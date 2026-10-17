@@ -1,0 +1,100 @@
+"use client"
+
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { User, LogIn, LogOut, Settings, BookOpen } from "lucide-react"
+import Link from "next/link"
+import { useAuth } from "@/hooks/use-auth"
+
+export function AuthNav() {
+  const { user, logout, isLoading } = useAuth()
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center gap-3">
+        <div className="w-8 h-8 bg-gray-800 rounded-full animate-pulse"></div>
+      </div>
+    )
+  }
+
+  if (!user) {
+    return (
+      <div className="flex items-center gap-3">
+        <Link href="/auth/login">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors font-medium"
+          >
+            <LogIn className="h-4 w-4 mr-2" />
+            Sign In
+          </Button>
+        </Link>
+        <Link href="/auth/signup">
+          <Button
+            size="sm"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white glow-effect font-medium"
+          >
+            <User className="h-4 w-4 mr-2" />
+            Sign Up
+          </Button>
+        </Link>
+      </div>
+    )
+  }
+
+  const getInitials = (email: string, name?: string) => {
+    if (name) {
+      return name
+        .split(" ")
+        .map((n) => n[0])
+        .join("")
+        .toUpperCase()
+        .slice(0, 2)
+    }
+    return email.slice(0, 2).toUpperCase()
+  }
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
+          <Avatar className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600">
+            <AvatarFallback className="bg-transparent text-white font-medium">
+              {getInitials(user.email, user.name)}
+            </AvatarFallback>
+          </Avatar>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56 bg-gray-900 border-gray-700" align="end" forceMount>
+        <div className="flex items-center justify-start gap-2 p-2">
+          <div className="flex flex-col space-y-1 leading-none">
+            {user.name && <p className="font-medium text-white">{user.name}</p>}
+            <p className="w-[200px] truncate text-sm text-gray-400">{user.email}</p>
+          </div>
+        </div>
+        <DropdownMenuSeparator className="bg-gray-700" />
+        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer">
+          <BookOpen className="mr-2 h-4 w-4" />
+          <span>My Progress</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer">
+          <Settings className="mr-2 h-4 w-4" />
+          <span>Settings</span>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator className="bg-gray-700" />
+        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer" onClick={logout}>
+          <LogOut className="mr-2 h-4 w-4" />
+          <span>Log out</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
