@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Answer-bearing documents are accessible only through verified server routes.
+    // Merge these protected paths into the live rules; do not retain broader allow rules.
+    match /questions/{document=**} { allow read, write: if false; }
+    match /certproAttempts/{document=**} { allow read, write: if false; }
+    match /certproConfig/{document=**} { allow read, write: if false; }
+    match /certproAudit/{document=**} { allow read, write: if false; }
+  }
+}

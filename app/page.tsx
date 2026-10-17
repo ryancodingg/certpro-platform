@@ -1,5 +1,8 @@
 "use client"
 
+import { AdminLink } from "@/components/admin-link"
+import { BankAvailability } from "@/components/bank-availability"
+
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -81,12 +84,12 @@ export default function HomePage() {
     {
       id: "dp-700",
       title: "DP-700",
-      subtitle: "Azure Data Fundamentals",
-      description: "Master Azure data services with AI-powered practice questions and real-time explanations.",
+      subtitle: "Microsoft Certified: Fabric Data Engineer Associate",
+      description: "Implement analytics solutions, ingest and transform data, and monitor and optimize Microsoft Fabric workloads.",
       provider: "Microsoft",
-      difficulty: "Beginner",
-      estimatedTime: "2-3 hours",
-      topics: ["Data Concepts", "Azure Data Services", "Data Analytics", "Data Visualization"],
+      difficulty: "Intermediate",
+      estimatedTime: "Self-paced",
+      topics: ["Microsoft Fabric", "SQL", "PySpark", "KQL"],
       passingScore: 70,
       totalQuestions: 40,
       category: "Data & Analytics",
@@ -562,7 +565,7 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center gap-1">
                         <BookOpen className="h-3 w-3" />
-                        <span className="font-medium">{cert.totalQuestions} questions</span>
+                        <span className="font-medium"><BankAvailability certification={cert.id} /></span>
                       </div>
                     </div>
 
@@ -602,12 +605,7 @@ export default function HomePage() {
 
         {/* Admin Link */}
         <div className="text-center mt-20">
-          <Link href="/admin">
-            <Button variant="ghost" className="text-gray-500 hover:text-gray-300 hover:bg-gray-900/50 font-medium">
-              <Bot className="h-4 w-4 mr-2" />
-              Admin Panel
-            </Button>
-          </Link>
+          <AdminLink />
         </div>
       </div>
     </div>

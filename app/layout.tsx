@@ -4,9 +4,9 @@ import "./globals.css"
 import { AuthProvider } from "@/hooks/use-auth"
 
 export const metadata: Metadata = {
-  title: "CertPro - AI-Powered Certification Learning",
+  title: "CertPro - Certification Practice and Mock Exams",
   description:
-    "Master your next certification with AI-powered questions, intelligent explanations, and adaptive learning paths.",
+    "Study published certification question banks with immediate practice explanations and timed mock exams.",
     generator: 'v0.app'
 }
 
