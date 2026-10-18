@@ -1,3 +1,6 @@
+import {premiumAccess} from '@/lib/server/paypal'
+import {freeQuestions} from '@/lib/learning-access'
+import {createHash} from 'node:crypto'
 import { learner } from '@/lib/server/learner'
 import { guideFor, questionSection } from '@/lib/exam-guide'
 import { randomBytes, timingSafeEqual } from "node:crypto"
@@ -8,7 +11,7 @@ export const runtime = "nodejs"
 async function bank(certification: string) {
   const snapshot = await services().db.collection("questions").where("certification","==",certification).get()
   const published = snapshot.docs.map(d => normalizeQuestion(d.data(),d.id)).filter(q => publication(q) === "published")
-  const questions = published.filter(q => questionSchema.safeParse(q).success).sort((a,b)=>a.id.localeCompare(b.id)).slice(0,100)
+  const questions = published.filter(q => questionSchema.safeParse(q).success).sort((a,b)=>a.id.localeCompare(b.id))
   return {questions, invalid:published.length - published.filter(q=>questionSchema.safeParse(q).success).length}
 }
 export async function GET(request: Request) {
@@ -30,22 +33,28 @@ export async function POST(request: Request) {
     const {db} = services()
     if (input.action === "start") {
       if (!/^[a-z0-9-]{1,100}$/.test(input.certification ?? "") || !["practice","exam"].includes(input.mode)) throw new HttpError(400,"Invalid learning mode or certification.")
-      const uid=await learner(request)
+      const uid=await learner(request,true)
       const all=await bank(input.certification); const invalid=all.invalid
       if(input.section && (input.mode!=='practice'||!['additional',...guideFor(input.certification).domains.map(d=>d.id)].includes(input.section)))throw new HttpError(400,'Invalid practice section.')
-      const questions=input.section?all.questions.filter(q=>questionSection(input.certification,q)===input.section):all.questions
+      const premium=await premiumAccess(uid!);const eligible=input.mode==='practice'&&!premium?freeQuestions(input.certification,all.questions):all.questions
+      const questions=input.section?eligible.filter(q=>questionSection(input.certification,q)===input.section):eligible
       if (!questions.length) return Response.json({questions:[], invalid})
       const id = randomBytes(16).toString("hex")
       const secret = randomBytes(32).toString("hex")
       const deadline = input.mode === "exam" ? Date.now() + 90*60*1000 : null
-      await db.collection("certproAttempts").doc(id).create({secret, uid, certification:input.certification, section:input.section||null, mode:input.mode, questions:JSON.stringify(questions), answers:"{}", deadline, createdAt:new Date().toISOString(), expiresAt:Date.now()+24*60*60*1000, submitted:false})
+      const attempt={secret,uid,certification:input.certification,section:input.section||null,mode:input.mode,questions:JSON.stringify(questions),answers:"{}",deadline,createdAt:new Date().toISOString(),expiresAt:Date.now()+24*60*60*1000,submitted:false}
+      if(input.mode==='exam'&&!premium){
+        const quota=db.collection('certproAttempts').doc('quota_'+createHash('sha256').update(uid+'|'+input.certification).digest('hex'))
+        const resumed=await db.runTransaction(async tx=>{const used=(await tx.get(quota)).data();if(used?.attemptId){const previous=(await tx.get(db.collection('certproAttempts').doc(used.attemptId))).data();if(previous&&!previous.submitted&&previous.expiresAt>Date.now())return {id:used.attemptId,...previous};throw new HttpError(403,'Your free Mock Exam for this certification has been used. Premium unlocks unlimited Mock Exams.')};tx.create(db.collection('certproAttempts').doc(id),attempt);tx.set(quota,{kind:'quota',uid,attemptId:id});return null})
+        if(resumed){const previous=resumed as any;(await cookies()).set(`cp_${previous.id}`,previous.secret,{httpOnly:true,secure:true,sameSite:'none',path:'/api/learning',maxAge:Math.max(1,Math.floor((previous.expiresAt-Date.now())/1000))});return Response.json({id:previous.id,mode:previous.mode,deadline:previous.deadline,questions:JSON.parse(previous.questions).map(publicQuestion),answers:JSON.parse(previous.answers),invalid,resumed:true})}
+      }else await db.collection('certproAttempts').doc(id).create(attempt)
       ;(await cookies()).set(`cp_${id}`, secret, {httpOnly:true, secure:true, sameSite:"none", path:"/api/learning", maxAge:24*60*60})
       return Response.json({id, mode:input.mode, deadline, questions:questions.map(publicQuestion), invalid})
     }
     if (!/^[a-f0-9]{32}$/.test(input.id ?? "")) throw new HttpError(400,"Invalid attempt.")
     const secret = (await cookies()).get(`cp_${input.id}`)?.value
     if (!secret) throw new HttpError(401,"Attempt session missing. Restart the quiz.")
-    const uid=await learner(request)
+    const uid=await learner(request,true)
     return await db.runTransaction(async tx => {
       const ref = db.collection("certproAttempts").doc(input.id)
       const snap = await tx.get(ref)

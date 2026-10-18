@@ -1,0 +1,9 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {hasPaidAccess} from '../lib/subscription-access'
+import {freeQuestions} from '../lib/learning-access'
+const now=Date.parse('2026-10-18T00:00:00Z')
+const subscription={status:'ACTIVE',billing_info:{last_payment:{amount:{currency_code:'USD',value:'3.99'},time:'2026-10-01T00:00:00Z'},next_billing_time:'2026-11-01T00:00:00Z'}}
+test('Premium requires a confirmed USD payment and valid paid period',()=>{assert.equal(hasPaidAccess(subscription,{},'3.99',now),true);assert.equal(hasPaidAccess({...subscription,billing_info:{next_billing_time:'2026-11-01T00:00:00Z'}},{},'3.99',now),false);assert.equal(hasPaidAccess({...subscription,status:'APPROVAL_PENDING'},{},'3.99',now),false);assert.equal(hasPaidAccess(subscription,{},'19.99',now),false)})
+test('Refund and suspension revoke access; cancellation preserves paid time only',()=>{assert.equal(hasPaidAccess(subscription,{refundedAt:'2026-10-15T00:00:00Z'},'3.99',now),false);assert.equal(hasPaidAccess({...subscription,status:'SUSPENDED'},{},'3.99',now),false);assert.equal(hasPaidAccess({...subscription,status:'CANCELLED'},{},'3.99',now),true);assert.equal(hasPaidAccess(subscription,{},'3.99',Date.parse('2026-11-02')),false)})
+test('Free practice caps each section at five and does not rotate on restart',()=>{const qs=Array.from({length:20},(_,i)=>({id:'q'+String(i).padStart(2,'0'),topic:'test',sectionId:i<10?'section-1':'section-2'})) as any;const a=freeQuestions('az-900',qs);const b=freeQuestions('az-900',[...qs].reverse());assert.equal(a.length,10);assert.equal(a.filter(q=>q.sectionId==='section-1').length,5);assert.equal(a.filter(q=>q.sectionId==='section-2').length,5);assert.deepEqual(a.map(q=>q.id),b.map(q=>q.id));assert.equal(new Set(a.map(q=>q.id)).size,a.length)})
