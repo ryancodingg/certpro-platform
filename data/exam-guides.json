@@ -1,0 +1,4305 @@
+{
+  "azure-for-sap-workloads-specialty": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Migrate SAP workloads to Azure (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Design and implement an infrastructure to support SAP workloads on Azure (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement high availability and disaster recovery (HADR) (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Maintain SAP workloads on Azure (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ120-StudyGuide",
+    "effectiveNote": "Skills measured as of April 17, 2026"
+  },
+  "mos-word-expert-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage document options and settings"
+      },
+      {
+        "id": "section-2",
+        "title": "Use advanced editing and formatting features"
+      },
+      {
+        "id": "section-3",
+        "title": "Create custom document elements"
+      },
+      {
+        "id": "section-4",
+        "title": "Use advanced Word features"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-101-microsoft-word-expert-skills-measured.pdf"
+  },
+  "github-administration": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage GitHub identities and access (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Administer GitHub Enterprise environment (10–15%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement secure software development and compliance (25–30%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage GitHub Actions (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Monitor and optimize GitHub usage (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH100-StudyGuide"
+  },
+  "mos-excel-expert-365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage workbook options and settings"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage and format data"
+      },
+      {
+        "id": "section-3",
+        "title": "Create advanced formulas and macros"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage advanced charts and tables"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf"
+  },
+  "ai-transformation-leader": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Identify the business value of generative AI solutions (35–40%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Identify benefits, capabilities, and opportunities for Microsoft’s AI apps and services (35–40%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Identify an implementation and adoption strategy for Microsoft’s AI apps and services (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/ab731-StudyGuide",
+    "effectiveNote": "Skills measured as of July 22, 2026"
+  },
+  "azure-cosmos-db-developer-specialty": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and develop database solutions (40–45%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Secure, optimize, and deploy database solutions (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement AI and analytics capabilities in database solutions (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/dp420-StudyGuide",
+    "effectiveNote": "Skills measured as of October 6, 2026"
+  },
+  "identity-and-access-administrator": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement and manage user identities (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement authentication and access management (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Plan and implement workload identities (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Plan and automate identity governance (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/sc300-StudyGuide",
+    "effectiveNote": "Skills measured as of October 28, 2026"
+  },
+  "supply-chain-management-ai-consultant-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement the design to retire process (5–10%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement the forecast to plan process (1–5%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement the inventory to deliver process (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement the order to cash process (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement the plan to produce process (1–5%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Implement the source to pay process (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB330-StudyGuide"
+  },
+  "multi-agent-ai-solutions-expert": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Architect multi-agent solutions (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Develop multi-agent solutions in Azure (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Evaluate, optimize, and monitor multi-agent solutions (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Secure, govern, and deploy multi-agent solutions (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AI500-StudyGuide"
+  },
+  "azure-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe cloud concepts (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Describe Azure architecture and services (35–40%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Describe Azure management and governance (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ900-StudyGuide",
+    "effectiveNote": "Skills measured as of July 20, 2026"
+  },
+  "fabric-data-engineer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement and manage an analytics solution (30–35%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Ingest and transform data (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Monitor and optimize an analytics solution (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/DP700-StudyGuide",
+    "effectiveNote": "Skills measured as of October 19, 2026"
+  },
+  "cybersecurity-business-professional": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Understand cybersecurity concepts"
+      },
+      {
+        "id": "section-2",
+        "title": "Understand cybersecurity risks and threats"
+      },
+      {
+        "id": "section-3",
+        "title": "Apply basic security policies to protect the organization"
+      },
+      {
+        "id": "section-4",
+        "title": "Report and respond to security incidents"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/"
+  },
+  "security-operations-analyst": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage a security operations environment (40–45%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Respond to security incidents (35–40%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Perform threat hunting (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/SC200-StudyGuide",
+    "effectiveNote": "Skills measured as of October 21, 2026"
+  },
+  "cloud-and-ai-security-engineer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage identity, access, and governance (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Secure storage, databases, and networking (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Secure compute (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage and monitor security posture (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/SC500-StudyGuide"
+  },
+  "d365-business-central-developer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe Business Central (10–15%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Install, develop, and deploy for Business Central (10–15%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Develop by using AL objects (35–40%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Develop by using AL (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Work with development tools (10–15%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Integrate Business Central with other applications (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/mb820-StudyGuide",
+    "effectiveNote": "Skills measured as of June 10, 2025"
+  },
+  "d365-functional-consultant-customer-service-v3": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage cases in Customer Service (51–55%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Configure representative experience and routing (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Extend Customer Service (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/MB230-StudyGuide",
+    "effectiveNote": "Skills measured as of March 11, 2026"
+  },
+  "mos-powerpoint-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage presentations"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage slides"
+      },
+      {
+        "id": "section-3",
+        "title": "Insert and format text, shapes, and images"
+      },
+      {
+        "id": "section-4",
+        "title": "Insert tables, charts, SmartArt, 3D models, and media"
+      },
+      {
+        "id": "section-5",
+        "title": "Apply transitions and animations"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-300-microsoft-powerpoint-2019-skills-measured.pdf"
+  },
+  "d365-contact-center-ai-engineer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Deploy Dynamics 365 Contact Center (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement channels (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Configure agents and AI capabilities (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configure work distribution (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Configure the Dynamics 365 Contact Center representative experience (15–20%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Manage analytics for the Dynamics 365 Contact Center (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB250-StudyGuide"
+  },
+  "github-advanced-security": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe GitHub Security suites, features, and ecosystem (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Configure and use Secret Protection (formerly secret scanning) (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Configure and use supply chain security (formerly Dependabot/Dependency Review) (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configure and use Code Security (formerly Code Scanning with CodeQL) (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Security operations: best practices, prioritization, and remediation (15–20%)"
+      },
+      {
+        "id": "section-6",
+        "title": "GitHub Security suites administration (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH500-StudyGuide"
+  },
+  "azure-administrator": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage Azure identities and governance (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement and manage storage (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Deploy and manage Azure compute resources (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement and manage virtual networking (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Monitor and maintain Azure resources (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ104-StudyGuide",
+    "effectiveNote": "Skills measured as of April 17, 2026"
+  },
+  "azure-ai-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Identify AI concepts and capabilities"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement AI solutions with Microsoft Foundry"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/"
+  },
+  "mos-excel-for-accounting-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Prepare accounting data for analysis"
+      },
+      {
+        "id": "section-2",
+        "title": "Prepare a trial balance"
+      },
+      {
+        "id": "section-3",
+        "title": "Prepare and analyze financial statements"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform routine accounting activities"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-220-mos-excel-for-accounting-associate.pdf"
+  },
+  "intelligent-applications-builder-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Create a foundation for intelligent applications (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Create intelligent applications (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Build business application logic and automation (40–45%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB410-StudyGuide"
+  },
+  "microsoft-office-specialist-expert-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "MO-101: Microsoft Word Expert (Office 2019)"
+      },
+      {
+        "id": "section-2",
+        "title": "MO-201: Microsoft Excel Expert (Office 2019)"
+      },
+      {
+        "id": "section-3",
+        "title": "MO-500: Microsoft Access Expert (Office 2019)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+  },
+  "mos-excel-associate-m365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage worksheets and workbooks"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage data cells and ranges"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage tables and table data"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform operations by using formulas and functions"
+      },
+      {
+        "id": "section-5",
+        "title": "Manage charts"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf"
+  },
+  "devops-engineer": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and implement processes and communications"
+      },
+      {
+        "id": "section-2",
+        "title": "Design and implement a source control strategy"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement build and release pipelines"
+      },
+      {
+        "id": "section-4",
+        "title": "Develop a security and compliance plan"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement an instrumentation strategy"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/"
+  },
+  "fabric-analytics-engineer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Maintain a data analytics solution (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Prepare data (45–50%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement and manage semantic models (25–30%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/dp600-StudyGuide",
+    "effectiveNote": "Skills measured as of October 19, 2026"
+  },
+  "windows-server-administrator-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Deploy and manage AD DS (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage Windows Server instances and workloads in a hybrid environment (10–15%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage VMs (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement and manage an on-premises and hybrid networking infrastructure (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Manage storage and file services (15–20%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Secure Windows Server infrastructure (10–15%)"
+      },
+      {
+        "id": "section-7",
+        "title": "Monitor and troubleshoot Windows Server environments (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ802-StudyGuide"
+  },
+  "mos-access-expert-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage databases"
+      },
+      {
+        "id": "section-2",
+        "title": "Create and modify tables"
+      },
+      {
+        "id": "section-3",
+        "title": "Create and modify queries"
+      },
+      {
+        "id": "section-4",
+        "title": "Modify forms in layout view"
+      },
+      {
+        "id": "section-5",
+        "title": "Modify reports in layout view"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-500-microsoft-access-expert-(access-and-access-2019)-skills-measured"
+  },
+  "d365-functional-consultant-supply-chain-management": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement product information management (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement inventory and asset management (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement and manage supply chain processes (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement warehouse management and transportation management (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement master planning (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/mb330-StudyGuide",
+    "effectiveNote": "Skills measured as of October 21, 2026"
+  },
+  "mos-powerpoint-associate-365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage presentations"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage slides"
+      },
+      {
+        "id": "section-3",
+        "title": "Insert and format text, shapes, and images"
+      },
+      {
+        "id": "section-4",
+        "title": "Insert tables, charts, SmartArt, 3D models, and media"
+      },
+      {
+        "id": "section-5",
+        "title": "Apply transitions and animations"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-(2).pdf"
+  },
+  "mos-excel-expert-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage workbook options and settings"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage and format data"
+      },
+      {
+        "id": "section-3",
+        "title": "Create advanced formulas and macros"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage advanced charts and tables"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-201-microsoft-excel-expert-2019-skills-measured.pdf"
+  },
+  "mos-word-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage documents"
+      },
+      {
+        "id": "section-2",
+        "title": "Insert and format text, paragraphs, and sections"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage tables and lists"
+      },
+      {
+        "id": "section-4",
+        "title": "Create and manage references"
+      },
+      {
+        "id": "section-5",
+        "title": "Insert and format graphic elements"
+      },
+      {
+        "id": "section-6",
+        "title": "Manage document collaboration"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-100-microsoft-word-2019-skills-measured.pdf"
+  },
+  "azure-database-administrator-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan and implement data platform resources (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement a secure environment (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Monitor, configure, and optimize database resources (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configure and manage automation of tasks (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Plan and configure a high availability and disaster recovery (HA/DR) environment (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/dp300-StudyGuide",
+    "effectiveNote": "Skills measured as of October 27, 2026"
+  },
+  "ai-agent-builder-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan and configure agent solutions (30–35%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Integrate and extend agents in Copilot Studio (40–45%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Test and manage agents (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB620-StudyGuide"
+  },
+  "azure-ai-cloud-developer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Develop containerized solutions on Azure (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Develop AI solutions by using Azure data management services (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Connect to and consume Azure services (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Secure, monitor, and troubleshoot Azure solutions (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AI200-StudyGuide",
+    "effectiveNote": "Skills measured as of October 7, 2026"
+  },
+  "m365-teams-administrator-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Configure and manage a Teams environment (40–45%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage teams, channels, chats, and apps (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage meetings and calling (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Monitor, report on, and troubleshoot Teams (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/ms700-StudyGuide",
+    "effectiveNote": "Skills measured as of October 27, 2026"
+  },
+  "github-foundations": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Understand Git and GitHub basics (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Work with GitHub repositories (10–15%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Collaborate using GitHub (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Apply modern development practices (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Manage projects with GitHub (5–10%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Explore the GitHub community (5–10%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH900-StudyGuide"
+  },
+  "operationalizing-machine-learning-and-generative-ai-solutions": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and implement an MLOps infrastructure (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement machine learning model lifecycle and operations (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement a GenAIOps infrastructure (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement generative AI quality assurance and observability (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Optimize generative AI systems and model performance (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AI300-StudyGuide"
+  },
+  "d365-functional-consultant-financials": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement financial management (35–40%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement accounts receivable, credit, collections, and subscription billing (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement and manage accounts payable and expenses (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage budgeting (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Manage fixed assets (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/mb310-StudyGuide",
+    "effectiveNote": "Skills measured as of August 14, 2026"
+  },
+  "azure-virtual-desktop-specialty": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan and implement an Azure Virtual Desktop infrastructure (40–45%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Plan and implement identity and security (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Plan and implement user environments and apps (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Monitor and maintain an Azure Virtual Desktop infrastructure (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ140-StudyGuide",
+    "effectiveNote": "Skills measured as of July 20, 2026"
+  },
+  "mos-excel-for-business-finance-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Prepare Financial Data for Analysis"
+      },
+      {
+        "id": "section-2",
+        "title": "Perform Financial Analysis"
+      },
+      {
+        "id": "section-3",
+        "title": "Perform Loan and Investment Analysis"
+      },
+      {
+        "id": "section-4",
+        "title": "Create Financial Forecasts"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-230-mos-excel-for-business-finance-associate.pdf"
+  },
+  "power-platform-developer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Build Microsoft Power Platform solutions (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Extend the user experience (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Extend Microsoft Power Platform (35–40%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Develop integrations (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/PL400-StudyGuide",
+    "effectiveNote": "Skills measured as of October 16, 2026"
+  },
+  "mos-outlook-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage Outlook settings and processes"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage messages"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage schedules"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage contacts and tasks"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-400-microsoft-outlook-(outlook-and-outlook-2019)-skills-measured"
+  },
+  "modern-desktop": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Prepare infrastructure for devices (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage and maintain devices (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Protect devices (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage and secure applications (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Optimize endpoint operations by using automation, monitoring, and reporting (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/md102-StudyGuide",
+    "effectiveNote": "Skills measured as of October 27, 2026"
+  },
+  "information-security-administrator": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Implement information protection (30–35%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement data loss prevention and retention (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage risks, alerts, and activities (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/SC401-StudyGuide",
+    "effectiveNote": "Skills measured as of October 28, 2026"
+  },
+  "ai-business-professional": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Understand generative AI fundamentals (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage prompts and chats by using Microsoft 365 Copilot (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage business content and collaboration by using Microsoft 365 Copilot (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Drive business outcomes by using agents (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/ab730-StudyGuide",
+    "effectiveNote": "Skills measured as of October 20, 2026"
+  },
+  "azure-solutions-architect": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design identity, governance, and monitoring solutions"
+      },
+      {
+        "id": "section-2",
+        "title": "Design data storage solutions"
+      },
+      {
+        "id": "section-3",
+        "title": "Design business continuity solutions"
+      },
+      {
+        "id": "section-4",
+        "title": "Design infrastructure solutions"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/"
+  },
+  "developing-ai-enabled-database-solutions": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and develop database solutions (35–40%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Secure, optimize, and deploy database solutions (35–40%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement AI capabilities in database solutions (25–30%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/DP800-StudyGuide",
+    "effectiveNote": "Skills measured as of October 19, 2026"
+  },
+  "ai-services-administrator-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Configure and manage Microsoft 365 tenants and workloads (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Govern and secure Microsoft 365 tenants and workloads (40–45%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage and secure AI services in Microsoft 365 (35–40%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB650-StudyGuide"
+  },
+  "azure-ai-apps-and-agents-developer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan and manage an Azure AI solution (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement generative AI and agentic solutions (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement computer vision solutions (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implement text analysis solutions (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement information extraction solutions (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AI103-StudyGuide",
+    "effectiveNote": "Skills measured as of April 16, 2026"
+  },
+  "azure-data-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe core data concepts (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Identify considerations for relational data on Azure (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Describe considerations for working with non-relational data on Azure (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Describe an analytics workload (25–30%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/dp900-StudyGuide",
+    "effectiveNote": "Skills measured as of July 21, 2026"
+  },
+  "mos-word-associate-m365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage documents"
+      },
+      {
+        "id": "section-2",
+        "title": "Insert and format text, paragraphs, and sections"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage tables and lists"
+      },
+      {
+        "id": "section-4",
+        "title": "Create and manage references"
+      },
+      {
+        "id": "section-5",
+        "title": "Insert and format graphic elements"
+      },
+      {
+        "id": "section-6",
+        "title": "Manage document collaboration"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf"
+  },
+  "m365-enterprise-administrator": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Deploy and manage a Microsoft 365 tenant"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement and manage Microsoft Entra identity and access"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage security and threats by using Microsoft Defender XDR"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage compliance by using Microsoft Purview"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/"
+  },
+  "m365-collaboration-communications-systems-engineer": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan and design collaboration communications systems (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Configure and manage Teams meetings, webinars, and town halls (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Implement and configure Teams Phone (30–35%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configure and manage Teams Rooms and devices (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/MS721-StudyGuide",
+    "effectiveNote": "Skills measured as of October 29, 2026"
+  },
+  "mos-associate-m365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "MO-110: Microsoft Word (Microsoft 365 Apps)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+  },
+  "data-analyst-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Prepare the data (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Visualize and analyze the data (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage and secure Power BI (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/pl300-StudyGuide",
+    "effectiveNote": "Skills measured as of April 20, 2026"
+  },
+  "agentic-ai-business-solutions-architect": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan AI-powered business solutions (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Design AI-powered business solutions (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Deploy AI-powered business solutions (40–45%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB100-StudyGuide",
+    "effectiveNote": "Skills measured as of October 14, 2026"
+  },
+  "mos-excel-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage worksheets and workbooks"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage data cells and ranges"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage tables and table data"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform operations by using formulas and functions"
+      },
+      {
+        "id": "section-5",
+        "title": "Manage charts"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-200-microsoft-excel-2019-skills-measured.pdf"
+  },
+  "copilot-and-agent-administration-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Identify the core features and objects of Microsoft 365 services (30–35%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Understand data protection and governance tasks for Microsoft 365 and Copilot (35–40%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Perform basic administrative tasks for Copilot and agents (25–30%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/ab900-StudyGuide",
+    "effectiveNote": "Skills measured as of October 14, 2026"
+  },
+  "mos-excel-for-operational-management-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Data Management"
+      },
+      {
+        "id": "section-2",
+        "title": "Process Management"
+      },
+      {
+        "id": "section-3",
+        "title": "Resource Management"
+      },
+      {
+        "id": "section-4",
+        "title": "Reporting and Visualization"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf"
+  },
+  "mos-word-expert-365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Manage document options and settings"
+      },
+      {
+        "id": "section-2",
+        "title": "Use advanced editing and formatting features"
+      },
+      {
+        "id": "section-3",
+        "title": "Create custom document elements"
+      },
+      {
+        "id": "section-4",
+        "title": "Use advanced Word features"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "50 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf"
+  },
+  "d365-finance-and-operations-apps-developer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Plan the architecture and solution design (5–10%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Apply developer tools (5–10%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and develop AOT elements (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Develop and test code (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement reporting (10–15%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Integrate and manage data solutions (15–20%)"
+      },
+      {
+        "id": "section-7",
+        "title": "Implement security and optimize performance (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/mb500-StudyGuide",
+    "effectiveNote": "Skills measured as of January 30, 2026"
+  },
+  "cybersecurity-architect-expert": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design solutions that align with security best practices and priorities"
+      },
+      {
+        "id": "section-2",
+        "title": "Design security operations, identity, and compliance capabilities"
+      },
+      {
+        "id": "section-3",
+        "title": "Design security solutions for infrastructure"
+      },
+      {
+        "id": "section-4",
+        "title": "Design security solutions for applications and data"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/"
+  },
+  "d365-business-central-functional-consultant-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Set up Business Central (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Configure financials (30–35%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Configure sales and purchasing (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform Business Central operations (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/MB800-StudyGuide",
+    "effectiveNote": "Skills measured as of June 30, 2026"
+  },
+  "agentic-ai-developer": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Prepare agent architecture and SDLC processes (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implement tool use and environment interaction (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Manage memory, state, and execution (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform evaluation, error analysis, and tuning (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Orchestrate multi-agent coordination (15–20%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Implement guardrails and accountability (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH600-StudyGuide"
+  },
+  "github-copilot": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Use GitHub Copilot responsibly (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Use GitHub Copilot features (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Understand GitHub Copilot data and architecture (10–15%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Apply prompt engineering and context crafting (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Improve developer productivity with GitHub Copilot (10–15%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Configure privacy, content exclusions, and safeguards (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH300-StudyGuide",
+    "effectiveNote": "Skills measured as of August 7, 2026"
+  },
+  "agentic-devops-engineer-expert": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and implement processes and communications (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Design and implement a source control strategy (10–15%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement build and release pipelines (35–40%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Design and implement a security and compliance plan (15–20%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implement an instrumentation strategy (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AZ401-StudyGuide"
+  },
+  "microsoft-certified-educator": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Facilitate student collaboration"
+      },
+      {
+        "id": "section-2",
+        "title": "Facilitate skilled communication"
+      },
+      {
+        "id": "section-3",
+        "title": "Facilitate self-regulation"
+      },
+      {
+        "id": "section-4",
+        "title": "Facilitate real-world problem solving and innovation"
+      },
+      {
+        "id": "section-5",
+        "title": "Facilitate student use of Information and Communication Tools (ICT)"
+      },
+      {
+        "id": "section-6",
+        "title": "Use ICT to be an effective educator"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "60 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4vHlU"
+  },
+  "d365-sales-ai-consultant-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Configure Dynamics 365 Sales core features for AI (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Optimize AI-driven sales (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Qualify and prioritize leads by using AI (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Develop deals by using intelligent opportunity research (25–30%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Extend and enhance Sales (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/AB210-StudyGuide"
+  },
+  "implementing-data-engineering-solutions-using-azure-databricks": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Set up and configure an Azure Databricks environment (15–20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Secure and govern Unity Catalog objects (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Prepare and process data (30–35%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Deploy and maintain data pipelines and workloads (30–35%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/DP750-StudyGuide",
+    "effectiveNote": "Skills measured as of October 19, 2026"
+  },
+  "security-compliance-and-identity-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe the concepts of security, compliance, and identity (10–15%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Describe the capabilities of Microsoft Entra (25–30%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Describe the capabilities of Microsoft security solutions (35–40%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Describe the capabilities of Microsoft compliance solutions (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/sc900-StudyGuide",
+    "effectiveNote": "Skills measured as of October 21, 2026"
+  },
+  "azure-network-engineer-associate": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design and implement core networking infrastructure (25–30%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Design, implement, and manage connectivity services (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement application delivery services (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Design and implement private access to Azure services (10–15%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Design and implement Azure network security services (15–20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/az700-StudyGuide",
+    "effectiveNote": "Skills measured as of July 27, 2026"
+  },
+  "agentic-ai-business-professional": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Use GitHub platform features (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Enhance productivity by using GitHub Copilot (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design and implement agentic workflows and automations (25–30%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Perform human-in-the-loop tasks for agentic workflows (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH700-StudyGuide"
+  },
+  "power-platform-fundamentals": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Describe the business value of Microsoft Power Platform (5–10%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage the Microsoft Power Platform environment (20–25%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Demonstrate the capabilities of Power Apps (20–25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Demonstrate the capabilities of Power Automate (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Describe features and capabilities of agents in Microsoft Copilot Studio (20–25%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "45 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/PL900-StudyGuide",
+    "effectiveNote": "Skills measured as of July 24, 2026"
+  },
+  "github-actions": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Author and manage workflows (20–25%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Consume and troubleshoot workflows (15–20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Author and maintain actions (15–20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Manage GitHub Actions for the enterprise (20–25%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Secure and optimize automation (10–15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "100 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
+      },
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://aka.ms/GH200-StudyGuide"
+  },
+  "microsoft-office-specialist-associate-2019": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "MO-100: Microsoft Word (Office 2019)"
+      },
+      {
+        "id": "section-2",
+        "title": "MO-200: Microsoft Excel (Office 2019)"
+      },
+      {
+        "id": "section-3",
+        "title": "MO-300: Microsoft PowerPoint (Office 2019)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+  },
+  "mos-expert-m365-apps": {
+    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "MO-211: Microsoft Excel Expert (Microsoft 365 Apps)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Pricing",
+        "value": "Based on the country or region where you take the exam"
+      }
+    ],
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+  },
+  "aws-ai-business-strategist": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "AI Fundamentals and Literacy (24% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "AI Strategy and Business Value Creation (28% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "AI Governance and Responsible AI Leadership (24% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Business Readiness, Leadership, and AI Transformation (24% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Duration discrepancy",
+        "value": "Certification page lists 170 minutes; the AIB-C01 guide lists 130 minutes. Confirm the version and duration when booking."
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html"
+  },
+  "aws-cloud-practitioner": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Cloud Concepts (24% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Security and Compliance (30% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Cloud Technology and Services (34% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Billing, Pricing, and Support (12% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions; either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "100 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "700 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html"
+  },
+  "aws-ai-practitioner": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Fundamentals of AI and ML (20% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Fundamentals of GenAI (24% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Applications of Foundation Models (28% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Guidelines for Responsible AI (14% of scored content)"
+      },
+      {
+        "id": "section-5",
+        "title": "Security, Compliance, and Governance for AI Solutions (14% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions"
+      },
+      {
+        "label": "Exam fee",
+        "value": "100 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "700 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+  },
+  "aws-solutions-architect-associate": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design Secure Architectures (30% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Design Resilient Architectures (26% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Design High-Performing Architectures (24% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Design Cost-Optimized Architectures (20% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "130 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions; either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "150 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "720 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html"
+  },
+  "aws-machine-learning-engineer-associate": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Data Preparation for ML and AI (28% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "ML Model and Foundation Model (FM) Development (24% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Deployment and Orchestration of ML and AI Workflows (24% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Operating, Monitoring, and Securing ML and AI Solutions (24% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "170 minutes"
+      },
+      {
+        "label": "Passing score",
+        "value": "720 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html"
+  },
+  "aws-data-engineer-associate": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Data Ingestion and Transformation (34% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Store Management (26% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Data Operations and Support (22% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Data Security and Governance (18% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "130 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions; either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "150 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "720 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html"
+  },
+  "aws-cloudops-engineer-associate": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Monitoring, Logging, Analysis, Remediation, and Performance Optimization (22% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Reliability and Business Continuity (22% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Deployment, Provisioning, and Automation (22% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Security and Compliance (16% of scored content)"
+      },
+      {
+        "id": "section-5",
+        "title": "Networking and Content Delivery (18% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "130 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions; either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "150 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "720 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html"
+  },
+  "aws-developer-associate": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-developer-associate/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Development with AWS Services (32% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Security (26% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Deployment (24% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Troubleshooting and Optimization (18% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "130 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions; either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "150 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "720 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html"
+  },
+  "aws-security-specialty": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-security-specialty/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Detection (16% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Incident Response (14% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Infrastructure Security (18% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Identity and Access Management (20% of scored content)"
+      },
+      {
+        "id": "section-5",
+        "title": "Data Protection (18% of scored content)"
+      },
+      {
+        "id": "section-6",
+        "title": "Security Foundations and Governance (14% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "170 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions, either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "300 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "750 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html"
+  },
+  "aws-advanced-networking-specialty": {
+    "sourceUrl": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Network Design (30% of scored content)"
+      },
+      {
+        "id": "section-2",
+        "title": "Network Implementation (26% of scored content)"
+      },
+      {
+        "id": "section-3",
+        "title": "Network Management and Operation (20% of scored content)"
+      },
+      {
+        "id": "section-4",
+        "title": "Network Security, Compliance, and Governance (24% of scored content)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "170 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "65 questions, either multiple choice or multiple response"
+      },
+      {
+        "label": "Exam fee",
+        "value": "300 USD; local pricing and taxes may vary"
+      },
+      {
+        "label": "Passing score",
+        "value": "750 (scaled score; not a percentage)"
+      }
+    ],
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html"
+  },
+  "google-cloud-digital-leader": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-digital-leader",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Digital Transformation with Google Cloud (~18% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Exploring Data Transformation with Google Cloud (~18% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Innovating with Google Cloud Artificial Intelligence (~18% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Modernize Infrastructure and Applications with Google Cloud (~18% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Trust and Security with Google Cloud (~18% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Scaling with Google Cloud Operations (~10% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf"
+  },
+  "google-generative-ai-leader": {
+    "sourceUrl": "https://cloud.google.com/learn/certification/generative-ai-leader",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Fundamentals of gen AI (~30% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Google Cloud’s gen AI offerings (~35% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Techniques to improve gen AI model output (~20% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Business strategies for a successful gen AI solution (~15% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice questions"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf"
+  },
+  "google-cloud-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Setting up a cloud solution environment (~20% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Planning and implementing a cloud solution (~30% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Ensuring the successful operation of a cloud solution (~30% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configuring access and security (~20% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf"
+  },
+  "google-google-workspace-administrator": {
+    "sourceUrl": "https://cloud.google.com/certification/associate-google-workspace-administrator",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Managing user accounts, domains, and Directory (~20% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Managing core Workspace services (~23% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Managing data governance and compliance (~15% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Managing security policies and access controls (~20% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Managing browsers and endpoints (~10% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Monitoring and troubleshooting common issues (~13% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select questions"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/associate_google_workspace_administrator_exam_guide_english.pdf"
+  },
+  "google-data-practitioner": {
+    "sourceUrl": "https://cloud.google.com/learn/certification/data-practitioner",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Data Preparation and Ingestion (~30% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Analysis and Presentation (~27% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Data Pipeline Orchestration (~18% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Data Management (~25% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select questions"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/v1.0_associate_data_practitioner_exam_guide_english.pdf"
+  },
+  "google-agentic-architect-beta": {
+    "sourceUrl": "https://cloud.google.com/learn/certification/agentic-architect/",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Building agents using low-code tools (~13% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Using coding agents for application development (~17% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Developing custom agents (~33% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Evaluating and deploying agentic workflows (~22% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Securing and governing agentic workflows (~15% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "3 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "~80 multiple choice questions"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf"
+  },
+  "google-cloud-architect": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-architect",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Designing and planning a cloud solution architecture (~25% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Managing and provisioning a cloud solution infrastructure (~17.5% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Designing for security and compliance (~17.5% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Analyzing and optimizing technical and business processes (~15% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Managing implementation (~12.5% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Ensuring solution and operations excellence (~12.5% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf"
+  },
+  "google-cloud-database-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-database-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design innovative, scalable, and highly available cloud database solutions (~32% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Manage a solution that can span multiple database technologies (~25% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Migrate data solutions (~23% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Deploy scalable and highly available databases in Google Cloud (~20% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_database_engineer_exam_guide_english.pdf"
+  },
+  "google-cloud-developer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-developer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Designing highly scalable, secure, and reliable cloud-native applications (~32% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Building and testing applications (~23% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Configuring cloud-native applications for deployment (~24% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Integrating applications with Google Cloud services (~21% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "Two hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_developer_exam_guide_english.pdf"
+  },
+  "google-data-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/data-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Designing data processing systems (~22% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Ingesting and processing the data (~25% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Storing the data (~20% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Preparing and using data for analysis (~15% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Maintaining and automating data workloads (~18% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "40-50 multiple choice and multiple"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf"
+  },
+  "google-cloud-devops-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-devops-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Bootstrapping and maintaining a Google Cloud organization (~20% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Building and implementing CI/CD pipelines, including continuous testing, for application, infrastructure, and machine learning workloads (~25% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Applying site reliability engineering practices (~18% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Implementing observability practices and troubleshooting issues (~25% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Optimizing performance and cost (~12% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "Two hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_devops_engineer_exam_guide_english.pdf"
+  },
+  "google-cloud-security-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-security-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Configuring access (~25% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Securing communications and establishing boundary protection (~22% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Ensuring data protection (~23% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Managing operations (~19% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Supporting compliance requirements (~11% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf"
+  },
+  "google-cloud-network-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/cloud-network-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Designing and planning a Google Cloud VPC network (~21% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Implementing a VPC network (~20% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Configuring managed network services (~16% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Configuring and implementing hybrid and multicloud network interconnectivity (~16% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Managing, monitoring, and troubleshooting network operations (~14% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Configuring, implementing and managing a cloud network security solution (~13% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/042426_professional_cloud_network_engineer_exam_guide_english.pdf"
+  },
+  "google-machine-learning-engineer": {
+    "sourceUrl": "https://cloud.google.com/certification/machine-learning-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Architecting low-code AI solutions (~13% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Collaborating within and across teams to manage data and models (~16% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Scaling prototypes into ML models (~21% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Serving and scaling models (~20% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Automating and orchestrating ML pipelines (~18% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Monitoring AI solutions (~13% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "Two hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf"
+  },
+  "google-security-operations-engineer": {
+    "sourceUrl": "https://cloud.google.com/learn/certification/security-operations-engineer",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Platform operations (~14% of the exam)"
+      },
+      {
+        "id": "section-2",
+        "title": "Data management (~14% of the exam)"
+      },
+      {
+        "id": "section-3",
+        "title": "Threat hunting (~19% of the exam)"
+      },
+      {
+        "id": "section-4",
+        "title": "Detection engineering (~22% of the exam)"
+      },
+      {
+        "id": "section-5",
+        "title": "Incident response (~21% of the exam)"
+      },
+      {
+        "id": "section-6",
+        "title": "Observability (~10% of the exam)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Exam time",
+        "value": "2 hours"
+      },
+      {
+        "label": "Questions",
+        "value": "50-60 multiple choice and multiple select questions"
+      }
+    ],
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf"
+  },
+  "databricks-data-analyst-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/data-analyst-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Understanding of Databricks Data Intelligence Platform"
+      },
+      {
+        "id": "section-2",
+        "title": "Managing Data"
+      },
+      {
+        "id": "section-3",
+        "title": "Importing Data"
+      },
+      {
+        "id": "section-4",
+        "title": "Executing queries using Databricks SQL and Databricks SQL Warehouses"
+      },
+      {
+        "id": "section-5",
+        "title": "Analyzing Queries"
+      },
+      {
+        "id": "section-6",
+        "title": "Working with Dashboards and Visualizations in Databricks"
+      },
+      {
+        "id": "section-7",
+        "title": "Developing, Sharing, and Maintaining AI/BI Genie spaces"
+      },
+      {
+        "id": "section-8",
+        "title": "Data Modeling with Databricks SQL"
+      },
+      {
+        "id": "section-9",
+        "title": "Securing Data"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "45 scored multiple-choice questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online proctored or test center proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf"
+  },
+  "databricks-data-engineer-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Databricks Intelligence Platform (6%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Ingestion and Loading (21%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Data Transformation and Modeling (22%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Working with Lakeflow Jobs (16%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Implementing CI/CD (10%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Troubleshooting, Monitoring, and Optimization (10%)"
+      },
+      {
+        "id": "section-7",
+        "title": "Governance and Security (15%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "45 scored multiple-choice questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Exam fee",
+        "value": "USD 200, plus applicable taxes as required per local law"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online or test center"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf",
+    "effectiveNote": "Exam version as of May 4, 2026"
+  },
+  "databricks-data-engineer-professional": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-professional",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Developing Code for Data Processing using Python and SQL"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Ingestion & Acquisition (12%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Data Manipulation (12%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Monitoring and Alerting (10%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Cost & Performance Optimization(15%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Ensuring Data Security and Compliance (8%)"
+      },
+      {
+        "id": "section-7",
+        "title": "Data Governance (5%)"
+      },
+      {
+        "id": "section-8",
+        "title": "Debugging and Deploying (10%)"
+      },
+      {
+        "id": "section-9",
+        "title": "Data Modeling (5%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "60 scored multiple-choice questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Exam fee",
+        "value": "USD 200, plus applicable taxes as required per local law"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online proctored or test center"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/Databricks-Certified-Data-Engineer-Professional-Exam-Guide-9-Oct-2026.pdf"
+  },
+  "databricks-machine-learning-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Databricks Machine Learning"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Processing"
+      },
+      {
+        "id": "section-3",
+        "title": "Model Development"
+      },
+      {
+        "id": "section-4",
+        "title": "Model Deployment"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "48 scored multiple-choice or multiple-selection questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Exam fee",
+        "value": "$200"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online Proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf"
+  },
+  "databricks-machine-learning-professional": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-professional",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Model Development Using Spark ML"
+      },
+      {
+        "id": "section-2",
+        "title": "MLOps Model Lifecycle Management"
+      },
+      {
+        "id": "section-3",
+        "title": "Model Deployment Deployment Strategies"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "59 scored multiple-choice             questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "120 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online       Proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2  years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf"
+  },
+  "databricks-genai-engineer-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Design Applications (14%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Data Preparation (14%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Application Development (30%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Assembling and Deploying Applications (22%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Governance (8%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Evaluation and Monitoring (12%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "45 scored multiple-choice and multiple-selection"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Exam fee",
+        "value": "USD 200, plus applicable taxes as required per local law"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/databricks-certified-gen-ai-associate-exam-guide-august-2026.pdf"
+  },
+  "databricks-context-engineer-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/context-engineer-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Foundations of Context Engineering"
+      },
+      {
+        "id": "section-2",
+        "title": "System Prompt and Instruction Design"
+      },
+      {
+        "id": "section-3",
+        "title": "Knowledge Retrieval and Genie Configuration"
+      },
+      {
+        "id": "section-4",
+        "title": "Memory Architecture with Lakebase and MLflow"
+      },
+      {
+        "id": "section-5",
+        "title": "Tool Design, MCP, and Agent Context"
+      },
+      {
+        "id": "section-6",
+        "title": "Context Compression and Compaction"
+      },
+      {
+        "id": "section-7",
+        "title": "Multi-Agent and Long-Horizon Task Design"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "approximately 45 multiple-choice or multiple-selection"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Exam fee",
+        "value": "$200"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online Proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-context-engineer-associate-exam-guide.pdf"
+  },
+  "databricks-apache-spark-developer-associate": {
+    "sourceUrl": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+    "checkedOn": "2026-10-18",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Apache Spark Architecture and Components"
+      },
+      {
+        "id": "section-2",
+        "title": "Using Spark SQL"
+      },
+      {
+        "id": "section-3",
+        "title": "Developing Apache SparkTM DataFrame/DataSet API Applications"
+      },
+      {
+        "id": "section-4",
+        "title": "Troubleshooting and Tuning Apache Spark DataFrame API Applications."
+      },
+      {
+        "id": "section-5",
+        "title": "Structured Streaming"
+      },
+      {
+        "id": "section-6",
+        "title": "Using Spark Connect to deploy applications"
+      },
+      {
+        "id": "section-7",
+        "title": "Using Pandas API on Spark"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Questions",
+        "value": "45 scored multiple-choice questions"
+      },
+      {
+        "label": "Exam time",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Delivery",
+        "value": "Online Proctored and test center proctored"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "No required prerequisite; see the official guide for recommended training and experience"
+      },
+      {
+        "label": "Validity",
+        "value": "2 years"
+      }
+    ],
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf"
+  }
+}

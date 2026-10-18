@@ -3,6 +3,7 @@ import { z } from "zod"
 const text = z.string().trim().min(1).max(20000)
 const safeUrl = z.union([z.literal(""), z.string().url().refine(v => v.startsWith("https://"), "Use HTTPS URLs")]).optional()
 export const questionSchema = z.object({
+  sectionId: z.string().regex(/^[a-z0-9-]{1,100}$/).optional(),
   question: text, options: z.array(text).max(100).default([]),
   correctAnswer: z.union([z.number().int(), z.array(z.number().int()), z.array(z.boolean()), z.array(z.string())]),
   explanation: text, topic: text, difficulty: z.enum(["Easy", "Medium", "Hard"]),

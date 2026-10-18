@@ -83,7 +83,7 @@ export function AuthNav() {
         <DropdownMenuSeparator className="bg-gray-700" />
         <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
           <BookOpen className="mr-2 h-4 w-4" />
-          <span>My Progress</span>
+          <Link href="/progress">My Progress</Link>
         </DropdownMenuItem>
         <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
           <Settings className="mr-2 h-4 w-4" />

@@ -1,3 +1,5 @@
+import { learner } from '@/lib/server/learner'
+import { guideFor, questionSection } from '@/lib/exam-guide'
 import { randomBytes, timingSafeEqual } from "node:crypto"
 import { cookies } from "next/headers"
 import { body, failure, HttpError, sameOrigin, services } from "@/lib/server/firebase"
@@ -14,7 +16,11 @@ export async function GET(request: Request) {
     const certification = new URL(request.url).searchParams.get("certification") ?? ""
     if (!/^[a-z0-9-]{1,100}$/.test(certification)) throw new HttpError(400,"Invalid certification.")
     const {questions,invalid} = await bank(certification)
-    return Response.json({count:questions.length, invalid}, {headers:{"Cache-Control":"no-store"}})
+    const guide=guideFor(certification)
+    const sections=guide.domains.map(d=>({...d,count:questions.filter(q=>questionSection(certification,q)===d.id).length}))
+    const additional=questions.filter(q=>questionSection(certification,q)==='additional').length
+    if(additional)sections.push({id:'additional',title:'Additional bank topics',count:additional})
+    return Response.json({count:questions.length, invalid, sections}, {headers:{"Cache-Control":"no-store"}})
   } catch(e) { return failure(e) }
 }
 export async function POST(request: Request) {
@@ -24,23 +30,28 @@ export async function POST(request: Request) {
     const {db} = services()
     if (input.action === "start") {
       if (!/^[a-z0-9-]{1,100}$/.test(input.certification ?? "") || !["practice","exam"].includes(input.mode)) throw new HttpError(400,"Invalid learning mode or certification.")
-      const {questions,invalid} = await bank(input.certification)
+      const uid=await learner(request)
+      const all=await bank(input.certification); const invalid=all.invalid
+      if(input.section && (input.mode!=='practice'||!['additional',...guideFor(input.certification).domains.map(d=>d.id)].includes(input.section)))throw new HttpError(400,'Invalid practice section.')
+      const questions=input.section?all.questions.filter(q=>questionSection(input.certification,q)===input.section):all.questions
       if (!questions.length) return Response.json({questions:[], invalid})
       const id = randomBytes(16).toString("hex")
       const secret = randomBytes(32).toString("hex")
       const deadline = input.mode === "exam" ? Date.now() + 90*60*1000 : null
-      await db.collection("certproAttempts").doc(id).create({secret, mode:input.mode, questions:JSON.stringify(questions), answers:"{}", deadline, createdAt:new Date().toISOString(), expiresAt:Date.now()+24*60*60*1000, submitted:false})
+      await db.collection("certproAttempts").doc(id).create({secret, uid, certification:input.certification, section:input.section||null, mode:input.mode, questions:JSON.stringify(questions), answers:"{}", deadline, createdAt:new Date().toISOString(), expiresAt:Date.now()+24*60*60*1000, submitted:false})
       ;(await cookies()).set(`cp_${id}`, secret, {httpOnly:true, secure:true, sameSite:"none", path:"/api/learning", maxAge:24*60*60})
       return Response.json({id, mode:input.mode, deadline, questions:questions.map(publicQuestion), invalid})
     }
     if (!/^[a-f0-9]{32}$/.test(input.id ?? "")) throw new HttpError(400,"Invalid attempt.")
     const secret = (await cookies()).get(`cp_${input.id}`)?.value
     if (!secret) throw new HttpError(401,"Attempt session missing. Restart the quiz.")
+    const uid=await learner(request)
     return await db.runTransaction(async tx => {
       const ref = db.collection("certproAttempts").doc(input.id)
       const snap = await tx.get(ref)
       const attempt = snap.data()
       if (!attempt || secret.length !== attempt.secret.length || !timingSafeEqual(Buffer.from(secret),Buffer.from(attempt.secret))) throw new HttpError(403,"Attempt access denied.")
+      if(attempt.uid && attempt.uid!==uid)throw new HttpError(403,'This attempt belongs to another account.')
       if (Date.now() > attempt.expiresAt) throw new HttpError(410,"Attempt expired. Start a new quiz.")
       const questions: Question[] = JSON.parse(attempt.questions)
       const answers = JSON.parse(attempt.answers)
