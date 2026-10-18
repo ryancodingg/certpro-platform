@@ -3,3 +3,5 @@ allowBuilds:
   esbuild: true
   protobufjs: true
   sharp: true
+patchedDependencies:
+  jwks-rsa@4.1.0: patches/jwks-rsa@4.1.0.patch
