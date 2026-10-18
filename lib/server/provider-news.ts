@@ -24,7 +24,7 @@ async function readSource(source:typeof sources[number]){
  for(const entry of entries){if(!entry.title||!entry.link||!relevant.test(entry.title))continue
  let url:URL;try{url=new URL(entry.link,source.url)}catch{continue}
  if(url.protocol!=='https:'||url.hostname!==source.host)continue
- url.hash='';const title=load(entry.title).text().replace(/\s+/g,' ').trim().slice(0,240)
+ url.hash='';const title=load(entry.title).text().replace(/\s+/g,' ').replace(/^Training and Certifications/,'').replace(/By .+ • \d+-minute read$/,'').trim().slice(0,240)
  const date=entry.isoDate?new Date(entry.isoDate):null
  if(date&&!Number.isNaN(date.valueOf())&&(date>new Date()||Date.now()-date.valueOf()>365*86400000))continue
  const id='official-'+createHash('sha256').update(url.href).digest('hex').slice(0,24)
@@ -36,6 +36,6 @@ const cached=sources.map(source=>unstable_cache(()=>readSource(source),['officia
 export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  const byUrl=new Map(seed.filter(n=>isActiveNews(n)).map(n=>[n.source_url,n]));for(const result of results)for(const n of result.items)if(!byUrl.has(n.source_url))byUrl.set(n.source_url,n)
- const items=[...byUrl.values()].sort((a,b)=>(b.published_on||(b.id.startsWith('official-')?'':b.verified_on)).localeCompare(a.published_on||(a.id.startsWith('official-')?'':a.verified_on))||a.id.localeCompare(b.id))
+ const items=[...byUrl.values()].sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')||a.id.localeCompare(b.id))
  return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Only certification-related announcements found in these sources appear here; coverage is not exhaustive.'}
 }

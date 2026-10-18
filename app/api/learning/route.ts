@@ -1,3 +1,4 @@
+import {certificationById} from '@/lib/catalog'
 import {premiumAccess} from '@/lib/server/paypal'
 import {freeQuestions} from '@/lib/learning-access'
 import {createHash} from 'node:crypto'
@@ -8,7 +9,9 @@ import { cookies } from "next/headers"
 import { body, failure, HttpError, sameOrigin, services } from "@/lib/server/firebase"
 import { normalizeQuestion, publication, publicQuestion, questionSchema, scoreQuestions, validAnswer, isCorrect, type Question } from "@/lib/questions"
 export const runtime = "nodejs"
+function bankId(id:string){const cert=certificationById(id);return cert?.aliases[0]||cert?.id||id}
 async function bank(certification: string) {
+  certification=bankId(certification)
   const snapshot = await services().db.collection("questions").where("certification","==",certification).get()
   const published = snapshot.docs.map(d => normalizeQuestion(d.data(),d.id)).filter(q => publication(q) === "published")
   const questions = published.filter(q => questionSchema.safeParse(q).success).sort((a,b)=>a.id.localeCompare(b.id))
@@ -16,7 +19,7 @@ async function bank(certification: string) {
 }
 export async function GET(request: Request) {
   try {
-    const certification = new URL(request.url).searchParams.get("certification") ?? ""
+    const certification = bankId(new URL(request.url).searchParams.get("certification") ?? "")
     if (!/^[a-z0-9-]{1,100}$/.test(certification)) throw new HttpError(400,"Invalid certification.")
     const {questions,invalid} = await bank(certification)
     const guide=guideFor(certification)
@@ -33,6 +36,7 @@ export async function POST(request: Request) {
     const {db} = services()
     if (input.action === "start") {
       if (!/^[a-z0-9-]{1,100}$/.test(input.certification ?? "") || !["practice","exam"].includes(input.mode)) throw new HttpError(400,"Invalid learning mode or certification.")
+      input.certification=bankId(input.certification)
       const uid=await learner(request,true)
       const all=await bank(input.certification); const invalid=all.invalid
       if(input.section && (input.mode!=='practice'||!['additional',...guideFor(input.certification).domains.map(d=>d.id)].includes(input.section)))throw new HttpError(400,'Invalid practice section.')
