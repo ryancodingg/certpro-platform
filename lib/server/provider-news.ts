@@ -34,12 +34,16 @@ async function readSource(source:typeof sources[number]){
  return {provider:source.provider,checkedAt:fetched,items:[...unique.values()].slice(0,15),status:'ok'}
 }
 async function retainedSource(source:typeof sources[number]){
- const ref=services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_'))
- const previous=(await ref.get()).data()
- try{const fresh=await readSource(source);const merged=new Map<string,NewsRecord>((previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n);const items=[...merged.values()].filter(n=>isActiveNews(n)).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100);await ref.set({...fresh,items});return {...fresh,items}}
- catch{return {provider:source.provider,checkedAt:previous?.checkedAt||null,items:(previous?.items||[]) as NewsRecord[],status:previous?'stale':'unavailable'}}
+ let previous:any=null
+ try{previous=(await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get()).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
+ try{
+  const fresh=await readSource(source);const merged=new Map<string,NewsRecord>((previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n)
+  const items=[...merged.values()].filter(n=>isActiveNews(n)).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100)
+  let archiveAvailable=true;try{await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).set({...fresh,items})}catch{archiveAvailable=false}
+  return {...fresh,items,archiveAvailable}
+ }catch{return {provider:source.provider,checkedAt:previous?.checkedAt||null,items:(previous?.items||[]) as NewsRecord[],status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
-const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-archive-v1',source.provider],{revalidate:3600}))
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v2',source.provider],{revalidate:3600}))
 export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  const byUrl=new Map(seed.filter(n=>isActiveNews(n)).map(n=>[n.source_url,n]));for(const result of results)for(const n of result.items)if(!byUrl.has(n.source_url))byUrl.set(n.source_url,n)
