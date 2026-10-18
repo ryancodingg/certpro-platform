@@ -1,5 +1,6 @@
 import "server-only"
 import { cert, getApps, initializeApp } from "firebase-admin/app"
+import { timingSafeSecretMatches } from "@/lib/security"
 import { getAuth } from "firebase-admin/auth"
 import { getFirestore } from "firebase-admin/firestore"
 import { cookies } from "next/headers"
@@ -17,21 +18,17 @@ export function services() {
   }
   return {auth: getAuth(app), db: getFirestore(app)}
 }
-export const OWNER_EMAIL = "nglongvu10022k@gmail.com"
 export async function requireOwner() {
   const session = (await cookies()).get("__session")?.value
   if (!session) throw new HttpError(401, "Sign in with the verified owner account to manage question banks.")
   const {auth, db} = services()
   let identity
   try { identity = await auth.verifySessionCookie(session, true) } catch { throw new HttpError(401, "Your session has expired. Sign in again.") }
+  const ownerUid = process.env.CERTPRO_OWNER_UID
+  const ownerEmail = process.env.CERTPRO_OWNER_EMAIL?.trim().toLowerCase()
+  if (!ownerUid || !ownerEmail) throw new HttpError(503, "Owner identity is not configured; no administrative action was performed.")
   const account = await auth.getUser(identity.uid)
-  if (account.disabled || !account.emailVerified || account.email?.toLowerCase() !== OWNER_EMAIL || !identity.email_verified) throw new HttpError(403, "Only the verified bank owner can manage questions.")
-  const ref = db.doc("certproConfig/owner")
-  await db.runTransaction(async tx => {
-    const owner = await tx.get(ref)
-    if (owner.exists && owner.data()?.uid !== account.uid) throw new HttpError(403, "Owner identity does not match the pinned account.")
-    if (!owner.exists) tx.create(ref, {uid: account.uid, resolvedAt: new Date().toISOString()})
-  })
+  if (account.disabled || !account.emailVerified || account.email?.toLowerCase() !== ownerEmail || !identity.email_verified || account.uid !== ownerUid) throw new HttpError(403, "Only the configured verified bank owner can manage questions.")
   return account.uid
 }
 export function sameOrigin(request: Request) {
