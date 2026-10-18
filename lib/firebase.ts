@@ -1,7 +1,8 @@
 import { getApps, initializeApp } from "firebase/app"
 import { getAuth } from "firebase/auth"
 const app = getApps()[0] ?? initializeApp({
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  // Keep static generation from evaluating Firebase with an undefined config; sign-in still fails clearly until project vars are configured.
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ?? "build-placeholder",
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,

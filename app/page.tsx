@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { BookOpen, Clock, Target, Search, ChevronRight, Users, ChevronLeft, Zap, Sparkles, Bot } from "lucide-react"
-import Link from "next/link"
 import { AuthNav } from "@/components/auth-nav"
+import Link from "next/link"
 
 interface Certification {
   id: string
@@ -341,6 +341,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        <section className="mb-20 rounded-2xl border border-gray-800 bg-gray-900/40 p-6"><div className="flex flex-wrap items-center justify-between gap-4"><div><p className="text-sm uppercase tracking-widest text-purple-400">Official-source watch</p><h2 className="mt-2 text-2xl font-bold text-white">News & Discounts</h2><p className="mt-2 text-gray-400">Verified benefits and certification updates. No guessed coupons.</p></div><Link href="/news" className="text-sm text-blue-300 underline">View all updates</Link></div></section>
 
         {/* Popular Certifications */}
         {!searchTerm && !selectedProvider && (

@@ -1,0 +1,1023 @@
+{
+  "verified_on": "2026-10-18",
+  "count": 111,
+  "provider_counts": {
+    "Microsoft": 71,
+    "GitHub": 7,
+    "AWS": 10,
+    "Google Cloud": 15,
+    "Databricks": 8
+  },
+  "notes": "Selected certification directory, not an exhaustive provider catalog. Certification listings do not imply available question banks or free provider exams. Retired certifications and duplicate aliases excluded. Beta/retiring labels retained. Official provider pages are authoritative.",
+  "certifications": [
+    {
+      "id": "azure-for-sap-workloads-specialty",
+      "name": "Microsoft Certified: Azure for SAP Workloads Specialty",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-word-expert-2019",
+      "name": "Microsoft Office Specialist: Word Expert (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "github-administration",
+      "name": "GitHub Administration",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-expert-365-apps",
+      "name": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "ai-transformation-leader",
+      "name": "Microsoft Certified: AI Transformation Leader",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-cosmos-db-developer-specialty",
+      "name": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "identity-and-access-administrator",
+      "name": "Microsoft Certified: Identity and Access Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "supply-chain-management-ai-consultant-associate",
+      "name": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+      "level": "intermediate",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "multi-agent-ai-solutions-expert",
+      "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-fundamentals",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "fabric-data-engineer-associate",
+      "name": "Microsoft Certified: Fabric Data Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "cybersecurity-business-professional",
+      "name": "Microsoft Certified: Cybersecurity Business Professional (beta)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+      "level": "beginner",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "security-operations-analyst",
+      "name": "Microsoft Certified: Security Operations Analyst Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "cloud-and-ai-security-engineer-associate",
+      "name": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-business-central-developer-associate",
+      "name": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-functional-consultant-customer-service-v3",
+      "name": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-powerpoint-2019",
+      "name": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-contact-center-ai-engineer-associate",
+      "name": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "github-advanced-security",
+      "name": "GitHub Advanced Security",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-administrator",
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-ai-fundamentals",
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-for-accounting-associate",
+      "name": "Microsoft Office Specialist: Excel for Accounting Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "intelligent-applications-builder-associate",
+      "name": "Microsoft Certified: Intelligent Applications Builder Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "microsoft-office-specialist-expert-2019",
+      "name": "Microsoft Office Specialist: Expert (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "devops-engineer",
+      "name": "Microsoft Certified: DevOps Engineer Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "fabric-analytics-engineer-associate",
+      "name": "Microsoft Certified: Fabric Analytics Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "windows-server-administrator-associate",
+      "name": "Microsoft Certified: Windows Server Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-access-expert-2019",
+      "name": "Microsoft Office Specialist: Access Expert (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-functional-consultant-supply-chain-management",
+      "name": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-powerpoint-associate-365-apps",
+      "name": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-expert-2019",
+      "name": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-word-2019",
+      "name": "Microsoft Office Specialist: Word Associate (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-database-administrator-associate",
+      "name": "Microsoft Certified: Azure Database Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "ai-agent-builder-associate",
+      "name": "Microsoft Certified: AI Agent Builder Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-ai-cloud-developer-associate",
+      "name": "Microsoft Certified: Azure AI Cloud Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "m365-teams-administrator-associate",
+      "name": "Microsoft 365 Certified: Teams Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "github-foundations",
+      "name": "GitHub Foundations",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "operationalizing-machine-learning-and-generative-ai-solutions",
+      "name": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-functional-consultant-financials",
+      "name": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-virtual-desktop-specialty",
+      "name": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-for-business-finance-associate",
+      "name": "Microsoft Office Specialist: Excel for Business Finance Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "power-platform-developer-associate",
+      "name": "Microsoft Certified: Power Platform Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-outlook-2019",
+      "name": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "modern-desktop",
+      "name": "Microsoft 365 Certified: Endpoint Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "information-security-administrator",
+      "name": "Microsoft Certified: Information Security Administrator Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "ai-business-professional",
+      "name": "Microsoft Certified: AI Business Professional",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-solutions-architect",
+      "name": "Microsoft Certified: Azure Solutions Architect Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "developing-ai-enabled-database-solutions",
+      "name": "Microsoft Certified: SQL AI Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "ai-services-administrator-associate",
+      "name": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+      "level": "intermediate",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-ai-apps-and-agents-developer-associate",
+      "name": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-data-fundamentals",
+      "name": "Microsoft Certified: Azure Data Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-word-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "m365-enterprise-administrator",
+      "name": "Microsoft 365 Certified: Administrator Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "m365-collaboration-communications-systems-engineer",
+      "name": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "data-analyst-associate",
+      "name": "Microsoft Certified: Power BI Data Analyst Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "agentic-ai-business-solutions-architect",
+      "name": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-2019",
+      "name": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "copilot-and-agent-administration-fundamentals",
+      "name": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-excel-for-operational-management-associate",
+      "name": "Microsoft Office Specialist: Excel for Operational Management Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-word-expert-365-apps",
+      "name": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-finance-and-operations-apps-developer-associate",
+      "name": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "cybersecurity-architect-expert",
+      "name": "Microsoft Certified: Cybersecurity Architect Expert",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-business-central-functional-consultant-associate",
+      "name": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "agentic-ai-developer",
+      "name": "GitHub Certified: Agentic AI Developer",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "agentic-devops-engineer-expert",
+      "name": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "level": "advanced",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "microsoft-certified-educator",
+      "name": "Microsoft Certified Educator",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "d365-sales-ai-consultant-associate",
+      "name": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "implementing-data-engineering-solutions-using-azure-databricks",
+      "name": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "security-compliance-and-identity-fundamentals",
+      "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "azure-network-engineer-associate",
+      "name": "Microsoft Certified: Azure Network Engineer Associate",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "agentic-ai-business-professional",
+      "name": "GitHub Certified: Agentic AI Business Professional (beta)",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+      "level": "intermediate",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "power-platform-fundamentals",
+      "name": "Microsoft Certified: Power Platform Fundamentals",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "provider": "GitHub",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "microsoft-office-specialist-associate-2019",
+      "name": "Microsoft Office Specialist: Associate (Office 2019)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "mos-expert-m365-apps",
+      "name": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-ai-business-strategist",
+      "name": "AWS Certified AI Business Strategist",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "level": "Business",
+      "status": "beta",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "name": "AWS Certified Cloud Practitioner",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "level": "Foundational",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "level": "Foundational",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-solutions-architect-associate",
+      "name": "AWS Certified Solutions Architect - Associate",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "level": "Associate",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-machine-learning-engineer-associate",
+      "name": "AWS Certified Machine Learning Engineer - Associate",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "level": "Associate",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-data-engineer-associate",
+      "name": "AWS Certified Data Engineer - Associate",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      "level": "Associate",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-cloudops-engineer-associate",
+      "name": "AWS Certified CloudOps Engineer - Associate",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      "level": "Associate",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-developer-associate",
+      "name": "AWS Certified Developer - Associate",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "level": "Associate",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-security-specialty",
+      "name": "AWS Certified Security - Specialty",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "level": "Specialty",
+      "status": "active",
+      "retires_on": null,
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "aws-advanced-networking-specialty",
+      "name": "AWS Certified Advanced Networking - Specialty",
+      "provider": "AWS",
+      "official_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      "level": "Specialty",
+      "status": "retiring",
+      "retires_on": "2026-12-31",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-digital-leader",
+      "name": "Google Cloud Cloud Digital Leader",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-digital-leader",
+      "level": "Foundational",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-generative-ai-leader",
+      "name": "Google Cloud Generative AI Leader",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "level": "Foundational",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-engineer",
+      "name": "Google Cloud Associate Cloud Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-engineer",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-google-workspace-administrator",
+      "name": "Google Cloud Associate Google Workspace Administrator",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/associate-google-workspace-administrator",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-data-practitioner",
+      "name": "Google Cloud Associate Data Practitioner",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/learn/certification/data-practitioner",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-agentic-architect-beta",
+      "name": "Google Cloud Professional Agentic Architect (Beta)",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "level": "Professional",
+      "status": "beta",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-architect",
+      "name": "Google Cloud Professional Cloud Architect",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-architect",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-database-engineer",
+      "name": "Google Cloud Professional Cloud Database Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-database-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-developer",
+      "name": "Google Cloud Professional Cloud Developer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-developer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-data-engineer",
+      "name": "Google Cloud Professional Data Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/data-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-devops-engineer",
+      "name": "Google Cloud Professional Cloud DevOps Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-devops-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-security-engineer",
+      "name": "Google Cloud Professional Cloud Security Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-security-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-cloud-network-engineer",
+      "name": "Google Cloud Professional Cloud Network Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/cloud-network-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-machine-learning-engineer",
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/certification/machine-learning-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "google-security-operations-engineer",
+      "name": "Google Cloud Professional Security Operations Engineer",
+      "provider": "Google Cloud",
+      "official_url": "https://cloud.google.com/learn/certification/security-operations-engineer",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-data-analyst-associate",
+      "name": "Databricks Certified Data Analyst Associate",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-data-engineer-associate",
+      "name": "Databricks Certified Data Engineer Associate",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/data-engineer-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-data-engineer-professional",
+      "name": "Databricks Certified Data Engineer Professional",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-machine-learning-associate",
+      "name": "Databricks Certified Machine Learning Associate",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/machine-learning-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-machine-learning-professional",
+      "name": "Databricks Certified Machine Learning Professional",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+      "level": "Professional",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-genai-engineer-associate",
+      "name": "Databricks Certified Generative AI Engineer Associate",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-context-engineer-associate",
+      "name": "Databricks Certified Context Engineer Associate",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/context-engineer-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    },
+    {
+      "id": "databricks-apache-spark-developer-associate",
+      "name": "Databricks Certified Associate Developer for Apache Spark",
+      "provider": "Databricks",
+      "official_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+      "level": "Associate",
+      "status": "active",
+      "verified_on": "2026-10-18"
+    }
+  ]
+}
