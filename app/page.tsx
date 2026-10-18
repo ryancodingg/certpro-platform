@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { BookOpen, Clock, Target, Search, ChevronRight, Users, ChevronLeft, Zap, Sparkles, Bot } from "lucide-react"
+import { BookOpen, Clock, Target, Search, ChevronRight, ChevronLeft, Zap, Sparkles, Bot } from "lucide-react"
 import { AuthNav } from "@/components/auth-nav"
 import Link from "next/link"
 
@@ -19,13 +19,11 @@ interface Certification {
   description: string
   provider: string
   difficulty: "Beginner" | "Intermediate" | "Advanced"
-  estimatedTime: string
   topics: string[]
   passingScore: number
   totalQuestions: number
   category: string
   isPopular?: boolean
-  studentsCount?: number
 }
 
 // Provider logo components with dark theme
@@ -88,13 +86,11 @@ export default function HomePage() {
       description: "Implement analytics solutions, ingest and transform data, and monitor and optimize Microsoft Fabric workloads.",
       provider: "Microsoft",
       difficulty: "Intermediate",
-      estimatedTime: "Self-paced",
       topics: ["Microsoft Fabric", "SQL", "PySpark", "KQL"],
       passingScore: 70,
       totalQuestions: 40,
       category: "Data & Analytics",
       isPopular: true,
-      studentsCount: 15420,
     },
     {
       id: "az-900",
@@ -103,58 +99,50 @@ export default function HomePage() {
       description: "Start your cloud journey with intelligent learning paths and adaptive questioning.",
       provider: "Microsoft",
       difficulty: "Beginner",
-      estimatedTime: "3-4 hours",
       topics: ["Cloud Concepts", "Azure Services", "Security", "Pricing & Support"],
       passingScore: 70,
       totalQuestions: 50,
       category: "Cloud Fundamentals",
       isPopular: true,
-      studentsCount: 28750,
     },
     {
       id: "databricks-certified-data-engineer-associate",
       title: "Data Engineer Associate",
       subtitle: "Databricks Certified Data Engineer Associate",
-      description: "Advanced lakehouse architecture with AI-driven performance optimization insights.",
+                      description: "Design and implement data engineering solutions on the Databricks Lakehouse Platform.",
       provider: "Databricks",
       difficulty: "Intermediate",
-      estimatedTime: "4-5 hours",
       topics: ["Lakehouse Architecture", "Delta Lake", "Data Pipelines", "Performance Optimization"],
       passingScore: 70,
       totalQuestions: 60,
       category: "Data Engineering",
       isPopular: true,
-      studentsCount: 8930,
     },
     {
       id: "aws-clf-c02",
       title: "CLF-C02",
       subtitle: "AWS Cloud Practitioner",
-      description: "Essential AWS knowledge enhanced with intelligent study recommendations.",
+                      description: "Build foundational knowledge of AWS cloud concepts, services, security, and billing.",
       provider: "Amazon",
       difficulty: "Beginner",
-      estimatedTime: "2-3 hours",
       topics: ["Cloud Concepts", "AWS Services", "Security", "Billing & Pricing"],
       passingScore: 70,
       totalQuestions: 65,
       category: "Cloud Fundamentals",
       isPopular: true,
-      studentsCount: 22100,
     },
     {
       id: "databricks-certified-machine-learning-associate",
       title: "ML Associate",
       subtitle: "Databricks Certified Machine Learning Associate",
-      description: "Next-gen ML workflows with AI-powered model deployment strategies.",
+                      description: "Learn machine learning workflows, model training, feature engineering, and deployment.",
       provider: "Databricks",
       difficulty: "Advanced",
-      estimatedTime: "4-6 hours",
       topics: ["MLflow", "Model Training", "Feature Engineering", "Model Deployment"],
       passingScore: 70,
       totalQuestions: 50,
       category: "Machine Learning",
       isPopular: true,
-      studentsCount: 6750,
     },
     {
       id: "aws-saa-c03",
@@ -163,13 +151,11 @@ export default function HomePage() {
       description: "Design resilient cloud architectures with intelligent pattern recognition.",
       provider: "Amazon",
       difficulty: "Intermediate",
-      estimatedTime: "4-5 hours",
       topics: ["Design Solutions", "High Availability", "Cost Optimization", "Security"],
       passingScore: 72,
       totalQuestions: 65,
       category: "Cloud Architecture",
       isPopular: true,
-      studentsCount: 18650,
     },
   ]
 
@@ -308,8 +294,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            Experience the future of certification prep with AI-powered questions, intelligent explanations, and
-            adaptive learning paths.
+            Explore a verified certification directory and practice with the question banks available in CertPro.
           </p>
 
           {/* AI Features Highlight */}
@@ -353,7 +338,7 @@ export default function HomePage() {
                   <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
                   Most Popular
                 </h2>
-                <p className="text-gray-400 font-light">AI-enhanced learning paths for trending certifications</p>
+                <p className="text-gray-400 font-light">                  Browse verified directory entries and available practice banks</p>
               </div>
               <div className="flex items-center gap-2">
                 <Button
@@ -397,10 +382,7 @@ export default function HomePage() {
                         </Badge>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-400">
-                        <Users className="h-4 w-4" />
-                        <span className="status-indicator status-active pl-3 font-mono">
-                          {cert.studentsCount?.toLocaleString()}
-                        </span>
+
                       </div>
                     </div>
                     <CardTitle className="text-2xl text-white group-hover:text-blue-400 transition-colors">
@@ -415,7 +397,7 @@ export default function HomePage() {
                     <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
                       <div className="flex items-center gap-2">
                         <Clock className="h-4 w-4 text-blue-400" />
-                        <span className="font-medium">{cert.estimatedTime}</span>
+                        <span className="font-medium">Self-paced</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <Target className="h-4 w-4 text-purple-400" />
@@ -563,7 +545,7 @@ export default function HomePage() {
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
                       <div className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />
-                        <span className="font-medium">{cert.estimatedTime}</span>
+                        <span className="font-medium">Self-paced</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <BookOpen className="h-3 w-3" />
