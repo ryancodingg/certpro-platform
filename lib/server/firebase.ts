@@ -44,6 +44,7 @@ export async function body(request: Request) {
 export function failure(error: unknown) {
   if (error instanceof HttpError) return Response.json({error: error.message}, {status: error.status})
   if (error && typeof error === "object" && "issues" in error) return Response.json({error: "Invalid question data", issues: error.issues}, {status: 400})
-  console.error("CertPro server request failed", error instanceof Error ? error.name : "Unknown error")
+  const diagnostic = error as { code?: string | number; message?: string };
+  console.error("CertPro server request failed", { name: error instanceof Error ? error.name : "Unknown", code: diagnostic?.code, message: String(diagnostic?.message ?? "").replace(/-----BEGIN[sS]*?-----END[^-]*-----/g, "[REDACTED]").slice(0, 700) })
   return Response.json({error: "The bank service is unavailable. Please retry; no fallback data was used."}, {status: 503})
 }
