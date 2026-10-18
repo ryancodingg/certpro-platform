@@ -6,7 +6,7 @@ export const plans={monthly:{amount:'3.99',interval:'MONTH'},yearly:{amount:'19.
 export type Plan=keyof typeof plans
 const base=()=>process.env.PAYPAL_MODE==='live'?'https://api-m.paypal.com':'https://api-m.sandbox.paypal.com'
 export const billingReady=()=>!!(process.env.PAYPAL_CLIENT_ID&&process.env.PAYPAL_CLIENT_SECRET&&process.env.PAYPAL_MONTHLY_PLAN_ID&&process.env.PAYPAL_YEARLY_PLAN_ID&&process.env.PAYPAL_WEBHOOK_ID)
-export const billingRef=(uid:string)=>services().db.collection('certproAttempts').doc('billing_'+createHash('sha256').update(uid).digest('hex'))
+export const billingRef=(uid:string)=>services().db.collection('certproAttempts').doc('billing_'+(process.env.PAYPAL_MODE==='live'?'live_':'sandbox_')+createHash('sha256').update(uid).digest('hex'))
 const planId=(plan:Plan)=>plan==='monthly'?process.env.PAYPAL_MONTHLY_PLAN_ID:process.env.PAYPAL_YEARLY_PLAN_ID
 export async function paypal(path:string,method='GET',data?:unknown,requestId?:string){
  if(!billingReady())throw new HttpError(503,'Subscriptions are being configured. No payment was taken.')
@@ -26,14 +26,14 @@ export async function syncSubscription(uid:string){
  const paid=last?.amount?.currency_code==='USD'&&Number(last.amount.value)>=Number(plans[plan].amount)
  const paidThrough=paid&&next?next:old.paidThrough||null
  const premium=hasPaidAccess(sub,old,plans[plan].amount)
- const result={kind:'billing',uid,subscriptionId:sub.id,binding:old.binding,plan,status:sub.status,premium,paidThrough,checkedAt:Date.now()}
+ const result={kind:'billing',environment:process.env.PAYPAL_MODE==='live'?'live':'sandbox',uid,subscriptionId:sub.id,binding:old.binding,plan,status:sub.status,premium,paidThrough,checkedAt:Date.now()}
  await ref.set(result,{merge:true});return {premium,status:sub.status,plan,paidThrough}
 }
 export async function premiumAccess(uid:string){const old=(await billingRef(uid).get()).data();if(!old?.subscriptionId)return false;if(!billingReady())throw new HttpError(503,'Subscription verification is temporarily unavailable. Your free allowance has not been used.');return (await syncSubscription(uid)).premium}
 export async function createSubscription(uid:string,plan:Plan,origin:string){
  if(!billingReady())throw new HttpError(503,'Subscriptions are being configured. No payment was taken.');
  const ref=billingRef(uid);const lock=randomUUID();const now=Date.now();let old:any
- await services().db.runTransaction(async tx=>{old=(await tx.get(ref)).data();if(old?.lockUntil>now)throw new HttpError(409,'A subscription request is already being processed.');if(old?.pendingPlan&&old.pendingPlan!==plan)throw new HttpError(409,'Retry your pending plan request before changing plans.');tx.set(ref,{kind:'billing',uid,lock,creationRequestId:old?.creationRequestId||lock,pendingPlan:plan,lockUntil:now+120000},{merge:true})})
+ await services().db.runTransaction(async tx=>{old=(await tx.get(ref)).data();if(old?.lockUntil>now)throw new HttpError(409,'A subscription request is already being processed.');if(old?.pendingPlan&&old.pendingPlan!==plan)throw new HttpError(409,'Retry your pending plan request before changing plans.');tx.set(ref,{kind:'billing',environment:process.env.PAYPAL_MODE==='live'?'live':'sandbox',uid,lock,creationRequestId:old?.creationRequestId||lock,pendingPlan:plan,lockUntil:now+120000},{merge:true})})
  try{
  if(old?.subscriptionId){const current=await syncSubscription(uid);if(current.premium||['ACTIVE','SUSPENDED','APPROVED'].includes(current.status))throw new HttpError(409,'You already have a subscription. Manage it from My Progress.');if(current.status==='APPROVAL_PENDING'&&old.approvalUrl)return {url:old.approvalUrl}}
  const product=await paypal('/v1/billing/plans/'+encodeURIComponent(planId(plan)!));const regular=product.billing_cycles?.filter((c:any)=>c.tenure_type==='REGULAR')||[]
@@ -41,6 +41,6 @@ export async function createSubscription(uid:string,plan:Plan,origin:string){
  const binding=createHash('sha256').update(uid).digest('hex');const sub=await paypal('/v1/billing/subscriptions','POST',{plan_id:planId(plan),custom_id:binding,application_context:{brand_name:'CertPro',shipping_preference:'NO_SHIPPING',user_action:'SUBSCRIBE_NOW',return_url:origin+'/pricing?subscription=return',cancel_url:origin+'/pricing?subscription=cancel'}},old?.creationRequestId||lock)
  const url=sub.links?.find((l:any)=>l.rel==='approve')?.href;const host=url?new URL(url).hostname:''
  if(!['www.paypal.com','www.sandbox.paypal.com'].includes(host))throw new HttpError(503,'No valid PayPal approval link was returned.')
- await ref.set({kind:'billing',uid,binding,subscriptionId:sub.id,approvalUrl:url,plan,status:sub.status,premium:false,paidThrough:null,refundedAt:null,creationRequestId:null,pendingPlan:null},{merge:true});return {url}
+ await ref.set({kind:'billing',environment:process.env.PAYPAL_MODE==='live'?'live':'sandbox',uid,binding,subscriptionId:sub.id,approvalUrl:url,plan,status:sub.status,premium:false,paidThrough:null,refundedAt:null,creationRequestId:null,pendingPlan:null},{merge:true});return {url}
  }finally{await services().db.runTransaction(async tx=>{const current=(await tx.get(ref)).data();if(current?.lock===lock)tx.set(ref,{lockUntil:0},{merge:true})})}
 }

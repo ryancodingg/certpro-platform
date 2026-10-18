@@ -8,7 +8,7 @@ export async function POST(request:Request){try{
  const subscriptionId=event.resource?.billing_agreement_id||(event.event_type?.startsWith('BILLING.SUBSCRIPTION.')?event.resource?.id:null)
  if(!subscriptionId)return Response.json({received:true})
  const records=await services().db.collection('certproAttempts').where('subscriptionId','==',subscriptionId).get()
- for(const doc of records.docs){const a=doc.data();if(a.kind!=='billing'||!a.uid)continue
+ for(const doc of records.docs){const a=doc.data();if(a.kind!=='billing'||!a.uid||a.environment!==(process.env.PAYPAL_MODE==='live'?'live':'sandbox'))continue
  if(['PAYMENT.SALE.REFUNDED','PAYMENT.SALE.REVERSED'].includes(event.event_type)){const time=Date.parse(event.create_time);if(Number.isFinite(time)&&(!a.refundedAt||time>Date.parse(a.refundedAt)))await billingRef(a.uid).set({refundedAt:event.create_time,premium:false},{merge:true})}
  await syncSubscription(a.uid)
  }
