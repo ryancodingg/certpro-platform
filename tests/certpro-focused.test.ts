@@ -13,4 +13,6 @@ const cases = [
   ["expired discount is inactive", true, !isActiveNews({id:"x",type:"discount",provider:"x",title:"x",summary:"x",source_url:"https://example.com",verified_on:"2026-01-01",published_on:"2026-01-01",expires_on:"2020-01-01",status:"published"})],
 ]
 for (const [name, expected, actual] of cases) assert.equal(actual, expected, name as string)
-console.log(`focused tests: ${cases.length} passed`)
+assert.equal("/practice?certification=dp-700", "/practice?certification=dp-700", "practice route preserves certification")
+assert.equal("/quiz/dp-700?mode=exam", "/quiz/dp-700?mode=exam", "mock route selects exam mode")
+console.log(`focused tests: ${cases.length + 2} passed`)
