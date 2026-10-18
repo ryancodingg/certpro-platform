@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { User, LogIn, LogOut, Settings, BookOpen } from "lucide-react"
+import { User, LogIn, LogOut, Settings, BookOpen, CreditCard, CalendarDays } from "lucide-react"
 import Link from "next/link"
 import { useAuth } from "@/hooks/use-auth"
 
@@ -65,7 +65,7 @@ export function AuthNav() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
+        <Button variant="ghost" aria-label="Profile" className="relative h-10 w-10 rounded-full">
           <Avatar className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600">
             <AvatarFallback className="bg-transparent text-foreground font-medium">
               {getInitials(user.email, user.name)}
@@ -85,9 +85,11 @@ export function AuthNav() {
           <BookOpen className="mr-2 h-4 w-4" />
           <Link href="/progress">My Progress</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
+        <DropdownMenuItem asChild><Link href="/subscription"><CreditCard className="mr-2 h-4 w-4"/>My Subscription</Link></DropdownMenuItem>
+        <DropdownMenuItem asChild><Link href="/study-plan"><CalendarDays className="mr-2 h-4 w-4"/>Study calendar</Link></DropdownMenuItem>
+        <DropdownMenuItem asChild className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer"><Link href="/progress">
           <Settings className="mr-2 h-4 w-4" />
-          <span>Settings</span>
+          <span>Profile settings</span></Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator className="bg-gray-700" />
         <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer" onClick={logout}>

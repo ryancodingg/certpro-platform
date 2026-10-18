@@ -1,3 +1,5 @@
+import {explainPractice} from '@/lib/server/tutor'
+import {checkedPracticeQuestion,tutorModes} from '@/lib/tutor'
 import {certificationById} from '@/lib/catalog'
 import {premiumAccess} from '@/lib/server/paypal'
 import {freeQuestions} from '@/lib/learning-access'
@@ -59,6 +61,13 @@ export async function POST(request: Request) {
     const secret = (await cookies()).get(`cp_${input.id}`)?.value
     if (!secret) throw new HttpError(401,"Attempt session missing. Restart the quiz.")
     const uid=await learner(request,true)
+    if(input.action==='explain'){
+      if(!tutorModes.includes(input.style))throw new HttpError(400,'Choose an explanation style.')
+      const attempt=(await db.collection('certproAttempts').doc(input.id).get()).data()
+      if(!attempt||typeof attempt.secret!=='string'||secret.length!==attempt.secret.length||!timingSafeEqual(Buffer.from(secret),Buffer.from(attempt.secret)))throw new HttpError(403,'Attempt access denied.')
+      let checked;try{checked=checkedPracticeQuestion(attempt,uid!,input.questionId)}catch(e){throw new HttpError(403,(e as Error).message)}
+      return Response.json(await explainPractice(uid!,checked.question,checked.answer,input.style),{headers:{'Cache-Control':'private, no-store'}})
+    }
     return await db.runTransaction(async tx => {
       const ref = db.collection("certproAttempts").doc(input.id)
       const snap = await tx.get(ref)
