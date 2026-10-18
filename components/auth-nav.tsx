@@ -19,7 +19,7 @@ export function AuthNav() {
   if (isLoading) {
     return (
       <div className="flex items-center gap-3">
-        <div className="w-8 h-8 bg-gray-800 rounded-full animate-pulse"></div>
+        <div className="w-8 h-8 bg-muted rounded-full animate-pulse"></div>
       </div>
     )
   }
@@ -31,7 +31,7 @@ export function AuthNav() {
           <Button
             variant="ghost"
             size="sm"
-            className="text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors font-medium"
+            className="text-slate-700 hover:text-foreground hover:bg-muted/50 transition-colors font-medium"
           >
             <LogIn className="h-4 w-4 mr-2" />
             Sign In
@@ -40,7 +40,7 @@ export function AuthNav() {
         <Link href="/auth/signup">
           <Button
             size="sm"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white glow-effect font-medium"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-foreground glow-effect font-medium"
           >
             <User className="h-4 w-4 mr-2" />
             Sign Up
@@ -67,30 +67,30 @@ export function AuthNav() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="relative h-10 w-10 rounded-full">
           <Avatar className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600">
-            <AvatarFallback className="bg-transparent text-white font-medium">
+            <AvatarFallback className="bg-transparent text-foreground font-medium">
               {getInitials(user.email, user.name)}
             </AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 bg-gray-900 border-gray-700" align="end" forceMount>
+      <DropdownMenuContent className="w-56 bg-card border-input" align="end" forceMount>
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1 leading-none">
-            {user.name && <p className="font-medium text-white">{user.name}</p>}
-            <p className="w-[200px] truncate text-sm text-gray-400">{user.email}</p>
+            {user.name && <p className="font-medium text-foreground">{user.name}</p>}
+            <p className="w-[200px] truncate text-sm text-slate-600">{user.email}</p>
           </div>
         </div>
         <DropdownMenuSeparator className="bg-gray-700" />
-        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer">
+        <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
           <BookOpen className="mr-2 h-4 w-4" />
           <span>My Progress</span>
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer">
+        <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
           <Settings className="mr-2 h-4 w-4" />
           <span>Settings</span>
         </DropdownMenuItem>
         <DropdownMenuSeparator className="bg-gray-700" />
-        <DropdownMenuItem className="text-gray-300 hover:text-white hover:bg-gray-800 cursor-pointer" onClick={logout}>
+        <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer" onClick={logout}>
           <LogOut className="mr-2 h-4 w-4" />
           <span>Log out</span>
         </DropdownMenuItem>
