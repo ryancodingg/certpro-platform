@@ -1,4 +1,5 @@
-import {explainPractice} from '@/lib/server/tutor'
+import {learningBank,bankUnavailable,recoveredBank} from '@/lib/server/learning-bank'
+import {explainPractice,requireTutorAcknowledgement} from '@/lib/server/tutor'
 import {checkedPracticeQuestion,tutorModes} from '@/lib/tutor'
 import {certificationById} from '@/lib/catalog'
 import {premiumAccess} from '@/lib/server/paypal'
@@ -12,29 +13,24 @@ import { body, failure, HttpError, sameOrigin, services } from "@/lib/server/fir
 import { normalizeQuestion, publication, publicQuestion, questionSchema, scoreQuestions, validAnswer, isCorrect, type Question } from "@/lib/questions"
 export const runtime = "nodejs"
 function bankId(id:string){const cert=certificationById(id);return cert?.aliases[0]||cert?.id||id}
-async function bank(certification: string) {
-  certification=bankId(certification)
-  const snapshot = await services().db.collection("questions").where("certification","==",certification).get()
-  const published = snapshot.docs.map(d => normalizeQuestion(d.data(),d.id)).filter(q => publication(q) === "published")
-  const questions = published.filter(q => questionSchema.safeParse(q).success).sort((a,b)=>a.id.localeCompare(b.id))
-  return {questions, invalid:published.length - published.filter(q=>questionSchema.safeParse(q).success).length}
-}
+async function bank(certification:string){return learningBank(bankId(certification))}
 export async function GET(request: Request) {
   try {
     const certification = bankId(new URL(request.url).searchParams.get("certification") ?? "")
     if (!/^[a-z0-9-]{1,100}$/.test(certification)) throw new HttpError(400,"Invalid certification.")
-    const {questions,invalid} = await bank(certification)
+    const {questions,invalid,recovery} = await bank(certification)
     const guide=guideFor(certification)
     const sections=guide.domains.map(d=>({...d,count:questions.filter(q=>questionSection(certification,q)===d.id).length}))
     const additional=questions.filter(q=>questionSection(certification,q)==='additional').length
     if(additional)sections.push({id:'additional',title:'Additional bank topics',count:additional})
-    return Response.json({count:questions.length, invalid, sections}, {headers:{"Cache-Control":"no-store"}})
+    return Response.json({count:questions.length, invalid, sections, recovery}, {headers:{"Cache-Control":"no-store"}})
   } catch(e) { return failure(e) }
 }
 export async function POST(request: Request) {
+  let input:any
   try {
     sameOrigin(request)
-    const input = await body(request)
+    input = await body(request)
     const {db} = services()
     if (input.action === "start") {
       if (!/^[a-z0-9-]{1,100}$/.test(input.certification ?? "") || !["practice","exam"].includes(input.mode)) throw new HttpError(400,"Invalid learning mode or certification.")
@@ -62,6 +58,7 @@ export async function POST(request: Request) {
     if (!secret) throw new HttpError(401,"Attempt session missing. Restart the quiz.")
     const uid=await learner(request,true)
     if(input.action==='explain'){
+      requireTutorAcknowledgement(input.aiAcknowledged)
       if(!tutorModes.includes(input.style))throw new HttpError(400,'Choose an explanation style.')
       const attempt=(await db.collection('certproAttempts').doc(input.id).get()).data()
       if(!attempt||typeof attempt.secret!=='string'||secret.length!==attempt.secret.length||!timingSafeEqual(Buffer.from(secret),Buffer.from(attempt.secret)))throw new HttpError(403,'Attempt access denied.')
@@ -92,5 +89,18 @@ export async function POST(request: Request) {
       tx.update(ref,{submitted:true, submittedAt:new Date().toISOString(), result:JSON.stringify(result)})
       return Response.json({result})
     })
-  } catch(e) { return failure(e) }
+  } catch(e) {
+    if(bankUnavailable(e)&&input?.action==='start'){
+      try{
+        await learner(request,true)
+        if(input.mode!=='practice')throw new HttpError(503,'Mock Exams are temporarily unavailable while Firebase recovers. Your attempt allowance has not been bypassed. Use Practical Mode for temporary study; saved scores will return when the service recovers.')
+        const certification=bankId(input.certification)
+        const recovered=recoveredBank(certification)
+        const eligible=freeQuestions(certification,recovered.questions)
+        const questions=input.section?eligible.filter(q=>questionSection(certification,q)===input.section):eligible
+        return Response.json({id:'recovery-'+randomBytes(16).toString('hex'),mode:'practice',deadline:null,questions:questions.map(publicQuestion),recoveryQuestions:questions,invalid:recovered.invalid,recovery:true},{headers:{'Cache-Control':'private, no-store'}})
+      }catch(error){return failure(error)}
+    }
+    return failure(e)
+  }
 }
