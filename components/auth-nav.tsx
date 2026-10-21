@@ -13,7 +13,7 @@ import { User, LogIn, LogOut, Settings, BookOpen, CreditCard, CalendarDays } fro
 import Link from "next/link"
 import { useAuth } from "@/hooks/use-auth"
 
-export function AuthNav() {
+export function AuthNav({returnTo}:{returnTo?:string}) {
   const { user, logout, isLoading } = useAuth()
 
   if (isLoading) {
@@ -27,7 +27,7 @@ export function AuthNav() {
   if (!user) {
     return (
       <div className="flex items-center gap-3">
-        <Link href="/auth/login">
+        <Link href={"/auth/login"+(returnTo?"?next="+encodeURIComponent(returnTo):"")}>
           <Button
             variant="ghost"
             size="sm"
@@ -37,7 +37,7 @@ export function AuthNav() {
             Sign In
           </Button>
         </Link>
-        <Link href="/auth/signup">
+        <Link href={"/auth/signup"+(returnTo?"?next="+encodeURIComponent(returnTo):"")}>
           <Button
             size="sm"
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white glow-effect font-medium"
