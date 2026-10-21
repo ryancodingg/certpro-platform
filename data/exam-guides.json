@@ -4301,5 +4301,216 @@
       }
     ],
     "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf"
+  },
+  "comptia-security-plus": {
+    "sourceUrl": "https://www.comptia.org/en-us/certifications/security/v7/",
+    "guideUrl": "https://www.comptia.org/en-us/certifications/security/v7/",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "General security concepts (12%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Threats, vulnerabilities, and mitigations (22%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Security architecture (18%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Security operations (28%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Security program management and oversight (20%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "CompTIA Security+ (SY0-701)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for CompTIA Security+ (SY0-701) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "SY0-701 / V7; English retirement June 11, 2027. V8 is a separate forthcoming outline."
+  },
+  "comptia-a-plus": {
+    "sourceUrl": "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
+    "guideUrl": "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Core 1: Mobile devices (6.5%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Core 1: Networking (11.5%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Core 1: Hardware (12.5%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Core 1: Virtualization and cloud computing (5.5%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Core 1: Hardware and network troubleshooting (14%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Core 2: Operating systems (14%)"
+      },
+      {
+        "id": "section-7",
+        "title": "Core 2: Security (14%)"
+      },
+      {
+        "id": "section-8",
+        "title": "Core 2: Software troubleshooting (11.5%)"
+      },
+      {
+        "id": "section-9",
+        "title": "Core 2: Operational procedures (10.5%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "CompTIA A+ (220-1201 and 220-1202)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for CompTIA A+ (220-1201 and 220-1202) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "Both Core 1 and Core 2 exams are required. This combined practice bank splits coverage equally between the two exams; the percentages shown are editorial shares of the combined bank, not official combined-exam weights. Core 1 official weights: 13/23/25/11/28%; Core 2: 28/28/23/21%."
+  },
+  "comptia-network-plus": {
+    "sourceUrl": "https://www.comptia.org/en-us/certifications/network/",
+    "guideUrl": "https://www.comptia.org/en-us/certifications/network/",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Networking concepts (23%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Network implementation (20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Network operations (19%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Network security (14%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Network troubleshooting (24%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "CompTIA Network+ (N10-009)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for CompTIA Network+ (N10-009) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "N10-009 / V9."
+  },
+  "comptia-cysa-plus": {
+    "sourceUrl": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+    "guideUrl": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Security Operations (34%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Vulnerability Management (26%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Incident Response and Management (24%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Reporting and Communication (16%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "CompTIA CySA+ (CS0-004)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for CompTIA CySA+ (CS0-004) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "CS0-004 / V4. This bank does not target the retiring CS0-003 outline."
+  },
+  "cisco-ccna": {
+    "sourceUrl": "https://www.cisco.com/web/go/ccna/",
+    "guideUrl": "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Network Fundamentals (20%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Network Access (20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "IP Connectivity (25%)"
+      },
+      {
+        "id": "section-4",
+        "title": "IP Services (10%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Security Fundamentals (15%)"
+      },
+      {
+        "id": "section-6",
+        "title": "Automation and Programmability (10%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "Cisco Certified Network Associate (200-301)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for Cisco Certified Network Associate (200-301) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "200-301 v1.1. Cisco lists February 2, 2027 as the last test date for v1.1; v2.0 begins February 3, 2027."
   }
 }
