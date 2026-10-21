@@ -1,0 +1,247 @@
+{
+  "note": "Editorial career relevance, not provider job-placement guarantees. A certification may support multiple roles. Explicit ID mappings are reviewed when the catalog changes.",
+  "roles": [
+    {
+      "id": "data-engineer",
+      "label": "Data Engineer",
+      "certificationIds": [
+        "fabric-data-engineer-associate",
+        "azure-data-fundamentals",
+        "implementing-data-engineering-solutions-using-azure-databricks",
+        "aws-data-engineer-associate",
+        "google-data-engineer",
+        "google-data-practitioner",
+        "databricks-data-engineer-associate",
+        "databricks-data-engineer-professional",
+        "databricks-apache-spark-developer-associate"
+      ]
+    },
+    {
+      "id": "data-analyst",
+      "label": "Data Analyst",
+      "certificationIds": [
+        "fabric-analytics-engineer-associate",
+        "data-analyst-associate",
+        "azure-data-fundamentals",
+        "google-data-practitioner",
+        "databricks-data-analyst-associate",
+        "mos-excel-expert-365-apps",
+        "mos-excel-expert-2019"
+      ]
+    },
+    {
+      "id": "database-engineer",
+      "label": "Database Engineer",
+      "certificationIds": [
+        "azure-cosmos-db-developer-specialty",
+        "azure-database-administrator-associate",
+        "developing-ai-enabled-database-solutions",
+        "google-cloud-database-engineer",
+        "mos-access-expert-2019"
+      ]
+    },
+    {
+      "id": "ai-ml-engineer",
+      "label": "AI / Machine Learning Engineer",
+      "certificationIds": [
+        "multi-agent-ai-solutions-expert",
+        "azure-ai-fundamentals",
+        "intelligent-applications-builder-associate",
+        "ai-agent-builder-associate",
+        "azure-ai-cloud-developer-associate",
+        "operationalizing-machine-learning-and-generative-ai-solutions",
+        "azure-ai-apps-and-agents-developer-associate",
+        "agentic-ai-developer",
+        "aws-ai-practitioner",
+        "aws-machine-learning-engineer-associate",
+        "google-machine-learning-engineer",
+        "google-agentic-architect-beta",
+        "databricks-machine-learning-associate",
+        "databricks-machine-learning-professional",
+        "databricks-genai-engineer-associate",
+        "databricks-context-engineer-associate"
+      ]
+    },
+    {
+      "id": "software-developer",
+      "label": "Software Developer",
+      "certificationIds": [
+        "azure-cosmos-db-developer-specialty",
+        "d365-business-central-developer-associate",
+        "intelligent-applications-builder-associate",
+        "github-foundations",
+        "github-copilot",
+        "github-advanced-security",
+        "power-platform-developer-associate",
+        "azure-ai-cloud-developer-associate",
+        "azure-ai-apps-and-agents-developer-associate",
+        "developing-ai-enabled-database-solutions",
+        "d365-finance-and-operations-apps-developer-associate",
+        "agentic-ai-developer",
+        "aws-developer-associate",
+        "google-cloud-developer",
+        "databricks-apache-spark-developer-associate"
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "label": "DevOps Engineer",
+      "certificationIds": [
+        "github-administration",
+        "github-foundations",
+        "github-actions",
+        "github-copilot",
+        "devops-engineer",
+        "agentic-devops-engineer-expert",
+        "aws-cloudops-engineer-associate",
+        "google-cloud-devops-engineer",
+        "operationalizing-machine-learning-and-generative-ai-solutions"
+      ]
+    },
+    {
+      "id": "cloud-engineer",
+      "label": "Cloud Engineer",
+      "certificationIds": [
+        "azure-fundamentals",
+        "azure-administrator",
+        "azure-for-sap-workloads-specialty",
+        "aws-cloud-practitioner",
+        "aws-cloudops-engineer-associate",
+        "google-cloud-engineer",
+        "google-cloud-digital-leader"
+      ]
+    },
+    {
+      "id": "solutions-architect",
+      "label": "Solutions Architect",
+      "certificationIds": [
+        "azure-solutions-architect",
+        "agentic-ai-business-solutions-architect",
+        "aws-solutions-architect-associate",
+        "google-cloud-architect",
+        "google-agentic-architect-beta",
+        "multi-agent-ai-solutions-expert"
+      ]
+    },
+    {
+      "id": "network-engineer",
+      "label": "Network Engineer",
+      "certificationIds": [
+        "azure-network-engineer-associate",
+        "aws-advanced-networking-specialty",
+        "google-cloud-network-engineer",
+        "comptia-network-plus",
+        "cisco-ccna",
+        "m365-collaboration-communications-systems-engineer"
+      ]
+    },
+    {
+      "id": "cybersecurity-specialist",
+      "label": "Cybersecurity Specialist",
+      "certificationIds": [
+        "identity-and-access-administrator",
+        "security-operations-analyst",
+        "cloud-and-ai-security-engineer-associate",
+        "github-advanced-security",
+        "information-security-administrator",
+        "cybersecurity-architect-expert",
+        "security-compliance-and-identity-fundamentals",
+        "aws-security-specialty",
+        "google-cloud-security-engineer",
+        "google-security-operations-engineer",
+        "comptia-security-plus",
+        "comptia-cysa-plus",
+        "isc2-certified-in-cybersecurity"
+      ]
+    },
+    {
+      "id": "it-administrator",
+      "label": "IT Administrator / Support",
+      "certificationIds": [
+        "azure-administrator",
+        "windows-server-administrator-associate",
+        "m365-teams-administrator-associate",
+        "azure-virtual-desktop-specialty",
+        "modern-desktop",
+        "ai-services-administrator-associate",
+        "m365-enterprise-administrator",
+        "m365-collaboration-communications-systems-engineer",
+        "copilot-and-agent-administration-fundamentals",
+        "google-google-workspace-administrator",
+        "github-administration",
+        "comptia-a-plus",
+        "comptia-network-plus"
+      ]
+    },
+    {
+      "id": "security-governance",
+      "label": "Security Manager / IT Auditor",
+      "certificationIds": [
+        "cybersecurity-business-professional",
+        "cybersecurity-architect-expert",
+        "security-compliance-and-identity-fundamentals",
+        "isaca-cism",
+        "isaca-cisa"
+      ]
+    },
+    {
+      "id": "business-consultant",
+      "label": "Business Analyst / Consultant",
+      "certificationIds": [
+        "supply-chain-management-ai-consultant-associate",
+        "d365-functional-consultant-customer-service-v3",
+        "d365-contact-center-ai-engineer-associate",
+        "d365-functional-consultant-supply-chain-management",
+        "d365-functional-consultant-financials",
+        "d365-business-central-functional-consultant-associate",
+        "d365-sales-ai-consultant-associate",
+        "power-platform-fundamentals"
+      ]
+    },
+    {
+      "id": "business-leader",
+      "label": "Business / AI Leader",
+      "certificationIds": [
+        "ai-transformation-leader",
+        "ai-business-professional",
+        "agentic-ai-business-professional",
+        "aws-ai-business-strategist",
+        "google-generative-ai-leader",
+        "google-cloud-digital-leader",
+        "aws-ai-practitioner"
+      ]
+    },
+    {
+      "id": "office-professional",
+      "label": "Office / Finance Professional",
+      "certificationIds": [
+        "mos-word-expert-2019",
+        "mos-excel-expert-365-apps",
+        "mos-powerpoint-2019",
+        "mos-excel-for-accounting-associate",
+        "microsoft-office-specialist-expert-2019",
+        "mos-excel-associate-m365-apps",
+        "mos-access-expert-2019",
+        "mos-powerpoint-associate-365-apps",
+        "mos-excel-expert-2019",
+        "mos-word-2019",
+        "mos-excel-for-business-finance-associate",
+        "mos-outlook-2019",
+        "mos-word-associate-m365-apps",
+        "mos-associate-m365-apps",
+        "mos-excel-2019",
+        "mos-excel-for-operational-management-associate",
+        "mos-word-expert-365-apps",
+        "microsoft-office-specialist-associate-2019",
+        "mos-expert-m365-apps"
+      ]
+    },
+    {
+      "id": "educator",
+      "label": "Educator",
+      "certificationIds": [
+        "microsoft-certified-educator"
+      ]
+    }
+  ]
+}

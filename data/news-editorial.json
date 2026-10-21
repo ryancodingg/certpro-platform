@@ -1,0 +1,82 @@
+{
+  "articles": [
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available/",
+      "title": "Prove your agentic AI skills: Two new microcredentials now available",
+      "published_on": "2026-09-29",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS has introduced two free, practical assessments covering agent identity security and the databases behind agentic AI.",
+      "paragraphs": [
+        "The identity assessment focuses on securing agent workloads: setting up identities, controlling access, choosing authentication methods, and recording token activity. Its scope includes AgentCore, Cognito, IAM and monitoring services. AWS positions it for security engineers and architects working with AI agents.",
+        "The database assessment covers configuring Aurora PostgreSQL and DynamoDB for agents, retrieval using pgvector and Bedrock Knowledge Bases, and diagnosing database interactions through MCP servers. It is aimed at database, architecture and AI engineering roles.",
+        "Both assessments are timed exercises in an AWS environment rather than multiple-choice tests. Successful participants receive a Credly badge. AWS says access through Skill Builder requires no paid subscription. These focused demonstrations complement broader certifications; they do not replace a certification exam."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "title": "Certification updates from AWS Training and Certification: September 2026",
+      "published_on": "2026-09-01",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS announced revisions to its machine-learning, professional architecture and developer exams.",
+      "paragraphs": [
+        "The announcement opens English beta registration for Machine Learning Engineer Associate MLA-C02. Its revised scope brings generative AI, foundation models and agent workflows alongside traditional machine-learning engineering.",
+        "AWS identifies September 28, 2026 as the final English testing date for MLA-C01. Japanese, Korean and Simplified Chinese delivery of that version continues during the beta period, with general availability of the replacement scheduled for January 14, 2027.",
+        "The intended audience includes engineers who deploy and operate ML systems, developers integrating AI, and data specialists moving toward production ML work. AWS recommends hands-on experience with its ML services and related engineering work. Candidates should check the exam code and language when choosing preparation materials; the announcement also covers SAP-C03 and DVA-C03 changes."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+      "title": "Introducing AWS Certified AI Business Strategist: Built for the people who scale AI",
+      "published_on": "2026-09-01",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS has added a certification for people making business decisions about AI adoption.",
+      "paragraphs": [
+        "The credential addresses the work around AI investment: selecting initiatives, evaluating outcomes, establishing governance and deciding when to expand an implementation. Its focus is business judgment rather than writing models or operating infrastructure.",
+        "AWS describes the audience as business leaders, sales professionals, consultants and program managers who connect AI projects to organizational goals. Enterprise scenarios assess decisions across the path from experimentation to wider adoption.",
+        "Learners considering this route should compare its business-oriented objectives with the technical AI and machine-learning certifications before choosing a study plan. The official announcement links to the exam information and preparation resources."
+      ]
+    },
+    {
+      "provider": "Cisco",
+      "source_url": "https://blogs.cisco.com/learning/the-skills-payload-whats-landing-at-cisco-live-us-2026",
+      "title": "Cisco outlines CCNA and advanced certification changes",
+      "published_on": "2026-05-31",
+      "reviewed_on": "2026-10-21",
+      "summary": "Cisco explains the transition to CCNA 2.0 and updates across its professional and expert certification portfolio.",
+      "paragraphs": [
+        "Cisco says candidates already studying CCNA v1.1 can continue toward that exam until February 2, 2027. CCNA 2.0 follows in February 2027. The announcement also describes an early preview of revised Cisco U. training with practical scenarios supporting the transition.",
+        "Other changes include AI tooling in the CCIE practical exam and a CCIE Automation v1.2 exam scheduled for March 23, 2027. Cisco also points to revised firewall and identity-services blueprints within the CCNP Security path.",
+        "For an existing study plan, the important decision is which exam version matches the intended test date. Use the official roadmap and exam blueprint before changing courses. The article includes event promotions from May 2026; those time-limited offers should not be treated as current discounts."
+      ]
+    },
+    {
+      "provider": "ISC2",
+      "source_url": "https://www.isc2.org/insights/2026/06/value-of-certifications",
+      "title": "ISC2 research explores the career value of cybersecurity certifications",
+      "published_on": "2026-06-30",
+      "reviewed_on": "2026-10-21",
+      "summary": "An ISC2 survey examines how certified professionals view credentials alongside practical experience.",
+      "paragraphs": [
+        "The research draws on 1,533 cybersecurity professionals in six countries who held at least one vendor-neutral certification. Responses were collected between December 2025 and January 2026.",
+        "Respondents associated certifications with stronger knowledge, workplace credibility and career development. Seventy-one percent held both vendor-specific and vendor-neutral credentials, suggesting that many professionals use the two approaches together.",
+        "The results describe the experiences and opinions of an already-certified survey population. They are useful context when planning a learning path, but do not guarantee a promotion, salary increase or job. Learners should combine exam preparation with practical work and select credentials that match the roles they want."
+      ]
+    },
+    {
+      "provider": "ISACA",
+      "source_url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities",
+      "title": "ISACA announces the November 2026 CISM exam update",
+      "published_on": "2026-09-10",
+      "reviewed_on": "2026-10-21",
+      "summary": "CISM candidates testing from November 3, 2026 should prepare against the revised content outline.",
+      "paragraphs": [
+        "ISACA says revised study materials became available on September 1, with the updated exam beginning November 3. The changes place more attention on security strategy and program development and introduce enterprise and information-security architecture content.",
+        "The exam retains four domains. Their revised weights are governance 18%, risk management 20%, security program 33%, and incident management 29%. Candidates should match their resources to their scheduled exam date rather than assume an older question bank covers every change.",
+        "ISACA recommends the updated preparation materials for exams on or after the transition date. The official release links to the content outline and support guidance, which should be checked before booking or revising a study plan."
+      ]
+    }
+  ]
+}

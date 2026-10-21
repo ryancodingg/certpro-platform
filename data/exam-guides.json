@@ -22,20 +22,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AZ120-StudyGuide",
-    "effectiveNote": "Skills measured as of April 17, 2026"
+    "effectiveNote": "Skills measured as of April 17, 2026",
+    "overview": "Plan SAP migrations and design resilient Azure infrastructure for enterprise SAP workloads.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-word-expert-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
@@ -60,19 +63,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-101-microsoft-word-expert-skills-measured.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-101-microsoft-word-expert-skills-measured.pdf",
+    "overview": "Demonstrate advanced document formatting, editing and document management with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "github-administration": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
@@ -101,19 +107,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH100-StudyGuide"
+    "guideUrl": "https://aka.ms/GH100-StudyGuide",
+    "overview": "Manage enterprise GitHub organizations, identity, access policies and development environments.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-expert-365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
@@ -138,19 +147,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+    "overview": "Demonstrate advanced formulas, workbook configuration and data analysis with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "ai-transformation-leader": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
@@ -171,20 +183,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/ab731-StudyGuide",
-    "effectiveNote": "Skills measured as of July 22, 2026"
+    "effectiveNote": "Skills measured as of July 22, 2026",
+    "overview": "Evaluate how generative AI can improve business processes and identify opportunities for Microsoft's AI services.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-cosmos-db-developer-specialty": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
@@ -205,20 +220,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/dp420-StudyGuide",
-    "effectiveNote": "Skills measured as of October 6, 2026"
+    "effectiveNote": "Skills measured as of October 6, 2026",
+    "overview": "Build applications backed by Azure Cosmos DB, with attention to database design, security and performance.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+    "costCheckedOn": "2026-10-21"
   },
   "identity-and-access-administrator": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
@@ -243,20 +261,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/sc300-StudyGuide",
-    "effectiveNote": "Skills measured as of October 28, 2026"
+    "effectiveNote": "Skills measured as of October 28, 2026",
+    "overview": "Manage user identities, authentication and access policies with Microsoft Entra.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+    "costCheckedOn": "2026-10-21"
   },
   "supply-chain-management-ai-consultant-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
@@ -289,19 +310,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AB330-StudyGuide"
+    "guideUrl": "https://aka.ms/AB330-StudyGuide",
+    "overview": "Configure Dynamics 365 supply-chain processes, from demand planning to product lifecycle management.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "multi-agent-ai-solutions-expert": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
@@ -326,11 +350,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://aka.ms/AI500-StudyGuide"
+    "guideUrl": "https://aka.ms/AI500-StudyGuide",
+    "overview": "Design and implement systems in which multiple AI agents collaborate across Azure services.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
@@ -351,20 +378,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AZ900-StudyGuide",
-    "effectiveNote": "Skills measured as of July 20, 2026"
+    "effectiveNote": "Skills measured as of July 20, 2026",
+    "overview": "Learn the foundations of cloud computing, Azure services, security, governance and cost management.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "fabric-data-engineer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
@@ -385,20 +415,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/DP700-StudyGuide",
-    "effectiveNote": "Skills measured as of October 19, 2026"
+    "effectiveNote": "Skills measured as of October 19, 2026",
+    "overview": "Build Microsoft Fabric data pipelines, transform incoming data and keep analytics solutions secure and reliable.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "cybersecurity-business-professional": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
@@ -423,11 +456,18 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+    "overview": "Understand cyber threats and connect security decisions to business risk and organizational needs.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+    "costCheckedOn": "2026-10-21"
   },
   "security-operations-analyst": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
@@ -448,20 +488,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/SC200-StudyGuide",
-    "effectiveNote": "Skills measured as of October 21, 2026"
+    "effectiveNote": "Skills measured as of October 21, 2026",
+    "overview": "Investigate threats, respond to incidents and manage security monitoring with Microsoft's security tools.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+    "costCheckedOn": "2026-10-21"
   },
   "cloud-and-ai-security-engineer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
@@ -486,19 +529,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/SC500-StudyGuide"
+    "guideUrl": "https://aka.ms/SC500-StudyGuide",
+    "overview": "Protect cloud and AI workloads through identity controls, secure networking and data protection.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-business-central-developer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
@@ -531,20 +577,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/mb820-StudyGuide",
-    "effectiveNote": "Skills measured as of June 10, 2025"
+    "effectiveNote": "Skills measured as of June 10, 2025",
+    "overview": "Develop and deploy extensions for Dynamics 365 Business Central using its application development tools.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-functional-consultant-customer-service-v3": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
@@ -565,20 +614,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/MB230-StudyGuide",
-    "effectiveNote": "Skills measured as of March 11, 2026"
+    "effectiveNote": "Skills measured as of March 11, 2026",
+    "overview": "Configure Dynamics 365 Customer Service for case handling, routing and support representative workflows.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-powerpoint-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
@@ -607,19 +659,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-300-microsoft-powerpoint-2019-skills-measured.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-300-microsoft-powerpoint-2019-skills-measured.pdf",
+    "overview": "Demonstrate presentation creation, slide design and delivery with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-contact-center-ai-engineer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
@@ -652,19 +707,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AB250-StudyGuide"
+    "guideUrl": "https://aka.ms/AB250-StudyGuide",
+    "overview": "Deploy Dynamics 365 Contact Center and connect communication channels with AI-assisted service workflows.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "github-advanced-security": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
@@ -697,19 +755,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH500-StudyGuide"
+    "guideUrl": "https://aka.ms/GH500-StudyGuide",
+    "overview": "Secure software delivery with GitHub's code analysis, secret protection and dependency security features.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-administrator": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
@@ -738,20 +799,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AZ104-StudyGuide",
-    "effectiveNote": "Skills measured as of April 17, 2026"
+    "effectiveNote": "Skills measured as of April 17, 2026",
+    "overview": "Operate Azure environments, including identities, storage, virtual machines, networking and monitoring.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-ai-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
@@ -768,11 +832,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "overview": "Explore AI concepts and the Azure tools used to build introductory AI solutions.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-for-accounting-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
@@ -797,19 +864,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-220-mos-excel-for-accounting-associate.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-220-mos-excel-for-accounting-associate.pdf",
+    "overview": "Demonstrate financial data preparation, accounting calculations and reports with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "intelligent-applications-builder-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
@@ -830,19 +900,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AB410-StudyGuide"
+    "guideUrl": "https://aka.ms/AB410-StudyGuide",
+    "overview": "Create intelligent business applications and connect them to data, automation and AI capabilities.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "microsoft-office-specialist-expert-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
@@ -863,12 +936,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
       }
     ],
     "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
-    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting.",
+    "overview": "Demonstrate advanced Office 2019 skills by completing the required specialist credentials and expert-level application exams.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-associate-m365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
@@ -897,19 +973,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+    "guideNote": "The official certification page currently links to an unrelated security-operations PDF. Use this certification page for the Excel skills outline pending correction of the provider link.",
+    "overview": "Demonstrate worksheets, data management, formulas and charts with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "devops-engineer": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
@@ -938,11 +1018,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+    "overview": "Build software delivery processes that connect source control, automated testing and deployment.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+    "costCheckedOn": "2026-10-21"
   },
   "fabric-analytics-engineer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
@@ -963,20 +1046,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/dp600-StudyGuide",
-    "effectiveNote": "Skills measured as of October 19, 2026"
+    "effectiveNote": "Skills measured as of October 19, 2026",
+    "overview": "Prepare and model data in Microsoft Fabric to deliver reliable analytics solutions.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "windows-server-administrator-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
@@ -1013,6 +1099,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
@@ -1021,7 +1111,10 @@
         "value": "Proctored; interactive components may be included"
       }
     ],
-    "guideUrl": "https://aka.ms/AZ802-StudyGuide"
+    "guideUrl": "https://aka.ms/AZ802-StudyGuide",
+    "overview": "Administer Windows Server across on-premises and cloud environments, including directory services and hybrid workloads.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-access-expert-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
@@ -1050,19 +1143,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-500-microsoft-access-expert-(access-and-access-2019)-skills-measured"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-500-microsoft-access-expert-(access-and-access-2019)-skills-measured",
+    "overview": "Demonstrate database design, tables, queries and forms with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-functional-consultant-supply-chain-management": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
@@ -1091,20 +1187,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/mb330-StudyGuide",
-    "effectiveNote": "Skills measured as of October 21, 2026"
+    "effectiveNote": "Skills measured as of October 21, 2026",
+    "overview": "Configure Dynamics 365 product, inventory and asset management for supply-chain operations.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-powerpoint-associate-365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
@@ -1133,19 +1232,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-(2).pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-(2).pdf",
+    "overview": "Demonstrate presentation creation, slide design and delivery with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-expert-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
@@ -1170,19 +1272,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-201-microsoft-excel-expert-2019-skills-measured.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-201-microsoft-excel-expert-2019-skills-measured.pdf",
+    "overview": "Demonstrate advanced formulas, workbook configuration and data analysis with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-word-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
@@ -1215,19 +1320,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-100-microsoft-word-2019-skills-measured.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-100-microsoft-word-2019-skills-measured.pdf",
+    "overview": "Demonstrate document creation, formatting and collaboration with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-database-administrator-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
@@ -1256,20 +1364,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/dp300-StudyGuide",
-    "effectiveNote": "Skills measured as of October 27, 2026"
+    "effectiveNote": "Skills measured as of October 27, 2026",
+    "overview": "Deploy, secure and maintain Azure database platforms while improving availability and performance.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "ai-agent-builder-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
@@ -1290,19 +1401,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AB620-StudyGuide"
+    "guideUrl": "https://aka.ms/AB620-StudyGuide",
+    "overview": "Create Copilot Studio agents, connect business data and extend agents with tools and integrations.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-ai-cloud-developer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
@@ -1327,20 +1441,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AI200-StudyGuide",
-    "effectiveNote": "Skills measured as of October 7, 2026"
+    "effectiveNote": "Skills measured as of October 7, 2026",
+    "overview": "Develop Azure cloud applications that combine containers, data services and AI capabilities.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "m365-teams-administrator-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
@@ -1365,20 +1482,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/ms700-StudyGuide",
-    "effectiveNote": "Skills measured as of October 27, 2026"
+    "effectiveNote": "Skills measured as of October 27, 2026",
+    "overview": "Manage Microsoft Teams collaboration, policies, applications and communication settings.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "github-foundations": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
@@ -1411,19 +1531,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH900-StudyGuide"
+    "guideUrl": "https://aka.ms/GH900-StudyGuide",
+    "overview": "Build confidence with Git, repositories, collaboration and everyday GitHub workflows.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+    "costCheckedOn": "2026-10-21"
   },
   "operationalizing-machine-learning-and-generative-ai-solutions": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
@@ -1452,19 +1575,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AI300-StudyGuide"
+    "guideUrl": "https://aka.ms/AI300-StudyGuide",
+    "overview": "Operate machine-learning and generative-AI systems with repeatable deployment, monitoring and model lifecycle practices.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-functional-consultant-financials": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
@@ -1493,20 +1619,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/mb310-StudyGuide",
-    "effectiveNote": "Skills measured as of August 14, 2026"
+    "effectiveNote": "Skills measured as of August 14, 2026",
+    "overview": "Configure Dynamics 365 Finance for accounting, receivables, collections and financial operations.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-virtual-desktop-specialty": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
@@ -1531,20 +1660,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AZ140-StudyGuide",
-    "effectiveNote": "Skills measured as of July 20, 2026"
+    "effectiveNote": "Skills measured as of July 20, 2026",
+    "overview": "Design and operate Azure Virtual Desktop environments with secure access and reliable user experiences.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-for-business-finance-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
@@ -1569,19 +1701,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-230-mos-excel-for-business-finance-associate.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-230-mos-excel-for-business-finance-associate.pdf",
+    "overview": "Demonstrate financial analysis, business calculations and spreadsheet reporting with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "power-platform-developer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
@@ -1606,12 +1741,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
     "guideUrl": "https://aka.ms/PL400-StudyGuide",
-    "effectiveNote": "Skills measured as of October 16, 2026"
+    "effectiveNote": "Skills measured as of October 16, 2026",
+    "overview": "Build and extend Power Platform applications, integrations and business automation.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-outlook-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
@@ -1636,19 +1774,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-400-microsoft-outlook-(outlook-and-outlook-2019)-skills-measured"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-400-microsoft-outlook-(outlook-and-outlook-2019)-skills-measured",
+    "overview": "Demonstrate email, calendar, contacts and communication workflows with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "modern-desktop": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
@@ -1677,20 +1818,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/md102-StudyGuide",
-    "effectiveNote": "Skills measured as of October 27, 2026"
+    "effectiveNote": "Skills measured as of October 27, 2026",
+    "overview": "Deploy, manage and protect organizational endpoints with Microsoft's device-management tools.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+    "costCheckedOn": "2026-10-21"
   },
   "information-security-administrator": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
@@ -1711,20 +1855,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/SC401-StudyGuide",
-    "effectiveNote": "Skills measured as of October 28, 2026"
+    "effectiveNote": "Skills measured as of October 28, 2026",
+    "overview": "Protect sensitive information with classification, loss-prevention and retention controls.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+    "costCheckedOn": "2026-10-21"
   },
   "ai-business-professional": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
@@ -1749,20 +1896,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/ab730-StudyGuide",
-    "effectiveNote": "Skills measured as of October 20, 2026"
+    "effectiveNote": "Skills measured as of October 20, 2026",
+    "overview": "Use Microsoft 365 Copilot and effective prompting to support everyday business tasks.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-solutions-architect": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
@@ -1787,11 +1937,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+    "overview": "Design Azure solutions for identity, data, infrastructure and business continuity.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+    "costCheckedOn": "2026-10-21"
   },
   "developing-ai-enabled-database-solutions": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
@@ -1812,20 +1965,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/DP800-StudyGuide",
-    "effectiveNote": "Skills measured as of October 19, 2026"
+    "effectiveNote": "Skills measured as of October 19, 2026",
+    "overview": "Develop database solutions that combine SQL capabilities with AI features, security and performance tuning.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+    "costCheckedOn": "2026-10-21"
   },
   "ai-services-administrator-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
@@ -1846,11 +2002,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://aka.ms/AB650-StudyGuide"
+    "guideUrl": "https://aka.ms/AB650-StudyGuide",
+    "overview": "Administer and govern Microsoft 365 services and AI workloads across an organization.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-ai-apps-and-agents-developer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
@@ -1879,20 +2038,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/AI103-StudyGuide",
-    "effectiveNote": "Skills measured as of April 16, 2026"
+    "effectiveNote": "Skills measured as of April 16, 2026",
+    "overview": "Build Azure AI applications and agents, including generative-AI features and their supporting services.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-data-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
@@ -1917,20 +2079,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/dp900-StudyGuide",
-    "effectiveNote": "Skills measured as of July 21, 2026"
+    "effectiveNote": "Skills measured as of July 21, 2026",
+    "overview": "Explore relational and nonrelational data and the Azure services used for storage and analytics.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-word-associate-m365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
@@ -1963,19 +2128,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf",
+    "overview": "Demonstrate document creation, formatting and collaboration with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "m365-enterprise-administrator": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
@@ -2000,11 +2168,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+    "overview": "Manage Microsoft 365 tenants, identity and security across enterprise services.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+    "costCheckedOn": "2026-10-21"
   },
   "m365-collaboration-communications-systems-engineer": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
@@ -2029,20 +2200,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/MS721-StudyGuide",
-    "effectiveNote": "Skills measured as of October 29, 2026"
+    "effectiveNote": "Skills measured as of October 29, 2026",
+    "overview": "Design and operate Teams communication systems for meetings, events and organizational collaboration.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-associate-m365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
@@ -2055,12 +2229,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
       }
     ],
     "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
-    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting.",
+    "overview": "Demonstrate practical skills across multiple Microsoft Office applications with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "data-analyst-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
@@ -2081,20 +2258,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/pl300-StudyGuide",
-    "effectiveNote": "Skills measured as of April 20, 2026"
+    "effectiveNote": "Skills measured as of April 20, 2026",
+    "overview": "Turn data into useful Power BI models, visualizations and analytical insights.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "agentic-ai-business-solutions-architect": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
@@ -2115,12 +2295,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
     "guideUrl": "https://aka.ms/AB100-StudyGuide",
-    "effectiveNote": "Skills measured as of October 14, 2026"
+    "effectiveNote": "Skills measured as of October 14, 2026",
+    "overview": "Plan business solutions that integrate AI agents with enterprise processes and applications.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
@@ -2149,19 +2332,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-200-microsoft-excel-2019-skills-measured.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-200-microsoft-excel-2019-skills-measured.pdf",
+    "overview": "Demonstrate worksheets, data management, formulas and charts with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "copilot-and-agent-administration-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
@@ -2182,20 +2368,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/ab900-StudyGuide",
-    "effectiveNote": "Skills measured as of October 14, 2026"
+    "effectiveNote": "Skills measured as of October 14, 2026",
+    "overview": "Understand the services, governance and protection controls behind Microsoft 365 Copilot and agents.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-excel-for-operational-management-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
@@ -2220,15 +2409,18 @@
     ],
     "facts": [
       {
-        "label": "Delivery",
-        "value": "Proctored; interactive components may be included"
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
       },
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Delivery",
+        "value": "Proctored; interactive components may be included"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+    "overview": "Demonstrate operational data management, process analysis and spreadsheet reporting with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-word-expert-365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
@@ -2253,19 +2445,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "50 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf"
+    "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+    "overview": "Demonstrate advanced document formatting, editing and document management with Microsoft 365 Apps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-finance-and-operations-apps-developer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
@@ -2302,20 +2497,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/mb500-StudyGuide",
-    "effectiveNote": "Skills measured as of January 30, 2026"
+    "effectiveNote": "Skills measured as of January 30, 2026",
+    "overview": "Develop and extend Dynamics 365 finance and operations applications with platform tools and integrations.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "cybersecurity-architect-expert": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
@@ -2340,11 +2538,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+    "overview": "Design security architectures that align identity, operations and compliance with organizational priorities.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-business-central-functional-consultant-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
@@ -2369,20 +2570,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/MB800-StudyGuide",
-    "effectiveNote": "Skills measured as of June 30, 2026"
+    "effectiveNote": "Skills measured as of June 30, 2026",
+    "overview": "Configure Business Central financial and operational processes for business users.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "agentic-ai-developer": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
@@ -2415,19 +2619,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH600-StudyGuide"
+    "guideUrl": "https://aka.ms/GH600-StudyGuide",
+    "overview": "Build software agents that use tools and interact with development environments safely and effectively.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+    "costCheckedOn": "2026-10-21"
   },
   "github-copilot": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
@@ -2460,20 +2667,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/GH300-StudyGuide",
-    "effectiveNote": "Skills measured as of August 7, 2026"
+    "effectiveNote": "Skills measured as of August 7, 2026",
+    "overview": "Use GitHub Copilot throughout software development while applying responsible AI practices.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+    "costCheckedOn": "2026-10-21"
   },
   "agentic-devops-engineer-expert": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
@@ -2502,11 +2712,14 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
       }
     ],
-    "guideUrl": "https://aka.ms/AZ401-StudyGuide"
+    "guideUrl": "https://aka.ms/AZ401-StudyGuide",
+    "overview": "Design modern delivery workflows that combine source control, automation and agent-assisted DevOps.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+    "costCheckedOn": "2026-10-21"
   },
   "microsoft-certified-educator": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
@@ -2539,19 +2752,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
+      },
+      {
         "label": "Exam time",
         "value": "60 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4vHlU"
+    "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+    "guideNote": "The provider-linked skills PDF returned HTTP 404 on 2026-10-18. Use the official credential page pending a replacement guide.",
+    "overview": "Use technology to support collaboration, communication and effective classroom learning.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+    "costCheckedOn": "2026-10-21"
   },
   "d365-sales-ai-consultant-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
@@ -2580,19 +2797,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/AB210-StudyGuide"
+    "guideUrl": "https://aka.ms/AB210-StudyGuide",
+    "overview": "Configure Dynamics 365 Sales and AI features to support sales teams and customer engagement.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "implementing-data-engineering-solutions-using-azure-databricks": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
@@ -2617,20 +2837,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "120 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/DP750-StudyGuide",
-    "effectiveNote": "Skills measured as of October 19, 2026"
+    "effectiveNote": "Skills measured as of October 19, 2026",
+    "overview": "Build data engineering solutions in Azure Databricks and govern data access with Unity Catalog.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+    "costCheckedOn": "2026-10-21"
   },
   "security-compliance-and-identity-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
@@ -2655,20 +2878,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/sc900-StudyGuide",
-    "effectiveNote": "Skills measured as of October 21, 2026"
+    "effectiveNote": "Skills measured as of October 21, 2026",
+    "overview": "Learn security, compliance and identity concepts and how Microsoft's services support them.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "azure-network-engineer-associate": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
@@ -2697,20 +2923,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/az700-StudyGuide",
-    "effectiveNote": "Skills measured as of July 27, 2026"
+    "effectiveNote": "Skills measured as of July 27, 2026",
+    "overview": "Design Azure networks and implement secure connectivity between cloud and on-premises environments.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+    "costCheckedOn": "2026-10-21"
   },
   "agentic-ai-business-professional": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
@@ -2735,19 +2964,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH700-StudyGuide"
+    "guideUrl": "https://aka.ms/GH700-StudyGuide",
+    "overview": "Apply GitHub's platform and Copilot capabilities to AI-assisted business workflows.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+    "costCheckedOn": "2026-10-21"
   },
   "power-platform-fundamentals": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
@@ -2776,20 +3008,23 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "45 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
     "guideUrl": "https://aka.ms/PL900-StudyGuide",
-    "effectiveNote": "Skills measured as of July 24, 2026"
+    "effectiveNote": "Skills measured as of July 24, 2026",
+    "overview": "Explore how Power Platform applications and automation can solve business problems.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+    "costCheckedOn": "2026-10-21"
   },
   "github-actions": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
@@ -2818,19 +3053,22 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Price depends on the exam and country or region. Select your location on the official booking page for the current fee."
+      },
+      {
         "label": "Exam time",
         "value": "100 minutes"
       },
       {
         "label": "Delivery",
         "value": "Proctored; interactive components may be included"
-      },
-      {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
       }
     ],
-    "guideUrl": "https://aka.ms/GH200-StudyGuide"
+    "guideUrl": "https://aka.ms/GH200-StudyGuide",
+    "overview": "Create, manage and troubleshoot GitHub Actions workflows for automated software delivery.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+    "costCheckedOn": "2026-10-21"
   },
   "microsoft-office-specialist-associate-2019": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
@@ -2851,12 +3089,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
       }
     ],
     "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
-    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting.",
+    "overview": "Demonstrate practical skills across multiple Microsoft Office applications with Office 2019.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+    "costCheckedOn": "2026-10-21"
   },
   "mos-expert-m365-apps": {
     "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
@@ -2869,12 +3110,15 @@
     ],
     "facts": [
       {
-        "label": "Pricing",
-        "value": "Based on the country or region where you take the exam"
+        "label": "Cost",
+        "value": "Set by your Certiport testing center or regional voucher store. Multi-exam credentials require separate exam fees."
       }
     ],
     "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
-    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting."
+    "effectiveNote": "This credential has exam or prerequisite requirements. Review the provider’s combination rules; these entries are requirement links, not a single-exam weighting.",
+    "overview": "Demonstrate advanced skills across Microsoft 365 Apps through the required specialist credentials and expert-level application exams.",
+    "costSourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-ai-business-strategist": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
@@ -2899,11 +3143,18 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 50 during the advertised beta; standard exam price USD 100. Confirm beta availability and taxes when booking."
+      },
+      {
         "label": "Duration discrepancy",
         "value": "Certification page lists 170 minutes; the AIB-C01 guide lists 130 minutes. Confirm the version and duration when booking."
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+    "overview": "Evaluate AI opportunities and develop business strategies for adopting AWS AI capabilities.",
+    "costSourceUrl": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-cloud-practitioner": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
@@ -2928,6 +3179,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 100 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "90 minutes"
       },
@@ -2936,15 +3191,14 @@
         "value": "65 questions; either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "100 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "700 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+    "overview": "Build a foundation in AWS services, cloud concepts, security responsibilities and billing.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-ai-practitioner": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/",
@@ -2973,6 +3227,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 100 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "90 minutes"
       },
@@ -2981,15 +3239,14 @@
         "value": "65 questions"
       },
       {
-        "label": "Exam fee",
-        "value": "100 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "700 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+    "overview": "Understand AI, machine learning and generative AI concepts and their uses on AWS.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-solutions-architect-associate": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
@@ -3014,6 +3271,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 150 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "130 minutes"
       },
@@ -3022,15 +3283,14 @@
         "value": "65 questions; either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "150 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "720 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+    "overview": "Design AWS architectures that balance security, resilience, performance and cost.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-machine-learning-engineer-associate": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
@@ -3055,6 +3315,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 150 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "170 minutes"
       },
@@ -3063,7 +3327,10 @@
         "value": "720 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+    "overview": "Prepare data, develop models and operate machine-learning workloads on AWS.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-data-engineer-associate": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
@@ -3088,6 +3355,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 150 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "130 minutes"
       },
@@ -3096,15 +3367,14 @@
         "value": "65 questions; either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "150 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "720 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+    "overview": "Build AWS data pipelines and manage ingestion, transformation, storage and data operations.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-cloudops-engineer-associate": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
@@ -3133,6 +3403,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 150 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "130 minutes"
       },
@@ -3141,15 +3415,14 @@
         "value": "65 questions; either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "150 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "720 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+    "overview": "Operate AWS workloads with monitoring, troubleshooting, reliability and performance management.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-developer-associate": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-developer-associate/",
@@ -3174,6 +3447,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 150 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "130 minutes"
       },
@@ -3182,15 +3459,14 @@
         "value": "65 questions; either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "150 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "720 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+    "overview": "Build and maintain AWS applications using cloud services, secure development and deployment practices.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-security-specialty": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-security-specialty/",
@@ -3223,6 +3499,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 300 per standard exam attempt; local currency and applicable taxes vary."
+      },
+      {
         "label": "Exam time",
         "value": "170 minutes"
       },
@@ -3231,15 +3511,14 @@
         "value": "65 questions, either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "300 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "750 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+    "overview": "Design and operate AWS security controls for detection, incident response and protection of cloud resources.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "aws-advanced-networking-specialty": {
     "sourceUrl": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
@@ -3264,6 +3543,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 300 per standard exam attempt; local currency and applicable taxes vary. Check the final booking date before paying."
+      },
+      {
         "label": "Exam time",
         "value": "170 minutes"
       },
@@ -3272,15 +3555,14 @@
         "value": "65 questions, either multiple choice or multiple response"
       },
       {
-        "label": "Exam fee",
-        "value": "300 USD; local pricing and taxes may vary"
-      },
-      {
         "label": "Passing score",
         "value": "750 (scaled score; not a percentage)"
       }
     ],
-    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html"
+    "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+    "overview": "Design, implement and troubleshoot complex AWS networks, including hybrid connectivity and network security.",
+    "costSourceUrl": "https://aws.amazon.com/certification/policies/before-testing/",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-digital-leader": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-digital-leader",
@@ -3313,6 +3595,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 99 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "90 minutes"
       },
@@ -3321,7 +3607,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+    "overview": "Understand how Google Cloud services support business transformation, data and organizational decision-making.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-digital-leader",
+    "costCheckedOn": "2026-10-21"
   },
   "google-generative-ai-leader": {
     "sourceUrl": "https://cloud.google.com/learn/certification/generative-ai-leader",
@@ -3346,6 +3635,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 99 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "90 minutes"
       },
@@ -3354,7 +3647,10 @@
         "value": "50-60 multiple choice questions"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+    "overview": "Explore generative AI concepts and Google Cloud tools for identifying and delivering business value.",
+    "costSourceUrl": "https://cloud.google.com/learn/certification/generative-ai-leader",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-engineer",
@@ -3379,6 +3675,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 125 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3387,7 +3687,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf",
+    "overview": "Deploy and operate Google Cloud resources, including environment setup, access and day-to-day administration.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-google-workspace-administrator": {
     "sourceUrl": "https://cloud.google.com/certification/associate-google-workspace-administrator",
@@ -3420,6 +3723,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 125 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3428,7 +3735,10 @@
         "value": "50-60 multiple choice and multiple select questions"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/associate_google_workspace_administrator_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/associate_google_workspace_administrator_exam_guide_english.pdf",
+    "overview": "Administer Google Workspace accounts, services, security policies and organizational collaboration.",
+    "costSourceUrl": "https://cloud.google.com/certification/associate-google-workspace-administrator",
+    "costCheckedOn": "2026-10-21"
   },
   "google-data-practitioner": {
     "sourceUrl": "https://cloud.google.com/learn/certification/data-practitioner",
@@ -3453,6 +3763,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 125 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3461,7 +3775,10 @@
         "value": "50-60 multiple choice and multiple select questions"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/v1.0_associate_data_practitioner_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/v1.0_associate_data_practitioner_exam_guide_english.pdf",
+    "overview": "Prepare, analyze and manage data with Google Cloud services and present useful findings.",
+    "costSourceUrl": "https://cloud.google.com/learn/certification/data-practitioner",
+    "costCheckedOn": "2026-10-21"
   },
   "google-agentic-architect-beta": {
     "sourceUrl": "https://cloud.google.com/learn/certification/agentic-architect/",
@@ -3490,6 +3807,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 120 for the advertised beta exam (standard retail price USD 200), plus applicable tax. Confirm beta availability."
+      },
+      {
         "label": "Exam time",
         "value": "3 hours"
       },
@@ -3498,7 +3819,10 @@
         "value": "~80 multiple choice questions"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+    "overview": "Design Google Cloud agentic systems that combine low-code agents, development tools and autonomous workflows.",
+    "costSourceUrl": "https://cloud.google.com/learn/certification/agentic-architect/",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-architect": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-architect",
@@ -3531,6 +3855,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3539,7 +3867,10 @@
         "value": "50-60 multiple choice and multiple"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+    "overview": "Design and manage Google Cloud architectures that meet business, security and reliability requirements.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-architect",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-database-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-database-engineer",
@@ -3564,6 +3895,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3572,7 +3907,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_database_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_database_engineer_exam_guide_english.pdf",
+    "overview": "Design and operate scalable Google Cloud database solutions across multiple database technologies.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-database-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-developer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-developer",
@@ -3597,6 +3935,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "Two hours"
       },
@@ -3605,7 +3947,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_developer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_developer_exam_guide_english.pdf",
+    "overview": "Build, test and deploy secure cloud-native applications on Google Cloud.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-developer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-data-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/data-engineer",
@@ -3634,6 +3979,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3642,7 +3991,10 @@
         "value": "40-50 multiple choice and multiple"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+    "overview": "Design Google Cloud data-processing systems for ingestion, transformation, storage and analytics.",
+    "costSourceUrl": "https://cloud.google.com/certification/data-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-devops-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-devops-engineer",
@@ -3671,6 +4023,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "Two hours"
       },
@@ -3679,7 +4035,10 @@
         "value": "50-60 multiple choice and multiple"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_devops_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_devops_engineer_exam_guide_english.pdf",
+    "overview": "Improve delivery and reliability with Google Cloud operations, continuous integration and deployment practices.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-devops-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-security-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-security-engineer",
@@ -3708,6 +4067,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3716,7 +4079,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+    "overview": "Secure Google Cloud resources through access management, network protection and security controls.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-security-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-cloud-network-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/cloud-network-engineer",
@@ -3749,6 +4115,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3757,7 +4127,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/042426_professional_cloud_network_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/042426_professional_cloud_network_engineer_exam_guide_english.pdf",
+    "overview": "Design and operate Google Cloud networking, including VPCs, connectivity and traffic management.",
+    "costSourceUrl": "https://cloud.google.com/certification/cloud-network-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-machine-learning-engineer": {
     "sourceUrl": "https://cloud.google.com/certification/machine-learning-engineer",
@@ -3790,6 +4163,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "Two hours"
       },
@@ -3798,7 +4175,10 @@
         "value": "50-60 multiple choice and multiple select"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+    "overview": "Develop and operate Google Cloud AI solutions, from data preparation to model deployment and monitoring.",
+    "costSourceUrl": "https://cloud.google.com/certification/machine-learning-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "google-security-operations-engineer": {
     "sourceUrl": "https://cloud.google.com/learn/certification/security-operations-engineer",
@@ -3831,6 +4211,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 for the standard exam, plus applicable tax; renewal exam pricing may differ."
+      },
+      {
         "label": "Exam time",
         "value": "2 hours"
       },
@@ -3839,7 +4223,10 @@
         "value": "50-60 multiple choice and multiple select questions"
       }
     ],
-    "guideUrl": "https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf"
+    "guideUrl": "https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf",
+    "overview": "Manage security data, detection workflows and incident response using Google Cloud security operations tools.",
+    "costSourceUrl": "https://cloud.google.com/learn/certification/security-operations-engineer",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-data-analyst-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/data-analyst-associate",
@@ -3884,6 +4271,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "45 scored multiple-choice questions"
       },
@@ -3904,7 +4295,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+    "overview": "Analyze data and build useful queries and insights on the Databricks Data Intelligence Platform.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/data-analyst-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-data-engineer-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-associate",
@@ -3941,16 +4335,16 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "45 scored multiple-choice questions"
       },
       {
         "label": "Exam time",
         "value": "90 minutes"
-      },
-      {
-        "label": "Exam fee",
-        "value": "USD 200, plus applicable taxes as required per local law"
       },
       {
         "label": "Delivery",
@@ -3966,7 +4360,10 @@
       }
     ],
     "guideUrl": "https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf",
-    "effectiveNote": "Exam version as of May 4, 2026"
+    "effectiveNote": "Exam version as of May 4, 2026",
+    "overview": "Build introductory Databricks data pipelines using ingestion, transformation, orchestration and governance tools.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/data-engineer-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-data-engineer-professional": {
     "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-professional",
@@ -4011,16 +4408,16 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "60 scored multiple-choice questions"
       },
       {
         "label": "Exam time",
         "value": "120 minutes"
-      },
-      {
-        "label": "Exam fee",
-        "value": "USD 200, plus applicable taxes as required per local law"
       },
       {
         "label": "Delivery",
@@ -4035,7 +4432,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/Databricks-Certified-Data-Engineer-Professional-Exam-Guide-9-Oct-2026.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/Databricks-Certified-Data-Engineer-Professional-Exam-Guide-9-Oct-2026.pdf",
+    "overview": "Develop production Databricks data systems with advanced processing, orchestration and operational practices.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/data-engineer-professional",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-machine-learning-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-associate",
@@ -4060,16 +4460,16 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "48 scored multiple-choice or multiple-selection questions"
       },
       {
         "label": "Exam time",
         "value": "90 minutes"
-      },
-      {
-        "label": "Exam fee",
-        "value": "$200"
       },
       {
         "label": "Delivery",
@@ -4084,7 +4484,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf",
+    "overview": "Prepare data and build machine-learning workflows with Databricks tools.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/machine-learning-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-machine-learning-professional": {
     "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-professional",
@@ -4104,6 +4507,10 @@
       }
     ],
     "facts": [
+      {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
       {
         "label": "Questions",
         "value": "59 scored multiple-choice             questions"
@@ -4125,7 +4532,10 @@
         "value": "2  years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+    "overview": "Operate production machine-learning systems with Databricks model development and lifecycle-management capabilities.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/machine-learning-professional",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-genai-engineer-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/genai-engineer-associate",
@@ -4158,16 +4568,16 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "45 scored multiple-choice and multiple-selection"
       },
       {
         "label": "Exam time",
         "value": "90 minutes"
-      },
-      {
-        "label": "Exam fee",
-        "value": "USD 200, plus applicable taxes as required per local law"
       },
       {
         "label": "Delivery",
@@ -4182,7 +4592,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/databricks-certified-gen-ai-associate-exam-guide-august-2026.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/databricks-certified-gen-ai-associate-exam-guide-august-2026.pdf",
+    "overview": "Build generative-AI applications on Databricks, including data preparation and application evaluation.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-context-engineer-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/context-engineer-associate",
@@ -4219,16 +4632,16 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "approximately 45 multiple-choice or multiple-selection"
       },
       {
         "label": "Exam time",
         "value": "90 minutes"
-      },
-      {
-        "label": "Exam fee",
-        "value": "$200"
       },
       {
         "label": "Delivery",
@@ -4243,7 +4656,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-context-engineer-associate-exam-guide.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-context-engineer-associate-exam-guide.pdf",
+    "overview": "Design the prompts, instructions and contextual information that help AI applications produce useful responses.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/context-engineer-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "databricks-apache-spark-developer-associate": {
     "sourceUrl": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
@@ -4280,6 +4696,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 200 per exam attempt, plus applicable local taxes."
+      },
+      {
         "label": "Questions",
         "value": "45 scored multiple-choice questions"
       },
@@ -4300,7 +4720,10 @@
         "value": "2 years"
       }
     ],
-    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf"
+    "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+    "overview": "Use Apache Spark and SQL to process data while understanding distributed execution and Spark architecture.",
+    "costSourceUrl": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+    "costCheckedOn": "2026-10-21"
   },
   "comptia-security-plus": {
     "sourceUrl": "https://www.comptia.org/en-us/certifications/security/v7/",
@@ -4330,6 +4753,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Regional voucher price is shown in the official CompTIA store; taxes and offers vary."
+      },
+      {
         "label": "Supported exam version",
         "value": "CompTIA Security+ (SY0-701)"
       },
@@ -4338,8 +4765,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for CompTIA Security+ (SY0-701) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "SY0-701 / V7; English retirement June 11, 2027. V8 is a separate forthcoming outline."
+    "overview": "Build core cybersecurity skills in threat analysis, security controls, operations and risk management.",
+    "effectiveNote": "SY0-701 / V7; English retirement June 11, 2027. V8 is a separate forthcoming outline.",
+    "costSourceUrl": "https://shop.comptia.org/",
+    "costCheckedOn": "2026-10-21"
   },
   "comptia-a-plus": {
     "sourceUrl": "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
@@ -4385,6 +4814,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Regional voucher price is shown in the official CompTIA store; taxes and offers vary. Two paid exams are required: Core 1 and Core 2."
+      },
+      {
         "label": "Supported exam version",
         "value": "CompTIA A+ (220-1201 and 220-1202)"
       },
@@ -4393,8 +4826,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for CompTIA A+ (220-1201 and 220-1202) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "Both Core 1 and Core 2 exams are required. This combined practice bank splits coverage equally between the two exams; the percentages shown are editorial shares of the combined bank, not official combined-exam weights. Core 1 official weights: 13/23/25/11/28%; Core 2: 28/28/23/21%."
+    "overview": "Prepare for IT support work across hardware, operating systems, networking, troubleshooting and security. Earning A+ requires both Core 1 and Core 2 exams.",
+    "effectiveNote": "Both Core 1 and Core 2 exams are required. This combined practice bank splits coverage equally between the two exams; the percentages shown are editorial shares of the combined bank, not official combined-exam weights. Core 1 official weights: 13/23/25/11/28%; Core 2: 28/28/23/21%.",
+    "costSourceUrl": "https://shop.comptia.org/",
+    "costCheckedOn": "2026-10-21"
   },
   "comptia-network-plus": {
     "sourceUrl": "https://www.comptia.org/en-us/certifications/network/",
@@ -4424,6 +4859,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Regional voucher price is shown in the official CompTIA store; taxes and offers vary."
+      },
+      {
         "label": "Supported exam version",
         "value": "CompTIA Network+ (N10-009)"
       },
@@ -4432,8 +4871,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for CompTIA Network+ (N10-009) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "N10-009 / V9."
+    "overview": "Build vendor-neutral skills for network implementation, operations, security and troubleshooting.",
+    "effectiveNote": "N10-009 / V9.",
+    "costSourceUrl": "https://shop.comptia.org/",
+    "costCheckedOn": "2026-10-21"
   },
   "comptia-cysa-plus": {
     "sourceUrl": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
@@ -4459,6 +4900,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "Regional voucher price is shown in the official CompTIA store; taxes and offers vary."
+      },
+      {
         "label": "Supported exam version",
         "value": "CompTIA CySA+ (CS0-004)"
       },
@@ -4467,8 +4912,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for CompTIA CySA+ (CS0-004) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "CS0-004 / V4. This bank does not target the retiring CS0-003 outline."
+    "overview": "Develop security analyst skills in monitoring, vulnerability management, incident response and reporting.",
+    "effectiveNote": "CS0-004 / V4. This bank does not target the retiring CS0-003 outline.",
+    "costSourceUrl": "https://shop.comptia.org/",
+    "costCheckedOn": "2026-10-21"
   },
   "cisco-ccna": {
     "sourceUrl": "https://www.cisco.com/web/go/ccna/",
@@ -4502,6 +4949,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 300 for the 200-301 exam according to Cisco’s exam pricing table; confirm local taxes and final booking price."
+      },
+      {
         "label": "Supported exam version",
         "value": "Cisco Certified Network Associate (200-301)"
       },
@@ -4510,8 +4961,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for Cisco Certified Network Associate (200-301) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "200-301 v1.1. Cisco lists February 2, 2027 as the last test date for v1.1; v2.0 begins February 3, 2027."
+    "overview": "Build networking skills across IP connectivity, switching, security and automation using Cisco technologies.",
+    "effectiveNote": "200-301 v1.1. Cisco lists February 2, 2027 as the last test date for v1.1; v2.0 begins February 3, 2027.",
+    "costSourceUrl": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/index.html",
+    "costCheckedOn": "2026-10-21"
   },
   "isc2-certified-in-cybersecurity": {
     "sourceUrl": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
@@ -4541,6 +4994,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 199 standard exam fee; regional currency and tax vary. Eligible promotional vouchers may reduce the fee. Membership maintenance is separate."
+      },
+      {
         "label": "Supported exam version",
         "value": "ISC2 Certified in Cybersecurity (CC)"
       },
@@ -4549,8 +5006,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for ISC2 Certified in Cybersecurity (CC) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "Outline effective September 1, 2026. Published rounded domain percentages total 99.9%; practice counts normalize these weights."
+    "overview": "Learn entry-level cybersecurity principles, access controls, network security and security operations.",
+    "effectiveNote": "Outline effective September 1, 2026. Published rounded domain percentages total 99.9%; practice counts normalize these weights.",
+    "costSourceUrl": "https://www.isc2.org/register-for-exam/isc2-exam-pricing",
+    "costCheckedOn": "2026-10-21"
   },
   "isaca-cism": {
     "sourceUrl": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
@@ -4576,6 +5035,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 575 for ISACA members; USD 760 for nonmembers. Certification application and maintenance fees are separate."
+      },
+      {
         "label": "Supported exam version",
         "value": "ISACA Certified Information Security Manager (CISM)"
       },
@@ -4584,8 +5047,10 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for ISACA Certified Information Security Manager (CISM) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "Current outline through November 2, 2026. The November 3, 2026 update changes weights and scope; this practice version must not be represented as the updated outline."
+    "overview": "Prepare to lead information security programs, manage risk and coordinate incident management.",
+    "effectiveNote": "Current outline through November 2, 2026. The November 3, 2026 update changes weights and scope; this practice version must not be represented as the updated outline.",
+    "costSourceUrl": "https://www.isaca.org/credentialing/cism",
+    "costCheckedOn": "2026-10-21"
   },
   "isaca-cisa": {
     "sourceUrl": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
@@ -4615,6 +5080,10 @@
     ],
     "facts": [
       {
+        "label": "Cost",
+        "value": "USD 575 for ISACA members; USD 760 for nonmembers. Certification application and maintenance fees are separate."
+      },
+      {
         "label": "Supported exam version",
         "value": "ISACA Certified Information Systems Auditor (CISA)"
       },
@@ -4623,7 +5092,9 @@
         "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
       }
     ],
-    "overview": "Practice the published domains for ISACA Certified Information Systems Auditor (CISA) with original CertPro learning questions. CertPro is not the exam provider.",
-    "effectiveNote": "Current official CISA content outline verified October 21, 2026."
+    "overview": "Develop the audit and assurance skills used to evaluate information systems, governance and organizational controls.",
+    "effectiveNote": "Current official CISA content outline verified October 21, 2026.",
+    "costSourceUrl": "https://www.isaca.org/credentialing/cisa",
+    "costCheckedOn": "2026-10-21"
   }
 }
