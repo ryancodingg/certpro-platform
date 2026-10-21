@@ -3,3 +3,8 @@ export function hasPaidAccess(sub:any,old:any,amount:string,now=Date.now()){
  const refunded=old.refundedAt&&(!last?.time||Date.parse(last.time)<=Date.parse(old.refundedAt))
  return !!(last?.amount?.currency_code==='USD'&&Number(last.amount.value)>=Number(amount)&&paidThrough&&Date.parse(paidThrough)>now&&!refunded&&['ACTIVE','CANCELLED'].includes(sub.status))
 }
+
+// An unapproved, unpaid checkout does not remove the existing Free entitlement.
+export function isUnpaidPendingCheckout(record:any){
+ return record?.status==='APPROVAL_PENDING' && record?.premium===false && !record?.paidThrough
+}
