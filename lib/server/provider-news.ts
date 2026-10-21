@@ -6,12 +6,15 @@ import {createHash} from 'node:crypto'
 import {unstable_cache} from 'next/cache'
 import {news as seed,isActiveNews,type NewsRecord} from '@/lib/catalog'
 const sources=[
+ {provider:'GitHub',label:'GitHub certification announcements',url:'https://github.blog/tag/certifications/feed/',host:'github.blog',kind:'rss'},
+ {provider:'AWS',label:'AWS training announcements',url:'https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/feed/',host:'aws.amazon.com',kind:'rss'},
  {provider:'AWS',url:'https://aws.amazon.com/blogs/training-and-certification/feed/',host:'aws.amazon.com',kind:'rss'},
  {provider:'Microsoft',url:'https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=skills-hub-blog',host:'techcommunity.microsoft.com',kind:'rss'},
  {provider:'Google Cloud',url:'https://cloud.google.com/blog/topics/training-certifications',host:'cloud.google.com',kind:'html',path:'/blog/topics/training-certifications/'},
  {provider:'Databricks',url:'https://www.databricks.com/feed',host:'www.databricks.com',kind:'rss'},
  {provider:'GitHub',url:'https://github.blog/feed/',host:'github.blog',kind:'rss'},
 ]
+const sourceId=(source:typeof sources[number])=>'news_source_'+createHash('sha256').update(source.url).digest('hex').slice(0,24)
 const relevant=/certif|credential|exam|voucher/i
 async function readSource(source:typeof sources[number]){
  const response=await fetch(source.url,{signal:AbortSignal.timeout(15000),headers:{'User-Agent':'CertPro official certification news reader'},next:{revalidate:3600}})
@@ -25,28 +28,28 @@ async function readSource(source:typeof sources[number]){
  for(const entry of entries){if(!entry.title||!entry.link||!relevant.test(entry.title))continue
  let url:URL;try{url=new URL(entry.link,source.url)}catch{continue}
  if(url.protocol!=='https:'||url.hostname!==source.host)continue
- url.hash='';const title=load(entry.title).text().replace(/\s+/g,' ').replace(/^Training and Certifications/,'').replace(/By .+ • \d+-minute read$/,'').trim().slice(0,240)
+ url.hash='';for(const key of [...url.searchParams.keys()])if(/^utm_|^(fbclid|gclid)$/i.test(key))url.searchParams.delete(key);const title=load(entry.title).text().replace(/\s+/g,' ').replace(/^Training and Certifications/,'').replace(/By .+ • \d+-minute read$/,'').trim().slice(0,240)
  const date=entry.isoDate?new Date(entry.isoDate):null
  if(date&&!Number.isNaN(date.valueOf())&&(date>new Date()||Date.now()-date.valueOf()>365*86400000))continue
  const id='official-'+createHash('sha256').update(url.href).digest('hex').slice(0,24)
  unique.set(id,{id,provider:source.provider,type:'news',title,summary:`An official announcement from ${source.provider}. Read the official announcement for details, eligibility, dates, and any offer terms.`,source_url:url.href,verified_on:fetched.slice(0,10),published_on:date&&!Number.isNaN(date.valueOf())?date.toISOString().slice(0,10):null,status:'published'})
  }
- return {provider:source.provider,checkedAt:fetched,items:[...unique.values()].slice(0,15),status:'ok'}
+ return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:fetched,items:[...unique.values()].slice(0,15),status:'ok'}
 }
 async function retainedSource(source:typeof sources[number]){
  let previous:any=null
- try{previous=(await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get()).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
+ try{previous=(await services().db.collection('certproConfig').doc(sourceId(source)).get()).data();if(!previous&&!source.label)previous=(await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get()).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
  try{
   const fresh=await readSource(source);const merged=new Map<string,NewsRecord>((previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n)
   const items=[...merged.values()].filter(n=>isActiveNews(n)).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100)
-  let archiveAvailable=true;try{await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).set({...fresh,items})}catch{archiveAvailable=false}
+  let archiveAvailable=true;try{await services().db.collection('certproConfig').doc(sourceId(source)).set({...fresh,items})}catch{archiveAvailable=false}
   return {...fresh,items,archiveAvailable}
- }catch{return {provider:source.provider,checkedAt:previous?.checkedAt||null,items:(previous?.items||[]) as NewsRecord[],status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
+ }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:(previous?.items||[]) as NewsRecord[],status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
-const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v2',source.provider],{revalidate:3600}))
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v3',source.url],{revalidate:3600}))
 export async function providerNews(){
- const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
+ const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  const byUrl=new Map(seed.filter(n=>isActiveNews(n)).map(n=>[n.source_url,n]));for(const result of results)for(const n of result.items)if(!byUrl.has(n.source_url))byUrl.set(n.source_url,n)
- const items=[...byUrl.values()].sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')||a.id.localeCompare(b.id))
+ const seenTitles=new Set<string>();const items=[...byUrl.values()].filter(n=>{const key=n.provider+'|'+n.title.toLowerCase().replace(/[^a-z0-9]/g,'');if(seenTitles.has(key))return false;seenTitles.add(key);return true}).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')||a.id.localeCompare(b.id))
  return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Only certification-related announcements found in these sources appear here; coverage is not exhaustive.'}
 }
