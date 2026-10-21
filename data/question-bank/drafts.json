@@ -1,0 +1,134 @@
+[
+  {
+    "id": "clf-ec2-patch-boundary-001",
+    "originality": "original-practice",
+    "question": {
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "topic": "Shared responsibility",
+      "question": "A small retailer runs its own Linux application on Amazon EC2. A security update is released for the guest operating system. Under the shared responsibility model, who must arrange its installation?",
+      "options": [
+        "The retailer, as the EC2 customer",
+        "AWS, because all operating systems are managed by AWS",
+        "The internet service provider connecting the retailer",
+        "The AWS data center security team"
+      ],
+      "correctAnswer": 0,
+      "questionType": "single",
+      "explanation": "For EC2, the customer manages the guest operating system and its updates. AWS manages the underlying infrastructure; selecting EC2 does not transfer guest patch management to AWS.",
+      "difficulty": "Medium",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true,
+      "sourceUrl": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+    },
+    "optionRationales": [
+      "The customer is responsible for guest OS updates on EC2.",
+      "AWS infrastructure management does not include this guest operating system.",
+      "The connectivity provider does not administer the EC2 guest.",
+      "Physical security staff protect facilities, not customer guest software."
+    ],
+    "references": [
+      {
+        "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+        "checkedOn": "2026-10-18",
+        "supports": "EC2 customers manage their guest OS and security patches; AWS protects underlying infrastructure."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "az900-resource-scope-001",
+    "originality": "original-practice",
+    "question": {
+      "certification": "az-900",
+      "sectionId": "section-2",
+      "topic": "Access management",
+      "question": "An operations analyst must inspect resources in one Azure resource group without changing them. Which approach best follows least privilege?",
+      "options": [
+        "Assign Owner at subscription scope",
+        "Assign Reader at the required resource-group scope",
+        "Assign Contributor at management-group scope",
+        "Share a subscription administrator account"
+      ],
+      "correctAnswer": 1,
+      "questionType": "single",
+      "explanation": "Azure RBAC combines a security principal, role definition and scope. A Reader assignment at the resource group provides read access within that boundary without resource modification rights.",
+      "difficulty": "Medium",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true,
+      "sourceUrl": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    },
+    "optionRationales": [
+      "Owner includes control beyond the requested read access.",
+      "Reader at the resource group matches both permission and resource boundaries.",
+      "Contributor allows modification and this scope reaches beyond the target group.",
+      "Sharing an administrator identity grants excessive access and loses individual accountability."
+    ],
+    "references": [
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "checkedOn": "2026-10-18",
+        "supports": "Azure RBAC defines role assignments with principal, role and scope; Reader can view resources without changing them."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "dbdea-silver-quality-001",
+    "originality": "original-practice",
+    "question": {
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "topic": "Medallion architecture",
+      "question": "A team retains raw incoming records in bronze. It now needs a reusable dataset with validated types and duplicate records removed, before business-specific aggregation. Which medallion layer is the intended destination?",
+      "options": [
+        "Another untouched bronze table",
+        "The silver layer",
+        "The gold layer only after reporting calculations",
+        "A dashboard cache outside the lakehouse"
+      ],
+      "correctAnswer": 1,
+      "questionType": "single",
+      "explanation": "Silver holds cleaned and validated data derived from bronze. Gold serves business-oriented models and aggregates; the described preparation belongs in silver before those downstream steps.",
+      "difficulty": "Medium",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true,
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion"
+    },
+    "optionRationales": [
+      "Bronze retains raw source data rather than the validated result described.",
+      "Silver is the refinement layer for validation and deduplication.",
+      "Gold is for business-ready results; this task precedes that aggregation.",
+      "A dashboard cache does not replace the reusable refinement layer."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Medallion architecture assigns raw ingestion to bronze, validation and cleaning to silver, and business aggregation to gold."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  }
+]

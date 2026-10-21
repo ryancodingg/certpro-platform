@@ -1,0 +1,4310 @@
+{
+  "note": "Only reviewed local drafts; deployed Firebase coverage is unknown without an authorized export.",
+  "certifications": [
+    {
+      "id": "azure-for-sap-workloads-specialty",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Migrate SAP workloads to Azure (25–30%)",
+          "target": 55,
+          "approvedDrafts": 0,
+          "remaining": 55
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement an infrastructure to support SAP workloads on Azure (25–30%)",
+          "target": 55,
+          "approvedDrafts": 0,
+          "remaining": 55
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement high availability and disaster recovery (HADR) (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        },
+        {
+          "id": "section-4",
+          "title": "Maintain SAP workloads on Azure (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-word-expert-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage document options and settings",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Use advanced editing and formatting features",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create custom document elements",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Use advanced Word features",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "github-administration",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage GitHub identities and access (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-2",
+          "title": "Administer GitHub Enterprise environment (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        },
+        {
+          "id": "section-3",
+          "title": "Implement secure software development and compliance (25–30%)",
+          "target": 59,
+          "approvedDrafts": 0,
+          "remaining": 59
+        },
+        {
+          "id": "section-4",
+          "title": "Manage GitHub Actions (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-5",
+          "title": "Monitor and optimize GitHub usage (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-expert-365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage workbook options and settings",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and format data",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create advanced formulas and macros",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage advanced charts and tables",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "ai-transformation-leader",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify the business value of generative AI solutions (35–40%)",
+          "target": 77,
+          "approvedDrafts": 0,
+          "remaining": 77
+        },
+        {
+          "id": "section-2",
+          "title": "Identify benefits, capabilities, and opportunities for Microsoft’s AI apps and services (35–40%)",
+          "target": 77,
+          "approvedDrafts": 0,
+          "remaining": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Identify an implementation and adoption strategy for Microsoft’s AI apps and services (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-cosmos-db-developer-specialty",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and develop database solutions (40–45%)",
+          "target": 87,
+          "approvedDrafts": 0,
+          "remaining": 87
+        },
+        {
+          "id": "section-2",
+          "title": "Secure, optimize, and deploy database solutions (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Implement AI and analytics capabilities in database solutions (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "identity-and-access-administrator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement and manage user identities (20–25%)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Implement authentication and access management (20–25%)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Plan and implement workload identities (20–25%)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Plan and automate identity governance (20–25%)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "supply-chain-management-ai-consultant-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement the design to retire process (5–10%)",
+          "target": 17,
+          "approvedDrafts": 0,
+          "remaining": 17
+        },
+        {
+          "id": "section-2",
+          "title": "Implement the forecast to plan process (1–5%)",
+          "target": 7,
+          "approvedDrafts": 0,
+          "remaining": 7
+        },
+        {
+          "id": "section-3",
+          "title": "Implement the inventory to deliver process (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-4",
+          "title": "Implement the order to cash process (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-5",
+          "title": "Implement the plan to produce process (1–5%)",
+          "target": 7,
+          "approvedDrafts": 0,
+          "remaining": 7
+        },
+        {
+          "id": "section-6",
+          "title": "Implement the source to pay process (30–35%)",
+          "target": 71,
+          "approvedDrafts": 0,
+          "remaining": 71
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "multi-agent-ai-solutions-expert",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Architect multi-agent solutions (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Develop multi-agent solutions in Azure (30–35%)",
+          "target": 69,
+          "approvedDrafts": 0,
+          "remaining": 69
+        },
+        {
+          "id": "section-3",
+          "title": "Evaluate, optimize, and monitor multi-agent solutions (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Secure, govern, and deploy multi-agent solutions (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe cloud concepts (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Describe Azure architecture and services (35–40%)",
+          "target": 77,
+          "approvedDrafts": 0,
+          "remaining": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Describe Azure management and governance (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "fabric-data-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement and manage an analytics solution (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Ingest and transform data (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Monitor and optimize an analytics solution (30–35%)",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "cybersecurity-business-professional",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand cybersecurity concepts",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Understand cybersecurity risks and threats",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Apply basic security policies to protect the organization",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Report and respond to security incidents",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "security-operations-analyst",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage a security operations environment (40–45%)",
+          "target": 83,
+          "approvedDrafts": 0,
+          "remaining": 83
+        },
+        {
+          "id": "section-2",
+          "title": "Respond to security incidents (35–40%)",
+          "target": 73,
+          "approvedDrafts": 0,
+          "remaining": 73
+        },
+        {
+          "id": "section-3",
+          "title": "Perform threat hunting (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "cloud-and-ai-security-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage identity, access, and governance (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Secure storage, databases, and networking (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Secure compute (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Manage and monitor security posture (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-business-central-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe Business Central (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        },
+        {
+          "id": "section-2",
+          "title": "Install, develop, and deploy for Business Central (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        },
+        {
+          "id": "section-3",
+          "title": "Develop by using AL objects (35–40%)",
+          "target": 71,
+          "approvedDrafts": 0,
+          "remaining": 71
+        },
+        {
+          "id": "section-4",
+          "title": "Develop by using AL (15–20%)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Work with development tools (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        },
+        {
+          "id": "section-6",
+          "title": "Integrate Business Central with other applications (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-functional-consultant-customer-service-v3",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage cases in Customer Service (51–55%)",
+          "target": 108,
+          "approvedDrafts": 0,
+          "remaining": 108
+        },
+        {
+          "id": "section-2",
+          "title": "Configure representative experience and routing (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Extend Customer Service (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-powerpoint-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage presentations",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage slides",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Insert and format text, shapes, and images",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Insert tables, charts, SmartArt, 3D models, and media",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Apply transitions and animations",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-contact-center-ai-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy Dynamics 365 Contact Center (15–20%)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-2",
+          "title": "Implement channels (30–35%)",
+          "target": 62,
+          "approvedDrafts": 0,
+          "remaining": 62
+        },
+        {
+          "id": "section-3",
+          "title": "Configure agents and AI capabilities (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        },
+        {
+          "id": "section-4",
+          "title": "Configure work distribution (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        },
+        {
+          "id": "section-5",
+          "title": "Configure the Dynamics 365 Contact Center representative experience (15–20%)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage analytics for the Dynamics 365 Contact Center (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "github-advanced-security",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe GitHub Security suites, features, and ecosystem (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Configure and use Secret Protection (formerly secret scanning) (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Configure and use supply chain security (formerly Dependabot/Dependency Review) (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and use Code Security (formerly Code Scanning with CodeQL) (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Security operations: best practices, prioritization, and remediation (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-6",
+          "title": "GitHub Security suites administration (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-administrator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage Azure identities and governance (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-2",
+          "title": "Implement and manage storage (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Deploy and manage Azure compute resources (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Implement and manage virtual networking (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-5",
+          "title": "Monitor and maintain Azure resources (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-ai-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify AI concepts and capabilities",
+          "target": 100,
+          "approvedDrafts": 0,
+          "remaining": 100
+        },
+        {
+          "id": "section-2",
+          "title": "Implement AI solutions with Microsoft Foundry",
+          "target": 100,
+          "approvedDrafts": 0,
+          "remaining": 100
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-for-accounting-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare accounting data for analysis",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Prepare a trial balance",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Prepare and analyze financial statements",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Perform routine accounting activities",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "intelligent-applications-builder-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Create a foundation for intelligent applications (25–30%)",
+          "target": 57,
+          "approvedDrafts": 0,
+          "remaining": 57
+        },
+        {
+          "id": "section-2",
+          "title": "Create intelligent applications (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Build business application logic and automation (40–45%)",
+          "target": 87,
+          "approvedDrafts": 0,
+          "remaining": 87
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "microsoft-office-specialist-expert-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-101: Microsoft Word Expert (Office 2019)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MO-201: Microsoft Excel Expert (Office 2019)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "MO-500: Microsoft Access Expert (Office 2019)",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-associate-m365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage worksheets and workbooks",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage data cells and ranges",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and table data",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Perform operations by using formulas and functions",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Manage charts",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "devops-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement processes and communications",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement a source control strategy",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement build and release pipelines",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Develop a security and compliance plan",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Implement an instrumentation strategy",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "fabric-analytics-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Maintain a data analytics solution (25–30%)",
+          "target": 54,
+          "approvedDrafts": 0,
+          "remaining": 54
+        },
+        {
+          "id": "section-2",
+          "title": "Prepare data (45–50%)",
+          "target": 93,
+          "approvedDrafts": 0,
+          "remaining": 93
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage semantic models (25–30%)",
+          "target": 53,
+          "approvedDrafts": 0,
+          "remaining": 53
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "windows-server-administrator-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy and manage AD DS (20–25%)",
+          "target": 42,
+          "approvedDrafts": 0,
+          "remaining": 42
+        },
+        {
+          "id": "section-2",
+          "title": "Manage Windows Server instances and workloads in a hybrid environment (10–15%)",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Manage VMs (10–15%)",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-4",
+          "title": "Implement and manage an on-premises and hybrid networking infrastructure (10–15%)",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-5",
+          "title": "Manage storage and file services (15–20%)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Secure Windows Server infrastructure (10–15%)",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-7",
+          "title": "Monitor and troubleshoot Windows Server environments (15–20%)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-access-expert-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage databases",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Create and modify tables",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Create and modify queries",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Modify forms in layout view",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Modify reports in layout view",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-functional-consultant-supply-chain-management",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement product information management (25–30%)",
+          "target": 54,
+          "approvedDrafts": 0,
+          "remaining": 54
+        },
+        {
+          "id": "section-2",
+          "title": "Implement inventory and asset management (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage supply chain processes (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-4",
+          "title": "Implement warehouse management and transportation management (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Implement master planning (10–15%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-powerpoint-associate-365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage presentations",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage slides",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Insert and format text, shapes, and images",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Insert tables, charts, SmartArt, 3D models, and media",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Apply transitions and animations",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-expert-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage workbook options and settings",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and format data",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create advanced formulas and macros",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage advanced charts and tables",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-word-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage documents",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Insert and format text, paragraphs, and sections",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and lists",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Create and manage references",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Insert and format graphic elements",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage document collaboration",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-database-administrator-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and implement data platform resources (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Implement a secure environment (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Monitor, configure, and optimize database resources (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and manage automation of tasks (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-5",
+          "title": "Plan and configure a high availability and disaster recovery (HA/DR) environment (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "ai-agent-builder-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and configure agent solutions (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Integrate and extend agents in Copilot Studio (40–45%)",
+          "target": 87,
+          "approvedDrafts": 0,
+          "remaining": 87
+        },
+        {
+          "id": "section-3",
+          "title": "Test and manage agents (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-ai-cloud-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Develop containerized solutions on Azure (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Develop AI solutions by using Azure data management services (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Connect to and consume Azure services (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Secure, monitor, and troubleshoot Azure solutions (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "m365-teams-administrator-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure and manage a Teams environment (40–45%)",
+          "target": 85,
+          "approvedDrafts": 0,
+          "remaining": 85
+        },
+        {
+          "id": "section-2",
+          "title": "Manage teams, channels, chats, and apps (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Manage meetings and calling (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-4",
+          "title": "Monitor, report on, and troubleshoot Teams (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "github-foundations",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand Git and GitHub basics (25–30%)",
+          "target": 69,
+          "approvedDrafts": 0,
+          "remaining": 69
+        },
+        {
+          "id": "section-2",
+          "title": "Work with GitHub repositories (10–15%)",
+          "target": 31,
+          "approvedDrafts": 0,
+          "remaining": 31
+        },
+        {
+          "id": "section-3",
+          "title": "Collaborate using GitHub (10–15%)",
+          "target": 31,
+          "approvedDrafts": 0,
+          "remaining": 31
+        },
+        {
+          "id": "section-4",
+          "title": "Apply modern development practices (10–15%)",
+          "target": 31,
+          "approvedDrafts": 0,
+          "remaining": 31
+        },
+        {
+          "id": "section-5",
+          "title": "Manage projects with GitHub (5–10%)",
+          "target": 19,
+          "approvedDrafts": 0,
+          "remaining": 19
+        },
+        {
+          "id": "section-6",
+          "title": "Explore the GitHub community (5–10%)",
+          "target": 19,
+          "approvedDrafts": 0,
+          "remaining": 19
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "operationalizing-machine-learning-and-generative-ai-solutions",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement an MLOps infrastructure (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-2",
+          "title": "Implement machine learning model lifecycle and operations (25–30%)",
+          "target": 59,
+          "approvedDrafts": 0,
+          "remaining": 59
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement a GenAIOps infrastructure (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-4",
+          "title": "Implement generative AI quality assurance and observability (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        },
+        {
+          "id": "section-5",
+          "title": "Optimize generative AI systems and model performance (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-functional-consultant-financials",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement financial management (35–40%)",
+          "target": 81,
+          "approvedDrafts": 0,
+          "remaining": 81
+        },
+        {
+          "id": "section-2",
+          "title": "Implement accounts receivable, credit, collections, and subscription billing (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage accounts payable and expenses (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        },
+        {
+          "id": "section-4",
+          "title": "Manage budgeting (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        },
+        {
+          "id": "section-5",
+          "title": "Manage fixed assets (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-virtual-desktop-specialty",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and implement an Azure Virtual Desktop infrastructure (40–45%)",
+          "target": 90,
+          "approvedDrafts": 0,
+          "remaining": 90
+        },
+        {
+          "id": "section-2",
+          "title": "Plan and implement identity and security (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Plan and implement user environments and apps (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Monitor and maintain an Azure Virtual Desktop infrastructure (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-for-business-finance-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare Financial Data for Analysis",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Perform Financial Analysis",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Perform Loan and Investment Analysis",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Create Financial Forecasts",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "power-platform-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Build Microsoft Power Platform solutions (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Extend the user experience (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Extend Microsoft Power Platform (35–40%)",
+          "target": 79,
+          "approvedDrafts": 0,
+          "remaining": 79
+        },
+        {
+          "id": "section-4",
+          "title": "Develop integrations (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-outlook-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage Outlook settings and processes",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage messages",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Manage schedules",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage contacts and tasks",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "modern-desktop",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare infrastructure for devices (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and maintain devices (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Protect devices (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Manage and secure applications (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-5",
+          "title": "Optimize endpoint operations by using automation, monitoring, and reporting (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "information-security-administrator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement information protection (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Implement data loss prevention and retention (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Manage risks, alerts, and activities (30–35%)",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "ai-business-professional",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand generative AI fundamentals (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-2",
+          "title": "Manage prompts and chats by using Microsoft 365 Copilot (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Manage business content and collaboration by using Microsoft 365 Copilot (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Drive business outcomes by using agents (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-solutions-architect",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design identity, governance, and monitoring solutions",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Design data storage solutions",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Design business continuity solutions",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Design infrastructure solutions",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "developing-ai-enabled-database-solutions",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and develop database solutions (35–40%)",
+          "target": 73,
+          "approvedDrafts": 0,
+          "remaining": 73
+        },
+        {
+          "id": "section-2",
+          "title": "Secure, optimize, and deploy database solutions (35–40%)",
+          "target": 73,
+          "approvedDrafts": 0,
+          "remaining": 73
+        },
+        {
+          "id": "section-3",
+          "title": "Implement AI capabilities in database solutions (25–30%)",
+          "target": 54,
+          "approvedDrafts": 0,
+          "remaining": 54
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "ai-services-administrator-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure and manage Microsoft 365 tenants and workloads (20–25%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Govern and secure Microsoft 365 tenants and workloads (40–45%)",
+          "target": 83,
+          "approvedDrafts": 0,
+          "remaining": 83
+        },
+        {
+          "id": "section-3",
+          "title": "Manage and secure AI services in Microsoft 365 (35–40%)",
+          "target": 73,
+          "approvedDrafts": 0,
+          "remaining": 73
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-ai-apps-and-agents-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and manage an Azure AI solution (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Implement generative AI and agentic solutions (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Implement computer vision solutions (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-4",
+          "title": "Implement text analysis solutions (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Implement information extraction solutions (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-data-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe core data concepts (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-2",
+          "title": "Identify considerations for relational data on Azure (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-3",
+          "title": "Describe considerations for working with non-relational data on Azure (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-4",
+          "title": "Describe an analytics workload (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-word-associate-m365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage documents",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Insert and format text, paragraphs, and sections",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and lists",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Create and manage references",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Insert and format graphic elements",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage document collaboration",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "m365-enterprise-administrator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy and manage a Microsoft 365 tenant",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Implement and manage Microsoft Entra identity and access",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Manage security and threats by using Microsoft Defender XDR",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage compliance by using Microsoft Purview",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "m365-collaboration-communications-systems-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and design collaboration communications systems (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-2",
+          "title": "Configure and manage Teams meetings, webinars, and town halls (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and configure Teams Phone (30–35%)",
+          "target": 69,
+          "approvedDrafts": 0,
+          "remaining": 69
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and manage Teams Rooms and devices (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-associate-m365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-110: Microsoft Word (Microsoft 365 Apps)",
+          "target": 200,
+          "approvedDrafts": 0,
+          "remaining": 200
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "data-analyst-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare the data (25–30%)",
+          "target": 76,
+          "approvedDrafts": 0,
+          "remaining": 76
+        },
+        {
+          "id": "section-2",
+          "title": "Visualize and analyze the data (25–30%)",
+          "target": 76,
+          "approvedDrafts": 0,
+          "remaining": 76
+        },
+        {
+          "id": "section-3",
+          "title": "Manage and secure Power BI (15–20%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "agentic-ai-business-solutions-architect",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan AI-powered business solutions (25–30%)",
+          "target": 57,
+          "approvedDrafts": 0,
+          "remaining": 57
+        },
+        {
+          "id": "section-2",
+          "title": "Design AI-powered business solutions (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Deploy AI-powered business solutions (40–45%)",
+          "target": 87,
+          "approvedDrafts": 0,
+          "remaining": 87
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage worksheets and workbooks",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage data cells and ranges",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and table data",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Perform operations by using formulas and functions",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Manage charts",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "copilot-and-agent-administration-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify the core features and objects of Microsoft 365 services (30–35%)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Understand data protection and governance tasks for Microsoft 365 and Copilot (35–40%)",
+          "target": 77,
+          "approvedDrafts": 0,
+          "remaining": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Perform basic administrative tasks for Copilot and agents (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-excel-for-operational-management-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Management",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Process Management",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Resource Management",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Reporting and Visualization",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-word-expert-365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage document options and settings",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Use advanced editing and formatting features",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create custom document elements",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Use advanced Word features",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-finance-and-operations-apps-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan the architecture and solution design (5–10%)",
+          "target": 15,
+          "approvedDrafts": 0,
+          "remaining": 15
+        },
+        {
+          "id": "section-2",
+          "title": "Apply developer tools (5–10%)",
+          "target": 15,
+          "approvedDrafts": 0,
+          "remaining": 15
+        },
+        {
+          "id": "section-3",
+          "title": "Design and develop AOT elements (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Develop and test code (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-5",
+          "title": "Implement reporting (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-6",
+          "title": "Integrate and manage data solutions (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-7",
+          "title": "Implement security and optimize performance (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "cybersecurity-architect-expert",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design solutions that align with security best practices and priorities",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Design security operations, identity, and compliance capabilities",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Design security solutions for infrastructure",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Design security solutions for applications and data",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-business-central-functional-consultant-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Set up Business Central (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        },
+        {
+          "id": "section-2",
+          "title": "Configure financials (30–35%)",
+          "target": 65,
+          "approvedDrafts": 0,
+          "remaining": 65
+        },
+        {
+          "id": "section-3",
+          "title": "Configure sales and purchasing (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        },
+        {
+          "id": "section-4",
+          "title": "Perform Business Central operations (30–35%)",
+          "target": 65,
+          "approvedDrafts": 0,
+          "remaining": 65
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "agentic-ai-developer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare agent architecture and SDLC processes (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-2",
+          "title": "Implement tool use and environment interaction (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Manage memory, state, and execution (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        },
+        {
+          "id": "section-4",
+          "title": "Perform evaluation, error analysis, and tuning (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-5",
+          "title": "Orchestrate multi-agent coordination (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-6",
+          "title": "Implement guardrails and accountability (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "github-copilot",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Use GitHub Copilot responsibly (15–20%)",
+          "target": 37,
+          "approvedDrafts": 0,
+          "remaining": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Use GitHub Copilot features (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Understand GitHub Copilot data and architecture (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        },
+        {
+          "id": "section-4",
+          "title": "Apply prompt engineering and context crafting (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Improve developer productivity with GitHub Copilot (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-6",
+          "title": "Configure privacy, content exclusions, and safeguards (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "agentic-devops-engineer-expert",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement processes and communications (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement a source control strategy (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement build and release pipelines (35–40%)",
+          "target": 73,
+          "approvedDrafts": 0,
+          "remaining": 73
+        },
+        {
+          "id": "section-4",
+          "title": "Design and implement a security and compliance plan (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-5",
+          "title": "Implement an instrumentation strategy (15–20%)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "microsoft-certified-educator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Facilitate student collaboration",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Facilitate skilled communication",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Facilitate self-regulation",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Facilitate real-world problem solving and innovation",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Facilitate student use of Information and Communication Tools (ICT)",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Use ICT to be an effective educator",
+          "target": 33,
+          "approvedDrafts": 0,
+          "remaining": 33
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "d365-sales-ai-consultant-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure Dynamics 365 Sales core features for AI (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-2",
+          "title": "Optimize AI-driven sales (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Qualify and prioritize leads by using AI (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Develop deals by using intelligent opportunity research (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-5",
+          "title": "Extend and enhance Sales (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "implementing-data-engineering-solutions-using-azure-databricks",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Set up and configure an Azure Databricks environment (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-2",
+          "title": "Secure and govern Unity Catalog objects (15–20%)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-3",
+          "title": "Prepare and process data (30–35%)",
+          "target": 65,
+          "approvedDrafts": 0,
+          "remaining": 65
+        },
+        {
+          "id": "section-4",
+          "title": "Deploy and maintain data pipelines and workloads (30–35%)",
+          "target": 65,
+          "approvedDrafts": 0,
+          "remaining": 65
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "security-compliance-and-identity-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe the concepts of security, compliance, and identity (10–15%)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        },
+        {
+          "id": "section-2",
+          "title": "Describe the capabilities of Microsoft Entra (25–30%)",
+          "target": 55,
+          "approvedDrafts": 0,
+          "remaining": 55
+        },
+        {
+          "id": "section-3",
+          "title": "Describe the capabilities of Microsoft security solutions (35–40%)",
+          "target": 75,
+          "approvedDrafts": 0,
+          "remaining": 75
+        },
+        {
+          "id": "section-4",
+          "title": "Describe the capabilities of Microsoft compliance solutions (20–25%)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "azure-network-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement core networking infrastructure (25–30%)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Design, implement, and manage connectivity services (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement application delivery services (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Design and implement private access to Azure services (10–15%)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Design and implement Azure network security services (15–20%)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "agentic-ai-business-professional",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Use GitHub platform features (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Enhance productivity by using GitHub Copilot (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement agentic workflows and automations (25–30%)",
+          "target": 58,
+          "approvedDrafts": 0,
+          "remaining": 58
+        },
+        {
+          "id": "section-4",
+          "title": "Perform human-in-the-loop tasks for agentic workflows (20–25%)",
+          "target": 47,
+          "approvedDrafts": 0,
+          "remaining": 47
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "power-platform-fundamentals",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe the business value of Microsoft Power Platform (5–10%)",
+          "target": 16,
+          "approvedDrafts": 0,
+          "remaining": 16
+        },
+        {
+          "id": "section-2",
+          "title": "Manage the Microsoft Power Platform environment (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Demonstrate the capabilities of Power Apps (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Demonstrate the capabilities of Power Automate (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-5",
+          "title": "Describe features and capabilities of agents in Microsoft Copilot Studio (20–25%)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "github-actions",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Author and manage workflows (20–25%)",
+          "target": 49,
+          "approvedDrafts": 0,
+          "remaining": 49
+        },
+        {
+          "id": "section-2",
+          "title": "Consume and troubleshoot workflows (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Author and maintain actions (15–20%)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-4",
+          "title": "Manage GitHub Actions for the enterprise (20–25%)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-5",
+          "title": "Secure and optimize automation (10–15%)",
+          "target": 27,
+          "approvedDrafts": 0,
+          "remaining": 27
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "microsoft-office-specialist-associate-2019",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-100: Microsoft Word (Office 2019)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MO-200: Microsoft Excel (Office 2019)",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "MO-300: Microsoft PowerPoint (Office 2019)",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "mos-expert-m365-apps",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-211: Microsoft Excel Expert (Microsoft 365 Apps)",
+          "target": 200,
+          "approvedDrafts": 0,
+          "remaining": 200
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-ai-business-strategist",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "AI Fundamentals and Literacy (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-2",
+          "title": "AI Strategy and Business Value Creation (28% of scored content)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-3",
+          "title": "AI Governance and Responsible AI Leadership (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Business Readiness, Leadership, and AI Transformation (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Cloud Concepts (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Security and Compliance (30% of scored content)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-3",
+          "title": "Cloud Technology and Services (34% of scored content)",
+          "target": 68,
+          "approvedDrafts": 0,
+          "remaining": 68
+        },
+        {
+          "id": "section-4",
+          "title": "Billing, Pricing, and Support (12% of scored content)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-ai-practitioner",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Fundamentals of AI and ML (20% of scored content)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Fundamentals of GenAI (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Applications of Foundation Models (28% of scored content)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-4",
+          "title": "Guidelines for Responsible AI (14% of scored content)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-5",
+          "title": "Security, Compliance, and Governance for AI Solutions (14% of scored content)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-solutions-architect-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design Secure Architectures (30% of scored content)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Design Resilient Architectures (26% of scored content)",
+          "target": 52,
+          "approvedDrafts": 0,
+          "remaining": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Design High-Performing Architectures (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Design Cost-Optimized Architectures (20% of scored content)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-machine-learning-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Preparation for ML and AI (28% of scored content)",
+          "target": 56,
+          "approvedDrafts": 0,
+          "remaining": 56
+        },
+        {
+          "id": "section-2",
+          "title": "ML Model and Foundation Model (FM) Development (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment and Orchestration of ML and AI Workflows (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Operating, Monitoring, and Securing ML and AI Solutions (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-data-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Ingestion and Transformation (34% of scored content)",
+          "target": 68,
+          "approvedDrafts": 0,
+          "remaining": 68
+        },
+        {
+          "id": "section-2",
+          "title": "Data Store Management (26% of scored content)",
+          "target": 52,
+          "approvedDrafts": 0,
+          "remaining": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Data Operations and Support (22% of scored content)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Data Security and Governance (18% of scored content)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-cloudops-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Monitoring, Logging, Analysis, Remediation, and Performance Optimization (22% of scored content)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Reliability and Business Continuity (22% of scored content)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment, Provisioning, and Automation (22% of scored content)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Security and Compliance (16% of scored content)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Networking and Content Delivery (18% of scored content)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Development with AWS Services (32% of scored content)",
+          "target": 64,
+          "approvedDrafts": 0,
+          "remaining": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Security (26% of scored content)",
+          "target": 52,
+          "approvedDrafts": 0,
+          "remaining": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Troubleshooting and Optimization (18% of scored content)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-security-specialty",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Detection (16% of scored content)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-2",
+          "title": "Incident Response (14% of scored content)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Infrastructure Security (18% of scored content)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Identity and Access Management (20% of scored content)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Data Protection (18% of scored content)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Security Foundations and Governance (14% of scored content)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "aws-advanced-networking-specialty",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Network Design (30% of scored content)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Network Implementation (26% of scored content)",
+          "target": 52,
+          "approvedDrafts": 0,
+          "remaining": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Network Management and Operation (20% of scored content)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Network Security, Compliance, and Governance (24% of scored content)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-digital-leader",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Digital Transformation with Google Cloud (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-2",
+          "title": "Exploring Data Transformation with Google Cloud (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-3",
+          "title": "Innovating with Google Cloud Artificial Intelligence (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Modernize Infrastructure and Applications with Google Cloud (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-5",
+          "title": "Trust and Security with Google Cloud (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Scaling with Google Cloud Operations (~10% of the exam)",
+          "target": 20,
+          "approvedDrafts": 0,
+          "remaining": 20
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-generative-ai-leader",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Fundamentals of gen AI (~30% of the exam)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Google Cloud’s gen AI offerings (~35% of the exam)",
+          "target": 70,
+          "approvedDrafts": 0,
+          "remaining": 70
+        },
+        {
+          "id": "section-3",
+          "title": "Techniques to improve gen AI model output (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Business strategies for a successful gen AI solution (~15% of the exam)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Setting up a cloud solution environment (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Planning and implementing a cloud solution (~30% of the exam)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-3",
+          "title": "Ensuring the successful operation of a cloud solution (~30% of the exam)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-4",
+          "title": "Configuring access and security (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-google-workspace-administrator",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Managing user accounts, domains, and Directory (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Managing core Workspace services (~23% of the exam)",
+          "target": 45,
+          "approvedDrafts": 0,
+          "remaining": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Managing data governance and compliance (~15% of the exam)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        },
+        {
+          "id": "section-4",
+          "title": "Managing security policies and access controls (~20% of the exam)",
+          "target": 39,
+          "approvedDrafts": 0,
+          "remaining": 39
+        },
+        {
+          "id": "section-5",
+          "title": "Managing browsers and endpoints (~10% of the exam)",
+          "target": 20,
+          "approvedDrafts": 0,
+          "remaining": 20
+        },
+        {
+          "id": "section-6",
+          "title": "Monitoring and troubleshooting common issues (~13% of the exam)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-data-practitioner",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Preparation and Ingestion (~30% of the exam)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Data Analysis and Presentation (~27% of the exam)",
+          "target": 54,
+          "approvedDrafts": 0,
+          "remaining": 54
+        },
+        {
+          "id": "section-3",
+          "title": "Data Pipeline Orchestration (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Data Management (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-agentic-architect-beta",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Building agents using low-code tools (~13% of the exam)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-2",
+          "title": "Using coding agents for application development (~17% of the exam)",
+          "target": 34,
+          "approvedDrafts": 0,
+          "remaining": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Developing custom agents (~33% of the exam)",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        },
+        {
+          "id": "section-4",
+          "title": "Evaluating and deploying agentic workflows (~22% of the exam)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Securing and governing agentic workflows (~15% of the exam)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-architect",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing and planning a cloud solution architecture (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Managing and provisioning a cloud solution infrastructure (~17.5% of the exam)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-3",
+          "title": "Designing for security and compliance (~17.5% of the exam)",
+          "target": 35,
+          "approvedDrafts": 0,
+          "remaining": 35
+        },
+        {
+          "id": "section-4",
+          "title": "Analyzing and optimizing technical and business processes (~15% of the exam)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        },
+        {
+          "id": "section-5",
+          "title": "Managing implementation (~12.5% of the exam)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        },
+        {
+          "id": "section-6",
+          "title": "Ensuring solution and operations excellence (~12.5% of the exam)",
+          "target": 25,
+          "approvedDrafts": 0,
+          "remaining": 25
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-database-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design innovative, scalable, and highly available cloud database solutions (~32% of the exam)",
+          "target": 64,
+          "approvedDrafts": 0,
+          "remaining": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Manage a solution that can span multiple database technologies (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Migrate data solutions (~23% of the exam)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Deploy scalable and highly available databases in Google Cloud (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-developer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing highly scalable, secure, and reliable cloud-native applications (~32% of the exam)",
+          "target": 64,
+          "approvedDrafts": 0,
+          "remaining": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Building and testing applications (~23% of the exam)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Configuring cloud-native applications for deployment (~24% of the exam)",
+          "target": 48,
+          "approvedDrafts": 0,
+          "remaining": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Integrating applications with Google Cloud services (~21% of the exam)",
+          "target": 42,
+          "approvedDrafts": 0,
+          "remaining": 42
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-data-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing data processing systems (~22% of the exam)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Ingesting and processing the data (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Storing the data (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Preparing and using data for analysis (~15% of the exam)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        },
+        {
+          "id": "section-5",
+          "title": "Maintaining and automating data workloads (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-devops-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Bootstrapping and maintaining a Google Cloud organization (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Building and implementing CI/CD pipelines, including continuous testing, for application, infrastructure, and machine learning workloads (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Applying site reliability engineering practices (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Implementing observability practices and troubleshooting issues (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-5",
+          "title": "Optimizing performance and cost (~12% of the exam)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-security-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configuring access (~25% of the exam)",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Securing communications and establishing boundary protection (~22% of the exam)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Ensuring data protection (~23% of the exam)",
+          "target": 46,
+          "approvedDrafts": 0,
+          "remaining": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Managing operations (~19% of the exam)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-5",
+          "title": "Supporting compliance requirements (~11% of the exam)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-cloud-network-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing and planning a Google Cloud VPC network (~21% of the exam)",
+          "target": 42,
+          "approvedDrafts": 0,
+          "remaining": 42
+        },
+        {
+          "id": "section-2",
+          "title": "Implementing a VPC network (~20% of the exam)",
+          "target": 40,
+          "approvedDrafts": 0,
+          "remaining": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Configuring managed network services (~16% of the exam)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-4",
+          "title": "Configuring and implementing hybrid and multicloud network interconnectivity (~16% of the exam)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Managing, monitoring, and troubleshooting network operations (~14% of the exam)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Configuring, implementing and managing a cloud network security solution (~13% of the exam)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-machine-learning-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Architecting low-code AI solutions (~13% of the exam)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        },
+        {
+          "id": "section-2",
+          "title": "Collaborating within and across teams to manage data and models (~16% of the exam)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-3",
+          "title": "Scaling prototypes into ML models (~21% of the exam)",
+          "target": 41,
+          "approvedDrafts": 0,
+          "remaining": 41
+        },
+        {
+          "id": "section-4",
+          "title": "Serving and scaling models (~20% of the exam)",
+          "target": 39,
+          "approvedDrafts": 0,
+          "remaining": 39
+        },
+        {
+          "id": "section-5",
+          "title": "Automating and orchestrating ML pipelines (~18% of the exam)",
+          "target": 36,
+          "approvedDrafts": 0,
+          "remaining": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Monitoring AI solutions (~13% of the exam)",
+          "target": 26,
+          "approvedDrafts": 0,
+          "remaining": 26
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "google-security-operations-engineer",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Platform operations (~14% of the exam)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-2",
+          "title": "Data management (~14% of the exam)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Threat hunting (~19% of the exam)",
+          "target": 38,
+          "approvedDrafts": 0,
+          "remaining": 38
+        },
+        {
+          "id": "section-4",
+          "title": "Detection engineering (~22% of the exam)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Incident response (~21% of the exam)",
+          "target": 42,
+          "approvedDrafts": 0,
+          "remaining": 42
+        },
+        {
+          "id": "section-6",
+          "title": "Observability (~10% of the exam)",
+          "target": 20,
+          "approvedDrafts": 0,
+          "remaining": 20
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-data-analyst-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understanding of Databricks Data Intelligence Platform",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-2",
+          "title": "Managing Data",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Importing Data",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-4",
+          "title": "Executing queries using Databricks SQL and Databricks SQL Warehouses",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-5",
+          "title": "Analyzing Queries",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-6",
+          "title": "Working with Dashboards and Visualizations in Databricks",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-7",
+          "title": "Developing, Sharing, and Maintaining AI/BI Genie spaces",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-8",
+          "title": "Data Modeling with Databricks SQL",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-9",
+          "title": "Securing Data",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-data-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Databricks Intelligence Platform (6%)",
+          "target": 12,
+          "approvedDrafts": 0,
+          "remaining": 12
+        },
+        {
+          "id": "section-2",
+          "title": "Data Ingestion and Loading (21%)",
+          "target": 42,
+          "approvedDrafts": 0,
+          "remaining": 42
+        },
+        {
+          "id": "section-3",
+          "title": "Data Transformation and Modeling (22%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Working with Lakeflow Jobs (16%)",
+          "target": 32,
+          "approvedDrafts": 0,
+          "remaining": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Implementing CI/CD (10%)",
+          "target": 20,
+          "approvedDrafts": 0,
+          "remaining": 20
+        },
+        {
+          "id": "section-6",
+          "title": "Troubleshooting, Monitoring, and Optimization (10%)",
+          "target": 20,
+          "approvedDrafts": 0,
+          "remaining": 20
+        },
+        {
+          "id": "section-7",
+          "title": "Governance and Security (15%)",
+          "target": 30,
+          "approvedDrafts": 0,
+          "remaining": 30
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-data-engineer-professional",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Developing Code for Data Processing using Python and SQL",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-2",
+          "title": "Data Ingestion & Acquisition (12%)",
+          "target": 23,
+          "approvedDrafts": 0,
+          "remaining": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Data Manipulation (12%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-4",
+          "title": "Monitoring and Alerting (10%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-5",
+          "title": "Cost & Performance Optimization(15%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-6",
+          "title": "Ensuring Data Security and Compliance (8%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-7",
+          "title": "Data Governance (5%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-8",
+          "title": "Debugging and Deploying (10%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        },
+        {
+          "id": "section-9",
+          "title": "Data Modeling (5%)",
+          "target": 22,
+          "approvedDrafts": 0,
+          "remaining": 22
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-machine-learning-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Databricks Machine Learning",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Data Processing",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Model Development",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Model Deployment",
+          "target": 50,
+          "approvedDrafts": 0,
+          "remaining": 50
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-machine-learning-professional",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Model Development Using Spark ML",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MLOps Model Lifecycle Management",
+          "target": 67,
+          "approvedDrafts": 0,
+          "remaining": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Model Deployment Deployment Strategies",
+          "target": 66,
+          "approvedDrafts": 0,
+          "remaining": 66
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-genai-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design Applications (14%)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-2",
+          "title": "Data Preparation (14%)",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Application Development (30%)",
+          "target": 60,
+          "approvedDrafts": 0,
+          "remaining": 60
+        },
+        {
+          "id": "section-4",
+          "title": "Assembling and Deploying Applications (22%)",
+          "target": 44,
+          "approvedDrafts": 0,
+          "remaining": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Governance (8%)",
+          "target": 16,
+          "approvedDrafts": 0,
+          "remaining": 16
+        },
+        {
+          "id": "section-6",
+          "title": "Evaluation and Monitoring (12%)",
+          "target": 24,
+          "approvedDrafts": 0,
+          "remaining": 24
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-context-engineer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Foundations of Context Engineering",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-2",
+          "title": "System Prompt and Instruction Design",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-3",
+          "title": "Knowledge Retrieval and Genie Configuration",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-4",
+          "title": "Memory Architecture with Lakebase and MLflow",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-5",
+          "title": "Tool Design, MCP, and Agent Context",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Context Compression and Compaction",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-7",
+          "title": "Multi-Agent and Long-Horizon Task Design",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        }
+      ],
+      "remaining": 200
+    },
+    {
+      "id": "databricks-apache-spark-developer-associate",
+      "target": 200,
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Apache Spark Architecture and Components",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-2",
+          "title": "Using Spark SQL",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-3",
+          "title": "Developing Apache SparkTM DataFrame/DataSet API Applications",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-4",
+          "title": "Troubleshooting and Tuning Apache Spark DataFrame API Applications.",
+          "target": 29,
+          "approvedDrafts": 0,
+          "remaining": 29
+        },
+        {
+          "id": "section-5",
+          "title": "Structured Streaming",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Using Spark Connect to deploy applications",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        },
+        {
+          "id": "section-7",
+          "title": "Using Pandas API on Spark",
+          "target": 28,
+          "approvedDrafts": 0,
+          "remaining": 28
+        }
+      ],
+      "remaining": 200
+    }
+  ]
+}

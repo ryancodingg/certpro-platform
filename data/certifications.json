@@ -1065,6 +1065,33 @@
       "level": "intermediate",
       "status": "active",
       "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isc2-certified-in-cybersecurity",
+      "name": "ISC2 Certified in Cybersecurity (CC)",
+      "provider": "ISC2",
+      "official_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isaca-cism",
+      "name": "ISACA Certified Information Security Manager (CISM)",
+      "provider": "ISACA",
+      "official_url": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isaca-cisa",
+      "name": "ISACA Certified Information Systems Auditor (CISA)",
+      "provider": "ISACA",
+      "official_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-21"
     }
   ]
 }

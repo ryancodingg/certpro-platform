@@ -4512,5 +4512,118 @@
     ],
     "overview": "Practice the published domains for Cisco Certified Network Associate (200-301) with original CertPro learning questions. CertPro is not the exam provider.",
     "effectiveNote": "200-301 v1.1. Cisco lists February 2, 2027 as the last test date for v1.1; v2.0 begins February 3, 2027."
+  },
+  "isc2-certified-in-cybersecurity": {
+    "sourceUrl": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+    "guideUrl": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Security Principles (24%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Security Governance (17.3%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Identity and Access Management (IAM) Concepts (20%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Networking and Cloud Security Concepts (21.3%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Security Operations and Incident Response (17.3%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "ISC2 Certified in Cybersecurity (CC)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for ISC2 Certified in Cybersecurity (CC) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "Outline effective September 1, 2026. Published rounded domain percentages total 99.9%; practice counts normalize these weights."
+  },
+  "isaca-cism": {
+    "sourceUrl": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+    "guideUrl": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Information Security Governance (17%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Information Security Risk Management (20%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Information Security Program (33%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Incident Management (30%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "ISACA Certified Information Security Manager (CISM)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for ISACA Certified Information Security Manager (CISM) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "Current outline through November 2, 2026. The November 3, 2026 update changes weights and scope; this practice version must not be represented as the updated outline."
+  },
+  "isaca-cisa": {
+    "sourceUrl": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+    "guideUrl": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+    "checkedOn": "2026-10-21",
+    "domains": [
+      {
+        "id": "section-1",
+        "title": "Information Systems Auditing Process (18%)"
+      },
+      {
+        "id": "section-2",
+        "title": "Governance and Management of IT (18%)"
+      },
+      {
+        "id": "section-3",
+        "title": "Information Systems Acquisition, Development and Implementation (12%)"
+      },
+      {
+        "id": "section-4",
+        "title": "Information Systems Operations and Business Resilience (26%)"
+      },
+      {
+        "id": "section-5",
+        "title": "Protection of Information Assets (26%)"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Supported exam version",
+        "value": "ISACA Certified Information Systems Auditor (CISA)"
+      },
+      {
+        "label": "Official exam details",
+        "value": "Consult the linked provider guide for booking, timing, fees, prerequisites and exam format."
+      }
+    ],
+    "overview": "Practice the published domains for ISACA Certified Information Systems Auditor (CISA) with original CertPro learning questions. CertPro is not the exam provider.",
+    "effectiveNote": "Current official CISA content outline verified October 21, 2026."
   }
 }

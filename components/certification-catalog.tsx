@@ -1,12 +1,15 @@
 "use client"
-import { useEffect, useMemo, useState } from "react"
+import { Suspense, useEffect, useMemo, useState } from "react"
 import Link from "next/link"
+import {useSearchParams} from "next/navigation"
 import { ArrowRight, SlidersHorizontal } from "lucide-react"
 import { certifications, providers } from "@/lib/catalog"
 import { ProviderLogo } from "@/components/provider-logo"
-export function CertificationCatalog({compact=false}:{compact?:boolean}) {
+export function CertificationCatalog(props:{compact?:boolean}) {return <Suspense fallback={<p role="status">Loading certifications…</p>}><CatalogContent {...props}/></Suspense>}
+function CatalogContent({compact=false}:{compact?:boolean}) {
+ const searchParams=useSearchParams();const urlQuery=searchParams.get("q")??"";const urlProvider=searchParams.get("provider")??"All";
  const [query,setQuery]=useState("");const [provider,setProvider]=useState("All");const [level,setLevel]=useState("All");const [sort,setSort]=useState("name");const [page,setPage]=useState(1);
- useEffect(()=>{const p=new URLSearchParams(window.location.search);setQuery(p.get("q")??"");const selected=p.get("provider");if(selected&&providers.includes(selected))setProvider(selected)},[]);
+ useEffect(()=>{setQuery(urlQuery);setProvider(providers.includes(urlProvider)?urlProvider:"All");setPage(1)},[urlQuery,urlProvider]);
  const levels=useMemo(()=>Array.from(new Set(certifications.map(c=>c.level))).sort(),[]);
  const filtered=useMemo(()=>certifications.filter(c=>(provider==="All"||c.provider===provider)&&(level==="All"||c.level===level)&&[c.name,c.provider,c.level,...c.aliases].join(" ").toLowerCase().includes(query.trim().toLowerCase())).sort((a,b)=>sort==="provider"?a.provider.localeCompare(b.provider)||a.name.localeCompare(b.name):a.name.localeCompare(b.name)),[query,provider,level,sort]);
  const size=compact?6:12;const pages=Math.max(1,Math.ceil(filtered.length/size));const current=Math.min(page,pages);const clear=()=>{setQuery("");setProvider("All");setLevel("All");setPage(1)};
