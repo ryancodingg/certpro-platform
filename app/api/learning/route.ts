@@ -1,7 +1,7 @@
 import {TESTING_ACCESS} from '@/lib/testing-access'
 import {examPolicy} from '@/lib/exam-policy'
 import {learningBank,bankUnavailable,recoveredBank} from '@/lib/server/learning-bank'
-import {explainPractice,requireTutorAcknowledgement} from '@/lib/server/tutor'
+import {explainPractice} from '@/lib/server/tutor'
 import {checkedPracticeQuestion,tutorModes} from '@/lib/tutor'
 import {certificationById} from '@/lib/catalog'
 import {premiumAccess} from '@/lib/server/paypal'
@@ -76,7 +76,6 @@ export async function POST(request: Request) {
     if (!secret) throw new HttpError(401,"Attempt session missing. Restart the quiz.")
     const uid=await learner(request,true)
     if(input.action==='explain'){
-      requireTutorAcknowledgement(input.aiAcknowledged)
       if(!tutorModes.includes(input.style))throw new HttpError(400,'Choose an explanation style.')
       const attempt=(await db.collection('certproAttempts').doc(input.id).get()).data()
       if(!attempt||typeof attempt.secret!=='string'||secret.length!==attempt.secret.length||!timingSafeEqual(Buffer.from(secret),Buffer.from(attempt.secret)))throw new HttpError(403,'Attempt access denied.')
