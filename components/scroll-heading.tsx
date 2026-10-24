@@ -11,5 +11,5 @@ export function ScrollHeading({text,as:Tag='h2',gradient=false}:{text:string;as?
   if(ref.current)observer.observe(ref.current)
   return ()=>observer.disconnect()
  },[])
- return <Tag ref={ref} aria-label={text} className={`${styles.heading} ${show?styles.revealed:''} ${gradient?'gradient-text':''}`}>{text.split(' ').map((word,i)=><span aria-hidden="true" key={i} className={styles.word} style={{animationDelay:`${i*65}ms`}}>{word}{' '}</span>)}</Tag>
+ return <Tag ref={ref} aria-label={text} className={`${styles.heading} ${show?styles.revealed:''} ${gradient?'gradient-text':''}`}>{text.split(' ').map((word,i)=><span key={i} className={styles.word} style={{animationDelay:`${i*65}ms`}}>{word}{' '}</span>)}</Tag>
 }
