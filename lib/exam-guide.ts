@@ -1,7 +1,7 @@
 import raw from '@/data/exam-guides.json'
 import { certificationById } from '@/lib/catalog'
 type Domain={id:string;title:string}
-export type Guide={sourceUrl:string;guideUrl:string;checkedOn:string;domains:Domain[];facts:{label:string;value:string}[];overview?:string;effectiveNote?:string}
+export type Guide={sourceUrl:string;guideUrl:string;checkedOn:string;domains:Domain[];facts:{label:string;value:string}[];overview?:string;effectiveNote?:string;costSourceUrl?:string;costCheckedOn?:string}
 export function guideFor(id:string):Guide{const c=certificationById(id);return (raw as Record<string,Guide>)[c?.id||id]||{sourceUrl:c?.official_url||'https://certpro.vercel.app/certifications',guideUrl:c?.official_url||'https://certpro.vercel.app/certifications',checkedOn:'2026-10-18',domains:[],facts:[]}}
 const topics:Record<string,Record<string,number>>={
  'dp-700':{'Microsoft Fabric Networking':1,'Microsoft Fabric Governance':1,'Microsoft Fabric Security':1,'Microsoft Fabric Roles & Permissions':1,'Row-Level Security in Microsoft Fabric':1,'Implement and manage an analytics solution':1,'Microsoft Fabric Deployment':1,'Microsoft Fabric Warehouse Deployment':1,'Microsoft Fabric Deployment Pipelines':1,'Power BI Deployment':1,'Microsoft Fabric and Azure DevOps Integration':1,'Microsoft Fabric Data Ingestion':2,'Microsoft Fabric data ingestion and transformation':2,'Microsoft Fabric OneLake and Eventhouse':2,'Microsoft Fabric - KQL Queries':2,'Ingest and transform data':2,'Ingest and transform streaming data':2,'Microsoft Fabric Monitoring':3,'Microsoft Fabric Warehouse Monitoring':3,'Microsoft Fabric Performance Optimization':3,'Delta Lakehouse Maintenance':3,'Monitor and optimize an analytics solution':3},

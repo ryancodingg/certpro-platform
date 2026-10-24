@@ -1,0 +1,2792 @@
+[
+  {
+    "id": "q-eb481a44c7f010888b02b7d81bb921ca",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering team is setting up a new medallion architecture on Databricks. A junior developer suggests directly writing incoming streaming ingestion data straight into the silver layer tables to speed up data availability and skip the bronze layer. According to Databricks best practices, what is the recommended approach?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "Databricks does not recommend writing to silver tables directly from ingestion because doing so introduces failures due to schema changes or corrupt records in data sources. Instead, raw data should be ingested into the bronze layer first, and then silver tables should be built from the bronze layer.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Directly write ingestion streams to the silver layer to reduce latency and eliminate storage redundancy.",
+        "Ingest raw data into the bronze layer first, and then build and populate silver tables from the bronze layer.",
+        "Bypass both bronze and silver layers entirely, writing all streaming datasets directly into gold layer materialized views.",
+        "Perform data deduplication and schema enforcement directly inside the ingestion source before landing it in any lakehouse layer."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect because writing directly from ingestion into silver tables is explicitly discouraged by Databricks as it introduces failures from schema changes and corrupt records.",
+      "Correct because Databricks recommends reading from one or more bronze or silver tables to write to silver tables, avoiding direct ingestion writes.",
+      "Incorrect because the gold layer is designed for business-level aggregates and reporting, not for raw streaming ingestion.",
+      "Incorrect because schema enforcement and deduplication occur in the silver and bronze/silver transition phases, not prior to landing in the lakehouse layers."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Databricks does not recommend writing to silver tables directly from ingestion. If you write directly from ingestion, you'll introduce failures due to schema changes or corrupt records in data sources.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f492d86b7ae289fb187af5da0c24da4b",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics manager wants to understand the foundational storage and governance technologies that support the Databricks lakehouse architecture. Which two core technologies combine with Apache Spark to power the Databricks lakehouse?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "The Databricks lakehouse uses Apache Spark for massively scalable compute along with two additional key technologies: Delta Lake (an optimized storage layer supporting ACID transactions and schema enforcement) and Unity Catalog (a unified, fine-grained governance solution for data and AI).",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/",
+      "options": [
+        "Delta Lake and Unity Catalog",
+        "MLflow and Redash",
+        "Auto Loader and Lakeflow pipelines",
+        "Hugging Face Transformers and DeepSpeed"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct because Delta Lake and Unity Catalog are explicitly cited as the two key technologies that power the Databricks lakehouse alongside Apache Spark.",
+      "Incorrect because MLflow and Redash are open source projects/tools used for machine learning tracking and querying, not the core storage/governance lakehouse foundation technologies.",
+      "Incorrect because Auto Loader and Lakeflow are data ingestion and pipeline tools.",
+      "Incorrect because Hugging Face and DeepSpeed are open-source machine learning and LLM tooling libraries."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/",
+        "checkedOn": "2026-10-18",
+        "supports": "The Databricks lakehouse uses two additional key technologies: Delta Lake : an optimized storage layer that supports ACID transactions and schema enforcement. Unity Catalog : a unified, fine-grained governance solution for data and AI.",
+        "sourceHash": "45c6cdc16b9ba39043ae8779bad2cb6d7d3c0491f93764f63700b881b234355c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-4f71cc96345b9caa7b34b9c34c12c597",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your organization needs to set up a layer in the medallion architecture that serves as the single source of truth, maintains the raw state of source data in its original format, and enables reprocessing and auditing. Which layer should you configure?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "The bronze layer contains raw, unvalidated data, maintains the raw state of the data source in its original format, is appended incrementally, and serves as the single source of truth enabling reprocessing and auditing.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "The bronze layer",
+        "The silver layer",
+        "The gold layer",
+        "The operational analytics layer"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct because the bronze layer holds raw, unvalidated data in its original format, serving as the single source of truth and enabling auditing.",
+      "Incorrect because the silver layer is used for validated, cleaned, deduplicated, and normalized data, not raw unvalidated ingestion data.",
+      "Incorrect because the gold layer contains highly refined, highly aggregated views designed for business users and dashboards.",
+      "Incorrect because operational analytics is a platform capability, not an architectural storage layer of the medallion design pattern."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "The bronze layer contains raw, unvalidated data. Data ingested in the bronze layer typically has the following characteristics: Contains and maintains the raw state of the data source in its original formats. Is appended incrementally and grows over time. Serves as the single source of truth, preserving the data's fidelity. Enables reprocessing and auditing by retaining all historical data.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9798b02eaa81c7558a4ab4a58146fb5f",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is evaluating different ingestion frequencies to balance cost and query latency for streaming tables within their Databricks architecture. If they configure a streaming table to ingest data using a continuous job trigger, how do cost and latency behave compared to triggered incremental ingestion?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "According to the Databricks cost and latency comparison table for data ingestion frequencies, continuous incremental ingestion results in higher cost and lower latency compared to triggered incremental ingestion.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Continuous incremental ingestion results in higher cost and lower latency.",
+        "Continuous incremental ingestion results in lower cost and higher latency.",
+        "Continuous incremental ingestion results in both lower cost and lower latency.",
+        "Continuous incremental ingestion results in both higher cost and higher latency."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct because continuous incremental ingestion incurs a higher cost with lower latency, whereas triggered incremental ingestion lowers cost at the expense of higher latency.",
+      "Incorrect because continuous ingestion has higher cost, not lower cost.",
+      "Incorrect because continuous ingestion does not yield lower cost.",
+      "Incorrect because continuous ingestion yields lower latency, not higher latency."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Continuous incremental ingestion: Cost Higher, Latency Lower. Triggered incremental ingestion: Cost Lower, Latency Higher.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-4c88dfebee16a80b41897d37a4b73748",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is building the silver layer of a lakehouse pipeline to prepare customer and transaction data for downstream predictive analytics. Which set of operations should specifically be performed at this silver stage?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "Data cleanup, validation, schema enforcement, handling null values, data deduplication, resolution of out-of-order data, type casting, and joins are performed in the silver layer.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Raw data ingestion from cloud object storage with minimal data cleanup and storing fields as string or VARIANT.",
+        "Schema enforcement, handling null values, data deduplication, resolving late-arriving data issues, and performing joins.",
+        "Creating highly aggregated business metric views and dimensional models exclusively optimized for executive dashboards.",
+        "Permanent, unvalidated bulk storage of data of any nature in any proprietary format without schema validation."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect because raw data ingestion with minimal cleanup and string/VARIANT storage describes the bronze layer.",
+      "Correct because schema enforcement, handling nulls, deduplication, resolving late-arriving data, and joins are specific operations performed in silver tables.",
+      "Incorrect because highly aggregated business metric views and executive dashboard optimization describe the gold layer.",
+      "Incorrect because permanent unvalidated storage describes a traditional data lake rather than the validated silver layer of a lakehouse."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Data cleanup and validation are performed in silver layer... Schema enforcement, Handling of null and missing values, Data deduplication, Resolution of out-of-order and late-arriving data issues, Data quality checks and enforcement, Schema evolution, Type casting, Joins.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fb49631324bc42759c383acb8f68278d",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is designing a streaming table ingestion process in Databricks where minimizing query latency is the primary business requirement, and higher infrastructure costs are acceptable. Which ingestion configuration should you implement according to Databricks cost and latency guidelines?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "According to Databricks best practices, continuous incremental ingestion provides lower latency with higher cost because the pipeline updates the streaming table continuously.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Continuous incremental ingestion using a streaming table where the pipeline runs continuously",
+        "Triggered incremental ingestion utilizing a job's scheduled trigger",
+        "Batch ingestion using partition overwrites with manual orchestration",
+        "Batch ingestion utilizing spark.read without Structured Streaming"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Continuous incremental ingestion yields higher cost and lower latency by running the pipeline continuously.",
+      "Incorrect: Triggered incremental ingestion lowers cost while increasing latency compared to continuous runs.",
+      "Incorrect: Batch ingestion with manual incremental processing results in the highest latency because of infrequent runs.",
+      "Incorrect: Batch ingestion using spark.read does not optimize for low query latency and results in the highest latency."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Continuous incremental ingestion Higher Lower Streaming Table using spark.readStream to ingest from cloud storage or message bus. The pipeline that updates this streaming table runs continuously.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fa4b198db1c21f1162153f6dfc4fe020",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise organization is establishing a new lakehouse architecture on Databricks. The management team wants to understand which core technologies combine with Apache Spark to power the Databricks lakehouse. Which combination correctly identifies these foundational technologies?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "The Databricks lakehouse uses Apache Spark along with Delta Lake for optimized storage supporting ACID transactions and Unity Catalog for unified governance.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/",
+      "options": [
+        "Delta Lake and Unity Catalog",
+        "MLflow and Redash",
+        "Auto Loader and Lakeflow pipelines",
+        "Databricks SQL and Delta Live Tables"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Delta Lake and Unity Catalog are the two key technologies that combine with Apache Spark to power the Databricks lakehouse.",
+      "Incorrect: MLflow and Redash are separate tracking and visualization tools, not the two core foundational storage and governance technologies of the lakehouse.",
+      "Incorrect: Auto Loader and Lakeflow pipelines are ingestion and ETL tools rather than the core lakehouse foundational technologies.",
+      "Incorrect: Databricks SQL and Delta Live Tables are services and execution frameworks built on top of the lakehouse rather than the foundational storage/governance pair."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/",
+        "checkedOn": "2026-10-18",
+        "supports": "The Databricks lakehouse uses two additional key technologies: Delta Lake : an optimized storage layer that supports ACID transactions and schema enforcement. Unity Catalog : a unified, fine-grained governance solution for data and AI.",
+        "sourceHash": "45c6cdc16b9ba39043ae8779bad2cb6d7d3c0491f93764f63700b881b234355c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-2ed4c2773d839cdd8e1a15f96e889b41",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is building a medallion architecture where customer and transaction records are refined. A developer proposes writing incoming raw streaming data directly into the silver layer to bypass bronze-level storage and speed up processing. Why does Databricks recommend against this practice?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "Databricks explicitly states not to write to silver tables directly from ingestion because it introduces failures due to schema changes or corrupt records in data sources.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Writing directly from ingestion introduces failures caused by schema changes or corrupt records in source data",
+        "Silver tables cannot accept streaming data reads and require static batch files",
+        "Writing directly to silver prevents Unity Catalog from tracking data lineage",
+        "Delta Lake schema evolution only functions when data flows through a bronze storage layer"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Direct writes from ingestion risk pipeline failures due to source schema changes or corrupt records, which the bronze layer helps mitigate.",
+      "Incorrect: Silver tables can successfully read from streaming sources, provided they are structured properly downstream.",
+      "Incorrect: Unity Catalog tracks lineage regardless of whether intermediate tables are omitted, but skipping layers violates architectural design patterns.",
+      "Incorrect: Delta Lake schema evolution is a storage-layer feature and does not strictly depend on a bronze layer to operate."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Databricks does not recommend writing to silver tables directly from ingestion. If you write directly from ingestion, you'll introduce failures due to schema changes or corrupt records in data sources.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3b70c62b815e3e27a7d8d25f61c04391",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is setting up data quality checks and schema enforcement for a dataset containing customer records. According to the medallion architecture guidelines, in which specific layer should these validation and deduplication processes take place?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "Data cleanup, deduplication, schema enforcement, and handling of null or missing values are explicitly performed in the silver layer.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "The silver layer",
+        "The bronze layer",
+        "The gold layer",
+        "The operational source database"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: The silver layer is where validation, schema enforcement, and deduplication occur.",
+      "Incorrect: The bronze layer contains raw, unvalidated data with minimal cleanup to preserve data fidelity.",
+      "Incorrect: The gold layer focuses on highly aggregated, business-level modeling and performance optimization for dashboards.",
+      "Incorrect: Operational source databases are external origin systems rather than the medallion layer designated for cleaning and validation."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Data cleanup and validation are performed in silver layer. ... Schema enforcement, Handling of null and missing values, Data deduplication",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3cccb089f479728ceb92d82210c385c3",
+    "originality": "original-practice",
+    "question": {
+      "question": "An organization requires a storage layer within their medallion architecture that preserves the exact raw state of source data in its original format, acts as a single source of truth, and allows historical auditing and reprocessing. Which component fulfills these requirements?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "The bronze layer contains and maintains the raw state of data sources in original formats, serving as a single source of truth and enabling reprocessing and auditing.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "The bronze layer",
+        "The silver layer",
+        "The gold layer",
+        "A materialized view built with aggregate metrics"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: The bronze layer preserves raw data in its original format to serve as a verifiable single source of truth for auditing and reprocessing.",
+      "Incorrect: The silver layer contains cleaned, validated, and transformed data rather than the raw original format.",
+      "Incorrect: The gold layer contains heavily aggregated and business-tailored datasets optimized for analytics and reporting.",
+      "Incorrect: Materialized views are pre-aggregated query results typically stored in the gold layer, not raw historical storage layers."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "The bronze layer contains raw, unvalidated data. Data ingested in the bronze layer typically has the following characteristics: Contains and maintains the raw state of the data source in its original formats. ... Serves as the single source of truth, preserving the data's fidelity. Enables reprocessing and auditing by retaining all historical data.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-bd7999ea0efd587060a31bf3ab09fee8",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is designing a new pipeline within a medallion architecture on Databricks. A developer suggests bypassing the bronze layer entirely and writing streaming ingestion data straight into silver layer tables to speed up data availability. According to Databricks best practices, why should the team avoid this approach?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "Databricks recommends against writing directly to silver tables from ingestion because doing so introduces pipeline failures due to schema changes or corrupt records present in data sources. The bronze layer acts as the raw single source of truth that preserves historical data and original formats, allowing downstream layers to handle validations safely.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+      "options": [
+        "Writing directly from ingestion introduces failures due to schema changes or corrupt records in data sources.",
+        "The silver layer cannot accept streaming data and requires manual batch triggers for every record.",
+        "Cloud object storage blocks direct writes to silver schemas due to fine-grained access control policies.",
+        "Bypassing the bronze layer prevents Unity Catalog from tracking data lineage and provenance."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Databricks explicitly states that writing directly from ingestion to silver introduces failures due to source schema changes or corrupt records.",
+      "Incorrect. The silver layer can ingest and process streaming reads from bronze tables or streaming sources when properly orchestrated.",
+      "Incorrect. Access control policies in Unity Catalog govern permissions rather than blocking data format writes based on layer design patterns.",
+      "Incorrect. While lineage is important, the specific operational reason cited by Databricks against bypassing bronze is avoiding failures caused by schema changes or corrupt data sources."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/medallion",
+        "checkedOn": "2026-10-18",
+        "supports": "Databricks does not recommend writing to silver tables directly from ingestion. If you write directly from ingestion, you'll introduce failures due to schema changes or corrupt records in data sources.",
+        "sourceHash": "380eee297f576d24f7a5c54a72a35de963b9bc66c1825d91b12e99cf9feffcd6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9a15e2e6eb66b9ebf1ed502cdf9b4f70",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics manager is reviewing the core technologies that combine with Apache Spark to power the Databricks lakehouse architecture. Which combination of technologies provides an optimized storage layer supporting ACID transactions alongside a unified, fine-grained governance solution?",
+      "topic": "Databricks Intelligence Platform",
+      "explanation": "The Databricks lakehouse relies on Apache Spark for a massively scalable compute engine, combined with Delta Lake as an optimized storage layer supporting ACID transactions and schema enforcement, and Unity Catalog as a unified governance solution for data and AI.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/lakehouse/",
+      "options": [
+        "Delta Lake and Unity Catalog",
+        "MLflow and Redash",
+        "Auto Loader and Structured Streaming",
+        "Lakeflow pipelines and Lakebase Postgres"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Delta Lake provides the optimized storage layer supporting ACID transactions, and Unity Catalog provides the unified governance solution.",
+      "Incorrect. MLflow and Redash are used for machine learning lifecycle management and querying/visualization, not as the foundational storage and governance technologies powering the lakehouse.",
+      "Incorrect. Auto Loader and Structured Streaming are data ingestion and processing tools built on top of Apache Spark and Delta Lake.",
+      "Incorrect. Lakeflow pipelines and Lakebase Postgres are specialized ETL and OLTP components rather than the two primary foundational technologies paired with Spark."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/lakehouse/",
+        "checkedOn": "2026-10-18",
+        "supports": "The Databricks lakehouse uses two additional key technologies: Delta Lake : an optimized storage layer that supports ACID transactions and schema enforcement. Unity Catalog : a unified, fine-grained governance solution for data and AI.",
+        "sourceHash": "45c6cdc16b9ba39043ae8779bad2cb6d7d3c0491f93764f63700b881b234355c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-8beab673cb8ef56c9ca91d06118d1f45",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is setting up an incremental data ingestion pipeline from cloud object storage and wants to use Auto Loader. According to Databricks guidance, how does Auto Loader track ingestion progress to ensure exactly-once semantics?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Auto Loader persists file metadata in a scalable key-value store (RocksDB) located in the checkpoint location of the pipeline to guarantee that data is processed exactly once.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "It stores file metadata in a scalable key-value store (RocksDB) within the pipeline's checkpoint location.",
+        "It logs every ingested file name in an unindexed CSV file inside the target Delta table directory.",
+        "It relies entirely on manual user-managed state tables created in the Hive metastore.",
+        "It queries the entire source cloud storage bucket from scratch on every micro-batch execution without caching metadata."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Auto Loader persists discovered file metadata in RocksDB within the checkpoint location to ensure exactly-once processing.",
+      "Incorrect. Auto Loader does not use an unindexed CSV file; it uses a scalable key-value store (RocksDB).",
+      "Incorrect. State management is handled automatically by Auto Loader in the checkpoint location, not manually via user-managed state tables.",
+      "Incorrect. Auto Loader persists metadata to avoid repeatedly scanning and discovering all historical files from scratch."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "As files are discovered, their metadata is persisted in a scalable key-value store (RocksDB) in the checkpoint location of your Auto Loader pipeline. This key-value store ensures that data is processed exactly once.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-26462ad0b3774699dcddf72b34a80e45",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise data team is evaluating file ingestion tools and considering the COPY INTO command versus streaming tables. For SQL users looking for a more scalable and robust file ingestion experience, what does Databricks recommend?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Databricks explicitly recommends that SQL users utilize streaming tables for a more scalable and robust file ingestion experience compared to COPY INTO.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/copy-into",
+      "options": [
+        "Streaming tables",
+        "Legacy WASB driver connections",
+        "Manual Python script loops using standard Spark DataFrame writes",
+        "Unmanaged local file caching"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Databricks documentation states that for a more scalable and robust file ingestion experience, SQL users should use streaming tables.",
+      "Incorrect. The legacy WASB driver has been deprecated and is not recommended.",
+      "Incorrect. Streaming tables are recommended over COPY INTO for SQL users seeking scalability and robustness.",
+      "Incorrect. Unmanaged local file caching is not a recommended ingestion tool or feature."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/copy-into",
+        "checkedOn": "2026-10-18",
+        "supports": "For a more scalable and robust file ingestion experience, Databricks recommends that SQL users use streaming tables.",
+        "sourceHash": "4611a62bb8c7f28e198907d841201d841e695d975acafbf9b296113ab5956cb1"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e5590c33de68b3a70827b508875feba7",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineer is designing an ingestion pipeline for cloud object storage and evaluating Auto Loader versus using Apache Spark Structured Streaming directly on files. Which of the following is a key architectural benefit of Auto Loader over raw Structured Streaming on files?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Auto Loader efficiently scales to discover billions of files and performs backfills asynchronously to avoid wasting compute resources, whereas raw file streaming lacks these specific optimizations.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "Auto Loader can discover billions of files efficiently and perform backfills asynchronously.",
+        "Auto Loader requires the user to manually maintain and manage the state for fault tolerance.",
+        "Auto Loader only supports directory listing mode and cannot use native cloud APIs.",
+        "Auto Loader enforces strict file arrival ordering across all detection modes."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Auto Loader efficiently discovers billions of files and supports asynchronous backfills.",
+      "Incorrect. Users do not need to maintain or manage any state themselves to achieve fault tolerance with Auto Loader.",
+      "Incorrect. Auto Loader uses native cloud APIs and supports file notification mode in addition to directory listing mode.",
+      "Incorrect. Auto Loader does not guarantee the order in which files are discovered or processed."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "Auto Loader can discover billions of files efficiently. Backfills can be performed asynchronously to avoid wasting any compute resources.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-94fe80853d97bca129043b806634c665",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is reviewing ingestion pipeline options and examining the different layers of the ETL stack in Databricks Lakeflow Connect. When comparing Lakeflow pipelines to raw Apache Spark Structured Streaming, which statement accurately describes Lakeflow pipelines?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Lakeflow pipelines extend Structured Streaming by offering a declarative framework that manages orchestration, monitoring, data quality, and errors with more automation and less overhead.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "They offer a declarative framework that manages orchestration, monitoring, data quality, and errors with less overhead than Structured Streaming.",
+        "They require developers to write custom boilerplate orchestration logic for every task because they lack built-in monitoring.",
+        "They operate completely independently of Spark Structured Streaming without utilizing its underlying engine.",
+        "They provide fewer automation capabilities and higher manual overhead than raw Structured Streaming."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Hard",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Lakeflow pipelines extend Structured Streaming with a declarative framework offering more automation and less overhead.",
+      "Incorrect. Lakeflow pipelines manage orchestration, monitoring, data quality, and errors automatically.",
+      "Incorrect. Lakeflow pipelines extend Structured Streaming rather than operating independently of it.",
+      "Incorrect. Lakeflow pipelines offer more automation and less overhead than Structured Streaming, not more manual overhead."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Lakeflow pipelines extend Structured Streaming , offering a declarative framework for creating data pipelines. You can define the transformations to perform on your data, and Lakeflow pipelines manage orchestration, monitoring, data quality, errors, and more. They offer more automation and less overhead than Structured Streaming .",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-27e2aff779456cfc497293c67fc603ba",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics engineering team is scheduling data ingestion pipelines in Databricks and needs to process new data as it arrives in the source. According to Databricks pipeline modes, which mode should they configure for streaming ingestion?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Continuous pipeline mode is used for streaming ingestion to process new data as it arrives in the source.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "Continuous",
+        "Triggered",
+        "Static",
+        "Batch-only"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Continuous pipeline mode processes new data as it arrives in the source for streaming ingestion.",
+      "Triggered mode processes new data on a schedule or when manually triggered, which corresponds to batch ingestion.",
+      "Incorrect. 'Static' is not a defined Databricks pipeline ingestion mode.",
+      "Incorrect. 'Batch-only' is not the term used for streaming ingestion modes."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Streaming ingestion: Continuous : Processes new data as it arrives in the source.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-59db0ba3d74da6d5cb459db16f46b705",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering team is building a Databricks Lakeflow pipeline to process incoming customer orders. You need to configure a data quality constraint that checks whether the order quantity is greater than zero, and if any record violates this constraint, you want the pipeline update to immediately fail and prevent further processing. Which syntax should you use in SQL?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks Lakeflow pipeline documentation, to fail the pipeline update when an invalid record is detected, you use the clause 'CONSTRAINT <constraint-name> EXPECT (<constraint-clause>) ON VIOLATION FAIL UPDATE'. The default action is 'warn' (retaining invalid records), and 'ON VIOLATION DROP ROW' drops invalid records instead of failing the pipeline.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ldp/expectations",
+      "options": [
+        "CONSTRAINT valid_qty EXPECT (quantity > 0) ON VIOLATION FAIL UPDATE",
+        "CONSTRAINT valid_qty EXPECT (quantity > 0) ON VIOLATION DROP ROW",
+        "CONSTRAINT valid_qty EXPECT (quantity > 0) ON VIOLATION WARN",
+        "CONSTRAINT valid_qty EXPECT (quantity > 0) ON FAILURE ROLLBACK"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "This is the correct SQL syntax to fail the pipeline update when an expectation constraint is violated.",
+      "This syntax drops invalid records rather than failing the update.",
+      "This is not valid syntax; warning is the default behavior when no action clause is specified.",
+      "This is a fabricated clause and is not supported by Databricks expectations."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+        "checkedOn": "2026-10-18",
+        "supports": "Action on invalid record: fail corresponds to SQL syntax: EXPECT ... ON VIOLATION FAIL UPDATE",
+        "sourceHash": "2a9c788a9735565bd1a2edac130195a9f7792c41e19d40f81133d682f85a7133"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-014f0cd19f78fd4730a23107eddbcf23",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineer is designing an ETL workload in Databricks and comparing batch versus streaming semantics. According to Databricks concepts for the medallion architecture, which medallion layer is generally recommended to use streaming processing for ingestion workloads because it typically involves no or stateless processing for incremental appends?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks documentation on batch vs. streaming recommendations, the bronze layer is used for ingestion workloads that typically involve no or stateless processing for incremental appends, making streaming processing a great choice without exposing users to stateful streaming complexities.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "Bronze layer",
+        "Silver layer",
+        "Gold layer",
+        "Serving layer"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "The bronze layer is recommended for streaming ingestion because it handles stateless incremental appends efficiently.",
+      "The silver layer typically involves transformation workloads with both stateless and stateful processing like joins and aggregations.",
+      "The gold layer is used for last-mile aggregation workloads which typically involve stateful processing.",
+      "The serving layer is not one of the core medallion layers defined in this context."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Bronze: Ingestion workloads. Typically involves no or stateless processing for incremental append from data sources. Streaming processing is generally a better choice.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-7bfb576cf927d734270d7773356ff22a",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise team is using a Delta Lake table in Databricks to collect operational logs. Because duplicate log records can be generated by sources, the engineer wants to use a SQL MERGE operation to perform continuous deduplication when writing new data. Which clause should be used in the MERGE statement to insert only new records that do not already exist in the target table?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Delta Lake merge documentation, to insert only new records and avoid duplicates during an append or merge workflow, you use the 'WHEN NOT MATCHED THEN INSERT *' clause.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/delta/merge",
+      "options": [
+        "WHEN NOT MATCHED THEN INSERT *",
+        "WHEN MATCHED THEN UPDATE SET *",
+        "WHEN NOT MATCHED BY SOURCE THEN DELETE",
+        "WHEN MATCHED THEN DELETE"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "This is the correct clause to insert source rows that do not match any target table rows, preventing duplicates.",
+      "This updates existing matched rows rather than inserting new ones.",
+      "This deletes target records that have no matching source records, which is used for syncing rather than deduplication on insert.",
+      "This deletes matched rows rather than inserting new unmatched records."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/delta/merge",
+        "checkedOn": "2026-10-18",
+        "supports": "MERGE INTO logs USING newDedupedLogs ON logs.uniqueId = newDedupedLogs.uniqueId WHEN NOT MATCHED THEN INSERT *",
+        "sourceHash": "3a3aa96cd5c0b75023943599c68ea37ced29c779608cb75f55e64e84da8ef4fb"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-00803088d8997f98d309800c2ca8d207",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is evaluating Spark Structured Streaming execution modes in Databricks. They require sub-second operational processing for a fraud detection workload. Which execution mode should they select?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks micro-batch and real-time processing documentation, Real-time mode (RTM) processes records as they arrive for sub-second operational workloads such as fraud detection and real-time personalization.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "Real-time mode (RTM)",
+        "Micro-batch mode",
+        "Batch mode",
+        "Continuous triggered batch mode"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Real-time mode (RTM) is designed for sub-second operational workloads like fraud detection.",
+      "Micro-batch mode processes new data in small batches with latency requirements measured in seconds or minutes.",
+      "Batch mode is designed for slower scheduled workloads, not sub-second operational needs.",
+      "This is a distractor term and does not represent a standard Structured Streaming execution mode in Databricks."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Real-time mode (RTM) : Process records as they arrive for sub-second operational workloads, such as fraud detection and real-time personalization.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-ffeb0c5ada23be1d5da4fd2b218eda5a",
+    "originality": "original-practice",
+    "question": {
+      "question": "You are writing a MERGE statement in Databricks SQL to incrementally sync a target Delta Lake table with a source table, and you want to automatically remove target records that no longer have corresponding entries in the source table within the past 5 days. Which clause should you use?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Delta Lake documentation on incrementally syncing a table with a source, the WHEN NOT MATCHED BY SOURCE clause enables you to delete or update target records that do not match any source records based on the condition.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/delta/merge",
+      "options": [
+        "WHEN NOT MATCHED BY SOURCE AND created_at >= (current_date() - INTERVAL '5' DAY) THEN DELETE",
+        "WHEN MATCHED BY SOURCE THEN DELETE",
+        "WHEN NOT MATCHED THEN DELETE",
+        "WHEN SOURCE NOT MATCHED THEN DROP"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Hard",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "This is the correct clause and condition to delete unmatched target records within the specified time window.",
+      "This is not valid syntax; matching source rows use WHEN MATCHED or WHEN NOT MATCHED clauses.",
+      "WHEN NOT MATCHED applies when source rows do not match target rows, and it only supports the insert action.",
+      "This is invalid syntax and does not exist in Delta Lake MERGE specifications."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/delta/merge",
+        "checkedOn": "2026-10-18",
+        "supports": "WHEN NOT MATCHED BY SOURCE and created_at >= (current_date() - INTERVAL '5' DAY) THEN DELETE",
+        "sourceHash": "3a3aa96cd5c0b75023943599c68ea37ced29c779608cb75f55e64e84da8ef4fb"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-a56f11062d522d0cd7d2f5012aa5f6a4",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is creating a Lakeflow Job that consists of multiple dependent tasks. You need to configure a downstream cleanup task so that it runs even if its upstream dependencies fail, allowing you to perform necessary logging and resource release. Which 'Run if' condition should you select for this task?",
+      "topic": "Working with Lakeflow Jobs",
+      "explanation": "To ensure a task runs regardless of whether its dependent runs succeeded or failed, you must configure it with the 'All done' condition. According to Databricks documentation, 'All done' runs the task after all its dependencies have run, regardless of the status of the dependent runs.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/jobs/run-if",
+      "options": [
+        "All succeeded",
+        "All done",
+        "At least one failed",
+        "None failed"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. 'All succeeded' requires all dependencies to have run and succeeded, which would prevent the task from running if an upstream task fails.",
+      "Correct. 'All done' executes the task after all its dependencies have run, regardless of their success or failure status.",
+      "Incorrect. 'At least one failed' triggers the task only when at least one dependency has failed, but it would not run if all dependencies succeeded.",
+      "Incorrect. 'None failed' requires that no dependencies failed and at least one ran, which does not cover scenarios where an upstream task fails."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/jobs/run-if",
+        "checkedOn": "2026-10-18",
+        "supports": "All done : The task is run after all its dependencies have run, regardless of the status of the dependent runs. This condition allows you to define a task that is run without depending on the outcome of its dependent tasks.",
+        "sourceHash": "481ad520f41c1ef502f836e64f40e20df60dbff3bf37303c969908964bc3a1e5"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f35c157d2f59ef1b8d64b2a8cbeef636",
+    "originality": "original-practice",
+    "question": {
+      "question": "An administrator is configuring a scheduled trigger for a Lakeflow Job in Databricks using a simple schedule. What is the absolute minimum interval that Databricks enforces between subsequent runs triggered by the schedule of a job, regardless of cron or simple configuration?",
+      "topic": "Working with Lakeflow Jobs",
+      "explanation": "Databricks enforces a strict minimum interval of 10 seconds between subsequent runs triggered by the schedule of a job, regardless of any configuration in the cron expression or simple schedule settings.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/jobs/scheduled",
+      "options": [
+        "1 second",
+        "5 seconds",
+        "10 seconds",
+        "60 seconds"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. 1 second is lower than the minimum platform-enforced constraint.",
+      "Incorrect. 5 seconds is lower than the enforced 10-second threshold.",
+      "Correct. Databricks strictly enforces a minimum interval of 10 seconds between subsequent runs triggered by a schedule.",
+      "Incorrect. 60 seconds is longer than the minimum enforced threshold of 10 seconds."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/jobs/scheduled",
+        "checkedOn": "2026-10-18",
+        "supports": "Databricks enforces a minimum interval of 10 seconds between subsequent runs triggered by the schedule of a job regardless of the configuration in the cron expression.",
+        "sourceHash": "cf8c84dbb59206175e26d8f56e92c567ea4232a2176172a3aa1f2eab15139f30"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-61401d244b169df48462f377e1d2dc4e",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is building a complex data pipeline within Databricks Lakeflow Jobs and wants to limit resource usage and stay within workspace platform limits. What is the maximum number of saved jobs that a single Databricks workspace can contain?",
+      "topic": "Working with Lakeflow Jobs",
+      "explanation": "According to Databricks platform limitations for Lakeflow Jobs, a single workspace can contain up to 12,000 saved jobs.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/jobs/",
+      "options": [
+        "1,000 saved jobs",
+        "2,000 saved jobs",
+        "10,000 saved jobs",
+        "12,000 saved jobs"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "Hard",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. 1,000 is the maximum task limit per job, not the workspace saved jobs limit.",
+      "Incorrect. 2,000 is the limit for concurrent task runs within a workspace.",
+      "Incorrect. 10,000 is the hourly limit for creating jobs, not the total saved jobs limit.",
+      "Correct. A workspace can contain up to 12,000 saved jobs as specified in the service limitations."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/jobs/",
+        "checkedOn": "2026-10-18",
+        "supports": "A workspace can contain up to 12000 saved jobs.",
+        "sourceHash": "d3904f747203fdb781ae4884d2658195acf543e9acf3e7ca648d0fa13ca68ef0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-cedc3aaa8836f118fd21e7573051a90e",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics engineer is setting up time zones for a scheduled Lakeflow Job that runs every hour. They want to avoid job skipping or delays caused by daylight saving time transitions. According to Databricks scheduling guidance, which time zone type should they choose?",
+      "topic": "Working with Lakeflow Jobs",
+      "explanation": "To ensure that hourly jobs run at absolute time without being skipped or delayed by daylight saving time shifts, Databricks documentation recommends choosing UTC.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/jobs/scheduled",
+      "options": [
+        "A local time zone that observes daylight saving time",
+        "UTC",
+        "A fixed offset time zone without cron support",
+        "The workspace creator's browser local time zone"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Selecting a time zone that observes daylight saving time can cause hourly jobs to be skipped or delayed when daylight saving time begins or ends.",
+      "Correct. Choosing UTC ensures that hourly jobs run reliably at every hour in absolute time.",
+      "Incorrect. Databricks guidance specifically specifies choosing UTC to handle absolute hourly schedules correctly.",
+      "Incorrect. Browser local time settings do not dictate server-side absolute scheduling behaviors for avoiding daylight saving shifts."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/jobs/scheduled",
+        "checkedOn": "2026-10-18",
+        "supports": "To run at every hour (absolute time), choose UTC.",
+        "sourceHash": "cf8c84dbb59206175e26d8f56e92c567ea4232a2176172a3aa1f2eab15139f30"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9b29357da934f00bf40c67494f4a8c10",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering group is implementing conditional branching logic in a Lakeflow Job. Which specific task type should you use to run a part of a job Directed Acyclic Graph (DAG) based on the evaluation of a boolean expression?",
+      "topic": "Working with Lakeflow Jobs",
+      "explanation": "Databricks provides the 'If/else condition task' to run a part of a job DAG based on the results of a boolean expression, allowing developers to add branching logic to their workflows.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/jobs/run-if",
+      "options": [
+        "The For each condition task",
+        "The Run Job task",
+        "The If/else condition task",
+        "The Notebook conditional task"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The 'For each condition task' adds looping logic based on an input array rather than conditional branching from a boolean expression.",
+      "Incorrect. The 'Run Job task' triggers another job in your workspace, rather than evaluating a boolean expression for internal DAG branching.",
+      "Correct. The 'If/else condition task' is specifically designed to run parts of a job DAG based on the results of a boolean expression.",
+      "Incorrect. 'Notebook conditional task' is a distractor and not the formal name of the feature provided in Lakeflow Jobs."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/jobs/run-if",
+        "checkedOn": "2026-10-18",
+        "supports": "The If/else condition task is used to run a part of a job DAG based on the results of a boolean expression. The If/else condition task allows you to add branching logic to your job.",
+        "sourceHash": "481ad520f41c1ef502f836e64f40e20df60dbff3bf37303c969908964bc3a1e5"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-0fe5f45e531719455a42f2c7509ba06c",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering team wants to adopt an infrastructure-as-code (IaC) approach to programmatically define, deploy, and run Databricks resources such as Lakeflow Jobs and pipelines following CI/CD best practices. Which primary tool does Databricks recommend for this task?",
+      "topic": "Implementing CI/CD",
+      "explanation": "Declarative Automation Bundles (formerly Databricks Asset Bundles) are the recommended tool to facilitate software engineering best practices, versioning, and CI/CD for Databricks resources like jobs and pipelines using YAML configurations.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+      "options": [
+        "Declarative Automation Bundles",
+        "Databricks Git folders with manual webhooks",
+        "Databricks Git with jobs integration only",
+        "Raw Apache Spark Structured Streaming scripts"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-5",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Declarative Automation Bundles are specifically designed to programmatically define, deploy, and run Databricks resources using CI/CD best practices.",
+      "Git folders reflect a remote Git repository but do not by themselves provide the full end-to-end resource definition and infrastructure-as-code deployment capabilities of bundles.",
+      "Git with jobs only supports limited job tasks and does not version-control job configurations like task sequences and schedules properly.",
+      "Spark Structured Streaming is a data processing framework, not an infrastructure-as-code deployment tool for CI/CD pipeline resources."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+        "checkedOn": "2026-10-18",
+        "supports": "Declarative Automation Bundles Programmatically define, deploy, and run Databricks resources, including Lakeflow Jobs, Lakeflow pipelines, and MLOps Stacks using CI/CD best practices and flows.",
+        "sourceHash": "58da90b44246ee4cad235b6e63f1db9b9944937550ea9cc0e561bf02ea27a85c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-ef250017342a337375b4048dbde421a6",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise organization is setting up a CI/CD workflow where developers author code in notebooks, store metadata using YAML configuration files alongside source code, and deploy everything as a single cohesive unit to target workspaces. Which tool features this workflow?",
+      "topic": "Implementing CI/CD",
+      "explanation": "Declarative Automation Bundles use YAML configuration files to define project metadata and source code together, allowing them to be deployed as a single bundle to target environments.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+      "options": [
+        "Declarative Automation Bundles",
+        "Databricks Git folders",
+        "Databricks Apps CLI",
+        "Databricks Terraform provider"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-5",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Declarative Automation Bundles combine source files and metadata into a single deployment package managed through YAML files.",
+      "Git folders primarily manage source files and notebooks rather than acting as a full bundle definition and metadata deployment tool.",
+      "Databricks Apps CLI is specifically scoped to deploy Databricks Apps directly from a remote Git repository rather than general data project bundles.",
+      "The Terraform provider is used to provision and manage workspaces and infrastructure rather than package bundle source files and metadata together."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+        "checkedOn": "2026-10-18",
+        "supports": "Your bundle project's collection of source files and metadata is deployed as a single bundle to your target environment.",
+        "sourceHash": "11a656a7ce667e8e0ec5b1476fbc16c040a3c8c4750202ca73d9a8ba5cf1de2f"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-187401fcfb08e508a62ba2719e92a406",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is establishing a CI/CD pipeline and evaluating how to initialize a new project using the Databricks CLI. Which specific command should developers run to generate the default template and project structure?",
+      "topic": "Implementing CI/CD",
+      "explanation": "The Databricks CLI provides the bundle init command to quickly start local bundle development by presenting default templates and interactive prompts.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+      "options": [
+        "databricks bundle init",
+        "databricks workspace deploy",
+        "databricks repo create",
+        "databricks pipeline generate"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-5",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "databricks bundle init is the exact command used to create a new bundle project using Databricks templates.",
+      "databricks workspace deploy is not the bundle creation initialization command.",
+      "databricks repo create is used for Git integration repositories rather than initializing bundle structures.",
+      "databricks pipeline generate is used to generate configuration for existing resources rather than starting a new project structure."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+        "checkedOn": "2026-10-18",
+        "supports": "Create your first bundle project using the Databricks CLI bundle init command . This command presents a choice of Databricks-provided default bundle templates and asks a series of questions to initialize project variables.",
+        "sourceHash": "11a656a7ce667e8e0ec5b1476fbc16c040a3c8c4750202ca73d9a8ba5cf1de2f"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-a63fd189d5c77828507b013142ffe988",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is reviewing their CI/CD implementation and needs to automate execution of bundle workflows directly from the command line after deployment. Which Databricks CLI command should they use to run bundle resources?",
+      "topic": "Implementing CI/CD",
+      "explanation": "To run bundle resources and automate executions in Databricks workspaces via the CLI, engineers use the databricks bundle run command.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+      "options": [
+        "databricks bundle run",
+        "databricks bundle deploy",
+        "databricks workspace execute",
+        "databricks pipeline trigger"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-5",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "databricks bundle run is the correct command to execute bundle resources in target workspaces.",
+      "databricks bundle deploy is used to deploy changes to the workspace, not to execute the deployed runtime workflows.",
+      "databricks workspace execute is not a standard command for running bundles.",
+      "databricks pipeline trigger is not the standard bundle execution command."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+        "checkedOn": "2026-10-18",
+        "supports": "Run bundle resources using databricks bundle run .",
+        "sourceHash": "58da90b44246ee4cad235b6e63f1db9b9944937550ea9cc0e561bf02ea27a85c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f0a889b42571f6f12c883dd81d763707",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your organization wants to ensure that developers utilize a consistent project template enforcing default permissions, service principals, and custom CI/CD configurations across new projects. According to Databricks guidance, how can you achieve this with Declarative Automation Bundles?",
+      "topic": "Implementing CI/CD",
+      "explanation": "Teams can author custom bundle templates to set organizational standards for new projects, including default permissions, service principals, and CI/CD configurations.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+      "options": [
+        "By authoring custom bundle templates",
+        "By utilizing raw Git webhook integrations",
+        "By writing manual workspace setup scripts in Python",
+        "By configuring workspace-level Delta Live Tables policies"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Hard",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-5",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Authoring custom bundle templates is the recommended method to set organizational standards and configurations for new projects.",
+      "Git webhooks are used for automated deployments on push rather than defining project templates and security permissions.",
+      "Manual Python scripts do not leverage the built-in templating mechanism of Declarative Automation Bundles.",
+      "Delta Live Tables policies govern data processing pipelines rather than bundle template standards and permissions."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/dev-tools/bundles",
+        "checkedOn": "2026-10-18",
+        "supports": "Set organizational standards for new projects by authoring custom bundle templates that include default permissions, service principals, and CI/CD configurations.",
+        "sourceHash": "11a656a7ce667e8e0ec5b1476fbc16c040a3c8c4750202ca73d9a8ba5cf1de2f"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9ad004251a0319d63da07316f6b346cc",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is troubleshooting a slow-running batch query on a large Unity Catalog managed Delta table in Databricks. According to Databricks optimization recommendations, which table layout feature should you implement to replace legacy table partitioning and Z-ordering, thereby improving data skipping and dynamic file pruning?",
+      "topic": "Troubleshooting, Monitoring, and Optimization",
+      "explanation": "Liquid clustering replaces table partitioning and Z-ORDER. It organizes data by the columns you frequently filter on, improving data skipping and dynamic file pruning.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/optimizations/",
+      "options": [
+        "Liquid clustering",
+        "Bloom filter indexes",
+        "Static file partitioning with custom directory hashes",
+        "Manual Z-ordering with frequent full-table rewrites"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-6",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Liquid clustering replaces table partitioning and Z-ORDER to organize data by frequently filtered columns.",
+      "Incorrect. Bloom filter indexes are a deprecated data skipping feature that adds write overhead.",
+      "Incorrect. Static file partitioning is a legacy technique and not the recommended replacement for Z-ordering.",
+      "Incorrect. Manual Z-ordering is explicitly replaced by liquid clustering in Databricks recommendations."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/optimizations/",
+        "checkedOn": "2026-10-18",
+        "supports": "Use liquid clustering for table layout. Liquid clustering replaces table partitioning and ZORDER . It organizes data by the columns you frequently filter on, which improves data skipping and dynamic file pruning.",
+        "sourceHash": "f6790e978d550e8a2078301b56ba8a9c4ec0c409f408f879c29d06e52345380a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-8c9063a54d013ef59db9f9951100cf1c",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineer is investigating slow query execution and high compute costs in a Databricks workspace. According to Databricks optimization guidelines, which feature speeds up queries that repeatedly read the same remote Parquet and Delta Lake data files by caching copies on the local storage of compute nodes?",
+      "topic": "Troubleshooting, Monitoring, and Optimization",
+      "explanation": "Disk caching speeds up queries that repeatedly read the same remote Parquet and Delta Lake data files by caching copies on the local storage of compute nodes.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/optimizations/",
+      "options": [
+        "Disk caching",
+        "Adaptive query execution",
+        "Predictive I/O",
+        "Cost-based optimizer"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-6",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Disk caching stores copies of remote files on local compute node storage to speed up repeated reads.",
+      "Incorrect. Adaptive query execution re-optimizes query plans while queries run based on actual data size.",
+      "Incorrect. Predictive I/O speeds up data scans and reduces data rewritten during updates, deletes, and merges.",
+      "Incorrect. The cost-based optimizer uses table and column statistics to choose efficient query plans."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/optimizations/",
+        "checkedOn": "2026-10-18",
+        "supports": "Disk caching : Speeds up queries that repeatedly read the same remote Parquet and Delta Lake data files. Databricks caches copies of the files on the local storage of compute nodes so that later reads run locally.",
+        "sourceHash": "f6790e978d550e8a2078301b56ba8a9c4ec0c409f408f879c29d06e52345380a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-824d21a01b1774932fa045e0cba08d98",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineer runs a MERGE statement to update a small number of rows across many files in a Delta table. Which automatic optimization feature specifically speeds up this operation by processing unmodified rows without a shuffle and preserving their existing data layout?",
+      "topic": "Troubleshooting, Monitoring, and Optimization",
+      "explanation": "Low shuffle merge speeds up MERGE operations that update or delete a few rows in each file by processing unmodified rows without a shuffle and preserving their existing data layout.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/optimizations/",
+      "options": [
+        "Low shuffle merge",
+        "Dynamic file pruning",
+        "Predictive optimization",
+        "Auto compaction"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-6",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Low shuffle merge optimizes MERGE operations that update or delete few rows by skipping shuffles for unmodified rows.",
+      "Incorrect. Dynamic file pruning skips files that cannot contain matching rows in joins.",
+      "Incorrect. Predictive optimization automatically runs OPTIMIZE, VACUUM, and ANALYZE on Unity Catalog managed tables.",
+      "Incorrect. Auto compaction automatically compresses small files after a write."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/optimizations/",
+        "checkedOn": "2026-10-18",
+        "supports": "Low shuffle merge : Speeds up MERGE operations that update or delete a few rows in each file. Low shuffle merge processes unmodified rows without a shuffle and preserves their existing data layout.",
+        "sourceHash": "f6790e978d550e8a2078301b56ba8a9c4ec0c409f408f879c29d06e52345380a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-a4f8cbb4af93673a3685402d25368a31",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team needs to audit table changes and identify whether an OPTIMIZE operation executed on a Delta table was an auto compaction, liquid clustering, or Z-ordering task. By inspecting table history via DESCRIBE HISTORY, which column should you analyze to determine the specific optimization parameters?",
+      "topic": "Troubleshooting, Monitoring, and Optimization",
+      "explanation": "To determine which type of OPTIMIZE operation ran, you inspect the operationParameters column in the table history.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/tables/history",
+      "options": [
+        "operationParameters",
+        "operationMetrics",
+        "table_size_after_restore",
+        "deletedFileRetentionDuration"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-6",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. The operationParameters column contains details such as clusterBy, zOrderBy, and auto parameters to identify the optimization type.",
+      "Incorrect. operationMetrics contains numerical metrics like numRemovedFiles and numAddedBytes, not the operational classification parameters.",
+      "Incorrect. table_size_after_restore is a metric reported after a RESTORE command, not table history.",
+      "Incorrect. deletedFileRetentionDuration is a table property controlling data retention for time travel and VACUUM."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/tables/history",
+        "checkedOn": "2026-10-18",
+        "supports": "Auto compaction, liquid clustering, and Z-ordering all appear in table history as OPTIMIZE operations. To determine which one ran, inspect the operationParameters column.",
+        "sourceHash": "28fce5e14bbb6bc6e79ec5440fa164a00224c8068a7ffd40baefcc0c09d1985a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fc313c022a68b1cd29d346e1f04dec8b",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics team needs to implement time travel and point-in-time querying on a Delta Lake table. According to Databricks documentation, what is the default value for logRetentionDuration, which determines table history retention?",
+      "topic": "Troubleshooting, Monitoring, and Optimization",
+      "explanation": "Table history retention is determined by the table setting logRetentionDuration, which is 30 days by default.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/tables/history",
+      "options": [
+        "interval 30 days",
+        "interval 7 days",
+        "interval 60 days",
+        "interval 1 day"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-6",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. The default logRetentionDuration setting for Delta tables is interval 30 days.",
+      "Incorrect. interval 7 days is the default setting for deletedFileRetentionDuration used by VACUUM.",
+      "Incorrect. 60 days is the retention period maintained for job runs and pipeline run history, not the default log retention.",
+      "Incorrect. interval 1 day is not the default log retention configuration."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/tables/history",
+        "checkedOn": "2026-10-18",
+        "supports": "Table history retention is determined by the table setting logRetentionDuration , which is 30 days by default.",
+        "sourceHash": "28fce5e14bbb6bc6e79ec5440fa164a00224c8068a7ffd40baefcc0c09d1985a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-232badcc790766db8460090ed0691cd0",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is preparing to query a table named 'menu' within the 'lineage_data.lineagedemo' schema. A junior analyst, userA, has been granted 'USE SCHEMA' and 'SELECT' permissions specifically on that table. When userA explores the lineage graph for the 'menu' table in Catalog Explorer, how will associated downstream tables (such as an unauthorized 'dinner' table) appear to them?",
+      "topic": "Governance and Security",
+      "explanation": "According to Unity Catalog permissions and data lineage rules, tables and data objects are visible only to users who have appropriate permissions. If a user lacks permission on associated tables like the downstream 'dinner' table, that table appears as a masked node to them, and they cannot expand the graph to reveal downstream tables from tables they do not have access to.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+      "options": [
+        "The downstream tables will be completely hidden from the lineage graph without any node representation.",
+        "The downstream table appears as a masked node, and the user cannot expand the graph to reveal it.",
+        "The downstream table will be fully visible since table lineage bypasses table-level access controls.",
+        "An error message will prevent the lineage graph from rendering entirely."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-7",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect; unauthorized nodes are masked rather than completely hidden without trace.",
+      "Correct; Unity Catalog masks unauthorized downstream nodes in the lineage graph so users cannot view details of tables they cannot access.",
+      "Incorrect; lineage graphs share the same permission model and do not bypass access controls.",
+      "Incorrect; the graph renders successfully, but unauthorized nodes are masked."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "checkedOn": "2026-10-18",
+        "supports": "The dinner table appears as a masked node to userA , and userA cannot expand the graph to reveal downstream tables from tables they do not have permission to access.",
+        "sourceHash": "b99b73b9808b3f1591cc1d0aa9df853fd91093169d7ab3dbfb7b759f45a0b128"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e12ab1ec76ff6b9fca80112f967beaa3",
+    "originality": "original-practice",
+    "question": {
+      "question": "An administrator is setting up a new Unity Catalog metastore and wants to understand privilege inheritance and how permissions apply down the hierarchy. Which metastore-level privilege automatically inherits down to all objects in the metastore?",
+      "topic": "Governance and Security",
+      "explanation": "According to the Unity Catalog privileges reference documentation, when 'READ METADATA' is granted on the metastore, it inherits down to all objects in the metastore, unlike other metastore-level privileges which do not follow privilege inheritance.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+      "options": [
+        "CREATE CATALOG",
+        "READ METADATA",
+        "MANAGE ALLOWLIST",
+        "USE RECIPIENT"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-7",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect; CREATE CATALOG does not inherit down to objects in the metastore automatically.",
+      "Correct; READ METADATA is explicitly documented as inheriting down to all objects in the metastore.",
+      "Incorrect; MANAGE ALLOWLIST is a metastore privilege that does not follow privilege inheritance.",
+      "Incorrect; USE RECIPIENT is an OpenSharing privilege that does not inherit down."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "checkedOn": "2026-10-18",
+        "supports": "When granted on the metastore , READ METADATA inherits down to all objects in the metastore. This is unlike other metastore-level privileges, which don't follow privilege inheritance.",
+        "sourceHash": "edc695a09fff7bc665047509a0bbd0f91cdaa99e3751bcfaceeaf37c5cacae36"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-d69ee409ffd16456545d097588df9c43",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your security team is auditing the privileges assigned to various users in Unity Catalog. A data scientist requires the ability to query data from a materialized view. Which specific privilege allows querying data from a materialized view?",
+      "topic": "Governance and Security",
+      "explanation": "The SELECT privilege allows querying data from a table, view, materialized view, or OpenSharing share according to the Unity Catalog privileges reference.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+      "options": [
+        "REFRESH",
+        "MANAGE",
+        "SELECT",
+        "APPLY TAG"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-7",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect; REFRESH is used to manually trigger a refresh of a materialized view, not query its data.",
+      "Incorrect; MANAGE governs administrative actions like privileges and ownership, not querying data.",
+      "Correct; SELECT is the privilege required to query data from a table, view, materialized view, or share.",
+      "Incorrect; APPLY TAG is used to add and edit tags on an object."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "checkedOn": "2026-10-18",
+        "supports": "SELECT Query data from a table , view , materialized view , or OpenSharing share .",
+        "sourceHash": "edc695a09fff7bc665047509a0bbd0f91cdaa99e3751bcfaceeaf37c5cacae36"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-5179fa3068f960c6671f21f83c0a84ec",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineer is configuring permissions for a materialized view in Unity Catalog. They want to grant a privilege that implies the ability to perform SELECT, REFRESH, and APPLY TAG. Which special privilege encompasses these capabilities for a materialized view?",
+      "topic": "Governance and Security",
+      "explanation": "According to the detailed Unity Catalog privileges reference, the ALL PRIVILEGES privilege on a materialized view implies the ability to perform SELECT, REFRESH, and APPLY TAG.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+      "options": [
+        "MODIFY",
+        "ALL PRIVILEGES",
+        "MANAGE",
+        "READ METADATA"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-7",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect; MODIFY is a table-level concept for inserting, updating, and deleting data.",
+      "Correct; ALL PRIVILEGES on a materialized view implies SELECT, REFRESH, and APPLY TAG.",
+      "Incorrect; MANAGE is an administrative privilege and is not implied by ALL PRIVILEGES.",
+      "Incorrect; READ METADATA is a child of MANAGE and is not part of the standard implied ALL PRIVILEGES set for data objects."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "checkedOn": "2026-10-18",
+        "supports": "Materialized view Implies the ability to perform SELECT , REFRESH , and APPLY TAG",
+        "sourceHash": "edc695a09fff7bc665047509a0bbd0f91cdaa99e3751bcfaceeaf37c5cacae36"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e460aed99f12c2775c5a5c9ea3515755",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your organization is reviewing how data lineage captures user-defined functions (UDFs) within a Unity Catalog environment. Which statement accurately describes a limitation regarding UDF lineage tracking?",
+      "topic": "Governance and Security",
+      "explanation": "The documentation for data lineage states that column-level UDF lineage is not captured, and Unity Catalog only captures table-level lineage for UDFs.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+      "options": [
+        "Unity Catalog captures full column-level UDF lineage across all SQL statements.",
+        "Unity Catalog captures table-level lineage for UDFs, but not column-level UDF lineage.",
+        "UDF lineage is captured automatically for all RDD-based data transformations.",
+        "UDF lineage is fully supported within lineage system tables."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-7",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect; column-level UDF lineage is explicitly noted as not being captured.",
+      "Correct; Unity Catalog captures table-level lineage for UDFs while column-level UDF lineage is unsupported.",
+      "Incorrect; RDD transformations are not captured in lineage at all.",
+      "Incorrect; lineage for Unity Catalog UDFs is explicitly noted as not available in the lineage system tables."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "checkedOn": "2026-10-18",
+        "supports": "Unity Catalog captures table-level lineage for UDFs, but not column-level UDF lineage.",
+        "sourceHash": "b99b73b9808b3f1591cc1d0aa9df853fd91093169d7ab3dbfb7b759f45a0b128"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-7db9a22c3fc169ffab50fc1fd24781b9",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering team is building a Lakeflow pipeline to ingest transaction data into a bronze layer table. According to Databricks data processing recommendations, why is streaming processing generally recommended for bronze layer ingestion workloads?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks recommendations, bronze layer ingestion workloads typically involve no or stateless processing for incremental appends from data sources where the data size is larger. Streaming processing is a better choice because users can benefit from streaming advantages without getting exposed to the complexities of stateful streaming processing.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "Bronze layers require complex stateful stream-stream joins that are only supported via continuous streaming mode.",
+        "Bronze ingestion typically involves stateless processing for incremental appends, allowing teams to benefit from streaming efficiency without managing stateful streaming complexities.",
+        "Batch processing is strictly forbidden by Databricks for any tables residing in the bronze medallion layer.",
+        "Streaming ensures that historical data is completely reprocessed and overwritten every hour to maintain strict aggregate consistency."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Bronze layers typically involve no or stateless processing, not complex stateful stream-stream joins.",
+      "Correct. Streaming is recommended for bronze layer ingestion because workloads are typically stateless incremental appends, letting users gain efficiency without stateful complexities.",
+      "Incorrect. Batch processing is not forbidden, but streaming is recommended for ingestion due to efficiency and volume characteristics.",
+      "Incorrect. Streaming processes only new data, whereas overwriting historical data on a schedule describes batch semantics."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Bronze layer ingestion workloads typically involve no or stateless processing for incremental append from data sources. The size of data is typically larger. Streaming processing is generally a better choice, given users can benefit from the advantages of streaming but not get exposed to the complexities of stateful streaming processing.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-b08729f08a7596e394cda5c133a56cce",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics engineering team is designing a silver layer transformation pipeline that involves complex aggregations and joins. Based on Databricks guidelines for processing semantics in the medallion architecture, what are the primary recommendations for silver transformations?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "For silver transformation workloads, which typically involve both stateless and stateful processing (such as joins, aggregations, and deduplications), Databricks recommends using batch processing (with incremental refresh in materialized views) or using streaming processing as an option only when efficiency and latency outweigh results accuracy.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "Always use continuous streaming mode with zero grace periods to ensure immediate row-level updates without ever considering batch options.",
+        "Strictly use batch processing exclusively, as streaming processing is prohibited for any table past the bronze layer.",
+        "Use batch processing with incremental refresh in materialized views, or use streaming processing when efficiency and latency are more important than exact results accuracy.",
+        "Avoid all materialized views and use raw Spark Structured Streaming files with manual state store checkpoints."
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Continuous mode without grace periods is not a blanket recommendation; batch or incremental materialized views are standard.",
+      "Incorrect. Streaming is noted as an option for silver layers when efficiency and latency outweigh accuracy.",
+      "Correct. Databricks recommends batch processing (with incremental refresh in materialized views) or streaming as an option when efficiency/latency matters more than accuracy.",
+      "Incorrect. Raw Spark Structured Streaming files with manual checkpoints are not the prescribed silver layer recommendation over materialized views."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Use batch processing (with incremental refresh in materialized views). Use streaming processing as an option for use cases where efficiency and latency is much more important than results accuracy. Be mindful of the complexities introduced by stateful streaming processing.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3d34f3f03cf78fa39c777c5cd13e5c53",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is implementing an operational logging table where sources frequently generate duplicate log entries. You plan to use a SQL MERGE operation to prevent inserting these duplicates. According to Databricks documentation, what critical requirement must be met by the source dataset before executing this merge?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks documentation on data deduplication when writing into Delta Lake tables, the dataset containing the new logs needs to be deduplicated within itself prior to the merge because the SQL MERGE command matches and deduplicates new data against existing table data but will insert duplicates if they exist within the incoming batch itself.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/delta/merge",
+      "options": [
+        "The source dataset must be pre-deduplicated within itself, because MERGE only deduplicates incoming rows against target table rows, not internally within the incoming batch.",
+        "The source dataset must be converted into an immutable Parquet file format without any primary key definitions.",
+        "The target table must have auto schema evolution enabled to automatically discard duplicate records during the shuffle phase.",
+        "The source dataset must be joined with a gold layer aggregation table to filter out null values before execution."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. The incoming dataset must be deduplicated within itself because MERGE matches against existing table data but inserts internal batch duplicates.",
+      "Incorrect. Delta Lake tables are used, and Parquet formatting alone does not solve deduplication.",
+      "Incorrect. Auto schema evolution handles schema changes, not internal duplicate batch records.",
+      "Incorrect. Joining with a gold aggregate table is unnecessary and incorrect for handling duplicate log ingestion."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/delta/merge",
+        "checkedOn": "2026-10-18",
+        "supports": "The dataset containing the new logs needs to be deduplicated within itself. By the SQL semantics of merge, it matches and deduplicates the new data with the existing data in the table, but if there is duplicate data within the new dataset, it is inserted. Hence, deduplicate the new data before merging into the table.",
+        "sourceHash": "3a3aa96cd5c0b75023943599c68ea37ced29c779608cb75f55e64e84da8ef4fb"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-faafa41420dfcec126161bab90f8295e",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise data team is writing a MERGE INTO statement to incrementally synchronize a target table with a source table, and they want to automatically delete records in the target table that no longer exist in the source table. Which clause should they include?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "In Databricks SQL and Databricks Runtime 12.2 LTS and above, you can use the WHEN NOT MATCHED BY SOURCE clause to DELETE or UPDATE records in the target table that do not have corresponding entries in the source table.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/delta/merge",
+      "options": [
+        "WHEN UNMATCHED TARGET DELETE",
+        "WHEN SOURCE MISSING DELETE",
+        "WHEN NOT MATCHED BY SOURCE THEN DELETE",
+        "WHEN TARGET EXCLUDES SOURCE DELETE"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. WHEN UNMATCHED TARGET DELETE is not valid Databricks Delta Lake syntax.",
+      "Incorrect. WHEN SOURCE MISSING DELETE is not valid syntax.",
+      "Correct. WHEN NOT MATCHED BY SOURCE THEN DELETE is the correct clause used to remove target records lacking matching entries in the source table.",
+      "Incorrect. WHEN TARGET EXCLUDES SOURCE DELETE is invalid syntax."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/delta/merge",
+        "checkedOn": "2026-10-18",
+        "supports": "In Databricks SQL and Databricks Runtime 12.2 LTS and above, you can use the WHEN NOT MATCHED BY SOURCE clause to UPDATE or DELETE records in the target table that do not have corresponding records in the source table.",
+        "sourceHash": "3a3aa96cd5c0b75023943599c68ea37ced29c779608cb75f55e64e84da8ef4fb"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-1b4523b91960f0c478ab0d5a8f92ca08",
+    "originality": "original-practice",
+    "question": {
+      "question": "You are configuring a data quality constraint on a streaming table using Lakeflow pipelines in SQL. You want any record violating the condition to be dropped automatically before data is written to the target, while also logging the count of dropped records. Which clause should you use?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "To drop invalid records automatically while logging the count of dropped records, Databricks documentation specifies using the ON VIOLATION DROP ROW clause with the expectation statement.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ldp/expectations",
+      "options": [
+        "CONSTRAINT expectation_name EXPECT (condition) ON VIOLATION DROP ROW",
+        "CONSTRAINT expectation_name EXPECT (condition) ON VIOLATION FAIL UPDATE",
+        "CONSTRAINT expectation_name EXPECT (condition) ON VIOLATION IGNORE",
+        "CONSTRAINT expectation_name EXPECT (condition) ON VIOLATION WARN"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. ON VIOLATION DROP ROW drops invalid records before writing and logs the drop count.",
+      "ON VIOLATION FAIL UPDATE causes the pipeline update to fail and stop execution immediately upon encountering an invalid record.",
+      "Incorrect. IGNORE is not a valid violation handling action in Lakeflow pipeline expectations.",
+      "WARN is the default action which writes invalid records to the target rather than dropping them."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+        "checkedOn": "2026-10-18",
+        "supports": "Invalid records are dropped before data is written to the target. The count of dropped records is logged alongside other dataset metrics.",
+        "sourceHash": "2a9c788a9735565bd1a2edac130195a9f7792c41e19d40f81133d682f85a7133"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-5f5095ea34a6f2be5f838a65de321784",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is establishing Lakeflow pipeline expectations and needs an action that stops execution immediately when an invalid record is detected, rolling back the transaction atomically if it is a table update. Which action should they choose?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to Databricks Lakeflow expectation documentation, when invalid records are unacceptable, you use the expect_or_fail operator or the ON VIOLATION FAIL UPDATE clause to stop execution immediately when a record fails validation and atomically roll back the transaction.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ldp/expectations",
+      "options": [
+        "ON VIOLATION DROP ROW",
+        "ON VIOLATION FAIL UPDATE",
+        "ON VIOLATION WARN LOG",
+        "ON VIOLATION ROLLBACK RETRY"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. DROP ROW deletes the invalid record and continues processing rather than failing the update.",
+      "Correct. ON VIOLATION FAIL UPDATE stops execution immediately and rolls back the transaction when an invalid record is detected.",
+      "Incorrect. WARN LOG is not standard syntax; warn is the default action that allows invalid records to pass through.",
+      "Incorrect. ROLLBACK RETRY is not a valid expectation violation clause."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+        "checkedOn": "2026-10-18",
+        "supports": "When invalid records are unacceptable, use the expect_or_fail operator to stop execution immediately when a record fails validation. If the operation is a table update, the system atomically rolls back the transaction",
+        "sourceHash": "2a9c788a9735565bd1a2edac130195a9f7792c41e19d40f81133d682f85a7133"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fbe08e6f88f36480c42665985b9be452",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics engineer is examining the pros and cons of batch versus streaming processing semantics in Databricks Lakeflow. When comparing batch processing to streaming processing, which of the following characteristics specifically describes batch processing?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "According to the Databricks comparison of batch versus streaming, batch processing has simple processing logic, results are always accurate and reflect all available data in the source, but it is less efficient because data is reprocessed in a particular batch partition.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "The processing engine continuously keeps track of processed records and only processes newly arrived data in subsequent runs.",
+        "Processing logic is complex due to stateful handling of out-of-order and late-arriving data.",
+        "Processing logic is simple, and results are always accurate and reflect all the available data in the source, though data is reprocessed in batch partitions.",
+        "It provides sub-second operational processing capabilities ideal for real-time fraud detection workloads."
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Keeping track of processed records and processing only new data describes streaming semantics.",
+      "Incorrect. Complex stateful handling of out-of-order data is a characteristic of streaming processing, not batch.",
+      "Correct. Batch processing features simple logic and accurate results reflecting all source data, though it reprocesses data in batch partitions.",
+      "Incorrect. Sub-second operational processing is handled by real-time streaming modes, not batch processing."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Processing logic is simple. Results are always accurate and reflect all the available data in the source. It is not as efficient; data is reprocessed in a particular batch partition.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-a4af9264ba9debd2ab3911ffd87d7929",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is designing a fraud detection workload in Databricks that requires sub-second operational processing capabilities. Which Structured Streaming execution mode should you select according to Databricks processing modes?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "Databricks documentation distinguishes between micro-batch mode for latency measured in seconds or minutes, and real-time mode (RTM) for processing records as they arrive for sub-second operational workloads such as fraud detection and real-time personalization.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+      "options": [
+        "Batch execution mode with scheduled hourly triggers",
+        "Micro-batch mode configured for 1-minute intervals",
+        "Real-time mode (RTM)",
+        "Static snapshot ingestion mode"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Batch execution with hourly triggers cannot achieve sub-second operational processing.",
+      "Incorrect. Micro-batch mode is for latency in seconds or minutes, not sub-second requirements.",
+      "Correct. Real-time mode (RTM) is designed to process records as they arrive for sub-second operational workloads like fraud detection.",
+      "Incorrect. Static snapshot ingestion processes static data without streaming capabilities."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+        "checkedOn": "2026-10-18",
+        "supports": "Real-time mode (RTM) : Process records as they arrive for sub-second operational workloads, such as fraud detection and real-time personalization.",
+        "sourceHash": "0fbcdf2856bb60fb69b3b6802cbc366871a6034777ca32b2dd818035575e93e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-cf924ca03c408fc23a9bdf83f234308b",
+    "originality": "original-practice",
+    "question": {
+      "question": "An organization is updating a Delta Lake table using an insert-only MERGE statement combined with partition filtering to optimize deduplication of log files. If they know duplicates only occur within a 7-day window, how does adding a date range condition in both the ON and WHEN NOT MATCHED clauses improve query performance?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "Databricks documentation explains that filtering the target table by date (e.g., within the last 7 days) makes the merge more efficient because it looks for duplicates only in the recent subset of logs rather than scanning and matching across the entire table.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/delta/merge",
+      "options": [
+        "It eliminates the need to declare primary keys on the target Delta table.",
+        "It ensures that partition pruning is bypassed to allow full table scans across all historical partitions.",
+        "It limits the scope of duplicate checking to the recent date window rather than searching the entire table.",
+        "It automatically upgrades the table layout to liquid clustering without requiring an explicit optimize command."
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Primary keys are not required or enforced in standard Delta merge operations.",
+      "Incorrect. Bypassing partition pruning would increase scan costs, whereas the date range enables efficient partition pruning.",
+      "Correct. Restricting the match condition to a specific date range makes the merge more efficient by checking only the recent logs rather than the entire table.",
+      "Incorrect. Liquid clustering is a separate table layout feature and is not triggered by merge date filters."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/delta/merge",
+        "checkedOn": "2026-10-18",
+        "supports": "This is more efficient than the previous command as it looks for duplicates only in the last 7 days of logs, not the entire table.",
+        "sourceHash": "3a3aa96cd5c0b75023943599c68ea37ced29c779608cb75f55e64e84da8ef4fb"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-1276aa1964756d32054dc338747a127b",
+    "originality": "original-practice",
+    "question": {
+      "question": "When defining constraints in Lakeflow pipelines, which of the following components or functions is explicitly prohibited from being included inside a constraint clause according to Databricks validation rules?",
+      "topic": "Data Transformation and Modeling",
+      "explanation": "Databricks pipeline expectation guidelines explicitly state that constraints must use valid SQL syntax and cannot contain custom Python functions, external service calls, or subqueries referencing other tables.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ldp/expectations",
+      "options": [
+        "Standard SQL comparison operators such as BETWEEN and IN",
+        "Subqueries referencing other tables",
+        "Built-in SQL scalar functions like year() or current_date()",
+        "Boolean logic operators like AND, OR, and NOT"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Comparison operators like BETWEEN and IN are fully supported in constraint clauses.",
+      "Correct. Subqueries referencing other tables are explicitly prohibited inside Lakeflow pipeline constraint expressions.",
+      "Incorrect. Built-in SQL functions like year() and current_date() are supported in constraints.",
+      "Incorrect. Boolean logic operators are standard and fully supported in constraint clauses."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+        "checkedOn": "2026-10-18",
+        "supports": "Constraints must use valid SQL syntax and cannot contain the following: Custom Python functions External service calls Subqueries referencing other tables",
+        "sourceHash": "2a9c788a9735565bd1a2edac130195a9f7792c41e19d40f81133d682f85a7133"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-ebfa3259254eed642570a51532d06cb1",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is evaluating different file ingestion strategies in Databricks for SQL users. Although COPY INTO provides a simple way to load data from cloud storage, Databricks recommends an alternative for a more scalable and robust file ingestion experience. Which option is recommended?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "According to Databricks ingestion documentation, for a more scalable and robust file ingestion experience, Databricks recommends that SQL users use streaming tables instead of COPY INTO.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/copy-into",
+      "options": [
+        "Streaming tables",
+        "Raw Apache Spark Structured Streaming code",
+        "Legacy Hive tables with batch inserts",
+        "Manual multi-part upload scripts"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Databricks specifically recommends streaming tables for SQL users looking for a more scalable and robust file ingestion experience.",
+      "Incorrect: Structured Streaming requires writing code in Python, Scala, or Java, whereas streaming tables offer a scalable native SQL ingestion experience.",
+      "Incorrect: Legacy Hive tables do not provide modern lakehouse streaming capabilities or scalable metadata tracking for cloud file ingestion.",
+      "Incorrect: Manual scripts do not provide the built-in idempotency, state management, and scalability required for robust lakehouse ingestion."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/copy-into",
+        "checkedOn": "2026-10-18",
+        "supports": "For a more scalable and robust file ingestion experience, Databricks recommends that SQL users use streaming tables.",
+        "sourceHash": "4611a62bb8c7f28e198907d841201d841e695d975acafbf9b296113ab5956cb1"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-dd6fed6efaf7ef4b92401c2e583bb38d",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise engineering team is designing a streaming ingestion pipeline to process new data files as they arrive in cloud object storage. They want to know how Auto Loader tracks ingestion progress to guarantee exactly-once processing. Where is file metadata persisted during this process?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Auto Loader tracks ingestion progress by persisting file metadata in a scalable key-value store (RocksDB) located in the checkpoint location of the pipeline.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "In a scalable key-value store (RocksDB) in the checkpoint location",
+        "In an external relational database management system (RDBMS) configured via JDBC",
+        "Inside the target Delta table transaction log history directly",
+        "Within an ephemeral cluster memory cache without persistence"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Auto Loader persists file metadata in a scalable key-value store (RocksDB) in the pipeline checkpoint location to ensure exactly-once semantics.",
+      "Incorrect: Auto Loader does not require an external RDBMS database to track file discovery state.",
+      "Incorrect: While Delta tables have transaction logs, file tracking state for Auto Loader is managed in the pipeline checkpoint location, not the Delta table log.",
+      "Incorrect: Ephemeral cache without persistence would fail to provide fault tolerance and resume capabilities upon cluster failure."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "As files are discovered, their metadata is persisted in a scalable key-value store (RocksDB) in the checkpoint location of your Auto Loader pipeline. This key-value store ensures that data is processed exactly once.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-41b5958486894909c9bd26766ec4ab2c",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your analytics engineering team is configuring pipeline execution modes in Databricks for incremental ingestion workloads. If the business requirement is to process new data as it arrives in the source continuously, which pipeline mode should be selected?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "According to Databricks ingestion scheduling documentation, continuous pipeline mode is designed for streaming ingestion to process new data as it arrives in the source.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "Continuous",
+        "Triggered",
+        "Batch-only",
+        "Ad-hoc"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Continuous mode is configured to process new data as it arrives in the source for streaming ingestion workloads.",
+      "Triggered mode processes new data on a schedule or when manually triggered, which corresponds to batch ingestion rather than continuous streaming.",
+      "Batch-only is not a standard Databricks pipeline execution mode for handling real-time streaming ingestion.",
+      "Ad-hoc refers to manual execution rather than a persistent pipeline streaming mode."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Streaming ingestion uses Continuous mode to process new data as it arrives in the source.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-a4e5867dd3cecd7859f5fe7d440003b5",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineer is comparing file ingestion mechanisms and reviewing the architectural benefits of Auto Loader versus running Apache Spark Structured Streaming directly on files. Which of the following is an explicit benefit of Auto Loader?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Auto Loader uses native cloud APIs to get lists of files that exist in storage, and its file notification mode can help reduce cloud costs by avoiding directory listing altogether.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "It uses native cloud APIs and file notification modes to reduce cloud costs by avoiding directory listing.",
+        "It guarantees that files are always discovered and processed in strict sequential order.",
+        "It eliminates the need for any cloud storage bucket permissions or credentials.",
+        "It restricts ingestion exclusively to pre-compressed JSON and CSV formats."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Auto Loader leverages native cloud APIs and file notification services to make file discovery much cheaper and avoid expensive directory listings.",
+      "Incorrect: Auto Loader explicitly does not guarantee the order in which files are discovered or processed.",
+      "Incorrect: Auto Loader requires proper cloud storage access permissions and data access configurations to read source files.",
+      "Incorrect: Auto Loader supports numerous formats beyond JSON and CSV, including Parquet, Avro, ORC, XML, text, and binary files."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "Auto Loader uses native cloud APIs to get lists of files that exist in storage. In addition, Auto Loader 's file notification mode can help reduce your cloud costs further by avoiding directory listing altogether.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-c5583b9ae024426276678f42cc5fbe48",
+    "originality": "original-practice",
+    "question": {
+      "question": "When examining the different layers of the ETL stack in Databricks Lakeflow Connect, how do Lakeflow pipelines compare to raw Apache Spark Structured Streaming in terms of management and overhead?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Lakeflow pipelines extend Structured Streaming by offering a declarative framework that manages orchestration, monitoring, data quality, and errors, resulting in more automation and less overhead than raw Structured Streaming.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "They offer more automation and less overhead by managing orchestration, monitoring, and data quality natively.",
+        "They require manual orchestration and custom state management code for every pipeline execution.",
+        "They completely replace Apache Spark and execute computations without using Spark engines.",
+        "They only support batch processing and cannot be used for streaming data sources."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Lakeflow pipelines provide a declarative framework that reduces operational overhead and increases automation compared to raw Structured Streaming.",
+      "Incorrect: Lakeflow pipelines manage orchestration and state automatically, reducing the need for custom code.",
+      "Incorrect: Lakeflow pipelines are built on top of and extend Apache Spark Structured Streaming.",
+      "Incorrect: Lakeflow pipelines support both streaming ingestion and batch processing workloads."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Lakeflow pipelines extend Structured Streaming, offering a declarative framework for creating data pipelines. You can define the transformations to perform on your data, and Lakeflow pipelines manage orchestration, monitoring, data quality, errors, and more. They offer more automation and less overhead than Structured Streaming.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-478a0862cf7b56972f857f988f60907c",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your team is designing an incremental ingestion pipeline in Databricks and evaluating various options across cloud object storage sources. According to Databricks guidance for SQL users, which SQL-based syntax is recommended for incremental ingestion from cloud object storage as an alternative to COPY INTO?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "SQL examples for incremental ingestion from cloud object storage use CREATE STREAMING TABLE syntax, which offers SQL users a scalable ingestion experience recommended as an alternative to COPY INTO.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "CREATE STREAMING TABLE",
+        "INSERT OVERWRITE DIRECTORY",
+        "CREATE INCREMENTAL VIEW",
+        "COPY BATCH TABLE"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: CREATE STREAMING TABLE is the recommended SQL syntax for scalable incremental ingestion from cloud object storage.",
+      "Incorrect: INSERT OVERWRITE DIRECTORY is used for writing output files to storage, not for creating managed incremental streaming ingestion objects.",
+      "Incorrect: CREATE INCREMENTAL VIEW is not the standard Databricks syntax for cloud object storage ingestion tables.",
+      "Incorrect: COPY BATCH TABLE is not a valid Databricks DDL command."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "SQL examples for incremental ingestion from cloud object storage use CREATE STREAMING TABLE syntax. It offers SQL users a scalable ingestion experience, therefore it's the recommended alternative to COPY INTO.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e07dadd3ea5c3da820328599a0709b87",
+    "originality": "original-practice",
+    "question": {
+      "question": "An organization is evaluating pipeline modes for scheduled ingestion tasks in Databricks. If a team wants to process new data on a schedule or when manually triggered rather than continuously, which pipeline mode should they configure?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Batch ingestion tasks use Triggered pipeline mode, which processes new data on a schedule or when manually triggered.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "Triggered",
+        "Continuous",
+        "Real-time streaming",
+        "Event-driven active mode"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Triggered mode processes new data on a schedule or when manually triggered for batch ingestion.",
+      "Incorrect: Continuous mode is intended for streaming ingestion as data arrives.",
+      "Incorrect: Real-time streaming implies continuous ingestion rather than scheduled batch triggers.",
+      "Incorrect: Event-driven active mode is not a standard Databricks pipeline execution schedule term."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Batch ingestion uses Triggered : Processes new data on a schedule or when manually triggered.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-35e9752008d21fb2c17ff9b6cc25ae0c",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your data engineering team is setting up Auto Loader in a Databricks environment to ingest JSON data files from an Azure Data Lake Storage container (abfss://). Which of the following is true regarding Auto Loader's file format support?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Auto Loader can ingest JSON, CSV, XML, PARQUET, AVRO, ORC, TEXT, and BINARYFILE file formats, along with pre-compressed files in these formats.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "It supports JSON, CSV, XML, Parquet, Avro, ORC, text, and binary file formats.",
+        "It exclusively supports Parquet and Delta formats and rejects raw JSON files.",
+        "It only supports CSV files and requires external conversion for JSON data.",
+        "It supports JSON and XML but does not support binary or pre-compressed files."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Auto Loader supports a comprehensive list of file formats, including JSON, CSV, XML, Parquet, Avro, ORC, text, and binary files.",
+      "Incorrect: Auto Loader is specifically designed to ingest unstructured and semi-structured formats like JSON, CSV, and XML, not just Parquet.",
+      "Incorrect: Auto Loader handles JSON and many other formats natively without requiring external conversion.",
+      "Incorrect: Auto Loader supports binary files as well as pre-compressed files across multiple formats."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "Auto Loader can ingest JSON , CSV , XML , PARQUET , AVRO , ORC , TEXT , and BINARYFILE file formats. Auto Loader also supports reading pre-compressed files in these formats.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9042ec0dbc7be35054c47fba0a024651",
+    "originality": "original-practice",
+    "question": {
+      "question": "A data engineering team is configuring an Auto Loader pipeline in Databricks and reviewing file detection strategies. Which file detection mode does Auto Loader use by default?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "According to Auto Loader file detection options, Auto Loader uses directory listing mode by default, though file notification mode is recommended for most workloads.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+      "options": [
+        "Directory listing mode",
+        "File notification mode using cloud file events",
+        "Polling database mode",
+        "Manual trigger notification mode"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Auto Loader uses directory listing mode by default when discovering files in cloud storage locations.",
+      "Incorrect: While file notification mode is recommended for performance and cost savings, it is not the default setting.",
+      "Incorrect: Polling database mode is not used by Auto Loader for cloud storage file detection.",
+      "Incorrect: Manual trigger notification is not a built-in Auto Loader detection mode."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+        "checkedOn": "2026-10-18",
+        "supports": "By default, Auto Loader uses directory listing mode. However, Databricks recommends file notification mode using file events for most workloads.",
+        "sourceHash": "17f2d85dc7e84e6444809122fcbd01e84649cda7c79171b324305d1b4468b9a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-d4417777ed14ce4c4c11f8d5e96e8cdc",
+    "originality": "original-practice",
+    "question": {
+      "question": "Your engineering team is reviewing the ETL stack tiers in Databricks Lakeflow Connect. When comparing managed connectors to Lakeflow pipelines, what additional capabilities do fully-managed connectors provide?",
+      "topic": "Data Ingestion and Loading",
+      "explanation": "Managed connectors build on Lakeflow pipelines, offering source-specific authentication, CDC, edge case handling, long-term API maintenance, automated retries, and automated schema evolution.",
+      "sourceUrl": "https://docs.databricks.com/aws/en/ingestion/",
+      "options": [
+        "Source-specific authentication, CDC, edge case handling, automated retries, and schema evolution",
+        "Manual generation of Spark Structured Streaming boilerplate code in Python or Scala",
+        "Direct hardware provisioning and cluster node configuration for physical worker servers",
+        "Exclusive execution in batch-only mode without support for streaming or incremental updates"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "databricks-data-engineer-associate",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Fully-managed connectors extend Lakeflow pipelines by providing source-specific authentication, CDC, edge case handling, automated retries, and schema evolution.",
+      "Incorrect: Managed connectors remove the need to write boilerplate code, offering a fully automated experience.",
+      "Incorrect: Infrastructure provisioning is handled by Databricks platform services, not managed connectors directly.",
+      "Incorrect: Managed connectors support incremental ingestion and change data capture (CDC) workflows."
+    ],
+    "references": [
+      {
+        "url": "https://docs.databricks.com/aws/en/ingestion/",
+        "checkedOn": "2026-10-18",
+        "supports": "Fully-managed connectors build on Lakeflow pipelines , offering even more automation for the most popular data sources. They extend Lakeflow pipelines functionality to also include source-specific authentication, CDC, edge case handling, long-term API maintenance, automated retries, automated schema evolution, and so on.",
+        "sourceHash": "eec0a513fa039ea4de982d685296c6e6b2c282ca597721480499e2e93a220c64"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  }
+]

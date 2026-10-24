@@ -1,0 +1,37 @@
+{
+  "section-1": [
+    "https://docs.databricks.com/aws/en/introduction/",
+    "https://docs.databricks.com/aws/en/lakehouse/medallion",
+    "https://docs.databricks.com/aws/en/lakehouse/"
+  ],
+  "section-2": [
+    "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/",
+    "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/copy-into",
+    "https://docs.databricks.com/aws/en/ingestion/"
+  ],
+  "section-3": [
+    "https://docs.databricks.com/aws/en/data-engineering/batch-vs-streaming",
+    "https://docs.databricks.com/aws/en/delta/merge",
+    "https://docs.databricks.com/aws/en/ldp/expectations"
+  ],
+  "section-4": [
+    "https://docs.databricks.com/aws/en/jobs/",
+    "https://docs.databricks.com/aws/en/jobs/run-if",
+    "https://docs.databricks.com/aws/en/jobs/scheduled"
+  ],
+  "section-5": [
+    "https://docs.databricks.com/aws/en/dev-tools/bundles",
+    "https://docs.databricks.com/aws/en/dev-tools/ci-cd",
+    "https://docs.databricks.com/aws/en/repos/"
+  ],
+  "section-6": [
+    "https://docs.databricks.com/aws/en/optimizations/",
+    "https://docs.databricks.com/aws/en/jobs/monitor",
+    "https://docs.databricks.com/aws/en/tables/history"
+  ],
+  "section-7": [
+    "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+    "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+    "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage"
+  ]
+}

@@ -40,4 +40,4 @@ const CiscoLogo = ({ className = "w-8 h-8" }: { className?: string }) => (
 )
 
 
-export function ProviderLogo({provider,className="h-9 w-9"}:{provider:string;className?:string}) { const Logo=provider==="Microsoft"?MicrosoftLogo:provider==="AWS"?AmazonLogo:provider==="Databricks"?DatabricksLogo:provider==="GitHub"?Github:Cloud; return <span role="img" aria-label={provider+" logo"}><Logo className={className}/></span> }
+export function ProviderLogo({provider,className="h-9 w-9"}:{provider:string;className?:string}) { if (["CompTIA", "ISC2", "ISACA"].includes(provider)) return <span className="inline-flex items-center justify-center rounded-md border px-2 py-1 text-xs font-bold text-red-700" aria-label={provider}>{provider}</span>; const Logo=provider==="Microsoft"?MicrosoftLogo:provider==="AWS"?AmazonLogo:provider==="Databricks"?DatabricksLogo:provider==="GitHub"?Github:provider==="Cisco"?CiscoLogo:Cloud; return <span role="img" aria-label={provider+" logo"}><Logo className={className}/></span> }

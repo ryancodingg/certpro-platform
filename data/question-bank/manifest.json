@@ -1,0 +1,4081 @@
+{
+  "schemaVersion": 1,
+  "targetTotal": 22200,
+  "note": "Planning inventory, not available questions. Inherited source dates are not fresh verification.",
+  "certifications": [
+    {
+      "id": "azure-for-sap-workloads-specialty",
+      "bankId": "azure-for-sap-workloads-specialty",
+      "name": "Microsoft Certified: Azure for SAP Workloads Specialty",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "guideUrl": "https://aka.ms/AZ120-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Migrate SAP workloads to Azure (25–30%)",
+          "target": 55
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement an infrastructure to support SAP workloads on Azure (25–30%)",
+          "target": 55
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement high availability and disaster recovery (HADR) (20–25%)",
+          "target": 45
+        },
+        {
+          "id": "section-4",
+          "title": "Maintain SAP workloads on Azure (20–25%)",
+          "target": 45
+        }
+      ]
+    },
+    {
+      "id": "mos-word-expert-2019",
+      "bankId": "mos-word-expert-2019",
+      "name": "Microsoft Office Specialist: Word Expert (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-101-microsoft-word-expert-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage document options and settings",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Use advanced editing and formatting features",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create custom document elements",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Use advanced Word features",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "github-administration",
+      "bankId": "github-administration",
+      "name": "GitHub Administration",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
+      "guideUrl": "https://aka.ms/GH100-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage GitHub identities and access (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-2",
+          "title": "Administer GitHub Enterprise environment (10–15%)",
+          "target": 27
+        },
+        {
+          "id": "section-3",
+          "title": "Implement secure software development and compliance (25–30%)",
+          "target": 59
+        },
+        {
+          "id": "section-4",
+          "title": "Manage GitHub Actions (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-5",
+          "title": "Monitor and optimize GitHub usage (10–15%)",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-expert-365-apps",
+      "bankId": "mos-excel-expert-365-apps",
+      "name": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage workbook options and settings",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and format data",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create advanced formulas and macros",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage advanced charts and tables",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "ai-transformation-leader",
+      "bankId": "ai-transformation-leader",
+      "name": "Microsoft Certified: AI Transformation Leader",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+      "guideUrl": "https://aka.ms/ab731-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify the business value of generative AI solutions (35–40%)",
+          "target": 77
+        },
+        {
+          "id": "section-2",
+          "title": "Identify benefits, capabilities, and opportunities for Microsoft’s AI apps and services (35–40%)",
+          "target": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Identify an implementation and adoption strategy for Microsoft’s AI apps and services (20–25%)",
+          "target": 46
+        }
+      ]
+    },
+    {
+      "id": "azure-cosmos-db-developer-specialty",
+      "bankId": "azure-cosmos-db-developer-specialty",
+      "name": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "guideUrl": "https://aka.ms/dp420-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and develop database solutions (40–45%)",
+          "target": 87
+        },
+        {
+          "id": "section-2",
+          "title": "Secure, optimize, and deploy database solutions (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Implement AI and analytics capabilities in database solutions (20–25%)",
+          "target": 46
+        }
+      ]
+    },
+    {
+      "id": "identity-and-access-administrator",
+      "bankId": "identity-and-access-administrator",
+      "name": "Microsoft Certified: Identity and Access Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "guideUrl": "https://aka.ms/sc300-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement and manage user identities (20–25%)",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Implement authentication and access management (20–25%)",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Plan and implement workload identities (20–25%)",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Plan and automate identity governance (20–25%)",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "supply-chain-management-ai-consultant-associate",
+      "bankId": "supply-chain-management-ai-consultant-associate",
+      "name": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+      "guideUrl": "https://aka.ms/AB330-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement the design to retire process (5–10%)",
+          "target": 17
+        },
+        {
+          "id": "section-2",
+          "title": "Implement the forecast to plan process (1–5%)",
+          "target": 7
+        },
+        {
+          "id": "section-3",
+          "title": "Implement the inventory to deliver process (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-4",
+          "title": "Implement the order to cash process (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-5",
+          "title": "Implement the plan to produce process (1–5%)",
+          "target": 7
+        },
+        {
+          "id": "section-6",
+          "title": "Implement the source to pay process (30–35%)",
+          "target": 71
+        }
+      ]
+    },
+    {
+      "id": "multi-agent-ai-solutions-expert",
+      "bankId": "multi-agent-ai-solutions-expert",
+      "name": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+      "guideUrl": "https://aka.ms/AI500-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Architect multi-agent solutions (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Develop multi-agent solutions in Azure (30–35%)",
+          "target": 69
+        },
+        {
+          "id": "section-3",
+          "title": "Evaluate, optimize, and monitor multi-agent solutions (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Secure, govern, and deploy multi-agent solutions (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "azure-fundamentals",
+      "bankId": "az-900",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+      "guideUrl": "https://aka.ms/AZ900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe cloud concepts (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Describe Azure architecture and services (35–40%)",
+          "target": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Describe Azure management and governance (30–35%)",
+          "target": 67
+        }
+      ]
+    },
+    {
+      "id": "fabric-data-engineer-associate",
+      "bankId": "dp-700",
+      "name": "Microsoft Certified: Fabric Data Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "guideUrl": "https://aka.ms/DP700-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement and manage an analytics solution (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Ingest and transform data (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Monitor and optimize an analytics solution (30–35%)",
+          "target": 66
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity-business-professional",
+      "bankId": "cybersecurity-business-professional",
+      "name": "Microsoft Certified: Cybersecurity Business Professional (beta)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-business-professional/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand cybersecurity concepts",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Understand cybersecurity risks and threats",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Apply basic security policies to protect the organization",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Report and respond to security incidents",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "security-operations-analyst",
+      "bankId": "security-operations-analyst",
+      "name": "Microsoft Certified: Security Operations Analyst Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "guideUrl": "https://aka.ms/SC200-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage a security operations environment (40–45%)",
+          "target": 83
+        },
+        {
+          "id": "section-2",
+          "title": "Respond to security incidents (35–40%)",
+          "target": 73
+        },
+        {
+          "id": "section-3",
+          "title": "Perform threat hunting (20–25%)",
+          "target": 44
+        }
+      ]
+    },
+    {
+      "id": "cloud-and-ai-security-engineer-associate",
+      "bankId": "cloud-and-ai-security-engineer-associate",
+      "name": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      "guideUrl": "https://aka.ms/SC500-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage identity, access, and governance (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Secure storage, databases, and networking (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Secure compute (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Manage and monitor security posture (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "d365-business-central-developer-associate",
+      "bankId": "d365-business-central-developer-associate",
+      "name": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+      "guideUrl": "https://aka.ms/mb820-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe Business Central (10–15%)",
+          "target": 24
+        },
+        {
+          "id": "section-2",
+          "title": "Install, develop, and deploy for Business Central (10–15%)",
+          "target": 24
+        },
+        {
+          "id": "section-3",
+          "title": "Develop by using AL objects (35–40%)",
+          "target": 71
+        },
+        {
+          "id": "section-4",
+          "title": "Develop by using AL (15–20%)",
+          "target": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Work with development tools (10–15%)",
+          "target": 24
+        },
+        {
+          "id": "section-6",
+          "title": "Integrate Business Central with other applications (10–15%)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "d365-functional-consultant-customer-service-v3",
+      "bankId": "d365-functional-consultant-customer-service-v3",
+      "name": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+      "guideUrl": "https://aka.ms/MB230-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage cases in Customer Service (51–55%)",
+          "target": 108
+        },
+        {
+          "id": "section-2",
+          "title": "Configure representative experience and routing (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Extend Customer Service (15–20%)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "mos-powerpoint-2019",
+      "bankId": "mos-powerpoint-2019",
+      "name": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-300-microsoft-powerpoint-2019-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage presentations",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage slides",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Insert and format text, shapes, and images",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Insert tables, charts, SmartArt, 3D models, and media",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Apply transitions and animations",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "d365-contact-center-ai-engineer-associate",
+      "bankId": "d365-contact-center-ai-engineer-associate",
+      "name": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+      "guideUrl": "https://aka.ms/AB250-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy Dynamics 365 Contact Center (15–20%)",
+          "target": 33
+        },
+        {
+          "id": "section-2",
+          "title": "Implement channels (30–35%)",
+          "target": 62
+        },
+        {
+          "id": "section-3",
+          "title": "Configure agents and AI capabilities (10–15%)",
+          "target": 24
+        },
+        {
+          "id": "section-4",
+          "title": "Configure work distribution (10–15%)",
+          "target": 24
+        },
+        {
+          "id": "section-5",
+          "title": "Configure the Dynamics 365 Contact Center representative experience (15–20%)",
+          "target": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage analytics for the Dynamics 365 Contact Center (10–15%)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "github-advanced-security",
+      "bankId": "github-advanced-security",
+      "name": "GitHub Advanced Security",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+      "guideUrl": "https://aka.ms/GH500-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe GitHub Security suites, features, and ecosystem (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Configure and use Secret Protection (formerly secret scanning) (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Configure and use supply chain security (formerly Dependabot/Dependency Review) (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and use Code Security (formerly Code Scanning with CodeQL) (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Security operations: best practices, prioritization, and remediation (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-6",
+          "title": "GitHub Security suites administration (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "azure-administrator",
+      "bankId": "azure-administrator",
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "guideUrl": "https://aka.ms/AZ104-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage Azure identities and governance (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-2",
+          "title": "Implement and manage storage (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Deploy and manage Azure compute resources (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Implement and manage virtual networking (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-5",
+          "title": "Monitor and maintain Azure resources (10–15%)",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": "azure-ai-fundamentals",
+      "bankId": "azure-ai-fundamentals",
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify AI concepts and capabilities",
+          "target": 100
+        },
+        {
+          "id": "section-2",
+          "title": "Implement AI solutions with Microsoft Foundry",
+          "target": 100
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-for-accounting-associate",
+      "bankId": "mos-excel-for-accounting-associate",
+      "name": "Microsoft Office Specialist: Excel for Accounting Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
+      "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-220-mos-excel-for-accounting-associate.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare accounting data for analysis",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Prepare a trial balance",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Prepare and analyze financial statements",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Perform routine accounting activities",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "intelligent-applications-builder-associate",
+      "bankId": "intelligent-applications-builder-associate",
+      "name": "Microsoft Certified: Intelligent Applications Builder Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+      "guideUrl": "https://aka.ms/AB410-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Create a foundation for intelligent applications (25–30%)",
+          "target": 57
+        },
+        {
+          "id": "section-2",
+          "title": "Create intelligent applications (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Build business application logic and automation (40–45%)",
+          "target": 87
+        }
+      ]
+    },
+    {
+      "id": "microsoft-office-specialist-expert-2019",
+      "bankId": "microsoft-office-specialist-expert-2019",
+      "name": "Microsoft Office Specialist: Expert (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-101: Microsoft Word Expert (Office 2019)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MO-201: Microsoft Excel Expert (Office 2019)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "MO-500: Microsoft Access Expert (Office 2019)",
+          "target": 66
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-associate-m365-apps",
+      "bankId": "mos-excel-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage worksheets and workbooks",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage data cells and ranges",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and table data",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Perform operations by using formulas and functions",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Manage charts",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "bankId": "devops-engineer",
+      "name": "Microsoft Certified: DevOps Engineer Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement processes and communications",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement a source control strategy",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement build and release pipelines",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Develop a security and compliance plan",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Implement an instrumentation strategy",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "fabric-analytics-engineer-associate",
+      "bankId": "fabric-analytics-engineer-associate",
+      "name": "Microsoft Certified: Fabric Analytics Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+      "guideUrl": "https://aka.ms/dp600-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Maintain a data analytics solution (25–30%)",
+          "target": 54
+        },
+        {
+          "id": "section-2",
+          "title": "Prepare data (45–50%)",
+          "target": 93
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage semantic models (25–30%)",
+          "target": 53
+        }
+      ]
+    },
+    {
+      "id": "windows-server-administrator-associate",
+      "bankId": "windows-server-administrator-associate",
+      "name": "Microsoft Certified: Windows Server Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "guideUrl": "https://aka.ms/AZ802-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy and manage AD DS (20–25%)",
+          "target": 42
+        },
+        {
+          "id": "section-2",
+          "title": "Manage Windows Server instances and workloads in a hybrid environment (10–15%)",
+          "target": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Manage VMs (10–15%)",
+          "target": 23
+        },
+        {
+          "id": "section-4",
+          "title": "Implement and manage an on-premises and hybrid networking infrastructure (10–15%)",
+          "target": 23
+        },
+        {
+          "id": "section-5",
+          "title": "Manage storage and file services (15–20%)",
+          "target": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Secure Windows Server infrastructure (10–15%)",
+          "target": 23
+        },
+        {
+          "id": "section-7",
+          "title": "Monitor and troubleshoot Windows Server environments (15–20%)",
+          "target": 33
+        }
+      ]
+    },
+    {
+      "id": "mos-access-expert-2019",
+      "bankId": "mos-access-expert-2019",
+      "name": "Microsoft Office Specialist: Access Expert (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-500-microsoft-access-expert-(access-and-access-2019)-skills-measured",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage databases",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Create and modify tables",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Create and modify queries",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Modify forms in layout view",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Modify reports in layout view",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "d365-functional-consultant-supply-chain-management",
+      "bankId": "d365-functional-consultant-supply-chain-management",
+      "name": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+      "guideUrl": "https://aka.ms/mb330-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement product information management (25–30%)",
+          "target": 54
+        },
+        {
+          "id": "section-2",
+          "title": "Implement inventory and asset management (20–25%)",
+          "target": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage supply chain processes (15–20%)",
+          "target": 34
+        },
+        {
+          "id": "section-4",
+          "title": "Implement warehouse management and transportation management (20–25%)",
+          "target": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Implement master planning (10–15%)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "mos-powerpoint-associate-365-apps",
+      "bankId": "mos-powerpoint-associate-365-apps",
+      "name": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-(2).pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage presentations",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage slides",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Insert and format text, shapes, and images",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Insert tables, charts, SmartArt, 3D models, and media",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Apply transitions and animations",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-expert-2019",
+      "bankId": "mos-excel-expert-2019",
+      "name": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-201-microsoft-excel-expert-2019-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage workbook options and settings",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and format data",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create advanced formulas and macros",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage advanced charts and tables",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "mos-word-2019",
+      "bankId": "mos-word-2019",
+      "name": "Microsoft Office Specialist: Word Associate (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-100-microsoft-word-2019-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage documents",
+          "target": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Insert and format text, paragraphs, and sections",
+          "target": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and lists",
+          "target": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Create and manage references",
+          "target": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Insert and format graphic elements",
+          "target": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage document collaboration",
+          "target": 33
+        }
+      ]
+    },
+    {
+      "id": "azure-database-administrator-associate",
+      "bankId": "azure-database-administrator-associate",
+      "name": "Microsoft Certified: Azure Database Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "guideUrl": "https://aka.ms/dp300-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and implement data platform resources (15–20%)",
+          "target": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Implement a secure environment (20–25%)",
+          "target": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Monitor, configure, and optimize database resources (20–25%)",
+          "target": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and manage automation of tasks (15–20%)",
+          "target": 34
+        },
+        {
+          "id": "section-5",
+          "title": "Plan and configure a high availability and disaster recovery (HA/DR) environment (20–25%)",
+          "target": 44
+        }
+      ]
+    },
+    {
+      "id": "ai-agent-builder-associate",
+      "bankId": "ai-agent-builder-associate",
+      "name": "Microsoft Certified: AI Agent Builder Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "guideUrl": "https://aka.ms/AB620-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and configure agent solutions (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Integrate and extend agents in Copilot Studio (40–45%)",
+          "target": 87
+        },
+        {
+          "id": "section-3",
+          "title": "Test and manage agents (20–25%)",
+          "target": 46
+        }
+      ]
+    },
+    {
+      "id": "azure-ai-cloud-developer-associate",
+      "bankId": "azure-ai-cloud-developer-associate",
+      "name": "Microsoft Certified: Azure AI Cloud Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "guideUrl": "https://aka.ms/AI200-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Develop containerized solutions on Azure (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Develop AI solutions by using Azure data management services (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Connect to and consume Azure services (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Secure, monitor, and troubleshoot Azure solutions (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "m365-teams-administrator-associate",
+      "bankId": "m365-teams-administrator-associate",
+      "name": "Microsoft 365 Certified: Teams Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+      "guideUrl": "https://aka.ms/ms700-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure and manage a Teams environment (40–45%)",
+          "target": 85
+        },
+        {
+          "id": "section-2",
+          "title": "Manage teams, channels, chats, and apps (20–25%)",
+          "target": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Manage meetings and calling (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-4",
+          "title": "Monitor, report on, and troubleshoot Teams (15–20%)",
+          "target": 35
+        }
+      ]
+    },
+    {
+      "id": "github-foundations",
+      "bankId": "github-foundations",
+      "name": "GitHub Foundations",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+      "guideUrl": "https://aka.ms/GH900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand Git and GitHub basics (25–30%)",
+          "target": 69
+        },
+        {
+          "id": "section-2",
+          "title": "Work with GitHub repositories (10–15%)",
+          "target": 31
+        },
+        {
+          "id": "section-3",
+          "title": "Collaborate using GitHub (10–15%)",
+          "target": 31
+        },
+        {
+          "id": "section-4",
+          "title": "Apply modern development practices (10–15%)",
+          "target": 31
+        },
+        {
+          "id": "section-5",
+          "title": "Manage projects with GitHub (5–10%)",
+          "target": 19
+        },
+        {
+          "id": "section-6",
+          "title": "Explore the GitHub community (5–10%)",
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": "operationalizing-machine-learning-and-generative-ai-solutions",
+      "bankId": "operationalizing-machine-learning-and-generative-ai-solutions",
+      "name": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+      "guideUrl": "https://aka.ms/AI300-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement an MLOps infrastructure (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-2",
+          "title": "Implement machine learning model lifecycle and operations (25–30%)",
+          "target": 59
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement a GenAIOps infrastructure (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-4",
+          "title": "Implement generative AI quality assurance and observability (10–15%)",
+          "target": 27
+        },
+        {
+          "id": "section-5",
+          "title": "Optimize generative AI systems and model performance (10–15%)",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": "d365-functional-consultant-financials",
+      "bankId": "d365-functional-consultant-financials",
+      "name": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+      "guideUrl": "https://aka.ms/mb310-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement financial management (35–40%)",
+          "target": 81
+        },
+        {
+          "id": "section-2",
+          "title": "Implement accounts receivable, credit, collections, and subscription billing (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and manage accounts payable and expenses (10–15%)",
+          "target": 27
+        },
+        {
+          "id": "section-4",
+          "title": "Manage budgeting (10–15%)",
+          "target": 27
+        },
+        {
+          "id": "section-5",
+          "title": "Manage fixed assets (10–15%)",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": "azure-virtual-desktop-specialty",
+      "bankId": "azure-virtual-desktop-specialty",
+      "name": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      "guideUrl": "https://aka.ms/AZ140-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and implement an Azure Virtual Desktop infrastructure (40–45%)",
+          "target": 90
+        },
+        {
+          "id": "section-2",
+          "title": "Plan and implement identity and security (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Plan and implement user environments and apps (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Monitor and maintain an Azure Virtual Desktop infrastructure (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-for-business-finance-associate",
+      "bankId": "mos-excel-for-business-finance-associate",
+      "name": "Microsoft Office Specialist: Excel for Business Finance Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
+      "guideUrl": "https://arch-center.azureedge.net/Credentials/exam-mo-230-mos-excel-for-business-finance-associate.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare Financial Data for Analysis",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Perform Financial Analysis",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Perform Loan and Investment Analysis",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Create Financial Forecasts",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "power-platform-developer-associate",
+      "bankId": "power-platform-developer-associate",
+      "name": "Microsoft Certified: Power Platform Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "guideUrl": "https://aka.ms/PL400-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Build Microsoft Power Platform solutions (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Extend the user experience (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Extend Microsoft Power Platform (35–40%)",
+          "target": 79
+        },
+        {
+          "id": "section-4",
+          "title": "Develop integrations (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "mos-outlook-2019",
+      "bankId": "mos-outlook-2019",
+      "name": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/exam-mo-400-microsoft-outlook-(outlook-and-outlook-2019)-skills-measured",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage Outlook settings and processes",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Manage messages",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Manage schedules",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage contacts and tasks",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "modern-desktop",
+      "bankId": "modern-desktop",
+      "name": "Microsoft 365 Certified: Endpoint Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      "guideUrl": "https://aka.ms/md102-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare infrastructure for devices (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-2",
+          "title": "Manage and maintain devices (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Protect devices (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Manage and secure applications (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-5",
+          "title": "Optimize endpoint operations by using automation, monitoring, and reporting (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "information-security-administrator",
+      "bankId": "information-security-administrator",
+      "name": "Microsoft Certified: Information Security Administrator Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "guideUrl": "https://aka.ms/SC401-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Implement information protection (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Implement data loss prevention and retention (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Manage risks, alerts, and activities (30–35%)",
+          "target": 66
+        }
+      ]
+    },
+    {
+      "id": "ai-business-professional",
+      "bankId": "ai-business-professional",
+      "name": "Microsoft Certified: AI Business Professional",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+      "guideUrl": "https://aka.ms/ab730-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understand generative AI fundamentals (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-2",
+          "title": "Manage prompts and chats by using Microsoft 365 Copilot (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Manage business content and collaboration by using Microsoft 365 Copilot (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-4",
+          "title": "Drive business outcomes by using agents (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "azure-solutions-architect",
+      "bankId": "azure-solutions-architect",
+      "name": "Microsoft Certified: Azure Solutions Architect Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design identity, governance, and monitoring solutions",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Design data storage solutions",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Design business continuity solutions",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Design infrastructure solutions",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "developing-ai-enabled-database-solutions",
+      "bankId": "developing-ai-enabled-database-solutions",
+      "name": "Microsoft Certified: SQL AI Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+      "guideUrl": "https://aka.ms/DP800-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and develop database solutions (35–40%)",
+          "target": 73
+        },
+        {
+          "id": "section-2",
+          "title": "Secure, optimize, and deploy database solutions (35–40%)",
+          "target": 73
+        },
+        {
+          "id": "section-3",
+          "title": "Implement AI capabilities in database solutions (25–30%)",
+          "target": 54
+        }
+      ]
+    },
+    {
+      "id": "ai-services-administrator-associate",
+      "bankId": "ai-services-administrator-associate",
+      "name": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+      "guideUrl": "https://aka.ms/AB650-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure and manage Microsoft 365 tenants and workloads (20–25%)",
+          "target": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Govern and secure Microsoft 365 tenants and workloads (40–45%)",
+          "target": 83
+        },
+        {
+          "id": "section-3",
+          "title": "Manage and secure AI services in Microsoft 365 (35–40%)",
+          "target": 73
+        }
+      ]
+    },
+    {
+      "id": "azure-ai-apps-and-agents-developer-associate",
+      "bankId": "azure-ai-apps-and-agents-developer-associate",
+      "name": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+      "guideUrl": "https://aka.ms/AI103-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and manage an Azure AI solution (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Implement generative AI and agentic solutions (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Implement computer vision solutions (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-4",
+          "title": "Implement text analysis solutions (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Implement information extraction solutions (10–15%)",
+          "target": 25
+        }
+      ]
+    },
+    {
+      "id": "azure-data-fundamentals",
+      "bankId": "azure-data-fundamentals",
+      "name": "Microsoft Certified: Azure Data Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "guideUrl": "https://aka.ms/dp900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe core data concepts (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-2",
+          "title": "Identify considerations for relational data on Azure (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-3",
+          "title": "Describe considerations for working with non-relational data on Azure (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-4",
+          "title": "Describe an analytics workload (25–30%)",
+          "target": 58
+        }
+      ]
+    },
+    {
+      "id": "mos-word-associate-m365-apps",
+      "bankId": "mos-word-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage documents",
+          "target": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Insert and format text, paragraphs, and sections",
+          "target": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and lists",
+          "target": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Create and manage references",
+          "target": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Insert and format graphic elements",
+          "target": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Manage document collaboration",
+          "target": 33
+        }
+      ]
+    },
+    {
+      "id": "m365-enterprise-administrator",
+      "bankId": "m365-enterprise-administrator",
+      "name": "Microsoft 365 Certified: Administrator Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Deploy and manage a Microsoft 365 tenant",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Implement and manage Microsoft Entra identity and access",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Manage security and threats by using Microsoft Defender XDR",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Manage compliance by using Microsoft Purview",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "m365-collaboration-communications-systems-engineer",
+      "bankId": "m365-collaboration-communications-systems-engineer",
+      "name": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+      "guideUrl": "https://aka.ms/MS721-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan and design collaboration communications systems (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-2",
+          "title": "Configure and manage Teams meetings, webinars, and town halls (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-3",
+          "title": "Implement and configure Teams Phone (30–35%)",
+          "target": 69
+        },
+        {
+          "id": "section-4",
+          "title": "Configure and manage Teams Rooms and devices (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "mos-associate-m365-apps",
+      "bankId": "mos-associate-m365-apps",
+      "name": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-110: Microsoft Word (Microsoft 365 Apps)",
+          "target": 200
+        }
+      ]
+    },
+    {
+      "id": "data-analyst-associate",
+      "bankId": "data-analyst-associate",
+      "name": "Microsoft Certified: Power BI Data Analyst Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+      "guideUrl": "https://aka.ms/pl300-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare the data (25–30%)",
+          "target": 76
+        },
+        {
+          "id": "section-2",
+          "title": "Visualize and analyze the data (25–30%)",
+          "target": 76
+        },
+        {
+          "id": "section-3",
+          "title": "Manage and secure Power BI (15–20%)",
+          "target": 48
+        }
+      ]
+    },
+    {
+      "id": "agentic-ai-business-solutions-architect",
+      "bankId": "agentic-ai-business-solutions-architect",
+      "name": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "guideUrl": "https://aka.ms/AB100-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan AI-powered business solutions (25–30%)",
+          "target": 57
+        },
+        {
+          "id": "section-2",
+          "title": "Design AI-powered business solutions (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-3",
+          "title": "Deploy AI-powered business solutions (40–45%)",
+          "target": 87
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-2019",
+      "bankId": "mos-excel-2019",
+      "name": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/mo-200-microsoft-excel-2019-skills-measured.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage worksheets and workbooks",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Manage data cells and ranges",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Manage tables and table data",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Perform operations by using formulas and functions",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Manage charts",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "copilot-and-agent-administration-fundamentals",
+      "bankId": "copilot-and-agent-administration-fundamentals",
+      "name": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+      "guideUrl": "https://aka.ms/ab900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Identify the core features and objects of Microsoft 365 services (30–35%)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "Understand data protection and governance tasks for Microsoft 365 and Copilot (35–40%)",
+          "target": 77
+        },
+        {
+          "id": "section-3",
+          "title": "Perform basic administrative tasks for Copilot and agents (25–30%)",
+          "target": 56
+        }
+      ]
+    },
+    {
+      "id": "mos-excel-for-operational-management-associate",
+      "bankId": "mos-excel-for-operational-management-associate",
+      "name": "Microsoft Office Specialist: Excel for Operational Management Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "guideUrl": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Management",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Process Management",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Resource Management",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Reporting and Visualization",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "mos-word-expert-365-apps",
+      "bankId": "mos-word-expert-365-apps",
+      "name": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+      "guideUrl": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Manage document options and settings",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Use advanced editing and formatting features",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Create custom document elements",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Use advanced Word features",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "d365-finance-and-operations-apps-developer-associate",
+      "bankId": "d365-finance-and-operations-apps-developer-associate",
+      "name": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+      "guideUrl": "https://aka.ms/mb500-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Plan the architecture and solution design (5–10%)",
+          "target": 15
+        },
+        {
+          "id": "section-2",
+          "title": "Apply developer tools (5–10%)",
+          "target": 15
+        },
+        {
+          "id": "section-3",
+          "title": "Design and develop AOT elements (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Develop and test code (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-5",
+          "title": "Implement reporting (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-6",
+          "title": "Integrate and manage data solutions (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-7",
+          "title": "Implement security and optimize performance (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity-architect-expert",
+      "bankId": "cybersecurity-architect-expert",
+      "name": "Microsoft Certified: Cybersecurity Architect Expert",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design solutions that align with security best practices and priorities",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Design security operations, identity, and compliance capabilities",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Design security solutions for infrastructure",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Design security solutions for applications and data",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "d365-business-central-functional-consultant-associate",
+      "bankId": "d365-business-central-functional-consultant-associate",
+      "name": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+      "guideUrl": "https://aka.ms/MB800-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Set up Business Central (20–25%)",
+          "target": 45
+        },
+        {
+          "id": "section-2",
+          "title": "Configure financials (30–35%)",
+          "target": 65
+        },
+        {
+          "id": "section-3",
+          "title": "Configure sales and purchasing (10–15%)",
+          "target": 25
+        },
+        {
+          "id": "section-4",
+          "title": "Perform Business Central operations (30–35%)",
+          "target": 65
+        }
+      ]
+    },
+    {
+      "id": "agentic-ai-developer",
+      "bankId": "agentic-ai-developer",
+      "name": "GitHub Certified: Agentic AI Developer",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+      "guideUrl": "https://aka.ms/GH600-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Prepare agent architecture and SDLC processes (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-2",
+          "title": "Implement tool use and environment interaction (20–25%)",
+          "target": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Manage memory, state, and execution (10–15%)",
+          "target": 25
+        },
+        {
+          "id": "section-4",
+          "title": "Perform evaluation, error analysis, and tuning (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-5",
+          "title": "Orchestrate multi-agent coordination (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-6",
+          "title": "Implement guardrails and accountability (10–15%)",
+          "target": 25
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "bankId": "github-copilot",
+      "name": "GitHub Copilot",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+      "guideUrl": "https://aka.ms/GH300-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Use GitHub Copilot responsibly (15–20%)",
+          "target": 37
+        },
+        {
+          "id": "section-2",
+          "title": "Use GitHub Copilot features (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-3",
+          "title": "Understand GitHub Copilot data and architecture (10–15%)",
+          "target": 27
+        },
+        {
+          "id": "section-4",
+          "title": "Apply prompt engineering and context crafting (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Improve developer productivity with GitHub Copilot (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-6",
+          "title": "Configure privacy, content exclusions, and safeguards (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "agentic-devops-engineer-expert",
+      "bankId": "agentic-devops-engineer-expert",
+      "name": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "guideUrl": "https://aka.ms/AZ401-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement processes and communications (15–20%)",
+          "target": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Design and implement a source control strategy (10–15%)",
+          "target": 25
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement build and release pipelines (35–40%)",
+          "target": 73
+        },
+        {
+          "id": "section-4",
+          "title": "Design and implement a security and compliance plan (15–20%)",
+          "target": 34
+        },
+        {
+          "id": "section-5",
+          "title": "Implement an instrumentation strategy (15–20%)",
+          "target": 34
+        }
+      ]
+    },
+    {
+      "id": "microsoft-certified-educator",
+      "bankId": "microsoft-certified-educator",
+      "name": "Microsoft Certified Educator",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+      "guideUrl": "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4vHlU",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Facilitate student collaboration",
+          "target": 34
+        },
+        {
+          "id": "section-2",
+          "title": "Facilitate skilled communication",
+          "target": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Facilitate self-regulation",
+          "target": 33
+        },
+        {
+          "id": "section-4",
+          "title": "Facilitate real-world problem solving and innovation",
+          "target": 33
+        },
+        {
+          "id": "section-5",
+          "title": "Facilitate student use of Information and Communication Tools (ICT)",
+          "target": 33
+        },
+        {
+          "id": "section-6",
+          "title": "Use ICT to be an effective educator",
+          "target": 33
+        }
+      ]
+    },
+    {
+      "id": "d365-sales-ai-consultant-associate",
+      "bankId": "d365-sales-ai-consultant-associate",
+      "name": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+      "guideUrl": "https://aka.ms/AB210-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configure Dynamics 365 Sales core features for AI (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-2",
+          "title": "Optimize AI-driven sales (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Qualify and prioritize leads by using AI (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Develop deals by using intelligent opportunity research (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-5",
+          "title": "Extend and enhance Sales (10–15%)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "implementing-data-engineering-solutions-using-azure-databricks",
+      "bankId": "implementing-data-engineering-solutions-using-azure-databricks",
+      "name": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "guideUrl": "https://aka.ms/DP750-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Set up and configure an Azure Databricks environment (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-2",
+          "title": "Secure and govern Unity Catalog objects (15–20%)",
+          "target": 35
+        },
+        {
+          "id": "section-3",
+          "title": "Prepare and process data (30–35%)",
+          "target": 65
+        },
+        {
+          "id": "section-4",
+          "title": "Deploy and maintain data pipelines and workloads (30–35%)",
+          "target": 65
+        }
+      ]
+    },
+    {
+      "id": "security-compliance-and-identity-fundamentals",
+      "bankId": "security-compliance-and-identity-fundamentals",
+      "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "guideUrl": "https://aka.ms/sc900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe the concepts of security, compliance, and identity (10–15%)",
+          "target": 25
+        },
+        {
+          "id": "section-2",
+          "title": "Describe the capabilities of Microsoft Entra (25–30%)",
+          "target": 55
+        },
+        {
+          "id": "section-3",
+          "title": "Describe the capabilities of Microsoft security solutions (35–40%)",
+          "target": 75
+        },
+        {
+          "id": "section-4",
+          "title": "Describe the capabilities of Microsoft compliance solutions (20–25%)",
+          "target": 45
+        }
+      ]
+    },
+    {
+      "id": "azure-network-engineer-associate",
+      "bankId": "azure-network-engineer-associate",
+      "name": "Microsoft Certified: Azure Network Engineer Associate",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "guideUrl": "https://aka.ms/az700-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design and implement core networking infrastructure (25–30%)",
+          "target": 56
+        },
+        {
+          "id": "section-2",
+          "title": "Design, implement, and manage connectivity services (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement application delivery services (15–20%)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Design and implement private access to Azure services (10–15%)",
+          "target": 26
+        },
+        {
+          "id": "section-5",
+          "title": "Design and implement Azure network security services (15–20%)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "agentic-ai-business-professional",
+      "bankId": "agentic-ai-business-professional",
+      "name": "GitHub Certified: Agentic AI Business Professional (beta)",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+      "guideUrl": "https://aka.ms/GH700-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Use GitHub platform features (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Enhance productivity by using GitHub Copilot (20–25%)",
+          "target": 47
+        },
+        {
+          "id": "section-3",
+          "title": "Design and implement agentic workflows and automations (25–30%)",
+          "target": 58
+        },
+        {
+          "id": "section-4",
+          "title": "Perform human-in-the-loop tasks for agentic workflows (20–25%)",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": "power-platform-fundamentals",
+      "bankId": "power-platform-fundamentals",
+      "name": "Microsoft Certified: Power Platform Fundamentals",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+      "guideUrl": "https://aka.ms/PL900-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Describe the business value of Microsoft Power Platform (5–10%)",
+          "target": 16
+        },
+        {
+          "id": "section-2",
+          "title": "Manage the Microsoft Power Platform environment (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Demonstrate the capabilities of Power Apps (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Demonstrate the capabilities of Power Automate (20–25%)",
+          "target": 46
+        },
+        {
+          "id": "section-5",
+          "title": "Describe features and capabilities of agents in Microsoft Copilot Studio (20–25%)",
+          "target": 46
+        }
+      ]
+    },
+    {
+      "id": "github-actions",
+      "bankId": "github-actions",
+      "name": "GitHub Actions",
+      "provider": "GitHub",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+      "guideUrl": "https://aka.ms/GH200-StudyGuide",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Author and manage workflows (20–25%)",
+          "target": 49
+        },
+        {
+          "id": "section-2",
+          "title": "Consume and troubleshoot workflows (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-3",
+          "title": "Author and maintain actions (15–20%)",
+          "target": 38
+        },
+        {
+          "id": "section-4",
+          "title": "Manage GitHub Actions for the enterprise (20–25%)",
+          "target": 48
+        },
+        {
+          "id": "section-5",
+          "title": "Secure and optimize automation (10–15%)",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": "microsoft-office-specialist-associate-2019",
+      "bankId": "microsoft-office-specialist-associate-2019",
+      "name": "Microsoft Office Specialist: Associate (Office 2019)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-100: Microsoft Word (Office 2019)",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MO-200: Microsoft Excel (Office 2019)",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "MO-300: Microsoft PowerPoint (Office 2019)",
+          "target": 66
+        }
+      ]
+    },
+    {
+      "id": "mos-expert-m365-apps",
+      "bankId": "mos-expert-m365-apps",
+      "name": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+      "provider": "Microsoft",
+      "target": 200,
+      "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+      "guideUrl": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "MO-211: Microsoft Excel Expert (Microsoft 365 Apps)",
+          "target": 200
+        }
+      ]
+    },
+    {
+      "id": "aws-ai-business-strategist",
+      "bankId": "aws-ai-business-strategist",
+      "name": "AWS Certified AI Business Strategist",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "AI Fundamentals and Literacy (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-2",
+          "title": "AI Strategy and Business Value Creation (28% of scored content)",
+          "target": 56
+        },
+        {
+          "id": "section-3",
+          "title": "AI Governance and Responsible AI Leadership (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Business Readiness, Leadership, and AI Transformation (24% of scored content)",
+          "target": 48
+        }
+      ]
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "bankId": "aws-clf-c02",
+      "name": "AWS Certified Cloud Practitioner",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Cloud Concepts (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-2",
+          "title": "Security and Compliance (30% of scored content)",
+          "target": 60
+        },
+        {
+          "id": "section-3",
+          "title": "Cloud Technology and Services (34% of scored content)",
+          "target": 68
+        },
+        {
+          "id": "section-4",
+          "title": "Billing, Pricing, and Support (12% of scored content)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "aws-ai-practitioner",
+      "bankId": "aws-ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Fundamentals of AI and ML (20% of scored content)",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Fundamentals of GenAI (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Applications of Foundation Models (28% of scored content)",
+          "target": 56
+        },
+        {
+          "id": "section-4",
+          "title": "Guidelines for Responsible AI (14% of scored content)",
+          "target": 28
+        },
+        {
+          "id": "section-5",
+          "title": "Security, Compliance, and Governance for AI Solutions (14% of scored content)",
+          "target": 28
+        }
+      ]
+    },
+    {
+      "id": "aws-solutions-architect-associate",
+      "bankId": "aws-saa-c03",
+      "name": "AWS Certified Solutions Architect - Associate",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design Secure Architectures (30% of scored content)",
+          "target": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Design Resilient Architectures (26% of scored content)",
+          "target": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Design High-Performing Architectures (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Design Cost-Optimized Architectures (20% of scored content)",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "aws-machine-learning-engineer-associate",
+      "bankId": "aws-machine-learning-engineer-associate",
+      "name": "AWS Certified Machine Learning Engineer - Associate",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Preparation for ML and AI (28% of scored content)",
+          "target": 56
+        },
+        {
+          "id": "section-2",
+          "title": "ML Model and Foundation Model (FM) Development (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment and Orchestration of ML and AI Workflows (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Operating, Monitoring, and Securing ML and AI Solutions (24% of scored content)",
+          "target": 48
+        }
+      ]
+    },
+    {
+      "id": "aws-data-engineer-associate",
+      "bankId": "aws-data-engineer-associate",
+      "name": "AWS Certified Data Engineer - Associate",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Ingestion and Transformation (34% of scored content)",
+          "target": 68
+        },
+        {
+          "id": "section-2",
+          "title": "Data Store Management (26% of scored content)",
+          "target": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Data Operations and Support (22% of scored content)",
+          "target": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Data Security and Governance (18% of scored content)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "aws-cloudops-engineer-associate",
+      "bankId": "aws-cloudops-engineer-associate",
+      "name": "AWS Certified CloudOps Engineer - Associate",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Monitoring, Logging, Analysis, Remediation, and Performance Optimization (22% of scored content)",
+          "target": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Reliability and Business Continuity (22% of scored content)",
+          "target": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment, Provisioning, and Automation (22% of scored content)",
+          "target": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Security and Compliance (16% of scored content)",
+          "target": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Networking and Content Delivery (18% of scored content)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "aws-developer-associate",
+      "bankId": "aws-developer-associate",
+      "name": "AWS Certified Developer - Associate",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Development with AWS Services (32% of scored content)",
+          "target": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Security (26% of scored content)",
+          "target": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Deployment (24% of scored content)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Troubleshooting and Optimization (18% of scored content)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "aws-security-specialty",
+      "bankId": "aws-security-specialty",
+      "name": "AWS Certified Security - Specialty",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Detection (16% of scored content)",
+          "target": 32
+        },
+        {
+          "id": "section-2",
+          "title": "Incident Response (14% of scored content)",
+          "target": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Infrastructure Security (18% of scored content)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Identity and Access Management (20% of scored content)",
+          "target": 40
+        },
+        {
+          "id": "section-5",
+          "title": "Data Protection (18% of scored content)",
+          "target": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Security Foundations and Governance (14% of scored content)",
+          "target": 28
+        }
+      ]
+    },
+    {
+      "id": "aws-advanced-networking-specialty",
+      "bankId": "aws-advanced-networking-specialty",
+      "name": "AWS Certified Advanced Networking - Specialty",
+      "provider": "AWS",
+      "target": 200,
+      "sourceUrl": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      "guideUrl": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Network Design (30% of scored content)",
+          "target": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Network Implementation (26% of scored content)",
+          "target": 52
+        },
+        {
+          "id": "section-3",
+          "title": "Network Management and Operation (20% of scored content)",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Network Security, Compliance, and Governance (24% of scored content)",
+          "target": 48
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-digital-leader",
+      "bankId": "google-cloud-digital-leader",
+      "name": "Google Cloud Cloud Digital Leader",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-digital-leader",
+      "guideUrl": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Digital Transformation with Google Cloud (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-2",
+          "title": "Exploring Data Transformation with Google Cloud (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-3",
+          "title": "Innovating with Google Cloud Artificial Intelligence (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Modernize Infrastructure and Applications with Google Cloud (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-5",
+          "title": "Trust and Security with Google Cloud (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Scaling with Google Cloud Operations (~10% of the exam)",
+          "target": 20
+        }
+      ]
+    },
+    {
+      "id": "google-generative-ai-leader",
+      "bankId": "google-generative-ai-leader",
+      "name": "Google Cloud Generative AI Leader",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "guideUrl": "https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Fundamentals of gen AI (~30% of the exam)",
+          "target": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Google Cloud’s gen AI offerings (~35% of the exam)",
+          "target": 70
+        },
+        {
+          "id": "section-3",
+          "title": "Techniques to improve gen AI model output (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Business strategies for a successful gen AI solution (~15% of the exam)",
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-engineer",
+      "bankId": "google-cloud-engineer",
+      "name": "Google Cloud Associate Cloud Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Setting up a cloud solution environment (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Planning and implementing a cloud solution (~30% of the exam)",
+          "target": 60
+        },
+        {
+          "id": "section-3",
+          "title": "Ensuring the successful operation of a cloud solution (~30% of the exam)",
+          "target": 60
+        },
+        {
+          "id": "section-4",
+          "title": "Configuring access and security (~20% of the exam)",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "google-google-workspace-administrator",
+      "bankId": "google-google-workspace-administrator",
+      "name": "Google Cloud Associate Google Workspace Administrator",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/associate-google-workspace-administrator",
+      "guideUrl": "https://services.google.com/fh/files/misc/associate_google_workspace_administrator_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Managing user accounts, domains, and Directory (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Managing core Workspace services (~23% of the exam)",
+          "target": 45
+        },
+        {
+          "id": "section-3",
+          "title": "Managing data governance and compliance (~15% of the exam)",
+          "target": 30
+        },
+        {
+          "id": "section-4",
+          "title": "Managing security policies and access controls (~20% of the exam)",
+          "target": 39
+        },
+        {
+          "id": "section-5",
+          "title": "Managing browsers and endpoints (~10% of the exam)",
+          "target": 20
+        },
+        {
+          "id": "section-6",
+          "title": "Monitoring and troubleshooting common issues (~13% of the exam)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "google-data-practitioner",
+      "bankId": "google-data-practitioner",
+      "name": "Google Cloud Associate Data Practitioner",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/learn/certification/data-practitioner",
+      "guideUrl": "https://services.google.com/fh/files/misc/v1.0_associate_data_practitioner_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Data Preparation and Ingestion (~30% of the exam)",
+          "target": 60
+        },
+        {
+          "id": "section-2",
+          "title": "Data Analysis and Presentation (~27% of the exam)",
+          "target": 54
+        },
+        {
+          "id": "section-3",
+          "title": "Data Pipeline Orchestration (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Data Management (~25% of the exam)",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "google-agentic-architect-beta",
+      "bankId": "google-agentic-architect-beta",
+      "name": "Google Cloud Professional Agentic Architect (Beta)",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Building agents using low-code tools (~13% of the exam)",
+          "target": 26
+        },
+        {
+          "id": "section-2",
+          "title": "Using coding agents for application development (~17% of the exam)",
+          "target": 34
+        },
+        {
+          "id": "section-3",
+          "title": "Developing custom agents (~33% of the exam)",
+          "target": 66
+        },
+        {
+          "id": "section-4",
+          "title": "Evaluating and deploying agentic workflows (~22% of the exam)",
+          "target": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Securing and governing agentic workflows (~15% of the exam)",
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-architect",
+      "bankId": "google-cloud-architect",
+      "name": "Google Cloud Professional Cloud Architect",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-architect",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing and planning a cloud solution architecture (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Managing and provisioning a cloud solution infrastructure (~17.5% of the exam)",
+          "target": 35
+        },
+        {
+          "id": "section-3",
+          "title": "Designing for security and compliance (~17.5% of the exam)",
+          "target": 35
+        },
+        {
+          "id": "section-4",
+          "title": "Analyzing and optimizing technical and business processes (~15% of the exam)",
+          "target": 30
+        },
+        {
+          "id": "section-5",
+          "title": "Managing implementation (~12.5% of the exam)",
+          "target": 25
+        },
+        {
+          "id": "section-6",
+          "title": "Ensuring solution and operations excellence (~12.5% of the exam)",
+          "target": 25
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-database-engineer",
+      "bankId": "google-cloud-database-engineer",
+      "name": "Google Cloud Professional Cloud Database Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-database-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_database_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design innovative, scalable, and highly available cloud database solutions (~32% of the exam)",
+          "target": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Manage a solution that can span multiple database technologies (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Migrate data solutions (~23% of the exam)",
+          "target": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Deploy scalable and highly available databases in Google Cloud (~20% of the exam)",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-developer",
+      "bankId": "google-cloud-developer",
+      "name": "Google Cloud Professional Cloud Developer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-developer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_developer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing highly scalable, secure, and reliable cloud-native applications (~32% of the exam)",
+          "target": 64
+        },
+        {
+          "id": "section-2",
+          "title": "Building and testing applications (~23% of the exam)",
+          "target": 46
+        },
+        {
+          "id": "section-3",
+          "title": "Configuring cloud-native applications for deployment (~24% of the exam)",
+          "target": 48
+        },
+        {
+          "id": "section-4",
+          "title": "Integrating applications with Google Cloud services (~21% of the exam)",
+          "target": 42
+        }
+      ]
+    },
+    {
+      "id": "google-data-engineer",
+      "bankId": "google-data-engineer",
+      "name": "Google Cloud Professional Data Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/data-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing data processing systems (~22% of the exam)",
+          "target": 44
+        },
+        {
+          "id": "section-2",
+          "title": "Ingesting and processing the data (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Storing the data (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-4",
+          "title": "Preparing and using data for analysis (~15% of the exam)",
+          "target": 30
+        },
+        {
+          "id": "section-5",
+          "title": "Maintaining and automating data workloads (~18% of the exam)",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-devops-engineer",
+      "bankId": "google-cloud-devops-engineer",
+      "name": "Google Cloud Professional Cloud DevOps Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-devops-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_devops_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Bootstrapping and maintaining a Google Cloud organization (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-2",
+          "title": "Building and implementing CI/CD pipelines, including continuous testing, for application, infrastructure, and machine learning workloads (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Applying site reliability engineering practices (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-4",
+          "title": "Implementing observability practices and troubleshooting issues (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-5",
+          "title": "Optimizing performance and cost (~12% of the exam)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-security-engineer",
+      "bankId": "google-cloud-security-engineer",
+      "name": "Google Cloud Professional Cloud Security Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-security-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Configuring access (~25% of the exam)",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Securing communications and establishing boundary protection (~22% of the exam)",
+          "target": 44
+        },
+        {
+          "id": "section-3",
+          "title": "Ensuring data protection (~23% of the exam)",
+          "target": 46
+        },
+        {
+          "id": "section-4",
+          "title": "Managing operations (~19% of the exam)",
+          "target": 38
+        },
+        {
+          "id": "section-5",
+          "title": "Supporting compliance requirements (~11% of the exam)",
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-network-engineer",
+      "bankId": "google-cloud-network-engineer",
+      "name": "Google Cloud Professional Cloud Network Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/cloud-network-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/042426_professional_cloud_network_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Designing and planning a Google Cloud VPC network (~21% of the exam)",
+          "target": 42
+        },
+        {
+          "id": "section-2",
+          "title": "Implementing a VPC network (~20% of the exam)",
+          "target": 40
+        },
+        {
+          "id": "section-3",
+          "title": "Configuring managed network services (~16% of the exam)",
+          "target": 32
+        },
+        {
+          "id": "section-4",
+          "title": "Configuring and implementing hybrid and multicloud network interconnectivity (~16% of the exam)",
+          "target": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Managing, monitoring, and troubleshooting network operations (~14% of the exam)",
+          "target": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Configuring, implementing and managing a cloud network security solution (~13% of the exam)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "google-machine-learning-engineer",
+      "bankId": "google-machine-learning-engineer",
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/certification/machine-learning-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Architecting low-code AI solutions (~13% of the exam)",
+          "target": 26
+        },
+        {
+          "id": "section-2",
+          "title": "Collaborating within and across teams to manage data and models (~16% of the exam)",
+          "target": 32
+        },
+        {
+          "id": "section-3",
+          "title": "Scaling prototypes into ML models (~21% of the exam)",
+          "target": 41
+        },
+        {
+          "id": "section-4",
+          "title": "Serving and scaling models (~20% of the exam)",
+          "target": 39
+        },
+        {
+          "id": "section-5",
+          "title": "Automating and orchestrating ML pipelines (~18% of the exam)",
+          "target": 36
+        },
+        {
+          "id": "section-6",
+          "title": "Monitoring AI solutions (~13% of the exam)",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": "google-security-operations-engineer",
+      "bankId": "google-security-operations-engineer",
+      "name": "Google Cloud Professional Security Operations Engineer",
+      "provider": "Google Cloud",
+      "target": 200,
+      "sourceUrl": "https://cloud.google.com/learn/certification/security-operations-engineer",
+      "guideUrl": "https://services.google.com/fh/files/misc/professional_security_operations_engineer_exam_guide_english.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Platform operations (~14% of the exam)",
+          "target": 28
+        },
+        {
+          "id": "section-2",
+          "title": "Data management (~14% of the exam)",
+          "target": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Threat hunting (~19% of the exam)",
+          "target": 38
+        },
+        {
+          "id": "section-4",
+          "title": "Detection engineering (~22% of the exam)",
+          "target": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Incident response (~21% of the exam)",
+          "target": 42
+        },
+        {
+          "id": "section-6",
+          "title": "Observability (~10% of the exam)",
+          "target": 20
+        }
+      ]
+    },
+    {
+      "id": "databricks-data-analyst-associate",
+      "bankId": "databricks-data-analyst-associate",
+      "name": "Databricks Certified Data Analyst Associate",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/data-analyst-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Understanding of Databricks Data Intelligence Platform",
+          "target": 23
+        },
+        {
+          "id": "section-2",
+          "title": "Managing Data",
+          "target": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Importing Data",
+          "target": 22
+        },
+        {
+          "id": "section-4",
+          "title": "Executing queries using Databricks SQL and Databricks SQL Warehouses",
+          "target": 22
+        },
+        {
+          "id": "section-5",
+          "title": "Analyzing Queries",
+          "target": 22
+        },
+        {
+          "id": "section-6",
+          "title": "Working with Dashboards and Visualizations in Databricks",
+          "target": 22
+        },
+        {
+          "id": "section-7",
+          "title": "Developing, Sharing, and Maintaining AI/BI Genie spaces",
+          "target": 22
+        },
+        {
+          "id": "section-8",
+          "title": "Data Modeling with Databricks SQL",
+          "target": 22
+        },
+        {
+          "id": "section-9",
+          "title": "Securing Data",
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": "databricks-data-engineer-associate",
+      "bankId": "databricks-data-engineer-associate",
+      "name": "Databricks Certified Data Engineer Associate",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Databricks Intelligence Platform (6%)",
+          "target": 12
+        },
+        {
+          "id": "section-2",
+          "title": "Data Ingestion and Loading (21%)",
+          "target": 42
+        },
+        {
+          "id": "section-3",
+          "title": "Data Transformation and Modeling (22%)",
+          "target": 44
+        },
+        {
+          "id": "section-4",
+          "title": "Working with Lakeflow Jobs (16%)",
+          "target": 32
+        },
+        {
+          "id": "section-5",
+          "title": "Implementing CI/CD (10%)",
+          "target": 20
+        },
+        {
+          "id": "section-6",
+          "title": "Troubleshooting, Monitoring, and Optimization (10%)",
+          "target": 20
+        },
+        {
+          "id": "section-7",
+          "title": "Governance and Security (15%)",
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": "databricks-data-engineer-professional",
+      "bankId": "databricks-data-engineer-professional",
+      "name": "Databricks Certified Data Engineer Professional",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/data-engineer-professional",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/Databricks-Certified-Data-Engineer-Professional-Exam-Guide-9-Oct-2026.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Developing Code for Data Processing using Python and SQL",
+          "target": 23
+        },
+        {
+          "id": "section-2",
+          "title": "Data Ingestion & Acquisition (12%)",
+          "target": 23
+        },
+        {
+          "id": "section-3",
+          "title": "Data Manipulation (12%)",
+          "target": 22
+        },
+        {
+          "id": "section-4",
+          "title": "Monitoring and Alerting (10%)",
+          "target": 22
+        },
+        {
+          "id": "section-5",
+          "title": "Cost & Performance Optimization(15%)",
+          "target": 22
+        },
+        {
+          "id": "section-6",
+          "title": "Ensuring Data Security and Compliance (8%)",
+          "target": 22
+        },
+        {
+          "id": "section-7",
+          "title": "Data Governance (5%)",
+          "target": 22
+        },
+        {
+          "id": "section-8",
+          "title": "Debugging and Deploying (10%)",
+          "target": 22
+        },
+        {
+          "id": "section-9",
+          "title": "Data Modeling (5%)",
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": "databricks-machine-learning-associate",
+      "bankId": "databricks-machine-learning-associate",
+      "name": "Databricks Certified Machine Learning Associate",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Databricks Machine Learning",
+          "target": 50
+        },
+        {
+          "id": "section-2",
+          "title": "Data Processing",
+          "target": 50
+        },
+        {
+          "id": "section-3",
+          "title": "Model Development",
+          "target": 50
+        },
+        {
+          "id": "section-4",
+          "title": "Model Deployment",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": "databricks-machine-learning-professional",
+      "bankId": "databricks-machine-learning-professional",
+      "name": "Databricks Certified Machine Learning Professional",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/machine-learning-professional",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Model Development Using Spark ML",
+          "target": 67
+        },
+        {
+          "id": "section-2",
+          "title": "MLOps Model Lifecycle Management",
+          "target": 67
+        },
+        {
+          "id": "section-3",
+          "title": "Model Deployment Deployment Strategies",
+          "target": 66
+        }
+      ]
+    },
+    {
+      "id": "databricks-genai-engineer-associate",
+      "bankId": "databricks-genai-engineer-associate",
+      "name": "Databricks Certified Generative AI Engineer Associate",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2026-10/databricks-certified-gen-ai-associate-exam-guide-august-2026.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "normalized-official-weight-midpoints",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Design Applications (14%)",
+          "target": 28
+        },
+        {
+          "id": "section-2",
+          "title": "Data Preparation (14%)",
+          "target": 28
+        },
+        {
+          "id": "section-3",
+          "title": "Application Development (30%)",
+          "target": 60
+        },
+        {
+          "id": "section-4",
+          "title": "Assembling and Deploying Applications (22%)",
+          "target": 44
+        },
+        {
+          "id": "section-5",
+          "title": "Governance (8%)",
+          "target": 16
+        },
+        {
+          "id": "section-6",
+          "title": "Evaluation and Monitoring (12%)",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": "databricks-context-engineer-associate",
+      "bankId": "databricks-context-engineer-associate",
+      "name": "Databricks Certified Context Engineer Associate",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/context-engineer-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-context-engineer-associate-exam-guide.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Foundations of Context Engineering",
+          "target": 29
+        },
+        {
+          "id": "section-2",
+          "title": "System Prompt and Instruction Design",
+          "target": 29
+        },
+        {
+          "id": "section-3",
+          "title": "Knowledge Retrieval and Genie Configuration",
+          "target": 29
+        },
+        {
+          "id": "section-4",
+          "title": "Memory Architecture with Lakebase and MLflow",
+          "target": 29
+        },
+        {
+          "id": "section-5",
+          "title": "Tool Design, MCP, and Agent Context",
+          "target": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Context Compression and Compaction",
+          "target": 28
+        },
+        {
+          "id": "section-7",
+          "title": "Multi-Agent and Long-Horizon Task Design",
+          "target": 28
+        }
+      ]
+    },
+    {
+      "id": "databricks-apache-spark-developer-associate",
+      "bankId": "databricks-apache-spark-developer-associate",
+      "name": "Databricks Certified Associate Developer for Apache Spark",
+      "provider": "Databricks",
+      "target": 200,
+      "sourceUrl": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+      "guideUrl": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf",
+      "inheritedGuideCheckedOn": "2026-10-18",
+      "researchStatus": "needs-current-outline-review",
+      "allocationMethod": "equal-editorial-allocation-not-official-weight",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "Apache Spark Architecture and Components",
+          "target": 29
+        },
+        {
+          "id": "section-2",
+          "title": "Using Spark SQL",
+          "target": 29
+        },
+        {
+          "id": "section-3",
+          "title": "Developing Apache SparkTM DataFrame/DataSet API Applications",
+          "target": 29
+        },
+        {
+          "id": "section-4",
+          "title": "Troubleshooting and Tuning Apache Spark DataFrame API Applications.",
+          "target": 29
+        },
+        {
+          "id": "section-5",
+          "title": "Structured Streaming",
+          "target": 28
+        },
+        {
+          "id": "section-6",
+          "title": "Using Spark Connect to deploy applications",
+          "target": 28
+        },
+        {
+          "id": "section-7",
+          "title": "Using Pandas API on Spark",
+          "target": 28
+        }
+      ]
+    }
+  ]
+}

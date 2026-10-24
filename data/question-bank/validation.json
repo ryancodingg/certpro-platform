@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "warnings": [
+    "Row 1: pending independent editorial review; excluded from export",
+    "Row 2: pending independent editorial review; excluded from export",
+    "Row 3: pending independent editorial review; excluded from export"
+  ],
+  "approvedCount": 0,
+  "rowCount": 3
+}

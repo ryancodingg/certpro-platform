@@ -1,0 +1,23 @@
+'use client'
+import {useEffect,useState} from 'react'
+import Link from 'next/link'
+import {useAuth} from '@/hooks/use-auth'
+import {SiteHeader} from './site-header'
+import {learnerFetch} from '@/lib/learner-client'
+import {readLearning,rememberLearning,missedQuestions,type LearningEvent} from '@/lib/learning-memory'
+import {certificationById} from '@/lib/catalog'
+import {QuestionText} from './question-text'
+import {QuestionInput,describeAnswer} from './question-input'
+import {isCorrect,validAnswer,type Question} from '@/lib/questions'
+function RetryQuestion({question}:{question:Question}){const [answer,setAnswer]=useState<unknown>(),[checked,setChecked]=useState(false);return <div className="cp-review-body"><QuestionText text={question.question}/><QuestionInput question={question} value={answer} onChange={setAnswer} disabled={checked} correctAnswer={checked?question.correctAnswer:undefined}/><button className="cp-primary" disabled={checked||!validAnswer(question,answer)} onClick={()=>setChecked(true)}>Check my understanding</button>{checked&&<div><strong style={{color:isCorrect(question,answer)?'#166534':'#b91c1c'}}>{isCorrect(question,answer)?'✓ Correct this time':'✗ Keep practising'}</strong><p>Correct answer: {describeAnswer(question,question.correctAnswer)}</p><QuestionText text={question.explanation}/>{question.sourceUrl&&<a className="cp-text-link" href={question.sourceUrl} target="_blank" rel="noopener noreferrer">Official source ↗</a>}<p className="cp-note">This review does not change your original score.</p></div>}</div>}
+export function MyLearning(){
+ const {user,isLoading}=useAuth();const [events,setEvents]=useState<LearningEvent[]>([]),[status,setStatus]=useState(''),[filter,setFilter]=useState(''),[busy,setBusy]=useState(false),[historyUid,setHistoryUid]=useState('')
+ useEffect(()=>{setEvents([]);setFilter('');setHistoryUid(user?.id||'');if(!user)return;let active=true
+  const load=()=>{try{if(active)setEvents(readLearning(user.id))}catch{if(active)setStatus('Device history could not be read.')}}
+  load();setBusy(true);setStatus('Loading account history…')
+  learnerFetch('/api/my-learning').then(async r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{if(!active)return;try{rememberLearning(user.id,data.events);load();setStatus('Includes your latest 100 account attempts and practice saved on this browser.')}catch{setEvents(data.events);setStatus('Account history loaded; browser storage is unavailable.')}}).catch(()=>{if(active)setStatus('Account history is temporarily unavailable. Showing reviews saved on this browser.')}).finally(()=>{if(active)setBusy(false)})
+  window.addEventListener('certpro-learning',load);return()=>{active=false;window.removeEventListener('certpro-learning',load)}
+ },[user?.id])
+ const missed=missedQuestions(historyUid===user?.id?events:[]);const certs=[...new Set(missed.map(e=>e.certification))];const items=missed.filter(e=>!filter||e.certification===filter)
+ return <main className="cp-site min-h-screen"><SiteHeader authReturnTo="/my-learning"/><section className="cp-section"><p className="cp-eyebrow">LEARN FROM EVERY ATTEMPT</p><h1>My Learning</h1><p>Revisit the questions you miss most often, then check your understanding at your own pace.</p>{isLoading?<p>Checking your account…</p>:!user?<Link className="cp-primary" href="/auth/login?next=%2Fmy-learning">Sign in to My Learning</Link>:<><p className="cp-note" role="status">{status}</p><div className="my-6 flex flex-wrap items-center gap-4"><label>Certification <select value={filter} onChange={e=>setFilter(e.target.value)} className="rounded-lg border p-2"><option value="">All certifications</option>{certs.map(id=><option key={id} value={id}>{certificationById(id)?.name||id}</option>)}</select></label><Link className="cp-text-link" href="/progress">My Progress →</Link></div><p className="mb-4">{items.length} questions to revisit · Most frequently missed first</p>{!busy&&!items.length&&<div className="cp-empty">No missed answers recorded yet. Check answers in Practical Mode or submit a Mock Exam to build your review list.</div>}{items.map(item=><details className="cp-review-item" key={item.certification+item.question.id}><summary><strong>{certificationById(item.certification)?.name||item.certification} · {item.question.topic}</strong><span className="block">Missed {item.wrong} of {item.total} recorded attempts · {item.latest.correct?'Latest attempt correct':'Latest attempt incorrect'}</span><span className="cp-review-preview">{item.question.question}</span></summary><RetryQuestion question={item.question}/></details>)}</>}</section></main>
+}

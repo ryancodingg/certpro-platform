@@ -1,5 +1,5 @@
 import 'server-only'
-import {hasPaidAccess} from '@/lib/subscription-access'
+import {hasPaidAccess,isUnpaidPendingCheckout} from '@/lib/subscription-access'
 import {createHash,randomUUID} from 'node:crypto'
 import {HttpError,services} from './firebase'
 export const plans={monthly:{amount:'3.99',interval:'MONTH'},yearly:{amount:'19.99',interval:'YEAR'}} as const
@@ -29,7 +29,7 @@ export async function syncSubscription(uid:string){
  const result={kind:'billing',environment:process.env.PAYPAL_MODE==='live'?'live':'sandbox',uid,subscriptionId:sub.id,binding:old.binding,plan,status:sub.status,premium,paidThrough,checkedAt:Date.now()}
  await ref.set(result,{merge:true});return {premium,status:sub.status,plan,paidThrough}
 }
-export async function premiumAccess(uid:string){const old=(await billingRef(uid).get()).data();if(!old?.subscriptionId)return false;if(!billingReady())throw new HttpError(503,'Subscription verification is temporarily unavailable. Your free allowance has not been used.');return (await syncSubscription(uid)).premium}
+export async function premiumAccess(uid:string){const old=(await billingRef(uid).get()).data();if(!old?.subscriptionId||isUnpaidPendingCheckout(old))return false;if(!billingReady())throw new HttpError(503,'Subscription verification is temporarily unavailable. Your free allowance has not been used.');return (await syncSubscription(uid)).premium}
 export async function createSubscription(uid:string,plan:Plan,origin:string){
  if(!billingReady())throw new HttpError(503,'Subscriptions are being configured. No payment was taken.');
  const ref=billingRef(uid);const lock=randomUUID();const now=Date.now();let old:any

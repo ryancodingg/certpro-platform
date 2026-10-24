@@ -13,7 +13,7 @@ import { User, LogIn, LogOut, Settings, BookOpen, CreditCard, CalendarDays } fro
 import Link from "next/link"
 import { useAuth } from "@/hooks/use-auth"
 
-export function AuthNav() {
+export function AuthNav({returnTo}:{returnTo?:string}) {
   const { user, logout, isLoading } = useAuth()
 
   if (isLoading) {
@@ -27,7 +27,7 @@ export function AuthNav() {
   if (!user) {
     return (
       <div className="flex items-center gap-3">
-        <Link href="/auth/login">
+        <Link href={"/auth/login"+(returnTo?"?next="+encodeURIComponent(returnTo):"")}>
           <Button
             variant="ghost"
             size="sm"
@@ -37,10 +37,10 @@ export function AuthNav() {
             Sign In
           </Button>
         </Link>
-        <Link href="/auth/signup">
+        <Link href={"/auth/signup"+(returnTo?"?next="+encodeURIComponent(returnTo):"")}>
           <Button
             size="sm"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-foreground glow-effect font-medium"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white glow-effect font-medium"
           >
             <User className="h-4 w-4 mr-2" />
             Sign Up
@@ -67,7 +67,7 @@ export function AuthNav() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" aria-label="Profile" className="relative h-10 w-10 rounded-full">
           <Avatar className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600">
-            <AvatarFallback className="bg-transparent text-foreground font-medium">
+            <AvatarFallback className="bg-transparent text-white font-medium">
               {getInitials(user.email, user.name)}
             </AvatarFallback>
           </Avatar>
@@ -81,12 +81,10 @@ export function AuthNav() {
           </div>
         </div>
         <DropdownMenuSeparator className="bg-gray-700" />
-        <DropdownMenuItem className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer">
-          <BookOpen className="mr-2 h-4 w-4" />
-          <Link href="/progress">My Progress</Link>
-        </DropdownMenuItem>
+        <DropdownMenuItem asChild><Link href="/progress"><BookOpen className="mr-2 h-4 w-4" />My Progress</Link></DropdownMenuItem>
+        <DropdownMenuItem asChild><Link href="/my-learning"><BookOpen className="mr-2 h-4 w-4"/>My Learning</Link></DropdownMenuItem>
         <DropdownMenuItem asChild><Link href="/subscription"><CreditCard className="mr-2 h-4 w-4"/>My Subscription</Link></DropdownMenuItem>
-        <DropdownMenuItem asChild><Link href="/study-plan"><CalendarDays className="mr-2 h-4 w-4"/>Study calendar</Link></DropdownMenuItem>
+        <DropdownMenuItem asChild><Link href="/study-plan"><CalendarDays className="mr-2 h-4 w-4"/>My Calendar</Link></DropdownMenuItem>
         <DropdownMenuItem asChild className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer"><Link href="/progress">
           <Settings className="mr-2 h-4 w-4" />
           <span>Profile settings</span></Link>

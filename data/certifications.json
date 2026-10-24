@@ -1,12 +1,14 @@
 {
   "verified_on": "2026-10-18",
-  "count": 111,
+  "count": 116,
   "provider_counts": {
     "Microsoft": 71,
     "GitHub": 7,
     "AWS": 10,
     "Google Cloud": 15,
-    "Databricks": 8
+    "Databricks": 8,
+    "CompTIA": 4,
+    "Cisco": 1
   },
   "notes": "Selected certification directory, not an exhaustive provider catalog. Certification listings do not imply available question banks or free provider exams. Retired certifications and duplicate aliases excluded. Beta/retiring labels retained. Official provider pages are authoritative.",
   "certifications": [
@@ -1018,6 +1020,78 @@
       "level": "Associate",
       "status": "active",
       "verified_on": "2026-10-18"
+    },
+    {
+      "id": "comptia-security-plus",
+      "name": "CompTIA Security+ (SY0-701)",
+      "provider": "CompTIA",
+      "official_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "comptia-a-plus",
+      "name": "CompTIA A+ (220-1201 and 220-1202)",
+      "provider": "CompTIA",
+      "official_url": "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "comptia-network-plus",
+      "name": "CompTIA Network+ (N10-009)",
+      "provider": "CompTIA",
+      "official_url": "https://www.comptia.org/en-us/certifications/network/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "comptia-cysa-plus",
+      "name": "CompTIA CySA+ (CS0-004)",
+      "provider": "CompTIA",
+      "official_url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "cisco-ccna",
+      "name": "Cisco Certified Network Associate (200-301)",
+      "provider": "Cisco",
+      "official_url": "https://www.cisco.com/web/go/ccna/",
+      "level": "intermediate",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isc2-certified-in-cybersecurity",
+      "name": "ISC2 Certified in Cybersecurity (CC)",
+      "provider": "ISC2",
+      "official_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "level": "beginner",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isaca-cism",
+      "name": "ISACA Certified Information Security Manager (CISM)",
+      "provider": "ISACA",
+      "official_url": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-21"
+    },
+    {
+      "id": "isaca-cisa",
+      "name": "ISACA Certified Information Systems Auditor (CISA)",
+      "provider": "ISACA",
+      "official_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "level": "advanced",
+      "status": "active",
+      "verified_on": "2026-10-21"
     }
   ]
 }

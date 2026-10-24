@@ -1,0 +1,675 @@
+{
+  "note": "Historical local snapshot only, not a fresh production audit. Counts do not prove editorial quality or topic coverage. Source: outputs/certpro-bank-availability.json from prior work.",
+  "catalogCount": 111,
+  "snapshotQuestions": 117,
+  "targetTotal": 22200,
+  "minimumCountGap": 22083,
+  "certifications": [
+    {
+      "id": "azure-for-sap-workloads-specialty",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-word-expert-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "github-administration",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-expert-365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "ai-transformation-leader",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-cosmos-db-developer-specialty",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "identity-and-access-administrator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "supply-chain-management-ai-consultant-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "multi-agent-ai-solutions-expert",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-fundamentals",
+      "snapshotCount": 20,
+      "target": 200,
+      "minimumCountGap": 180
+    },
+    {
+      "id": "fabric-data-engineer-associate",
+      "snapshotCount": 57,
+      "target": 200,
+      "minimumCountGap": 143
+    },
+    {
+      "id": "cybersecurity-business-professional",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "security-operations-analyst",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "cloud-and-ai-security-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-business-central-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-functional-consultant-customer-service-v3",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-powerpoint-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-contact-center-ai-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "github-advanced-security",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-administrator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-ai-fundamentals",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-for-accounting-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "intelligent-applications-builder-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "microsoft-office-specialist-expert-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-associate-m365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "devops-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "fabric-analytics-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "windows-server-administrator-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-access-expert-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-functional-consultant-supply-chain-management",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-powerpoint-associate-365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-expert-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-word-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-database-administrator-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "ai-agent-builder-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-ai-cloud-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "m365-teams-administrator-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "github-foundations",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "operationalizing-machine-learning-and-generative-ai-solutions",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-functional-consultant-financials",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-virtual-desktop-specialty",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-for-business-finance-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "power-platform-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-outlook-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "modern-desktop",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "information-security-administrator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "ai-business-professional",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-solutions-architect",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "developing-ai-enabled-database-solutions",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "ai-services-administrator-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-ai-apps-and-agents-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-data-fundamentals",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-word-associate-m365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "m365-enterprise-administrator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "m365-collaboration-communications-systems-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-associate-m365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "data-analyst-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "agentic-ai-business-solutions-architect",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "copilot-and-agent-administration-fundamentals",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-excel-for-operational-management-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-word-expert-365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-finance-and-operations-apps-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "cybersecurity-architect-expert",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-business-central-functional-consultant-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "agentic-ai-developer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "github-copilot",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "agentic-devops-engineer-expert",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "microsoft-certified-educator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "d365-sales-ai-consultant-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "implementing-data-engineering-solutions-using-azure-databricks",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "security-compliance-and-identity-fundamentals",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "azure-network-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "agentic-ai-business-professional",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "power-platform-fundamentals",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "github-actions",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "microsoft-office-specialist-associate-2019",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "mos-expert-m365-apps",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-ai-business-strategist",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "snapshotCount": 20,
+      "target": 200,
+      "minimumCountGap": 180
+    },
+    {
+      "id": "aws-ai-practitioner",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-solutions-architect-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-machine-learning-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-data-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-cloudops-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-security-specialty",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "aws-advanced-networking-specialty",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-digital-leader",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-generative-ai-leader",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-google-workspace-administrator",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-data-practitioner",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-agentic-architect-beta",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-architect",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-database-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-developer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-data-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-devops-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-security-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-cloud-network-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-machine-learning-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "google-security-operations-engineer",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-data-analyst-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-data-engineer-associate",
+      "snapshotCount": 20,
+      "target": 200,
+      "minimumCountGap": 180
+    },
+    {
+      "id": "databricks-data-engineer-professional",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-machine-learning-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-machine-learning-professional",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-genai-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-context-engineer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    },
+    {
+      "id": "databricks-apache-spark-developer-associate",
+      "snapshotCount": 0,
+      "target": 200,
+      "minimumCountGap": 200
+    }
+  ]
+}

@@ -1,0 +1,2612 @@
+[
+  {
+    "id": "q-92182db23c3d4c7952580bdc32ad76b1",
+    "originality": "original-practice",
+    "question": {
+      "question": "A startup company is designing a new web application and wants to avoid investing heavily in physical data centers and servers before knowing their actual usage levels. According to the AWS advantages of cloud computing, what financial model should they adopt?",
+      "topic": "Cloud Concepts - Six Advantages of Cloud Computing",
+      "explanation": "The startup should trade fixed expense for variable expense, allowing them to pay only when they consume computing resources and only for how much they consume.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Trade fixed expense for variable expense",
+        "Invest upfront in dedicated long-term physical hardware",
+        "Purchase fixed annual software licensing tiers",
+        "Maintain a completely on-premises static data center"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. This advantage allows companies to pay only when consuming computing resources rather than investing heavily in physical data centers upfront.",
+      "Incorrect. Investing upfront in dedicated hardware contradicts the cloud advantage of avoiding heavy initial capital expenditures.",
+      "Incorrect. Purchasing fixed annual software licensing tiers represents a fixed expense model rather than a flexible cloud-based variable cost structure.",
+      "Incorrect. Maintaining a completely on-premises static data center defeats the purpose of shifting to cloud computing flexibility."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Trade fixed expense for variable expense – Instead of having to invest heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources, and pay only for how much you consume.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-24450f19116c1b7f8bfbb97d2be66520",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise development team needs to spin up new IT resources for testing a prototype. In a traditional environment, this process takes several weeks. Using an AWS cloud computing environment, how is this timeline affected?",
+      "topic": "Cloud Concepts - Increase Speed and Agility",
+      "explanation": "New IT resources are only a click away in a cloud environment, reducing the time to make resources available from weeks to just minutes.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "The time to make resources available is reduced from weeks to just minutes.",
+        "Resource provisioning takes longer due to complex global compliance checks.",
+        "Developers must manually order physical server blades through procurement.",
+        "The timeline remains unchanged at several weeks per request."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Cloud computing increases speed and agility by making new IT resources available in minutes instead of weeks.",
+      "Incorrect. Cloud deployment streamlines resource availability rather than slowing it down with manual compliance checks.",
+      "Incorrect. Manual procurement of physical server blades belongs to traditional on-premises data center management.",
+      "Incorrect. The timeline is drastically reduced, not kept the same."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f3257951cbf9d45d38c4d696d2e670d2",
+    "originality": "original-practice",
+    "question": {
+      "question": "An online retail organization wants to expand its application presence to multiple regions around the world to provide lower latency and a better experience for global customers. Based on AWS whitepapers, how can this be achieved?",
+      "topic": "Cloud Concepts - Go Global in Minutes",
+      "explanation": "Applications can be easily deployed in multiple regions around the world with just a few clicks at minimal cost.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Deploy the application in multiple regions around the world with just a few clicks.",
+        "Construct custom regional data centers with long procurement cycles.",
+        "Ship physical storage appliances across international borders manually.",
+        "Rely entirely on a single localized availability zone for all international traffic."
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. AWS allows businesses to go global in minutes by deploying applications across multiple regions with a few clicks.",
+      "Incorrect. Constructing custom regional data centers requires heavy upfront capital and long timelines, which cloud avoids.",
+      "Incorrect. Manual shipping of physical storage appliances is not the cloud-native method for global deployment described.",
+      "Incorrect. Relying on a single zone would cause high latency for international users."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-133150e8c34b3812a5d28ec3f8db46b1",
+    "originality": "original-practice",
+    "question": {
+      "question": "A company is reviewing its technology architecture and wants to ensure it builds stable and efficient systems. According to the AWS Well-Architected Framework, which six pillars must be incorporated?",
+      "topic": "Cloud Concepts - Well-Architected Framework Pillars",
+      "explanation": "The six pillars of the Well-Architected Framework are operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability",
+        "Speed, agility, capacity, global reach, elasticity, and automation",
+        "Business, people, governance, platform, security, and operations",
+        "Confidentiality, integrity, availability, scalability, durability, and redundancy"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. These are the exact six pillars defined in the AWS Well-Architected Framework.",
+      "Incorrect. These list some cloud advantages and characteristics, but not the six pillars of the Well-Architected Framework.",
+      "Incorrect. These correspond to the six perspectives of the AWS Cloud Adoption Framework (CAF), not the Well-Architected Framework pillars.",
+      "Incorrect. While related to security and design goals, these are not the official six pillars of the Well-Architected Framework."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3928fd334396c9985001961f6f52d2e9",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise is planning its cloud transformation journey and needs a perspective that helps ensure its cloud investments accelerate digital transformation ambitions and business outcomes. According to the AWS Cloud Adoption Framework (CAF), which perspective is responsible for this?",
+      "topic": "Cloud Concepts - AWS Cloud Adoption Framework Perspectives",
+      "explanation": "The Business perspective helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "People perspective",
+        "Platform perspective",
+        "Operations perspective"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. The Business perspective specifically focuses on aligning cloud investments with digital transformation and business outcomes.",
+      "Incorrect. The People perspective serves as a bridge between technology and business, focusing on culture, leadership, and workforce readiness.",
+      "Incorrect. The Platform perspective helps build enterprise-grade, scalable, hybrid cloud platforms and modernize workloads.",
+      "Incorrect. The Operations perspective ensures cloud services are delivered at a level meeting business needs."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-2ddf745c56d6fe44c29f2374d1caa899",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineering team is struggling with capacity planning for a new web service. They frequently end up purchasing too much hardware or finding themselves with limited capacity. According to the advantages of cloud computing, how does moving to AWS address this challenge?",
+      "topic": "Cloud Concepts - Six Advantages of Cloud Computing",
+      "explanation": "Moving to the cloud allows organizations to eliminate guessing on infrastructure capacity needs. Instead of buying fixed capacity beforehand and dealing with idle resources or limited capacity, teams can access as much or as little capacity as needed and scale up and down with only a few minutes notice.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "By enforcing fixed-term hardware leases to strictly control future expenses",
+        "By allowing the organization to stop guessing capacity and scale resources up or down with a few minutes notice",
+        "By requiring organizations to lock in maximum server allocations prior to application deployment",
+        "By automating the physical racking, stacking, and powering of data center servers"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Fixed-term hardware leases do not solve capacity guessing and run counter to flexible cloud scaling.",
+      "Correct. Cloud computing eliminates the need to guess capacity, allowing organizations to scale up or down as required with only a few minutes notice.",
+      "Incorrect. Locking in maximum allocations beforehand leads back to expensive idle resources, which the cloud avoids.",
+      "Incorrect. Racking, stacking, and powering servers are parts of traditional data centers; cloud computing lets you avoid this heavy lifting."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-091aa22694e8fb56ccc3362bf01d81b8",
+    "originality": "original-practice",
+    "question": {
+      "question": "A multinational corporation is restructuring its internal groups to support an upcoming cloud transformation. Leadership wants to focus on building an enterprise-grade, hybrid cloud platform, modernizing existing workloads, and implementing new cloud-native solutions. According to the AWS Cloud Adoption Framework (CAF), which perspective covers these foundational capabilities?",
+      "topic": "Cloud Concepts - AWS Cloud Adoption Framework (CAF)",
+      "explanation": "The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions, involving CTOs, technology leaders, architects, and engineers.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "The Business perspective",
+        "The People perspective",
+        "The Platform perspective",
+        "The Governance perspective"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Business perspective helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes.",
+      "Incorrect. The People perspective serves as a bridge between technology and business, focusing on culture, leadership, and workforce evolution.",
+      "Correct. The Platform perspective is specifically defined as helping you build a hybrid cloud platform, modernize existing workloads, and implement cloud-native solutions.",
+      "Incorrect. The Governance perspective helps orchestrate cloud initiatives while maximizing benefits and minimizing transformation-related risks."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-969385553b1d532e399977c901175cb6",
+    "originality": "original-practice",
+    "question": {
+      "question": "An operations manager wants to verify that their cloud architecture aligns with the AWS Well-Architected Framework to deliver stable and efficient systems. Specifically, they need to ensure that services are delivered at a level that meets the needs of the business. Which of the six Well-Architected pillars is directly focused on producing stable, efficient systems while incorporating operational excellence, security, reliability, performance efficiency, and cost optimization?",
+      "topic": "Cloud Concepts - AWS Well-Architected Framework",
+      "explanation": "The Well-Architected Framework includes six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. Incorporating all six pillars helps produce stable and efficient systems.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Sustainability, alongside operational excellence, security, reliability, performance efficiency, and cost optimization",
+        "Data sovereignty, alongside availability, elasticity, agility, security, and economy",
+        "Flexibility, alongside scalability, fault tolerance, manageability, governance, and compliance",
+        "Simplicity, alongside automation, modularity, durability, recoverability, and speed"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Sustainability is listed as one of the six pillars alongside operational excellence, security, reliability, performance efficiency, and cost optimization.",
+      "Incorrect. Data sovereignty and the other listed terms are not the official six pillars of the Well-Architected Framework.",
+      "Incorrect. Flexibility, fault tolerance, and manageability are not among the six official Well-Architected pillars.",
+      "Incorrect. Simplicity, modularity, and durability are not part of the official six pillars list."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-ff74c0af60a18879be021c3e4bfe2e5d",
+    "originality": "original-practice",
+    "question": {
+      "question": "An IT department spends a significant portion of its budget and workforce hours managing physical data centers, replacing power supplies, and racking servers. By adopting AWS cloud computing, how should this operational model shift according to the advantages of cloud computing?",
+      "topic": "Cloud Concepts - Six Advantages of Cloud Computing",
+      "explanation": "Cloud computing allows organizations to stop spending money running and maintaining data centers, letting them focus on projects that differentiate their business instead of the heavy lifting of racking, stacking, and powering servers.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "By replacing variable expenses with fixed upfront data center build-out costs",
+        "By shifting internal efforts from infrastructure maintenance to focusing on business-differentiating projects and customers",
+        "By delegating hardware cooling and physical maintenance to local regional office staff",
+        "By eliminating the need to deploy applications across multiple global regions"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Cloud computing trades fixed expense for variable expense, not the other way around.",
+      "Correct. Cloud computing allows organizations to stop spending money running and maintaining data centers so they can focus on customers and projects that differentiate their business.",
+      "Incorrect. Physical maintenance and heavy lifting are handled by the cloud provider, not local office staff.",
+      "Incorrect. The cloud actually enables going global in minutes to provide lower latency, rather than eliminating multi-region deployment."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Cloud computing lets you focus on your own customers, rather than on the heavy lifting of racking, stacking, and powering servers.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9c3128bd5e23661ddde042d234f1772e",
+    "originality": "original-practice",
+    "question": {
+      "question": "A newly formed executive committee including the chief risk officer, chief data officer, and chief information officer is organizing their cloud transformation initiatives. They want to ensure they maximize organizational benefits while minimizing transformation-related risks. According to the AWS Cloud Adoption Framework (CAF), which perspective addresses these goals?",
+      "topic": "Cloud Concepts - AWS Cloud Adoption Framework (CAF)",
+      "explanation": "The Governance perspective helps organizations orchestrate cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks. Common stakeholders include the chief transformation officer, CIO, CTO, CFO, CDO, and CRO.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "The Security perspective",
+        "The Operations perspective",
+        "The Governance perspective",
+        "The Business perspective"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Hard",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Security perspective helps achieve the confidentiality, integrity, and availability of data and cloud workloads.",
+      "Incorrect. The Operations perspective ensures that cloud services are delivered at a level meeting business needs.",
+      "Correct. The Governance perspective is explicitly designed to help orchestrate cloud initiatives while maximizing benefits and minimizing transformation risks.",
+      "Incorrect. The Business perspective ensures cloud investments accelerate digital transformation ambitions and business outcomes."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e8f448ea41cd4a5b6ec746819279d3f4",
+    "originality": "original-practice",
+    "question": {
+      "question": "A global media company wants to construct a new software architecture and is evaluating the core guidelines required to deliver stable and efficient systems. According to the AWS Well-Architected Framework, which set of six elements must be incorporated to prevent structural problems?",
+      "topic": "AWS Well-Architected Framework",
+      "explanation": "According to the AWS Well-Architected Framework documentation, when architecting technology solutions, neglecting the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability can make it challenging to build systems that deliver on expectations.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability",
+        "Data management, compute scaling, network security, financial governance, operational monitoring, and resilience",
+        "Agility, elasticity, global deployment, economies of scale, fixed expense reduction, and variable cost",
+        "Business, People, Governance, Platform, Security, and Operations"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "This option correctly lists the six pillars of the AWS Well-Architected Framework.",
+      "This is incorrect and describes generic IT management concepts rather than the six official Well-Architected pillars.",
+      "This is incorrect because these terms represent the six advantages of cloud computing, not the Well-Architected pillars.",
+      "This is incorrect because these represent the six perspectives of the AWS Cloud Adoption Framework (CAF)."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-7c1bbcd892a7b2ce7b972d107edde8de",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise financial organization is reorganizing its transformation capabilities and wants to ensure that its cloud investments directly accelerate business outcomes and digital transformation ambitions. According to the AWS Cloud Adoption Framework (CAF), which perspective is designed to support this objective?",
+      "topic": "AWS Cloud Adoption Framework",
+      "explanation": "The AWS Cloud Adoption Framework (CAF) groups its capabilities into six perspectives. According to the documentation, the Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "The People perspective",
+        "The Business perspective",
+        "The Operations perspective",
+        "The Platform perspective"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "The People perspective serves as a bridge between technology and business, accelerating the cloud journey toward a culture of continuous growth and learning, not specifically business outcomes acceleration.",
+      "The Business perspective is correct as it specifically helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes.",
+      "The Operations perspective helps ensure that cloud services are delivered at a level that meets the needs of your business.",
+      "The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform and modernize workloads."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-447f562f910d3a09a8f61a71edd2c8e2",
+    "originality": "original-practice",
+    "question": {
+      "question": "A retail corporation is updating its infrastructure budget and wants to transition away from heavy upfront physical data center commitments. Under the six advantages of cloud computing, what financial change does AWS enable instead of upfront capital outlays?",
+      "topic": "Advantages of Cloud Computing",
+      "explanation": "The AWS whitepaper on the six advantages of cloud computing states that organizations can trade fixed expense for variable expense, paying only when and how much computing resources are consumed rather than investing heavily beforehand.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Trade variable expense for a fixed monthly subscription cost",
+        "Trade fixed expense for variable expense",
+        "Eliminate all variable costs through permanent capacity reservations",
+        "Replace variable capital expenditures with upfront licensing fees"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "This option reverses the actual advantage by suggesting trading variable for fixed expenses.",
+      "This option correctly matches the advantage of trading fixed expense for variable expense.",
+      "This is incorrect because variable costs are consumed on a pay-as-you-go basis, and permanent reservations do not eliminate all variable costs.",
+      "This is incorrect because upfront licensing fees act as fixed capital expenditures, which cloud computing helps avoid."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Trade fixed expense for variable expense – Instead of having to invest heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources, and pay only for how much you consume.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-1f9d14a3048e8ed52d0f2eb150f32d10",
+    "originality": "original-practice",
+    "question": {
+      "question": "A mid-sized logistics firm is modernizing its technology portfolio by building a scalable, hybrid cloud platform and deploying new cloud-native solutions. According to the AWS Cloud Adoption Framework (ادفCAF), which perspective is primarily responsible for guiding these specific technical implementations?",
+      "topic": "AWS Cloud Adoption Framework (CAF) Perspectives",
+      "explanation": "The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "Platform perspective",
+        "Operations perspective",
+        "Security perspective"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+      "Correct. The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+      "Incorrect. The Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+      "Incorrect. The Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fb6dbcabc507c2653d90dadef6561724",
+    "originality": "original-practice",
+    "question": {
+      "question": "An internal IT audit team at a financial institution is reviewing their cloud migration strategy to ensure the confidentiality, integrity, and availability of sensitive customer data and cloud workloads. According to the AWS Cloud Adoption Framework (CAF), which perspective directly covers these objectives?",
+      "topic": "AWS Cloud Adoption Framework (CAF) Perspectives",
+      "explanation": "The Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Governance perspective",
+        "People perspective",
+        "Security perspective",
+        "Platform perspective"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+      "Incorrect. The People perspective serves as a bridge between technology and business, focusing on culture, organizational structure, leadership, and workforce.",
+      "Correct. The Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads.",
+      "Incorrect. The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-154f7a1e2443290fe7247393d32d63b6",
+    "originality": "original-practice",
+    "question": {
+      "question": "A healthcare provider is designing a resilient software system and evaluates the core elements required to prevent structural problems that could undermine function and integrity. According to the AWS Well-Architected Framework, which six pillars must be incorporated?",
+      "topic": "AWS Well-Architected Framework Pillars",
+      "explanation": "The AWS Well-Architected Framework specifies six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability",
+        "Business, people, governance, platform, security, and operations",
+        "Compute, storage, database, networking, security, and management",
+        "Availability, scalability, fault tolerance, elasticity, durability, and agility"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. These are the exact six pillars defined by the AWS Well-Architected Framework.",
+      "Incorrect. These correspond to the six perspectives of the AWS Cloud Adoption Framework (CAF), not the Well-Architected Framework pillars.",
+      "Incorrect. These are general categories of AWS services rather than the architectural pillars of the Well-Architected Framework.",
+      "Incorrect. These are common cloud characteristics and design properties, but not the official six Well-Architected Framework pillars."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-6339026bbaf447d4c01c205192cbd4e8",
+    "originality": "original-practice",
+    "question": {
+      "question": "A software development team wants to experiment with building a new internal tool, but leadership is concerned about the time it takes to procure physical hardware and make environments available. In a cloud computing environment, how is resource provisioning time affected?",
+      "topic": "Advantages of Cloud Computing",
+      "explanation": "Cloud computing increases speed and agility because new IT resources are only a click away, reducing provisioning time from weeks to just minutes.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Provisioning time remains unchanged because hardware setup requires manual racking regardless of the hosting model.",
+        "Provisioning time is reduced from weeks to just minutes, increasing speed and agility.",
+        "Provisioning time increases because cloud environments require extensive upfront capacity planning.",
+        "Provisioning time is eliminated entirely, requiring zero preparation or configuration."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Moving to the cloud eliminates the need for manual physical racking and significantly speeds up resource availability.",
+      "Correct. New IT resources are only a click away, reducing the time from weeks to just minutes and increasing organizational agility.",
+      "Incorrect. Cloud computing actually helps eliminate guessing capacity and speeds up deployment rather than increasing delays.",
+      "Incorrect. While resources are provisioned in minutes, configuration and architecture setup still take place; provisioning time is not literally zero."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-0a0b39a3fec545c929ff93b5d6b43fcb",
+    "originality": "original-practice",
+    "question": {
+      "question": "A video streaming platform experiences fluctuating viewership patterns throughout the day, making it difficult to predict peak resource needs accurately. By leveraging cloud computing, how can the company address this challenge according to the six advantages of cloud computing?",
+      "topic": "Advantages of Cloud Computing",
+      "explanation": "Cloud computing allows organizations to stop guessing capacity, enabling them to access as much or as little capacity as needed and scale up and down with a few minutes’ notice.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "By purchasing permanent fixed capacity that covers the absolute maximum annual peak to avoid any shortfalls.",
+        "By eliminating capacity guesswork, allowing the company to access as much or as little capacity as needed and scale up or down within minutes.",
+        "By relying entirely on massive economies of scale to automatically rewrite application code for variable traffic.",
+        "By completely stopping all server maintenance and shifting all infrastructure tasks to physical data center leasing."
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Purchasing permanent fixed capacity leads to expensive idle resources, which cloud computing is designed to prevent.",
+      "Correct. The advantage of stopping capacity guesswork lets organizations scale up and down dynamically as required with only a few minutes' notice.",
+      "Incorrect. Economies of scale lower variable costs through aggregated usage, but do not automatically rewrite application code.",
+      "Incorrect. Cloud computing eliminates running and maintaining physical data centers, but scaling relies on dynamic resource provisioning rather than leasing physical servers."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Eliminate guessing on your infrastructure capacity needs... You can access as much or as little capacity as you need, and scale up and down as required with only a few minutes’ notice.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-d109b8bd2db6c32e35a5d61e3bf8b71a",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial enterprise is restructuring its transformation domains and wants to ensure that its cloud investments directly accelerate digital transformation ambitions and business outcomes. According to the AWS Cloud Adoption Framework (CAF), which perspective is primarily focused on achieving this objective?",
+      "topic": "AWS Cloud Adoption Framework Perspectives",
+      "explanation": "The Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "People perspective",
+        "Governance perspective",
+        "Platform perspective"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. The Business perspective specifically helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes.",
+      "Incorrect. The People perspective serves as a bridge between technology and business, focusing on culture, organizational structure, leadership, and workforce.",
+      "Incorrect. The Governance perspective helps orchestrate cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+      "Incorrect. The Platform perspective helps build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-95d4674cf674f61e67a794c6ce0c643b",
+    "originality": "original-practice",
+    "question": {
+      "question": "A technology organization is establishing its cloud strategy and wants to ensure that cloud initiatives are properly orchestrated while simultaneously maximizing organizational benefits and minimizing transformation-related risks. According to the AWS Cloud Adoption Framework (CAF), which perspective covers these goals?",
+      "topic": "AWS Cloud Adoption Framework Perspectives",
+      "explanation": "The Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "Governance perspective",
+        "Security perspective",
+        "Operations perspective"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Business perspective helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes.",
+      "Correct. The Governance perspective is designed to help orchestrate cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+      "Incorrect. The Security perspective helps achieve the confidentiality, integrity, and availability of data and cloud workloads.",
+      "Incorrect. The Operations perspective helps ensure that cloud services are delivered at a level that meets the needs of the business."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3d5dacd48dcdf61eaed14ef8ef2fe7e1",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise is designing a modern software architecture and wants to make sure it incorporates all necessary pillars to prevent structural problems that could undermine the integrity and function of the system. According to the AWS Well-Architected Framework, which exact set of six pillars must be included?",
+      "topic": "AWS Well-Architected Framework Pillars",
+      "explanation": "The six pillars of the AWS Well-Architected Framework are operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Operational excellence, Security, Reliability, Performance efficiency, Cost optimization, and Sustainability",
+        "Operational excellence, Security, Availability, Scalability, Cost reduction, and Agility",
+        "Business, People, Governance, Platform, Security, and Operations",
+        "Compute, Storage, Database, Network, Security, and Management"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. These are the exact six pillars defined in the AWS Well-Architected Framework.",
+      "Incorrect. Availability, Scalability, Cost reduction, and Agility are not part of the six Well-Architected pillars.",
+      "Incorrect. Business, People, Governance, Platform, Security, and Operations are the six perspectives of the AWS Cloud Adoption Framework (CAF).",
+      "Incorrect. Compute, Storage, Database, Network, Security, and Management represent categories of AWS services rather than the Well-Architected pillars."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-fb7d41793db65e021ecf930d7bd52fd8",
+    "originality": "original-practice",
+    "question": {
+      "question": "An internal audit team is reviewing their cloud platform to verify that it achieves the confidentiality, integrity, and availability of data and cloud workloads. According to the AWS Cloud Adoption Framework (CAF), which perspective is directly responsible for these capabilities?",
+      "topic": "AWS Cloud Adoption Framework Perspectives",
+      "explanation": "The Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Platform perspective",
+        "Governance perspective",
+        "Security perspective",
+        "Operations perspective"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Platform perspective helps build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+      "Incorrect. The Governance perspective helps orchestrate cloud initiatives while maximizing benefits and minimizing transformation-related risks.",
+      "Correct. The Security perspective helps achieve the confidentiality, integrity, and availability of data and cloud workloads.",
+      "Incorrect. The Operations perspective helps ensure that cloud services are delivered at a level that meets the needs of the business."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-17664aceb366ef5786be376f30542396",
+    "originality": "original-practice",
+    "question": {
+      "question": "An e-commerce company wants to reduce heavy upfront investments in physical data centers and servers before knowing their exact usage levels. Under the six advantages of cloud computing, what is the primary financial benefit gained by moving to AWS?",
+      "topic": "Six Advantages of Cloud Computing",
+      "explanation": "By trading fixed expense for variable expense, you do not have to invest heavily in data centers and servers before you know how you are going to use them, allowing you to pay only for the computing resources you consume.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Trade variable expense for fixed expense",
+        "Trade fixed expense for variable expense",
+        "Eliminate all operational costs completely",
+        "Secure guaranteed perpetual hardware discounts upfront"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The advantage is trading fixed expense for variable expense, not the other way around.",
+      "Correct. AWS allows organizations to trade fixed capital expenses (like data centers and servers) for variable expenses by paying only for consumed resources.",
+      "Incorrect. Cloud computing does not eliminate all operational costs; rather, it changes how expenses are incurred and managed.",
+      "Incorrect. AWS provides pay-as-you-go pricing based on consumption rather than requiring perpetual upfront hardware commitments."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Trade fixed expense for variable expense – Instead of having to invest heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources, and pay only for how much you consume.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9ecf17e09d6b77ab39e49aad9e910e02",
+    "originality": "original-practice",
+    "question": {
+      "question": "A business leadership group wants to ensure their organization can rapidly evolve to a culture of continuous growth and learning while treating change as normal business operations during their cloud journey. According to the AWS Cloud Adoption Framework (CAF), which perspective directly serves as a bridge between technology and business to focus on culture, organizational structure, leadership, and workforce?",
+      "topic": "AWS Cloud Adoption Framework (CAF) Perspectives",
+      "explanation": "The People perspective within the AWS CAF serves as a bridge between technology and business, helping organizations evolve toward a culture of continuous growth, learning, and normal business change with a focus on culture, organizational structure, leadership, and workforce.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "People perspective",
+        "Operations perspective",
+        "Governance perspective"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "The Business perspective helps ensure that cloud investments accelerate digital transformation ambitions and business outcomes, rather than serving as the specific bridge focusing on culture and workforce structure.",
+      "Correct. The People perspective serves as the bridge between technology and business, focusing on culture, leadership, workforce, and organizational structure to accelerate the cloud journey.",
+      "The Operations perspective helps ensure that cloud services are delivered at a level that meets the needs of the business, rather than acting as the bridge for culture and workforce.",
+      "The Governance perspective helps orchestrate cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "People perspective serves as a bridge between technology and business, accelerating the cloud journey to help organizations more rapidly evolve to a culture of continuous growth, learning, and where change becomes business-as-normal, with focus on culture, organizational structure, leadership, and workforce.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-4521a218bfa487bdd40cce9b3b8c545d",
+    "originality": "original-practice",
+    "question": {
+      "question": "An IT infrastructure department needs to verify that their cloud services are being delivered at a service level that consistently meets the needs of their business operations. According to the AWS Cloud Adoption Framework (CAF), which perspective is primarily responsible for addressing these service delivery needs?",
+      "topic": "AWS Cloud Adoption Framework (CAF) Perspectives",
+      "explanation": "The Operations perspective in the AWS CAF helps ensure that your cloud services are delivered at a level that meets the needs of your business, involving stakeholders such as infrastructure and operations leaders, site reliability engineers, and IT service managers.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Platform perspective",
+        "Security perspective",
+        "Operations perspective",
+        "Business perspective"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "The Platform perspective helps build an enterprise-grade, scalable, hybrid cloud platform and modernize workloads, not manage day-to-day service delivery levels for business needs.",
+      "The Security perspective helps achieve the confidentiality, integrity, and availability of data and cloud workloads.",
+      "Correct. The Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+      "The Business perspective helps ensure cloud investments accelerate digital transformation ambitions and business outcomes."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9cc745796261da7c90f33a62836e9177",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise development division wants to deploy an application across multiple distinct geographic regions worldwide to minimize latency for international users. According to the six advantages of cloud computing, what mechanism enables this capability with minimal cost and time?",
+      "topic": "Six Advantages of Cloud Computing",
+      "explanation": "Going global in minutes allows organizations to easily deploy applications in multiple regions around the world with just a few clicks, providing lower latency and a better experience for customers at minimal cost.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Trading fixed expense for variable expense",
+        "Benefiting from massive economies of scale",
+        "Going global in minutes",
+        "Stopping spending money running and maintaining data centers"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Trading fixed expense for variable expense deals with paying only for consumed computing resources instead of heavy upfront investments.",
+      "Benefiting from massive economies of scale relates to achieving lower variable costs because usage from hundreds of thousands of customers is aggregated.",
+      "Correct. Going global in minutes allows you to easily deploy applications in multiple regions around the world with just a few clicks to provide lower latency at minimal cost.",
+      "Stopping spending money running and maintaining data centers allows an organization to focus on projects that differentiate its business instead of racking, stacking, and powering servers."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Go global in minutes – Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-7d4ce12202e5d739b093106ed3f573ab",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineering department wants to lower its variable costs below what it could achieve independently. According to the six advantages of cloud computing, what primary economic mechanism allows providers like AWS to deliver these lower costs to customers?",
+      "topic": "Six Advantages of Cloud Computing",
+      "explanation": "Massive economies of scale are achieved because usage from hundreds of thousands of customers is aggregated in the cloud, allowing providers like AWS to achieve higher efficiencies that translate into lower pay-as-you-go prices.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Stop guessing capacity",
+        "Benefit from massive economies of scale",
+        "Increase speed and agility",
+        "Trade fixed expense for variable expense"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Stop guessing capacity relates to eliminating infrastructure capacity forecasting errors and avoiding idle resources or limited capacity.",
+      "Correct. Benefiting from massive economies of scale aggregates usage from hundreds of thousands of customers to achieve higher efficiency and lower variable costs.",
+      "Increase speed and agility focuses on making new IT resources available in minutes to enhance experimentation and development speed.",
+      "Trade fixed expense for variable expense involves paying only for consumed computing resources rather than investing heavily upfront."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Benefit from massive economies of scale – By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale, which translates into lower pay as-you-go prices.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-ca6b0d69ee8388c1b94fb04aab1ae233",
+    "originality": "original-practice",
+    "question": {
+      "question": "An architect is designing a new cloud system and wants to ensure that all core pillars of the AWS Well-Architected Framework are considered to prevent structural problems. Along with operational excellence, security, reliability, performance efficiency, and cost optimization, which final pillar must be included?",
+      "topic": "AWS Well-Architected Framework Pillars",
+      "explanation": "The six pillars of the AWS Well-Architected Framework are operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Sustainability",
+        "Flexibility",
+        "Scalability",
+        "Manageability"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Sustainability is one of the six pillars of the AWS Well-Architected Framework, alongside operational excellence, security, reliability, performance efficiency, and cost optimization.",
+      "Flexibility is a general characteristic of cloud computing rather than one of the six explicit pillars of the Well-Architected Framework.",
+      "Scalability is a property and goal of cloud architectures rather than a named pillar in the Well-Architected Framework.",
+      "Manageability is a general administrative concept rather than one of the official six pillars."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-c1ecd6b70b2367c936bf3497653a666b",
+    "originality": "original-practice",
+    "question": {
+      "question": "An IT infrastructure leadership group is reviewing how their cloud platform delivers services to verify that service levels consistently align with business requirements. According to the AWS Cloud Adoption Framework (CAF), which perspective is primarily responsible for ensuring that cloud services are delivered at a level that meets business needs?",
+      "topic": "Cloud Concepts",
+      "explanation": "According to the AWS Cloud Adoption Framework (CAF) foundational capabilities, the Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+      "options": [
+        "Business perspective",
+        "Operations perspective",
+        "Platform perspective",
+        "Governance perspective"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. The Business perspective helps ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes.",
+      "Correct. The Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+      "Incorrect. The Platform perspective helps you build an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.",
+      "Incorrect. The Governance perspective helps you orchestrate your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Operations perspective helps ensure that your cloud services are delivered at a level that meets the needs of your business.",
+        "sourceHash": "2cc5a3904346b394637a2703f216d15628075d6c42fa7f01871aeaa19879b1a9"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-e23625824e848e555e3d8447ec87b9c1",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial institution's security architecture team wants to verify their alignment with the AWS Well-Architected Framework when building a new banking portal. Along with operational excellence, reliability, performance efficiency, cost optimization, and sustainability, which essential pillar must they incorporate to prevent structural problems?",
+      "topic": "Cloud Concepts",
+      "explanation": "The AWS Well-Architected Framework outlines six pillars that must be incorporated to produce stable and efficient systems: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "Agility",
+        "Security",
+        "Elasticity",
+        "Simplicity"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Agility is an advantage of cloud computing, not a pillar of the Well-Architected Framework.",
+      "Correct. Security is one of the six pillars of the AWS Well-Architected Framework.",
+      "Incorrect. Elasticity relates to capacity scaling and is not one of the six Well-Architected pillars.",
+      "Incorrect. Simplicity is a design concept, but not one of the six official Well-Architected pillars."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "When architecting technology solutions, if you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it can become challenging to build a system that delivers on your expectations and requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-24e087f21908619b353322b398eb689e",
+    "originality": "original-practice",
+    "question": {
+      "question": "A global gaming enterprise is preparing to launch a multiplayer title across multiple global continents on short notice. Under the six advantages of cloud computing, what specific capability allows the company to deploy applications in multiple regions around the world quickly and cost-effectively?",
+      "topic": "Cloud Concepts",
+      "explanation": "According to the six advantages of cloud computing, going global in minutes allows you to easily deploy your application in multiple regions around the world with just a few clicks to provide lower latency at minimal cost.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "Trade fixed expense for variable expense",
+        "Benefit from massive economies of scale",
+        "Go global in minutes",
+        "Stop spending money running and maintaining data centers"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Trading fixed expense for variable expense refers to paying only for resources consumed instead of investing heavily upfront in data centers.",
+      "Incorrect. Massive economies of scale refer to achieving a lower variable cost than you can get on your own through aggregated customer usage.",
+      "Correct. Going global in minutes enables deploying applications in multiple regions with a few clicks to provide lower latency at minimal cost.",
+      "Incorrect. Stopping spending money running and maintaining data centers allows an organization to focus on projects that differentiate their business rather than heavy lifting."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Go global in minutes – Easily deploy your application in multiple regions around the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-c2e50b2f89cb8da27afaae121b831345",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineering division is designing a software system and evaluating core design principles. According to the AWS Well-Architected Framework, what is the primary purpose of incorporating the six framework pillars into your architecture?",
+      "topic": "Cloud Concepts",
+      "explanation": "The AWS Well-Architected Framework states that incorporating the six pillars into your architecture will help you produce stable and efficient systems, allowing you to focus on other aspects of design.",
+      "sourceUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "options": [
+        "To help you produce stable and efficient systems",
+        "To eliminate all software bugs prior to user testing",
+        "To guarantee compliance with financial auditing standards automatically",
+        "To mandate the exclusive use of serverless architectures"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Incorporating the six pillars into your architecture helps you produce stable and efficient systems.",
+      "Incorrect. The framework pillars prevent structural and architectural problems, but they do not automatically eliminate all software bugs.",
+      "Incorrect. While security supports compliance, the Well-Architected pillars are designed to help produce stable and efficient systems rather than guarantee specific financial audit compliance.",
+      "Incorrect. The framework does not mandate serverless architectures; it applies broadly to technology solution design."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Incorporating these pillars into your architecture will help you produce stable and efficient systems. This will allow you to focus on the other aspects of design, such as functional requirements.",
+        "sourceHash": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f1d0f210932a3e72748ba2092ce08a85",
+    "originality": "original-practice",
+    "question": {
+      "question": "A retail company is planning its infrastructure budget and wants to avoid paying for expensive idle resources or facing limited capacity when unexpected traffic spikes occur. According to the six advantages of cloud computing, how does moving to the cloud solve this dilemma?",
+      "topic": "Cloud Concepts",
+      "explanation": "By utilizing cloud computing, organizations can eliminate guessing on infrastructure capacity needs, allowing them to access as much or as little capacity as needed and scale up and down with only a few minutes' notice.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+      "options": [
+        "By enforcing mandatory five-year hardware purchasing contracts",
+        "By allowing you to stop guessing capacity and scale up and down as required",
+        "By shifting all infrastructure responsibilities back to on-premises hardware vendors",
+        "By fixing operational expenses into rigid monthly subscription tiers"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-1",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Cloud computing avoids rigid long-term physical hardware contracts for standard usage models.",
+      "Correct. Cloud computing eliminates capacity guessing, allowing you to access as much or as little capacity as needed and scale dynamically.",
+      "Incorrect. Cloud computing removes the heavy lifting of running on-premises data centers rather than shifting responsibilities back to hardware vendors.",
+      "Incorrect. Cloud computing utilizes a variable, pay-as-you-go expense model rather than rigid fixed monthly subscription tiers."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Stop guessing capacity – Eliminate guessing on your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity. With cloud computing, these problems go away.",
+        "sourceHash": "77981a878dade34d751d1487eb527fc7fcf0d836ae8eb0ece65bf488b606c03b"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-c61572b49874a877c88df43a279d14f8",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial institution is building a cloud-native custom application and needs to externalize authorization while centralizing policy management and administration using custom policies defined in Cedar. Which AWS service should the security team choose?",
+      "topic": "Security and Compliance",
+      "explanation": "Amazon Verified Permissions is a scalable, fine-grained permissions management and authorization service for custom applications you've built, utilizing Cedar to define fine-grained permissions.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+      "options": [
+        "Amazon Verified Permissions",
+        "AWS Identity and Access Management (IAM)",
+        "AWS Key Management Service (KMS)",
+        "AWS Secrets Manager"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon Verified Permissions is correct because it uses Cedar to define fine-grained permissions and centralize policy management for custom applications.",
+      "IAM is incorrect because it controls access to AWS services and resources for AWS users and roles, rather than externalizing authorization for custom applications via Cedar.",
+      "AWS KMS is incorrect because it is designed for creating and managing cryptographic keys rather than application-level authorization policies.",
+      "AWS Secrets Manager is incorrect because it is used for rotating, managing, and retrieving database credentials and API keys rather than defining application authorization policies."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon Verified Permissions uses Cedar, an open-source policy language and SDK, to define fine-grained permissions for application users.",
+        "sourceHash": "4c9a839be13096f4a6c446c49d610332e6461dbf7384eab617fab074830053a2"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-061da437c3f3feac3a5ca9d1ea4365b3",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise security team wants to continuously audit their AWS usage to simplify how they assess risk and compliance with regulations such as the CIS AWS Foundations Benchmark and PCI DSS. The tool needs to automate evidence collection and map resources to compliance controls. Which service meets these requirements?",
+      "topic": "Security and Compliance",
+      "explanation": "AWS Audit Manager helps continuously audit AWS usage to simplify risk and compliance assessment by automating evidence collection and mapping resources to industry standards.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+      "options": [
+        "AWS Artifact",
+        "AWS Audit Manager",
+        "Amazon Inspector",
+        "Amazon GuardDuty"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "AWS Audit Manager is correct because it continuously audits AWS usage, automates evidence collection, and maps resources to regulations like PCI DSS and CIS benchmarks.",
+      "AWS Artifact is incorrect because it serves as a central resource for compliance-related information and reports (like SOC and PCI reports) rather than automating internal evidence collection.",
+      "Amazon Inspector is incorrect because it is an automated vulnerability management service that scans AWS workloads for software vulnerabilities and network exposure.",
+      "Amazon GuardDuty is incorrect because it is a threat detection service that continuously monitors for malicious activity and anomalous behavior."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Audit Manager helps you continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards.",
+        "sourceHash": "4c9a839be13096f4a6c446c49d610332e6461dbf7384eab617fab074830053a2"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-f03ae2eb55b28e27983656628466956e",
+    "originality": "original-practice",
+    "question": {
+      "question": "An operations team needs on-demand access to AWS security and compliance reports, such as Service Organization Control (SOC) and Payment Card Industry (PCI) reports, as well as online agreements like the Business Associate Addendum (BAA). Which AWS resource should they access?",
+      "topic": "Security and Compliance",
+      "explanation": "AWS Artifact provides on-demand access to AWS security and compliance reports and select online agreements such as SOC reports, PCI reports, and the BAA.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+      "options": [
+        "AWS Audit Manager",
+        "AWS Artifact",
+        "AWS Trusted Advisor",
+        "AWS CloudHSM"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "AWS Audit Manager is incorrect because it focuses on auditing internal AWS usage and collecting evidence against compliance frameworks rather than providing third-party audit reports.",
+      "AWS Artifact is correct because it provides on-demand access to compliance reports and online agreements like SOC, PCI, and BAA.",
+      "AWS Trusted Advisor is incorrect because it inspects the AWS environment and makes recommendations for cost optimization, security, and performance.",
+      "AWS CloudHSM is incorrect because it is a cloud-based hardware security module used to generate and use encryption keys."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Artifact is your go-to, central resource for compliance-related information that matters to you. It provides on-demand access to AWS security and compliance reports and select online agreements.",
+        "sourceHash": "4c9a839be13096f4a6c446c49d610332e6461dbf7384eab617fab074830053a2"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-86a8ea0a52e99f6a3abca940e0fb3654",
+    "originality": "original-practice",
+    "question": {
+      "question": "A security analyst needs to investigate a potential security finding by analyzing trillions of events from sources like VPC Flow Logs and AWS CloudTrail to determine the underlying root cause through a unified interactive view. Which service simplifies this investigation process?",
+      "topic": "Security and Compliance",
+      "explanation": "Amazon Detective makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues by collecting log data and building a linked set of data.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+      "options": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "Amazon Detective",
+        "Amazon Macie"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon GuardDuty is incorrect because it is a threat detection service that monitors for malicious activity and generates alerts, rather than deep-dive root cause investigation.",
+      "Amazon Inspector is incorrect because it is an automated vulnerability management service that scans EC2 instances and container images for software vulnerabilities.",
+      "Amazon Detective is correct because it analyzes multiple data sources to help security teams easily investigate and identify the root cause of security findings.",
+      "Amazon Macie is incorrect because it is a data security and privacy service that discovers sensitive data in Amazon S3 environments."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon Detective makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities.",
+        "sourceHash": "4c9a839be13096f4a6c446c49d610332e6461dbf7384eab617fab074830053a2"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-95a54b5c5ab61807bc6d642a529b652e",
+    "originality": "original-practice",
+    "question": {
+      "question": "An e-commerce enterprise stores critical customer records in Amazon Simple Storage Service (Amazon S3) buckets and needs a fully managed service that uses machine learning and pattern matching to discover sensitive data, such as personally identifiable information (PII) and financial data, across the environment. Which AWS service should they deploy?",
+      "topic": "Security and Compliance",
+      "explanation": "Amazon Macie is a fully managed data security and data privacy service that uses inventory evaluations, machine learning, and pattern matching to discover sensitive data in Amazon S3.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+      "options": [
+        "Amazon Macie",
+        "AWS Artifact",
+        "Amazon GuardDuty",
+        "AWS Audit Manager"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-2",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon Macie is correct because it uses machine learning and pattern matching specifically to discover sensitive data like PII and financial records in Amazon S3.",
+      "AWS Artifact is incorrect because it provides compliance reports and agreements, not data discovery capabilities.",
+      "Amazon GuardDuty is incorrect because it monitors accounts and workloads for threats and anomalous behavior, not specific sensitive data content inside S3.",
+      "AWS Audit Manager is incorrect because it automates evidence collection for regulatory compliance assessments rather than scanning storage buckets for sensitive data types."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon Macie is a fully managed data security and data privacy service that uses inventory evaluations, machine learning, and pattern matching to discover sensitive data and accessibility in your Amazon S3 environment.",
+        "sourceHash": "4c9a839be13096f4a6c446c49d610332e6461dbf7384eab617fab074830053a2"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-57de07e6f0baba4a8aea9a29c558592b",
+    "originality": "original-practice",
+    "question": {
+      "question": "An analytics startup is running a database management solution on AWS and requires a fully managed relational database engine that combines the speed and availability of high-end commercial databases with open-source simplicity. Which database service should they deploy?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon Aurora is a MySQL and PostgreSQL-compatible relational database engine designed for unparalleled high performance and availability at global scale, offering commercial-grade database capabilities at a lower cost.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html",
+      "options": [
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon Timestream",
+        "Amazon Neptune"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Amazon Aurora is a fully managed MySQL and PostgreSQL-compatible relational database engine.",
+      "Incorrect: Amazon DynamoDB is a key-value and document database service, not a relational database engine.",
+      "Incorrect: Amazon Timestream is a fast, scalable, fully managed time series database service, not a relational database.",
+      "Incorrect: Amazon Neptune is a graph database service used for connected datasets, not a standard relational database engine."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon Aurora is a MySQL and PostgreSQL compatible relational database engine that combines the speed and availability of high-end commercial databases with the simplicity and cost-effectiveness of open source databases.",
+        "sourceHash": "debbb9f1b15770271ec7564c599fc7c3feac52de2f1221ec779c871ced88db2c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-9d7594cf0d7617ce83d36a368a4f5174",
+    "originality": "original-practice",
+    "question": {
+      "question": "A media processing organization needs a file system optimized for compute-intensive workloads such as machine learning and high-performance computing, with the ability to process massive datasets at high throughput. Which storage service fits this requirement?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon FSx for Lustre is a fully managed file system optimized for compute-intensive workloads like high-performance computing and machine learning, capable of processing massive data sets with sub-millisecond latencies.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+      "options": [
+        "Amazon Simple Storage Service (Amazon S3)",
+        "Amazon FSx for Lustre",
+        "Amazon Elastic File System (Amazon EFS)",
+        "Amazon Elastic Block Store (Amazon EBS)"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect: Amazon S3 is an object storage service, not a specialized high-performance parallel file system.",
+      "Correct: Amazon FSx for Lustre is fully managed and optimized specifically for compute-intensive workloads like machine learning and HPC.",
+      "Incorrect: Amazon EFS provides a scalable file system for general Linux workloads, but FSx for Lustre is optimized for compute-intensive and high-performance requirements.",
+      "Incorrect: Amazon EBS provides persistent block storage volumes for use with individual Amazon EC2 instances."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon FSx for Lustre is a fully managed file system that is optimized for compute-intensive workloads, such as high performance computing, machine learning, and media data processing workflows.",
+        "sourceHash": "5184b8c12f15994500acf29e9f2b8ac70af18110d0282c9a89386ba871c1a227"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-b01806394f4d93ca4dd9705303d794ac",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise web development team wants to deploy web applications developed in Node.js and Python without manually managing underlying servers, capacity provisioning, or load balancing, while retaining full control over the underlying AWS resources. Which service should they choose?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "AWS Elastic Beanstalk allows developers to upload code while automatically handling deployment details like capacity provisioning, load balancing, and auto scaling, while retaining full control over the underlying AWS resources.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html",
+      "options": [
+        "AWS Lambda",
+        "Amazon EC2 Auto Scaling",
+        "AWS Elastic Beanstalk",
+        "Amazon Lightsail"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect: AWS Lambda runs code without provisioning servers, but it does not provide direct access or full control over traditional underlying server resources in the same manner as Elastic Beanstalk.",
+      "Incorrect: Amazon EC2 Auto Scaling adds or removes instances based on conditions, but it does not provide the application deployment framework for code runtimes like Node.js and Python by itself.",
+      "Correct: AWS Elastic Beanstalk automates deployment, capacity provisioning, and scaling for application runtimes while maintaining full user control over underlying resources.",
+      "Incorrect: Amazon Lightsail is designed to launch and manage standalone virtual private servers at a predictable price rather than offering a managed multi-runtime deployment platform with full resource control."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker... At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time.",
+        "sourceHash": "605485cc972fe47066b73032c6c40c64bb3370ebef399f7b3ccfaf1d833dd2d6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-888870868d4ee5a60d4821d71a774d82",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial firm is planning to migrate its on-premises Windows-based applications that rely heavily on the SMB protocol, NTFS, and Active Directory integration to the cloud. Which fully managed service should they use?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon FSx for Windows File Server provides fully managed native Microsoft Windows file systems supporting the SMB protocol, Windows NTFS, and Active Directory integration.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+      "options": [
+        "Amazon FSx for Windows File Server",
+        "Amazon Elastic Block Store (Amazon EBS)",
+        "Amazon File Cache",
+        "Amazon S3 Glacier Deep Archive"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct: Amazon FSx for Windows File Server delivers native Windows shared file storage with SMB, NTFS, and Active Directory support.",
+      "Incorrect: Amazon EBS provides block storage volumes for single EC2 instances, not shared Windows file systems with AD integration.",
+      "Incorrect: Amazon File Cache serves as temporary high-performance storage for dispersed datasets rather than native Windows file server workloads.",
+      "Incorrect: Amazon S3 Glacier Deep Archive is designed for long-term data archiving rather than active Windows file share applications."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon FSx for Windows File Server provides a fully managed native Microsoft Windows file system so you can easily move your Windows-based applications that require file storage to AWS. Built on Windows Server, Amazon FSx provides shared file storage with the compatibility and features that your Windows-based applications rely on, including full support for the SMB protocol and Windows NTFS, Active Directory (AD) integration...",
+        "sourceHash": "5184b8c12f15994500acf29e9f2b8ac70af18110d0282c9a89386ba871c1a227"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-cbb21fe458ae9fb2db4f098a42c72891",
+    "originality": "original-practice",
+    "question": {
+      "question": "An e-commerce company needs an in-memory caching layer to improve web application performance by retrieving information quickly instead of relying entirely on slower disk-based databases. Which AWS service supports managed Redis and Memcached engines?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale in-memory caches in the cloud, supporting both Redis and Memcached engines.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html",
+      "options": [
+        "Amazon DynamoDB",
+        "Amazon Aurora",
+        "Amazon ElastiCache",
+        "Amazon Timestream"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect: Amazon DynamoDB is a key-value and document database service, not an in-memory caching service supporting Redis or Memcached engines.",
+      "Incorrect: Amazon Aurora is a relational database engine, not an in-memory cache.",
+      "Correct: Amazon ElastiCache provides managed in-memory caching supporting both Redis and Memcached.",
+      "Incorrect: Amazon Timestream is a time series database service."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches... ElastiCache supports two open-source in-memory caching engines: Redis... Memcached...",
+        "sourceHash": "debbb9f1b15770271ec7564c599fc7c3feac52de2f1221ec779c871ced88db2c"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-490fa943f9a26f6390d8b32ade9d0700",
+    "originality": "original-practice",
+    "question": {
+      "question": "A growing enterprise needs to consolidate charges across multiple distinct AWS accounts and wants to combine the usage across all accounts to share volume pricing discounts, Reserved Instances discounts, and Savings Plans. Which feature in AWS Organizations should the company use to accomplish this without incurring an extra fee?",
+      "topic": "Billing, Pricing, and Support",
+      "explanation": "Consolidated billing is a feature offered by AWS Organizations at no additional cost that allows you to combine usage across all accounts in your organization to share volume pricing discounts, Reserved Instances discounts, and Savings Plans, resulting in a single bill.",
+      "sourceUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+      "options": [
+        "Consolidated billing",
+        "AWS Billing Conductor",
+        "Billing transfer",
+        "AWS Cost Explorer"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Correct. Consolidated billing combines usage across all accounts in an organization to share volume pricing discounts, Reserved Instances, and Savings Plans at no additional cost.",
+      "Incorrect. AWS Billing Conductor is a custom billing service used to support showback and chargeback workflows for AWS Partners or custom groupings, not for basic multi-account usage consolidation.",
+      "Incorrect. Billing transfer allows a management account to designate an external management account to manage and pay for its consolidated bill, rather than providing the core multi-account usage consolidation mechanism.",
+      "Incorrect. AWS Cost Explorer is a tool used to analyze, filter, group, and forecast your cost and usage data, rather than combining usage across accounts for discounts."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Consolidated billing has the following benefits: One bill - Get one bill for multiple accounts... Combined usage - Combine the usage across all accounts in the organization to share the volume pricing discounts, Reserved Instances discounts, and Savings Plans... No extra fee - Consolidated billing is offered at no additional cost.",
+        "sourceHash": "d1ee7fad7796d1e765df2a81c298dcdd472002b191b6964e365e0189f4dd225d"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-5a4c7f180471551c86e9b9b02aa0efc7",
+    "originality": "original-practice",
+    "question": {
+      "question": "An online retail organization wants to minimize its compute costs for batch processing jobs that can be interrupted and do not require continuous running. According to AWS pricing models, which mechanism offers spare computing capacity at a discounted hourly rate of up to 90 percent off the On-Demand price with no upfront commitment?",
+      "topic": "Billing, Pricing, and Support",
+      "explanation": "Spot Instances let you request spare computing capacity with no upfront commitment at a discounted hourly rate of up to 90 percent off the On-Demand price.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+      "options": [
+        "Savings Plans",
+        "Spot Instances",
+        "On-Demand Instances",
+        "Reservations"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Savings Plans offer low prices in exchange for a commitment to a consistent amount of usage measured in dollars per hour for a one or three-year term, rather than utilizing spare capacity at up to 90 percent off.",
+      "Correct. Spot Instances let you request spare computing capacity with no upfront commitment at a discounted hourly rate of up to 90 percent off the On-Demand price.",
+      "Incorrect. On-Demand Instances let you pay for capacity by the hour or second with no long-term commitments or upfront payments, but do not provide discounts of up to 90 percent off spare capacity.",
+      "Incorrect. Reservations provide a greater discount by paying for capacity ahead of time, whereas Spot Instances utilize spare computing capacity with no upfront commitment."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+        "checkedOn": "2026-10-18",
+        "supports": "The Spot Instance Amazon EC2 pricing mechanism lets you request spare computing capacity with no upfront commitment and at discounted hourly rate (up to 90 percent off the on-demand price).",
+        "sourceHash": "9fd7402b47a87a7f055f2775c6e69d80cf38d47a383a929f97f62751bed800a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3389712185eba47708103f8a0d4ab348",
+    "originality": "original-practice",
+    "question": {
+      "question": "An operations team requires 24/7 access to Cloud Support Engineers via phone, web, and chat, along with human engagement of less than 30 minutes for business-critical system down cases and more than 500 checks with AWS Trusted Advisor. Which specific AWS Support plan provides these exact benefits?",
+      "topic": "Billing, Pricing, and Support",
+      "explanation": "Customers with a Business Support+ plan have access to 24x7 phone, web, and chat access to Cloud Support Engineers, less than 30 minutes human engagement for business critical system down cases, and more than 500 checks with AWS Trusted Advisor.",
+      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+      "options": [
+        "Basic Support",
+        "Enterprise Support",
+        "Business Support+",
+        "AWS Unified Operations"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Basic Support offers assistance for account and billing questions and service quota increases, but does not provide 24x7 phone, web, and chat technical support or 500+ Trusted Advisor checks.",
+      "Incorrect. Enterprise Support includes all Business Support+ benefits plus a designated Technical Account Manager (TAM) and up to 15-minute production-critical case response times, exceeding the specified criteria.",
+      "Correct. The Business Support+ plan includes 24x7 phone, web, and chat access, less than 30-minute response for business-critical system down cases, and more than 500 checks with AWS Trusted Advisor.",
+      "Incorrect. AWS Unified Operations provides specialized benefits such as an application architecture guidance and a designated TAM and Domain Specialist Engineer, rather than the standard Business Support+ tier features."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Customers with a Business Support+ plan have access to these additional features: Real time and contextual responses through generative AI. 24x7 phone, web, and chat access to Cloud Support Engineers. Less than 30 minutes human engagement for business critical system down cases. More than 500 checks with AWS Trusted Advisor.",
+        "sourceHash": "34ec652b96faa6e9a28f1484850adc37fb4cecfe690a2a0a81bd96f4451412cc"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3830ca2c3acb7d26162e84726c291b46",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineering organization wants to trade fixed expenses like physical data centers for variable expenses and only pay for IT as they consume it. According to AWS pricing principles, what primary economic benefit do customers gain from cloud providers due to their scale?",
+      "topic": "Billing, Pricing, and Support",
+      "explanation": "Because of economies of scale, the variable expenses in the cloud are much lower than what customers would pay to build and run physical data centers themselves.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+      "options": [
+        "Elimination of outbound data transfer fees across all services",
+        "Economies of scale resulting in much lower variable expenses",
+        "Free compute capacity regardless of whether instances are running",
+        "Mandatory long-term commitments for all On-Demand workloads"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. Outbound data transfer fees still apply based on outbound data rates, and inbound data transfer or intra-region data transfer between services has specific rules rather than eliminating all transfer fees.",
+      "Correct. Because of economies of scale, the variable expenses in the cloud are much lower than what you would pay to do it yourself.",
+      "Incorrect. You do not get free compute capacity; one of the advantages is that you don't pay for instances when they're not running, but active instances incur hourly or second-based charges.",
+      "Incorrect. On-Demand workloads and specific pricing models do not require mandatory long-term commitments, which is contrary to the premise of flexible on-demand pricing."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+        "checkedOn": "2026-10-18",
+        "supports": "The cloud allows you to trade fixed expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. And because of the economies of scale, the variable expenses are much lower than what you would pay to do it yourself.",
+        "sourceHash": "9fd7402b47a87a7f055f2775c6e69d80cf38d47a383a929f97f62751bed800a7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-d8b743dc4ddf8ab2e0d471302fa2c3ed",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial analyst wants to analyze cost and usage data using visuals, custom filtering, and grouping, and needs to create custom reports and expenditure forecasts. Which feature of AWS Billing and Cost Management provides these capabilities?",
+      "topic": "Billing, Pricing, and Support",
+      "explanation": "AWS Cost Explorer enables you to analyze your cost and usage data with visuals, filtering, and grouping, allowing you to forecast costs and create custom reports.",
+      "sourceUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+      "options": [
+        "AWS Cost Anomaly Detection",
+        "AWS Free Tier",
+        "AWS Cost Explorer",
+        "Data exports"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-4",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Incorrect. AWS Cost Anomaly Detection is used to set up automated alerts when AWS detects a cost anomaly to reduce unexpected costs, rather than providing visual analysis and custom report creation.",
+      "Incorrect. AWS Free Tier is used to monitor current and forecasted usage of free tier services to avoid unexpected costs.",
+      "Correct. AWS Cost Explorer allows you to analyze cost and usage data with visuals, filtering, and grouping, forecast costs, and create custom reports.",
+      "Incorrect. Data exports are used to create custom data exports from Billing and Cost Management datasets, rather than providing the interactive visual analysis and report building interface of Cost Explorer."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Cost Explorer - Analyze your cost and usage data with visuals, filtering, and grouping. You can forecast your costs and create custom reports.",
+        "sourceHash": "d1ee7fad7796d1e765df2a81c298dcdd472002b191b6964e365e0189f4dd225d"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-d461734528943112139246ee6b498177",
+    "originality": "original-practice",
+    "question": {
+      "question": "A multinational media company needs to securely deliver videos, applications, and APIs to users across multiple continents with low latency and high transfer speeds. Which AWS networking service operates a globally distributed network of points of presence (PoPs) to achieve this?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon CloudFront",
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "Amazon VPC Lattice"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon CloudFront is correct because it is a content delivery network (CDN) that utilizes a globally distributed network of points of presence to deliver content with low latency.",
+      "AWS Direct Connect is incorrect because it provides a dedicated network connection from an on-premises data center to AWS rather than a global CDN for end-user content delivery.",
+      "AWS Transit Gateway is incorrect because it connects Amazon VPCs and on-premises networks together via a central hub rather than delivering content globally to users.",
+      "Amazon VPC Lattice is incorrect because it provides fully managed support for service-to-service connectivity and communication within applications."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-34ad890d536120ec2086fea693779d59",
+    "originality": "original-practice",
+    "question": {
+      "question": "An engineering team is building a web application and needs an API 'front door' that can easily create, publish, maintain, monitor, and secure APIs at any scale while handling hundreds of thousands of concurrent API calls. Which AWS service fits this requirement?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "AWS App Mesh",
+        "Amazon API Gateway",
+        "AWS Global Accelerator",
+        "AWS PrivateLink"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "AWS App Mesh is incorrect because it standardizes how microservices communicate and provides end-to-end visibility, rather than serving as an API front door.",
+      "Amazon API Gateway is correct because it is a fully managed service designed to create, publish, maintain, monitor, and secure APIs at any scale.",
+      "AWS Global Accelerator is incorrect because it improves availability and performance of applications using static IP addresses and the AWS global network.",
+      "AWS PrivateLink is incorrect because it simplifies the security of data shared with cloud-based applications by providing private connectivity without using the public Internet."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-6bb00d365d1ed6dbf9866dd834fbf4a1",
+    "originality": "original-practice",
+    "question": {
+      "question": "A financial enterprise wants to establish a dedicated, private network connection from its corporate data center to AWS to reduce network costs and provide a more consistent network experience than Internet-based connections. Which AWS networking service should they use?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Direct Connect makes it easy to establish a dedicated network connection from your premises to AWS, reducing network costs and providing consistent performance.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon Route 53",
+        "AWS Site-to-Site VPN",
+        "Direct Connect",
+        "AWS Transit Gateway"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon Route 53 is incorrect because it is a cloud Domain Name System (DNS) web service, not a dedicated physical network connection.",
+      "AWS Site-to-Site VPN is incorrect because it creates encrypted tunnels over the public internet or network, whereas Direct Connect provides a dedicated connection.",
+      "Direct Connect is correct because it allows customers to establish a dedicated network connection from their premises to AWS.",
+      "AWS Transit Gateway is incorrect because it connects multiple VPCs and on-premises networks to a single gateway rather than providing the dedicated physical connection circuit itself."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Direct Connect makes it easy to establish a dedicated network connection from your premises to AWS.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-3dc80fefa183ac4f9c43e854e2de4a1d",
+    "originality": "original-practice",
+    "question": {
+      "question": "An operations team needs to automatically distribute incoming HTTP and HTTPS application traffic across multiple Amazon EC2 instances and containers in a single Availability Zone or across multiple Availability Zones. Which Elastic Load Balancing feature is best suited for this?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Application Load Balancer is best suited for load balancing of HTTP and HTTPS traffic and provides advanced request routing targeted at modern application architectures.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Network Load Balancer",
+        "Classic Load Balancer",
+        "Gateway Load Balancer",
+        "Application Load Balancer"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Network Load Balancer is incorrect because it is designed for TCP traffic where extreme performance and ultra-low latencies at the connection level are required.",
+      "Classic Load Balancer is incorrect because it provides basic load balancing intended for legacy applications built within the retired EC2-Classic network.",
+      "Gateway Load Balancer is incorrect because it is designed to make it easy to deploy, scale, and run third-party virtual networking appliances.",
+      "Application Load Balancer is correct because it is best suited for load balancing of HTTP and HTTPS traffic at the request level."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Application Load Balancer is best suited for load balancing of HTTP and HTTPS traffic and provides advanced request routing targeted at the delivery of modern application architectures, including microservices and containers.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-8ddb5cff76efbdeab586561716bbf126",
+    "originality": "original-practice",
+    "question": {
+      "question": "A cloud architect is provisioning a logically isolated section of the AWS Cloud where they can launch resources in a virtual network they define, complete with custom subnets, route tables, and gateways. Which service provides this capability?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon VPC",
+        "AWS Private 5G",
+        "AWS Transit Gateway",
+        "AWS Client VPN"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon VPC is correct because it enables users to provision a logically isolated virtual network with custom IP address ranges, subnets, and route tables.",
+      "AWS Private 5G is incorrect because it provides pre-integrated cellular hardware and software components to deploy a private cellular network.",
+      "AWS Transit Gateway is incorrect because it acts as a hub to connect multiple VPCs and on-premises networks together, rather than provisioning the isolated virtual network itself.",
+      "AWS Client VPN is incorrect because it is a managed VPN solution used to connect remote users to AWS or on-premises resources."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-1ea6b2351ccf2cb76da65abae8c69160",
+    "originality": "original-practice",
+    "question": {
+      "question": "An enterprise is experiencing challenges managing point-to-point peering connections across hundreds of Amazon VPCs and on-premises data centers. Which AWS service acts as a hub to control traffic routing and significantly simplifies network scaling?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "With AWS Transit Gateway, you only have to create and manage a single connection from the central gateway to each Amazon VPC or on-premises data center.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon VPC Lattice",
+        "AWS Transit Gateway",
+        "AWS App Mesh",
+        "AWS Cloud Map"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon VPC Lattice is incorrect because it provides service-to-service connectivity and communication policies across compute services rather than routing network traffic between VPCs.",
+      "Transit Gateway is correct because it functions as a central hub controlling how traffic is routed among connected networks, simplifying multi-VPC and hybrid management.",
+      "AWS App Mesh is incorrect because it standardizes how microservices communicate for traffic visibility and control within an application.",
+      "AWS Cloud Map is incorrect because it is a cloud resource discovery service that tracks dynamically changing application resource locations."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "With AWS Transit Gateway, you only have to create and manage a single connection from the central gateway in to each Amazon VPC, on-premises data center, or remote office across your network.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-878131369806ebc722a28c6a6bc55853",
+    "originality": "original-practice",
+    "question": {
+      "question": "A web application architecture requires a cloud resource discovery service to register custom names for dynamically changing application resources—such as databases, queues, and microservices—and constantly check their health. Which service performs this function?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "AWS Cloud Map is a cloud resource discovery service that allows you to define custom names for application resources and constantly checks their health.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon Route 53",
+        "Amazon API Gateway",
+        "AWS Cloud Map",
+        "AWS Verified Access"
+      ],
+      "correctAnswer": 2,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon Route 53 is incorrect because it is a cloud Domain Name System (DNS) web service primarily used for translating human-readable names into numeric IP addresses.",
+      "Amazon API Gateway is incorrect because it acts as an API front door rather than a general cloud resource discovery registry for internal application components.",
+      "AWS Cloud Map is correct because it allows you to register application resources with custom names and constantly checks their health to maintain updated locations.",
+      "AWS Verified Access is incorrect because it provides corporate users secure access to applications based on Zero Trust principles without using a VPN."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Cloud Map is a cloud resource discovery service. With AWS Cloud Map, you can define custom names for your application resources, and it maintains the updated location of these dynamically changing resources.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-7a6d664e3c4c20069599d2ff2b035266",
+    "originality": "original-practice",
+    "question": {
+      "question": "A security team wants to provide corporate users with secure access to internal applications without utilizing a virtual private network (VPN), evaluating each request in real time based on user identity and device posture. Which AWS service meets this need?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "AWS Verified Access provides corporate users secure access to your applications without using a virtual private network (VPN) based on AWS Zero Trust principles.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "AWS Site-to-Site VPN",
+        "AWS Client VPN",
+        "AWS PrivateLink",
+        "AWS Verified Access"
+      ],
+      "correctAnswer": 3,
+      "difficulty": "Easy",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "AWS Site-to-Site VPN is incorrect because it establishes encrypted tunnels between networks and VPCs or Transit Gateways rather than evaluating application requests via Zero Trust.",
+      "AWS Client VPN is incorrect because it specifically connects users using a VPN software client, whereas Verified Access eliminates the need for a VPN.",
+      "AWS PrivateLink is incorrect because it provides private connectivity between VPCs, AWS services, and on-premises applications on the Amazon network rather than user-level access evaluation.",
+      "AWS Verified Access is correct because it provides secure access to applications without a VPN by evaluating user identity and device posture in real time using Zero Trust."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Verified Access provides corporate users secure access to your applications without using a virtual private network (VPN). Based on AWS Zero Trust principles, Verified Access evaluates each application request in real time...",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-6e4e2134280230aa47429620dffb17e0",
+    "originality": "original-practice",
+    "question": {
+      "question": "An organization wants to improve the availability and performance of applications offered to global users by routing internet traffic through the congestion-free AWS global network and providing static IP entry points. Which service should they deploy?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "AWS Global Accelerator is a networking service that improves the availability and performance of applications offered to global users using the AWS global network and static IP addresses.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "AWS Global Accelerator",
+        "Amazon CloudFront",
+        "Amazon Route 53",
+        "AWS Direct Connect"
+      ],
+      "correctAnswer": 0,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "AWS Global Accelerator is correct because it directs internet traffic over the AWS global network using static IP addresses to improve global application availability and performance.",
+      "Amazon CloudFront is incorrect because it is primarily a content delivery network (CDN) for caching and delivering static and dynamic web content and APIs.",
+      "Amazon Route 53 is incorrect because it is a DNS web service that routes domain queries rather than providing an edge networking traffic optimization layer with static IPs.",
+      "AWS Direct Connect is incorrect because it is used for dedicated private connections from a data center to AWS, not for routing public internet user traffic."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS Global Accelerator uses the highly available and congestion-free AWS global network to direct internet traffic from your users to your applications on AWS, making your users’ experience more consistent.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  },
+  {
+    "id": "q-8d1d8b704d9af4924b4acf659d3ff64d",
+    "originality": "original-practice",
+    "question": {
+      "question": "A microservices application running on Amazon ECS requires a service that standardizes how microservices communicate, providing consistent network traffic controls and end-to-end visibility without modifying application code. Which AWS service should be used?",
+      "topic": "Cloud Technology and Services",
+      "explanation": "AWS App Mesh makes it easy to monitor and control microservices running on AWS by standardizing how they communicate and providing end-to-end visibility.",
+      "sourceUrl": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+      "options": [
+        "Amazon VPC Lattice",
+        "AWS App Mesh",
+        "AWS Cloud Map",
+        "Amazon API Gateway"
+      ],
+      "correctAnswer": 1,
+      "difficulty": "Medium",
+      "certification": "aws-clf-c02",
+      "sectionId": "section-3",
+      "questionType": "single",
+      "status": "draft",
+      "isActive": false,
+      "isAiGenerated": true
+    },
+    "optionRationales": [
+      "Amazon VPC Lattice is incorrect because it provides managed support for service-to-service connectivity and communication across instances, containers, and serverless applications via policies, whereas App Mesh uses Envoy proxies for microservice traffic control.",
+      "AWS App Mesh is correct because it standardizes microservice communication, provides traffic controls, and gives end-to-end visibility using the open-source Envoy proxy.",
+      "AWS Cloud Map is incorrect because it is a resource discovery service used to find infrastructure resources rather than control network traffic between microservices.",
+      "Amazon API Gateway is incorrect because it manages incoming public or external client API calls rather than internal microservice-to-microservice mesh communications."
+    ],
+    "references": [
+      {
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+        "checkedOn": "2026-10-18",
+        "supports": "AWS App Mesh makes it easy to monitor and control microservices running on AWS. App Mesh standardizes how your microservices communicate, giving you end-to-end visibility and helping to ensure high-availability for your applications.",
+        "sourceHash": "b433b66719921b78b5d921000ee83936f5e64ac7e6dff4430ed73454862080e7"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "answerVerified": false,
+      "topicVerified": false,
+      "originalityVerified": false
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "section-1": [
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+    "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html"
+  ],
+  "section-2": [
+    "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-services.html"
+  ],
+  "section-3": [
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/networking-services.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-subnet-basics.html",
+    "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/points-of-presence.html"
+  ],
+  "section-4": [
+    "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/key-principles.html",
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+    "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html"
+  ]
+}
