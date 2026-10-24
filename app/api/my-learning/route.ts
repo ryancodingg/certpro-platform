@@ -1,4 +1,4 @@
-import {explainPractice,requireTutorAcknowledgement} from '@/lib/server/tutor'
+import {explainPractice} from '@/lib/server/tutor'
 import {tutorModes} from '@/lib/tutor'
 import {learner} from '@/lib/server/learner'
 import {services,failure,HttpError} from '@/lib/server/firebase'
@@ -20,7 +20,6 @@ export async function GET(request:Request){try{
 export async function POST(request:Request){try{
  const uid=await learner(request,true)
  const input=await request.json()
- requireTutorAcknowledgement(input.aiAcknowledged)
  if(input.action!=='explain'||!tutorModes.includes(input.style)||typeof input.id!=='string'||!/^[a-zA-Z0-9_-]{1,160}$/.test(input.id)||typeof input.questionId!=='string')throw new HttpError(400,'Choose a recorded answer and explanation style.')
  const attempt=(await services().db.collection('certproAttempts').doc(input.id).get()).data()
  if(!attempt||attempt.uid!==uid)throw new HttpError(404,'This answer is not available in account history. For device-only reviews, use the saved explanation or start a new Practical Mode session.')
