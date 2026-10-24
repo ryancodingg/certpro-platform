@@ -6,8 +6,6 @@ import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'
 import {certifications, type NewsRecord} from '@/lib/catalog'
 import styles from './home-hero.module.css'
-const MOTION_KEY = 'certpro:homepage-motion-paused:v1'
-
 export function HomeHero({updates}: {updates: NewsRecord[]}) {
   const hero = useRef<HTMLElement>(null)
   const [motionOptIn,setMotionOptIn] = useState(false)
@@ -18,7 +16,6 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     const updateReduced = () => {setReduced(media.matches);setMotionOptIn(false)}
     const updateVisibility = () => setVisible(document.visibilityState === 'visible')
     updateReduced(); updateVisibility()
-    try {setPausedByUser(localStorage.getItem(MOTION_KEY) === 'true')} catch {/* Motion controls also work without browser storage. */}
     setReady(true)
     media.addEventListener('change',updateReduced)
     document.addEventListener('visibilitychange',updateVisibility)
@@ -30,7 +27,6 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     const next = reduced && !motionOptIn ? false : !pausedByUser
     if (reduced && !motionOptIn) setMotionOptIn(true)
     setPausedByUser(next)
-    try {localStorage.setItem(MOTION_KEY,String(next))} catch {/* Keep the preference for this visit. */}
   }
   const controlPaused = pausedByUser || (reduced && !motionOptIn)
   const paused = !ready || controlPaused || !inView || !visible

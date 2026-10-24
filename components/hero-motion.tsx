@@ -30,7 +30,7 @@ export function HeroMotion({ paused = false, motionOptIn = false, className }: H
                 <path d="M163 155c12-6 19-19 33-26 11-6 22 3 31 1 13-3 18 6 24 14 5 7-4 14-14 15-14 1-18 9-31 5-14-4-27 3-43-9Z" strokeOpacity=".4"/>
               </g>
               <path d="M29 32h382M29 245h382" strokeDasharray="2 8" strokeOpacity=".42"/>
-              {[46,91,136,181,226,271,316,361,406].map(x=><circle key={x} cx={x} cy="32" r="3" fill="#F4EDFC" strokeOpacity=".55"/>)}}
+              {[46,91,136,181,226,271,316,361,406].map(x=><circle key={x} cx={x} cy="32" r="3" fill="#F4EDFC" strokeOpacity=".55"/>)}
               <path d="M22 78v26m-4-13h8M418 178v26m-4-13h8" strokeOpacity=".65"/>
             </g> : index === 1 ? <g stroke={`url(#${ink})`} strokeWidth="1.1">
               <path d="M-15 151c43-7 69-35 90-63 21-27 47-2 66-20 27-26 39-2 65 15 25 16 54-9 83 7 27 16 44 61 76 46 35-16 47-7 94 14" strokeOpacity=".68"/>
