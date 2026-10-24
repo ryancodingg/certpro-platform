@@ -1,4 +1,5 @@
 "use client"
+import { ScrollHeading } from "@/components/scroll-heading"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
