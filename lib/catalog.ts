@@ -2,7 +2,7 @@ import rawCatalog from "@/data/certifications.json"
 import rawNews from "@/data/news-seed.json"
 
 export type CertificationRecord = { id: string; name: string; provider: string; official_url: string; level: string; status: string; verified_on: string }
-export type NewsRecord = { id: string; type: string; provider: string; title: string; summary: string; article_paragraphs?: string[]; article_reviewed_on?: string; source_excerpt?: string; source_url: string; verified_on: string; published_on: string | null; expires_on?: string | null; expiry_note?: string; eligibility?: string; event_on?: string; status: string }
+export type NewsRecord = { id: string; type: string; provider: string; title: string; summary: string; article_paragraphs?: string[]; article_reviewed_on?: string; article_generated_on?: string; article_summary_kind?: "automatic" | "source-offer"; summary_attempted_on?: string; source_excerpt?: string; source_url: string; verified_on: string; published_on: string | null; expires_on?: string | null; expiry_note?: string; eligibility?: string; event_on?: string; status: string }
 
 export const certifications = (rawCatalog.certifications as CertificationRecord[]).map((item) => ({ ...item, aliases: item.id === "fabric-data-engineer-associate" ? ["dp-700"] : item.id === "azure-fundamentals" ? ["az-900"] : item.id === "aws-cloud-practitioner" ? ["aws-clf-c02"] : item.id === "aws-solutions-architect-associate" ? ["aws-saa-c03"] : item.id === "databricks-certified-data-engineer-associate" ? ["databricks-certified-data-engineer-associate"] : [] }))
 export const news = rawNews.items as NewsRecord[]

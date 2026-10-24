@@ -82,6 +82,7 @@ export function AuthNav({returnTo}:{returnTo?:string}) {
         </div>
         <DropdownMenuSeparator className="bg-gray-700" />
         <DropdownMenuItem asChild><Link href="/progress"><BookOpen className="mr-2 h-4 w-4" />My Progress</Link></DropdownMenuItem>
+        <DropdownMenuItem asChild><Link href="/my-learning"><BookOpen className="mr-2 h-4 w-4"/>My Learning</Link></DropdownMenuItem>
         <DropdownMenuItem asChild><Link href="/subscription"><CreditCard className="mr-2 h-4 w-4"/>My Subscription</Link></DropdownMenuItem>
         <DropdownMenuItem asChild><Link href="/study-plan"><CalendarDays className="mr-2 h-4 w-4"/>My Calendar</Link></DropdownMenuItem>
         <DropdownMenuItem asChild className="text-slate-700 hover:text-foreground hover:bg-muted cursor-pointer"><Link href="/progress">

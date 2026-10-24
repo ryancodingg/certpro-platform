@@ -266,3 +266,114 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 @media(max-width:1100px){.cp-learning-header{gap:15px}.cp-desktop-links{gap:14px;font-size:12px}.cp-explore-link{display:none}}
 @media(max-width:850px){.cp-desktop-links{display:none}.cp-menu-toggle{display:flex}.cp-mobile-links{display:flex;flex-wrap:wrap;gap:16px;padding:18px 24px;background:#faf8fd;border-bottom:1px solid #e9e6ee;font-size:14px}}
 @media(max-width:640px){.cp-learning-header{flex-wrap:wrap;padding:12px 16px;gap:12px}.cp-learning-header .cp-brand{font-size:26px;margin-right:auto}.cp-learning-header .cp-search{order:4;flex-basis:100%;min-width:0}.cp-header-providers{justify-content:flex-start;gap:24px;padding:12px 16px}.cp-account .gap-3{gap:4px}.cp-account a svg{display:none}}
+
+/* Compact, account-scoped calendar and notification tools. */
+.cp-learning-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.cp-tool-icon{position:relative;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:0;border-radius:10px;background:transparent;color:#272338;cursor:pointer;flex-shrink:0}
+.cp-tool-icon:hover{background:#f2ecff}.cp-tool-icon:focus-visible{outline:2px solid #7134da;outline-offset:2px}
+.cp-notification-count{position:absolute;top:0;right:0;min-width:17px;height:17px;padding:0 3px;border-radius:10px;background:#7134da;color:white;font:600 10px/17px Arial;text-align:center}
+.cp-tools-dialog{position:fixed;inset:0;margin:auto;width:min(920px,calc(100vw - 32px));max-width:920px;max-height:90dvh;padding:0;border:1px solid #e4dcf4;border-radius:20px;background:#fff;color:#282437;box-shadow:0 24px 90px #27104d33;overflow:auto}
+.cp-tools-dialog::backdrop{background:#21153266;backdrop-filter:blur(3px)}
+.cp-tools-content{padding:28px}.cp-tools-title{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:12px}.cp-tools-title h2{font-size:25px;font-weight:700;margin:2px 0}.cp-tools-title .cp-eyebrow{font-size:10px}
+.cp-planner-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:24px 0}.cp-month-controls{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.cp-mini-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.cp-mini-calendar>span{text-align:center;font-size:11px;color:#696078;padding:6px 0}.cp-mini-calendar button{position:relative;height:43px;border:1px solid #ece7f4;background:#fff;border-radius:9px;color:#292337;cursor:pointer;font-size:13px}.cp-mini-calendar button:hover{background:#f6f0ff}.cp-mini-calendar button.is-selected{background:#7134da;border-color:#7134da;color:white}.cp-plan-dot{position:absolute;bottom:4px;left:calc(50% - 2px);height:4px;width:4px;border-radius:50%;background:currentColor}
+.cp-plan-list-title{font-size:14px;font-weight:650;margin:22px 0 10px}.cp-plan-row{display:flex;flex-direction:column;gap:5px;width:100%;text-align:left;padding:12px;margin-bottom:8px;border:1px solid #e7def3;background:#faf8ff;border-radius:10px;cursor:pointer}.cp-plan-row strong{font-size:12px}.cp-plan-row span{font-size:12px;color:#6d627a}
+.cp-quick-plan{display:flex;flex-direction:column;gap:12px;padding:18px;background:#faf8ff;border:1px solid #e7def3;border-radius:14px}.cp-quick-plan h3{font-weight:650;font-size:17px;margin:0}.cp-quick-plan label:not(.cp-check-label){display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:600}.cp-quick-plan input:not([type=checkbox]),.cp-quick-plan select{width:100%;min-width:0;padding:9px;border:1px solid #d9cee9;border-radius:7px;background:white;color:#292337;font-size:13px}.cp-quick-plan fieldset{border:0;padding:0;margin:0}.cp-quick-plan legend{font-size:12px;font-weight:600;margin-bottom:7px}.cp-study-days{display:flex;flex-wrap:wrap;gap:8px}.cp-study-days label{font-size:10px!important;align-items:center}.cp-check-label{display:flex;align-items:center;gap:8px;font-size:13px}.cp-check-label input{accent-color:#7134da}.cp-quick-plan .cp-note{font-size:11px;margin:0}.cp-plan-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:28px;background:#faf8ff;border-radius:14px;color:#665b77}.cp-plan-empty h3{font-size:18px;color:#292337;font-weight:650}.cp-plan-empty p{font-size:13px;line-height:1.65}.cp-plan-message{font-size:13px;margin-top:12px;color:#5d2ca7}.cp-notification-settings{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:18px 0}.cp-notification-list{margin:20px 0;display:grid;gap:10px}.cp-notification-item{display:flex;flex-direction:column;gap:7px;border:1px solid #e9e2f1;padding:16px;border-radius:12px;color:#282437;text-decoration:none}.cp-notification-item.is-unread{background:#f7f1ff;border-left:4px solid #7134da}.cp-notification-item strong{font-size:15px}.cp-notification-item>span:last-child{font-size:12px;color:#70667c}.cp-notification-item .cp-eyebrow{font-size:10px}.cp-inline-study{display:flex;align-items:center;gap:16px;border:1px solid #e7def3;border-radius:14px;padding:20px;margin:24px 0}.cp-inline-study div{flex:1}.cp-inline-study h2{font-size:17px;margin:0 0 5px}.cp-inline-study p{font-size:13px;color:#70667c;margin:0}
+@media(max-width:650px){.cp-tools-content{padding:18px}.cp-planner-layout{grid-template-columns:1fr;gap:20px}.cp-tools-dialog{max-height:94dvh;width:calc(100vw - 16px);border-radius:14px}.cp-learning-tools{gap:2px}.cp-tool-icon{width:35px;height:35px}.cp-inline-study{flex-wrap:wrap}.cp-inline-study .cp-secondary{width:100%}.cp-plan-empty{min-height:140px}}
+
+.cp-cancel-plan{padding:10px;border:1px solid #d9c9df;border-radius:8px;background:white;color:#94333f;font-weight:600;font-size:13px;cursor:pointer}.cp-cancel-plan:hover{background:#fff4f5}.cp-cancel-plan:disabled{opacity:.5;cursor:wait}
+
+.cp-learning-header .cp-brand{display:inline-flex;align-items:center;gap:8px;flex-shrink:0}
+.cp-brand-mascot{display:block;width:38px;height:38px;object-fit:contain;flex-shrink:0}
+@media(max-width:640px){.cp-brand-mascot{width:32px;height:32px}.cp-learning-header .cp-brand{gap:6px}}
+
+/* Comfortable question reading and separate review groups. */
+.cp-question-text{font-size:16px;line-height:1.8;font-weight:400;letter-spacing:normal;overflow-wrap:anywhere}
+.cp-question-text p{margin:0 0 1em;white-space:pre-wrap}
+.cp-question-text p:last-child{margin-bottom:0}
+.cp-review-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.cp-review-item{border:1px solid #e4dafa;border-radius:14px;background:white;margin-bottom:12px;overflow:hidden}
+.cp-review-item summary{cursor:pointer;padding:18px;line-height:1.6}
+.cp-review-item summary strong{display:block;margin-top:6px}
+.cp-review-preview{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14px;color:#56516a;margin-top:8px}
+.cp-review-body{padding:0 18px 20px;display:grid;gap:14px}
+@media(max-width:760px){.cp-review-columns{grid-template-columns:1fr}.cp-question-text{font-size:15px}}
+
+.cp-review-item[open] .cp-review-preview{display:none}
+
+/* My Progress: focused next steps, readable activity and optional exam goals. */
+.cp-progress-page{padding-top:36px;max-width:1280px}
+.cp-progress-heading{max-width:780px;margin-bottom:28px}
+.cp-progress-heading h1{font-size:clamp(32px,4vw,44px);font-weight:760;letter-spacing:-.035em;line-height:1.15;margin:8px 0 12px}
+.cp-progress-heading>p:last-child{color:#686174;font-size:16px;line-height:1.7}
+.cp-learning-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 28px;border:1px solid #ded3f5;border-radius:20px;background:linear-gradient(115deg,#f1eaff,#faf8ff);margin-bottom:18px}
+.cp-learning-toolbar>div{display:flex;align-items:center;gap:16px;min-width:0}
+.cp-learning-toolbar-icon{display:grid;place-items:center;background:#fff;color:#6d32c4;border-radius:16px;width:52px;height:52px;flex-shrink:0;box-shadow:0 5px 16px #6841aa0b}
+.cp-learning-toolbar strong{display:block;font-size:18px;line-height:1.4;letter-spacing:-.02em}
+.cp-learning-toolbar div div>span{display:block;margin-top:5px;font-size:13px;color:#675876;line-height:1.5}
+.cp-learning-toolbar .cp-secondary{white-space:nowrap;background:#fff;border-color:#d8cbe9}
+.cp-progress-quicklinks{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;margin:0 0 26px;padding:0 4px}
+.cp-progress-quicklinks a{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:13px;color:#6235a7}
+.cp-learning-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.cp-learning-card{position:relative;overflow:hidden;border:1px solid #e4dced;border-radius:22px;background:#fff;padding:26px;box-shadow:0 7px 26px #33224b06;transition:box-shadow .2s,border-color .2s;min-width:0}
+.cp-learning-card:hover{border-color:#c6b2e6;box-shadow:0 10px 28px #6537a511}
+.cp-learning-card.has-resume:before{content:"";height:4px;position:absolute;top:0;left:0;right:0;background:linear-gradient(90deg,#5248ce,#912dd1)}
+.cp-learning-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.cp-learning-provider{display:flex;align-items:center;gap:12px;min-width:0}
+.cp-learning-logo{display:grid;place-items:center;width:50px;height:50px;border:1px solid #eee8f6;border-radius:14px;background:#faf8fd;flex-shrink:0}
+.cp-learning-provider p{font-size:12px;font-weight:700;color:#40324f;margin:0;line-height:1.45}
+.cp-learning-provider p span{font-weight:450;color:#776b83}
+.cp-learning-status{display:block;color:#72667e;font-size:11px;margin-top:4px;line-height:1.4}
+.cp-learning-unsave{display:inline-flex;align-items:center;justify-content:center;gap:5px;color:#756780;font-size:12px;padding:8px;border-radius:8px;flex-shrink:0}
+.cp-learning-unsave:hover{background:#f5f1fa;color:#56318e}.cp-learning-unsave:disabled{opacity:.6}
+.cp-learning-card h2{font-size:21px;line-height:1.4;letter-spacing:-.025em;font-weight:730;margin:0 0 20px;min-height:2.8em}
+.cp-learning-card h2 a:hover{color:#6731bc;text-decoration:underline;text-underline-offset:4px}
+.cp-learning-goal{display:flex;align-items:center;gap:10px;padding:14px 15px;border-radius:12px;background:#f7f5fb;border:1px solid #eee8f6;color:#72568f;margin-bottom:22px}
+.cp-learning-goal>svg{flex-shrink:0}.cp-learning-goal>div{flex:1;min-width:0}
+.cp-learning-goal strong{display:block;font-size:13px;line-height:1.4;color:#493159}
+.cp-learning-goal span{display:block;font-size:11px;line-height:1.5;color:#746581;margin-top:3px}
+.cp-learning-goal button{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:650;white-space:nowrap;color:#6233a7}
+.cp-learning-goal.is-near{background:#f0e8ff;border-color:#dbc6fb}
+.cp-learning-progress{display:grid;gap:16px}
+.cp-learning-meter>div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:12px;line-height:1.5;margin-bottom:8px;color:#62556f}
+.cp-learning-meter strong{color:#49315e;white-space:nowrap;font-size:12px;font-weight:650}
+.cp-meter-percent{font-weight:450;color:#756181}
+.cp-learning-meter progress{appearance:none;display:block;width:100%;height:8px;overflow:hidden;border:0;border-radius:20px;background:#eee8f5;color:#7340c4}
+.cp-learning-meter progress::-webkit-progress-bar{background:#eee8f5;border-radius:20px}
+.cp-learning-meter progress::-webkit-progress-value{background:linear-gradient(90deg,#5646d0,#963fd2);border-radius:20px}
+.cp-learning-meter progress::-moz-progress-bar{background:linear-gradient(90deg,#5646d0,#963fd2);border-radius:20px}
+.cp-learning-caption{font-size:10px;line-height:1.5;color:#71617e;margin-top:-6px}
+.cp-learning-empty-metric{font-size:13px;line-height:1.6;color:#746581}
+.cp-learning-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:21px 0;padding-top:18px;border-top:1px solid #eee8f5}
+.cp-learning-stats>div{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#796c86;line-height:1.45}
+.cp-learning-stats svg{color:#9478b4;flex-shrink:0;margin-top:3px}
+.cp-learning-stats strong{display:block;font-size:20px;line-height:1.25;color:#382a48;letter-spacing:-.03em;margin-bottom:4px}
+.cp-learning-stats small{display:block;font-size:10px;margin-top:3px}
+.cp-learning-next{display:flex;gap:12px;background:linear-gradient(115deg,#f6f1ff,#fcfaff);border-radius:13px;padding:16px;margin-top:8px;min-height:106px}
+.cp-learning-next-icon{width:34px;height:34px;display:grid;place-items:center;color:#7c3bc4;background:#e9dcff;border-radius:11px;flex-shrink:0}
+.cp-learning-next p{font-size:9px;font-weight:750;letter-spacing:.1em;color:#8055ac;line-height:1.4;margin:0 0 6px}
+.cp-learning-next strong{display:block;font-size:13px;line-height:1.5;color:#4b305e}
+.cp-learning-next div>span{display:block;font-size:11px;line-height:1.5;color:#74617f;margin-top:6px}
+.cp-learning-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+.cp-learning-actions .cp-primary{flex:1;min-width:160px;padding:13px 16px}
+.cp-learning-actions .cp-secondary{font-size:12px;padding:13px 15px;border-color:#d6c8e7}
+.cp-learning-actions .cp-text-link{font-size:12px;white-space:nowrap}
+.cp-learning-history{margin-top:20px;padding-top:16px;border-top:1px solid #eee8f5;font-size:12px;color:#6d5b7c}
+.cp-learning-history summary{cursor:pointer;font-weight:600;line-height:1.6}
+.cp-learning-history summary>span{display:inline-flex;min-width:21px;justify-content:center;border-radius:20px;background:#f2edf9;color:#82659b;font-size:10px;margin-left:6px;padding:0 5px}
+.cp-learning-history li{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid #f1ecf6}
+.cp-learning-history li div{flex:1;min-width:0}.cp-learning-history li strong{font-size:12px;color:#4d365e}
+.cp-learning-history li span,.cp-learning-history small{display:block;font-size:10px;line-height:1.6;margin-top:3px;color:#756181}
+.cp-learning-history li p{text-align:right;font-size:11px;white-space:nowrap}
+.cp-learning-history>p{padding-top:12px;line-height:1.7}
+.cp-progress-notice{border:1px solid #ddd0ee;border-radius:12px;background:#f8f4fd;font-size:13px;padding:14px 18px;margin-bottom:18px}
+.cp-progress-footer{display:flex;justify-content:space-between;gap:24px;align-items:start;padding:24px 4px;font-size:11px;color:#71617e}
+.cp-progress-footer details{max-width:760px}.cp-progress-footer summary{cursor:pointer}.cp-progress-footer p{line-height:1.7;margin-top:10px}.cp-progress-footer>a{white-space:nowrap;color:#6b4a89}
+.cp-progress-empty{border:1px dashed #d7c8ec;border-radius:20px;background:#fbf9ff;padding:46px 24px;text-align:center;color:#78618f}
+.cp-progress-empty>svg{margin:0 auto 18px}.cp-progress-empty h2{font-size:24px;font-weight:700;color:#433050}.cp-progress-empty p{font-size:14px;margin:12px auto 24px;max-width:460px;line-height:1.7}
+.cp-progress-dashboard a:focus-visible,.cp-progress-dashboard button:focus-visible,.cp-progress-dashboard summary:focus-visible{outline:3px solid #9060cf;outline-offset:4px;border-radius:7px}
+@media(max-width:1000px){.cp-learning-grid{grid-template-columns:1fr}.cp-learning-card h2{min-height:0}.cp-learning-actions .cp-primary{flex:0}.cp-learning-next{min-height:0}.cp-learning-goal span{font-size:12px}}
+@media(max-width:600px){.cp-progress-page{padding-top:24px}.cp-learning-toolbar{align-items:stretch;flex-direction:column;padding:20px}.cp-learning-toolbar strong{font-size:16px}.cp-learning-toolbar .cp-secondary{align-self:flex-start;margin-left:68px}.cp-progress-quicklinks{flex-direction:column;gap:14px}.cp-learning-card{padding:20px;border-radius:18px}.cp-learning-card h2{font-size:19px}.cp-learning-goal{flex-wrap:wrap;padding:13px}.cp-learning-goal button{margin-left:30px;min-height:28px}.cp-learning-goal>div{flex-basis:calc(100% - 35px)}.cp-learning-actions .cp-primary{flex-basis:100%;width:100%}.cp-learning-actions .cp-secondary{flex:1}.cp-learning-actions .cp-text-link{padding:8px}.cp-learning-meter>div{font-size:11px}.cp-learning-provider p span{display:block}.cp-progress-footer{flex-wrap:wrap}.cp-learning-history li p{white-space:normal;max-width:105px}}
+
+.cp-learning-logo>span{max-width:100%;font-size:10px;padding:4px}
+
+.cp-learning-actions .cp-primary{min-width:max-content;white-space:nowrap}

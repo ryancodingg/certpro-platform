@@ -1,0 +1,38 @@
+.art {
+  --hero-motion-play-state: running;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin: 12px auto 8px;
+  pointer-events: none;
+  user-select: none;
+}
+.art[data-paused="true"] { --hero-motion-play-state: paused; }
+.floor {position:absolute;inset:44% 8% 0;border-radius:50%;background:radial-gradient(ellipse,#8760ca24,transparent 66%);transform:scaleY(.5);}
+.scene {position:absolute;inset:0;perspective:950px;perspective-origin:50% 38%;}
+.stack {position:absolute;left:50%;top:48%;width:82%;max-width:420px;aspect-ratio:21/11;transform-style:preserve-3d;transform:translate(-50%,-50%) rotateX(48deg) rotateY(-15deg) rotateZ(-15deg);animation:orbit 12s ease-in-out infinite;animation-play-state:var(--hero-motion-play-state);}
+.plane {position:absolute;inset:0;border:1.5px solid #9c73df;border-radius:20px;background:linear-gradient(130deg,#ffffffdc,#e5d4ff70 56%,#dce4ff99);box-shadow:0 16px 30px #65368d18,inset 0 0 0 1px #ffffffbd;transform-style:preserve-3d;backface-visibility:hidden;}
+.plane::after{content:'';position:absolute;inset:3px;border:1px solid #ffffff9c;border-radius:16px;pointer-events:none;}
+.backPlane {transform:translate3d(-13px,12px,-58px);background:linear-gradient(135deg,#f6f0ffdd,#cbb3f09e);animation:spreadBack 12s ease-in-out infinite;animation-play-state:var(--hero-motion-play-state);}
+.middlePlane {transform:translate3d(0,0,4px);border-color:#b18be8;background:linear-gradient(135deg,#fbf8ffb3,#e2ceff66);animation:spreadMiddle 12s ease-in-out infinite;animation-play-state:var(--hero-motion-play-state);}
+.frontPlane {transform:translate3d(13px,-12px,70px);border-color:#8c58d5;background:linear-gradient(130deg,#ffffffdf,#f5edffb3 58%,#dfe1ffb3);box-shadow:0 20px 40px #6e3ab82b,inset 0 0 0 1px #fff;animation:spreadFront 12s ease-in-out infinite;animation-play-state:var(--hero-motion-play-state);}
+.surface{display:block;width:100%;height:100%;border-radius:inherit;overflow:hidden;}
+.planeLabel{position:absolute;left:20px;right:20px;top:13px;display:flex;align-items:center;gap:10px;color:#7043ac;font-family:inherit;font-size:9px;font-weight:700;letter-spacing:.16em;}
+.planeLabel>span:first-child{font-variant-numeric:tabular-nums;opacity:.6;}.planeLabel i{margin-left:auto;width:5px;height:5px;border-radius:50%;background:#8b56d2;box-shadow:12px 0 0 #ae8cdd;}
+.edge{position:absolute;left:15px;right:15px;bottom:-4px;height:4px;border-radius:0 0 16px 16px;background:linear-gradient(90deg,#9871ce99,#dbc8fbaa);transform:rotateX(-90deg);transform-origin:top;}
+@keyframes orbit {0%,100%{transform:translate(-50%,-48%) rotateX(48deg) rotateY(-15deg) rotateZ(-15deg)}50%{transform:translate(-50%,-54%) rotateX(55deg) rotateY(10deg) rotateZ(-7deg)}}
+@keyframes spreadBack {0%,100%{transform:translate3d(-13px,12px,-58px)}50%{transform:translate3d(-26px,22px,-80px)}}
+@keyframes spreadMiddle {0%,100%{transform:translate3d(0,0,4px)}50%{transform:translate3d(0,0,0)}}
+@keyframes spreadFront {0%,100%{transform:translate3d(13px,-12px,70px)}50%{transform:translate3d(25px,-22px,105px)}}
+@media(max-width:1000px){.art{height:310px;margin-top:12px}.stack{width:84%}.planeLabel{left:14px;right:14px;top:10px;font-size:8px}.plane{border-radius:16px}}
+@media(max-width:700px){.art{height:260px;max-width:470px;margin-bottom:0}.stack{width:76%}.planeLabel{font-size:8px}.scene{perspective:850px}}
+@media(max-width:380px){.art{height:225px}.planeLabel{font-size:7px;letter-spacing:.1em}}
+@media(prefers-reduced-motion:reduce){
+  .art:not([data-motion-opt-in="true"]) :is(.stack,.backPlane,.middlePlane,.frontPlane){animation:none!important;}
+  /* Explicit Play affects this decorative artwork only. */
+  .art[data-motion-opt-in="true"] .stack{animation:orbit 12s ease-in-out infinite!important;}
+  .art[data-motion-opt-in="true"] .backPlane{animation:spreadBack 12s ease-in-out infinite!important;}
+  .art[data-motion-opt-in="true"] .middlePlane{animation:spreadMiddle 12s ease-in-out infinite!important;}
+  .art[data-motion-opt-in="true"] .frontPlane{animation:spreadFront 12s ease-in-out infinite!important;}
+  .art[data-motion-opt-in="true"] :is(.stack,.backPlane,.middlePlane,.frontPlane){animation-play-state:var(--hero-motion-play-state)!important;}
+}

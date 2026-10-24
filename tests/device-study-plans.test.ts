@@ -1,6 +1,6 @@
 import {test} from 'node:test'
 import assert from 'node:assert/strict'
-import {readDevicePlans,writeDevicePlans,upsertDevicePlan} from '../lib/device-study-plans'
+import {readDevicePlans,writeDevicePlans,upsertDevicePlan,cancelDevicePlan,readCancelledPlans} from '../lib/device-study-plans'
 import {studyCalendar,type StudyPlan} from '../lib/study-plan'
 const plan:StudyPlan={certification:'dp-700',examDate:'2026-11-01',time:'19:00',timezone:'Australia/Sydney',minutes:30,days:[1,3,5],reminderMinutes:10,emailRequested:false}
 function storage(){const m=new Map<string,string>();return {getItem:(k:string)=>m.get(k)??null,setItem:(k:string,v:string)=>{m.set(k,v)}}}
@@ -8,3 +8,5 @@ test('Device plans survive reads and remain separated by account and guest',()=>
 test('Editing replaces only the chosen certification; removing preserves others',()=>{const other={...plan,certification:'az-900'};const edited=upsertDevicePlan([plan,other],{...plan,minutes:45});assert.equal(edited.length,2);assert.equal(edited.find(p=>p.certification==='dp-700')?.minutes,45);const s=storage();writeDevicePlans(s,'alice',edited.filter(p=>p.certification!=='dp-700'));assert.deepEqual(readDevicePlans(s,'alice'),[other])})
 test('Corrupt or blocked storage does not silently overwrite existing data',()=>{assert.throws(()=>readDevicePlans({getItem:()=>'{bad',setItem:()=>{}},'alice'));assert.throws(()=>writeDevicePlans({getItem:()=>null,setItem:()=>{throw Error('QuotaExceeded')}},'alice',[plan]));assert.throws(()=>writeDevicePlans(storage(),'alice',[{...plan,examDate:'2026-02-30'}]))})
 test('Offline export includes study duration, alerts and target date without server access',()=>{const text=studyCalendar(plan,'Fabric','device-dp-700',new Date('2026-10-18T00:00:00Z'));assert.match(text,/BEGIN:VCALENDAR/);assert.match(text,/TRIGGER:-PT10M/);assert.match(text,/DTSTART;VALUE=DATE:20261101/);assert.match(text,/DTSTART:20261019T080000Z/);assert.match(text,/DTEND:20261019T083000Z/);assert.match(text,/Target exam date: Fabric/)})
+
+test('Cancellation persists, is account scoped, and a new saved plan reactivates it',()=>{const s=storage();writeDevicePlans(s,'alice',[plan,{...plan,certification:'az-900'}]);cancelDevicePlan(s,'alice','dp-700');assert.deepEqual(readDevicePlans(s,'alice').map(p=>p.certification),['az-900']);assert.deepEqual(readCancelledPlans(s,'alice'),['dp-700']);assert.deepEqual(readCancelledPlans(s,'bob'),[]);writeDevicePlans(s,'alice',upsertDevicePlan(readDevicePlans(s,'alice'),plan));assert.equal(readDevicePlans(s,'alice').length,2);assert.deepEqual(readCancelledPlans(s,'alice'),[])})

@@ -77,6 +77,354 @@
         "The exam retains four domains. Their revised weights are governance 18%, risk management 20%, security program 33%, and incident management 29%. Candidates should match their resources to their scheduled exam date rather than assume an older question bank covers every change.",
         "ISACA recommends the updated preparation materials for exams on or after the transition date. The official release links to the content outline and support guidance, which should be checked before booking or revising a study plan."
       ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-github-certified-agentic-ai-business-professional/ba-p/4564534",
+      "title": "New GitHub Certified: Agentic AI Business Professional",
+      "published_on": "2026-10-20",
+      "reviewed_on": "2026-10-21",
+      "summary": "GitHub’s new business-focused credential assesses how professionals organize work and build supervised AI workflows with GitHub Copilot.",
+      "paragraphs": [
+        "The Agentic AI Business Professional credential is earned through GH-700, announced in beta. It targets product and program managers, technical project managers and business analysts. Deep coding expertise is not required, but candidates should have experience using generative AI and managing business work.",
+        "The assessed skills include tracking work in GitHub, producing dependable Copilot outputs, building automations and reviewing agent decisions. Preparation should cover human oversight as well as workflow design; the announcement links to the exam page and study guide.",
+        "The article advertises an 80% beta discount for the first 300 candidates, excluding Turkey, Pakistan, India and China. However, it gives conflicting November 2 and November 9 deadlines. Confirm the applicable date and remaining availability with Microsoft before booking. Beta results are delayed until rescoring after launch."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-microsoft-certified-supply-chain-management-ai-consultant/ba-p/4564533",
+      "title": "New Microsoft Certified: Supply Chain Management AI Consultant Associate",
+      "published_on": "2026-10-16",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft’s AB-330 beta exam introduces an AI-focused certification for Dynamics 365 supply-chain consultants.",
+      "paragraphs": [
+        "The credential covers implementing supply-chain operations with Dynamics 365 Supply Chain Management and its AI capabilities. Candidates should already have hands-on experience configuring end-to-end processes and translating customer requirements into workable solutions.",
+        "Its emphasis is on analyzing requirements, matching them to system capabilities, managing dependencies and designing reliable implementations. Consultants work with architects, developers and business stakeholders; the exam is intended to validate practical functional expertise rather than introductory product awareness.",
+        "The announcement offers 80% off to the first 300 candidates who take the beta by November 15, 2026, subject to availability and regional exclusions. General availability is planned for January 2027; MB-330 and the previous Functional Consultant Associate credential are scheduled to retire February 1, 2027. Check the current study guide and booking terms before choosing a version."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-microsoft-certified-agentic-devops-engineer-expert/ba-p/4528356",
+      "title": "New Microsoft Certified: Agentic DevOps Engineer Expert",
+      "published_on": "2026-10-16",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft has announced AZ-401 for AI-assisted DevOps, with an additional prerequisite for earning the expert certification.",
+      "paragraphs": [
+        "Agentic DevOps Engineer Expert covers continuous delivery using Azure DevOps, GitHub and Copilot. Topics include traceability and metrics, source control, AI-assisted pipelines, security, compliance and monitoring. Candidates should bring practical administration or development experience plus familiarity with YAML, KQL and Bicep.",
+        "Passing AZ-401 alone does not complete the credential: the announcement also requires GH-300 or AZ-104. Microsoft links a study guide and an Azure AI-agent DevOps learning plan to help candidates compare the new objectives with their existing experience.",
+        "The first 300 eligible candidates taking the beta by November 9, 2026 may receive 80% off; regional exclusions apply and availability is limited. The announcement schedules general availability for December and retirement of AZ-400 and the previous DevOps Engineer Expert credential for February 1, 2027. Confirm current booking details before switching exams."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-accessibility-updates-for-microsoft-certification-exams/ba-p/4528354",
+      "title": "New accessibility updates for Microsoft Certification exams",
+      "published_on": "2026-10-12",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft is updating exam case-study layouts and expanding online scheduling for approved accessibility accommodations.",
+      "paragraphs": [
+        "The revised case-study interface supports adjustable side-by-side question and scenario panels. Smaller screens and magnification can use a vertical layout, while a contents outline and return links reduce scrolling. Rollout is underway, with all exams and languages targeted by year-end and the sandbox expected to reflect it by late October 2026.",
+        "Candidates with some preapproved accommodations, including extra time, can now schedule online. Arrangements needing additional coordination, such as a separate room, may still require a telephone booking. Approval remains necessary; online scheduling does not automatically authorize an accommodation.",
+        "Microsoft plans a registration-integrated accommodation request system in early 2027 and broader online scheduling in mid-2027. Before booking, review the accommodation guidance and confirm lead times. Use the official exam sandbox to practise navigation in the updated interface."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/updates-to-azure-cosmos-db-and-power-platform-developer/ba-p/4528353",
+      "title": "Updates to Azure Cosmos DB and Power Platform Developer Certifications",
+      "published_on": "2026-09-15",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft announced an AI-focused Cosmos DB credential update and the transition from Power Platform exam PL-400 to AB-400.",
+      "paragraphs": [
+        "The Cosmos DB credential becomes Azure Cosmos DB AI Developer Associate, with the updated exam and name effective October 6, 2026. Its scope retains database-development fundamentals while adding more cloud-native architecture and AI application scenarios. Existing holders receive the updated name automatically and continue normal renewal.",
+        "For Power Platform, AB-400 covers extending solutions with code and AI, including code apps and integrations with Microsoft Foundry and Copilot Studio agents. The certification remains Power Platform Developer Associate; the exam-code change does not create a separate credential.",
+        "The announcement sets October 16 as the registration transition to AB-400. Candidates registered for PL-400 by that date can take it through October 30, 2026. Match preparation resources to the booked exam code, and consult the current exam page before scheduling or changing an appointment."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/microsoft-credentials-roundup-june-2026/ba-p/4528350",
+      "title": "Microsoft Credentials roundup: June 2026",
+      "published_on": "2026-08-14",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft’s credentials roundup explains new evidence-based badges, AI-oriented certifications and changes to older exam paths.",
+      "paragraphs": [
+        "Pro Badges are intended to recognize skills demonstrated during everyday work rather than through a separate exam. The first announced offering uses GitHub Copilot proficiency evidence, with general availability planned around GitHub Universe in late October 2026.",
+        "The roundup describes 17 new or revised certifications and exams across AI, data, security and business applications, plus hands-on Applied Skills assessments for agent development and related tasks. It also outlines AI Skills Navigator improvements intended to connect preparation, credential discovery and credential management.",
+        "Retirements and replacement exams affect study planning, but an earned certification remains valid until its expiry. The roundup contains earlier projections that subsequent announcements have revised. Use it as a portfolio overview, then consult the latest individual exam page for the actual registration deadline, prerequisites and available version."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-microsoft-365-certified-ai-services-administrator-associate/ba-p/4494123",
+      "title": "New Microsoft 365 Certified: AI Services Administrator Associate Certification",
+      "published_on": "2026-07-28",
+      "reviewed_on": "2026-10-21",
+      "summary": "The AI Services Administrator Associate announcement focuses on operating Microsoft 365, Copilot and connected AI capabilities securely at scale.",
+      "paragraphs": [
+        "AB-650 assesses administration of Microsoft 365 tenants, workloads and AI services. The role includes governing data access, protecting information, supporting collaboration between people and agents, and maintaining dependable enterprise operations.",
+        "Microsoft recommends experience with Microsoft 365 and Entra ID, knowledge of Defender XDR and familiarity with Microsoft Graph PowerShell. Candidates can use the linked exam page and study guide to identify gaps in governance, security and operational knowledge before booking.",
+        "This July announcement introduced the exam in beta and targeted October 2026 availability. Its limited 80% beta discount required testing by August 18, 2026 and has expired. Do not treat the old promotional code as a current offer; check the live exam page for today’s status and registration options."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert/ba-p/4494122",
+      "title": "New Microsoft Certified: Multi-Agent AI Solutions Expert Certification",
+      "published_on": "2026-07-23",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft’s Multi-Agent AI Solutions Expert credential targets practitioners designing and operating production agent systems.",
+      "paragraphs": [
+        "AI-500 covers architecture, tool integration, orchestration, evaluation, monitoring, security and deployment using Microsoft Foundry and Azure. The expected background includes Python, production AI experience and Azure infrastructure, along with familiarity with MCP, retrieval-augmented generation and agent frameworks.",
+        "The credential also requires Azure AI Apps and Agents Developer Associate, earned through AI-103. Learners should plan for both requirements rather than assume passing the expert exam alone completes certification. The study guide helps distinguish advanced multi-agent responsibilities from foundational agent development.",
+        "The launch article introduced AI-500 in beta and projected October 2026 availability. Its first-300-candidates discount required testing by August 5, 2026 and is no longer current. Check the official exam page for present availability; beta results follow Microsoft’s rescoring process rather than immediate final certification results."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://techcommunity.microsoft.com/t5/the-skills-hub-blog/new-exam-for-microsoft-certified-windows-server-administrator/ba-p/4494120",
+      "title": "New exam for Microsoft Certified: Windows Server Administrator Associate Certification",
+      "published_on": "2026-07-08",
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft is consolidating the Windows Server certification’s two-exam route into AZ-802 and updating the credential name.",
+      "paragraphs": [
+        "The renamed Windows Server Administrator Associate credential covers identity, virtual machines, networking, storage, security and troubleshooting across on-premises and Azure environments. AZ-802 brings core and advanced administration into one exam, including newer hybrid management and security scenarios.",
+        "The announcement replaces AZ-800 and AZ-801 and says existing holders need no additional action for the name change. Taking the new exam is optional for them; passing resets expiry to one year from that pass date. Normal renewal assesses the updated skills.",
+        "Candidates should review the AZ-802 study guide and gain practical experience with tools such as Windows Admin Center, PowerShell and Azure Arc. The article’s beta discount ended July 22, 2026. Its launch timing references vary, so use the current exam page to confirm availability rather than relying on the older announcement’s schedule."
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "title": "DP-700 certification page updated October 19, 2026",
+      "published_on": null,
+      "reviewed_on": "2026-10-21",
+      "summary": "Microsoft’s Fabric Data Engineer certification page now shows an October 19, 2026 update; candidates should use the latest DP-700 study guide.",
+      "paragraphs": [
+        "The intermediate credential is aimed at data engineers working with loading patterns, data architecture and orchestration in Microsoft Fabric. Microsoft expects candidates to manipulate and transform data with SQL, PySpark and KQL and collaborate with analysts, architects and administrators.",
+        "The assessed areas are implementing and managing an analytics solution, ingesting and transforming data, and monitoring and optimizing the solution. Compare the current study guide with older training materials before choosing practice topics; the certification page alone does not describe every change to individual objectives.",
+        "The page lists a 100-minute proctored assessment, potentially including interactive tasks, with pricing based on the testing country or region. Microsoft provides a practice assessment and exam sandbox for preparation. Role-based certification holders can renew through a no-cost online assessment on Microsoft Learn."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+      "title": "Professional Agentic Architect: beta results and general-availability plans",
+      "published_on": null,
+      "reviewed_on": "2026-10-21",
+      "summary": "Google’s Agentic Architect credential combines a knowledge exam with practical labs; its page now outlines the transition from beta to general availability.",
+      "paragraphs": [
+        "The credential targets developers and architects designing autonomous workflows on Google Cloud. Assessed skills include low-code agents, coding assistants, custom agent development, deployment and evaluation, plus security and governance. Google recommends three years of cloud experience, including a year building agentic solutions.",
+        "Candidates must pass a proctored multiple-choice assessment and then complete separate hands-on labs in Google Skills. The beta specification lists about 80 questions over three hours, English delivery and a USD 120 fee before applicable tax. Those are beta terms, not a guarantee of current registration availability.",
+        "As reviewed on October 21, Google says beta results are due at the end of October, with successful candidates required to finish labs by December 31, 2026. General-availability registration is expected in mid-November. Check the linked page and FAQs for the applicable window before planning an attempt."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/new-google-cloud-certification-in-generative-ai",
+      "title": "Google Cloud announces first-of-its-kind generative AI leader certification",
+      "published_on": "2025-05-14",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google introduced Generative AI Leader for business professionals who need to understand and guide AI adoption without being developers.",
+      "paragraphs": [
+        "The announcement positions the credential for managers, administrators and other non-technical roles. It assesses understanding of generative AI and its business application rather than software implementation. At launch, the exam was priced at USD 99 and scheduled for 90 minutes; check current exam terms before booking.",
+        "The published assessment breakdown gives approximately 30% to AI fundamentals, 35% to Google Cloud’s generative AI products, 20% to improving model output, and 15% to strategies for successful business adoption. Responsible deployment and handling model limitations are part of that preparation.",
+        "Google also announced a free learning path lasting roughly seven to eight hours. Its five courses move from core concepts and the AI ecosystem to workplace applications and organizational use of agents, with practical activities and audio-style lessons. Training completion supports preparation but does not itself award the certification."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/free-gemini-enterrprise-training",
+      "title": "Your agentic summer: No-cost lessons from Google experts to build and scale agents",
+      "published_on": "2026-08-06",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google’s summer learning roundup connects introductory agent concepts with practical development, orchestration and production operations.",
+      "paragraphs": [
+        "The GEAR-supported selection begins with agent fundamentals and business use cases, then progresses to Gemini Enterprise applications and multi-agent workflows. It includes skill badges intended to demonstrate practical capability, alongside courses about human oversight and planning useful AI projects.",
+        "For developers, the recommendations cover ADK pipelines, structured outputs, connecting tools through MCP, maintaining agent memory and session state, and creating reusable skills. An AgentOps course addresses monitoring, observability and secure delivery practices. Google presented these resources as no-cost learning; confirm current access conditions on each course.",
+        "The article also promoted the All Things Agentic Hackathon with a submission window of August 3–31, 2026. That deadline has passed: the contest is historical information, not an open offer. Learners can still use the linked training paths to explore multi-agent engineering and enterprise governance, subject to current availability."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/join-the-gemini-live-agent-challenge",
+      "title": "Calling all devs: Build the future of Multimodal AI in the Gemini Live Agent Challenge",
+      "published_on": "2026-03-06",
+      "reviewed_on": "2026-10-21",
+      "summary": "This historical challenge asked developers to build multimodal agents on Google Cloud; its March 16, 2026 submission deadline has passed.",
+      "paragraphs": [
+        "The competition focused on experiences beyond ordinary text chat. Its three categories covered conversational live agents, creative systems mixing media, and agents that interpret interfaces visually. Examples included real-time translation, interactive storytelling and visual navigation or testing.",
+        "Entries were required to use a Gemini model with the Google Gen AI SDK or Agent Development Kit, plus at least one Google Cloud service. The announcement pointed participants to tutorials, quickstarts and expert webinars to support implementation and deployment.",
+        "Google advertised a combined USD 80,000 prize pool and additional awards such as cloud credits and event opportunities. Those were competition terms for the original submission window, not benefits currently available through CertPro. The linked announcement remains useful as project inspiration; consult its official rules for the historical eligibility and award details."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/new-ways-keep-google-cloud-certifications-current",
+      "title": "New ways to keep Google Cloud certifications current and boost your career",
+      "published_on": "2026-07-08",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google announced a learning-based renewal route for four cloud certifications, allowing eligible holders to extend an active credential by one year.",
+      "paragraphs": [
+        "The announcement covers Cloud Digital Leader, Associate Cloud Engineer, Professional Cloud Architect and Professional Data Engineer. Instead of relying only on another lengthy exam, eligible holders can complete the specified activities in Google Skills. This is a renewal route for existing holders, not a replacement for earning an initial certification.",
+        "Learners can use selected courses to study changed topics or demonstrate practical skills through hands-on skill badges. Google describes the badge route as useful for people already applying relevant cloud technologies at work. Only the activities required for the particular credential count toward renewal.",
+        "The certification must still be active when the required work is completed. Google says qualifying completion automatically extends validity by one year. Check the linked recertification guidance and your account’s requirements before choosing activities, especially if your credential is approaching expiration."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/google-skills-new-home-ai-learning",
+      "title": "Google Skills: Your new home for Google AI learning and more",
+      "published_on": "2025-10-09",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google announced a unified learning platform bringing together cloud, AI and other training, alongside a program focused on enterprise agents.",
+      "paragraphs": [
+        "At launch, Google Skills brought nearly 3,000 courses and labs from Google Cloud, DeepMind, Grow with Google and Google for Education into one place. It was designed for a wide range of learners, from students and developers to business leaders, while preserving the existing cloud training library.",
+        "The announcement highlighted Gemini Code Assist inside hands-on labs and new badges for AI-assisted development, MCP and agent deployment. Organizational features included assigning learning to teams, customized leaderboards and expanded reporting plans. These tools support structured practice rather than replacing certification assessments.",
+        "Google also introduced the Gemini Enterprise Agent Ready program, aiming to help one million developers build enterprise agents. The launch article invited readers to request 150 learning credits; that historical promotion should not be assumed available today. Check the current Google Skills and GEAR pages for enrollment, access and any applicable credit offers."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/upskill-for-the-holidays-no-cost-ai-training-from-google-skills",
+      "title": "Upskill for the holidays: Check out no-cost AI training now",
+      "published_on": "2025-12-02",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google’s 2025 holiday roundup offers a practical starting list of AI courses and labs for both technical and non-technical learners.",
+      "paragraphs": [
+        "The technical recommendations cover AI-assisted development, Gemini CLI, MCP integration, model fine-tuning and communication between agents. The article distinguishes credit-consuming labs from courses that require no credits. Labs provide a sandbox for working with Google Cloud tools rather than only reading about them.",
+        "For business learners, the selection introduces generative AI concepts and Gemini Enterprise, including its relationship to organizational needs, architecture and data privacy. It also points toward Generative AI Leader preparation. Completing these resources builds skills but is separate from passing a certification exam.",
+        "The announcement described 35 monthly Google Skills credits through the no-cost Google Developer Program. This is a December 2025 resource list, not a new seasonal offer. Confirm current membership benefits and each course’s credit requirements before enrolling; the article’s original course prices and access arrangements may change."
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "source_url": "https://cloud.google.com/blog/topics/training-certifications/gear-up-to-get-the-most-out-of-ai-learning-at-google-cloud-next26",
+      "title": "GEAR up to get the most out of AI learning at Google Cloud Next ‘26",
+      "published_on": "2026-04-21",
+      "reviewed_on": "2026-10-21",
+      "summary": "Google outlined GEAR training paths and hands-on activities around Next ’26, with learning resources extending beyond the conference.",
+      "paragraphs": [
+        "The announcement describes GEAR as a route to practical enterprise-agent skills. Listed benefits include 35 monthly learning credits, a community on Discord and curated resources. It also notes a certification preparation program for Google Cloud customers; eligibility for that program should be checked separately.",
+        "The recommended learning paths progress from agent concepts and Google’s ecosystem to ADK development, production deployment and organization-wide scaling. These paths provide a structured way to move from understanding agents to building and operating them, with current access conditions available through Google Skills.",
+        "The conference program included short mini-labs, longer workshops, a skills challenge and sessions on workforce development. Those Next ’26 activities are historical event information, not upcoming bookings or guaranteed rewards. Use the official links to find the ongoing learning programs and check their current benefits before making plans."
+      ]
+    },
+    {
+      "provider": "Cisco",
+      "source_url": "https://blogs.cisco.com/learning/cisco-security-certification-updates-your-questions-answered",
+      "title": "Cisco Security Certification Updates: Your Questions Answered",
+      "published_on": "2026-08-27",
+      "reviewed_on": "2026-10-21",
+      "summary": "Cisco’s security exam transition changes SCOR substantially while preserving credit for exams already passed.",
+      "paragraphs": [
+        "New security exam versions became available on August 27, 2026, including SCOR v2.0 and SSCA v2.0. Cisco describes SCOR as a major blueprint revision covering modern cloud-delivered security and infrastructure. Candidates using older SCOR material should compare it with the new blueprint, rather than treating this as a minor update.",
+        "Previously passed core or concentration exams still count toward CCNP Security. Cisco states that candidates have three years from passing one professional-level exam to complete the other; the version change does not erase that credit. SDSI remains unchanged, while SISE received a lighter update.",
+        "The separate SVPN exam retired after August 26 without a direct replacement. VPN topics remain in SCOR and the firewall concentration, and VPN training continues. SNCF exam changes are relatively small, although its training is being consolidated. Choose preparation material for the exact concentration and current version before booking."
+      ]
+    },
+    {
+      "provider": "Cisco",
+      "source_url": "https://blogs.cisco.com/learning/ccnp-security-should-you-take-the-leap",
+      "title": "CCNP Security: Should You Take the Leap?",
+      "published_on": "2026-08-12",
+      "reviewed_on": "2026-10-21",
+      "summary": "Cisco explains how CCNP Security can help network professionals build broader security and troubleshooting skills.",
+      "paragraphs": [
+        "The article presents CCNP Security as a possible next step for people who already understand networking and want to protect enterprise infrastructure. Its interviewees emphasize understanding protocols and security principles, rather than simply memorizing a vendor’s interface. Those foundations can also help in environments containing multiple vendors.",
+        "Two practitioners describe applying their knowledge to real work: diagnosing an authentication incident and automating checks of firewall configurations. These are personal examples of using training in practice, not promises of a promotion or salary increase. The emphasis is on confidence, methodical troubleshooting and a broader view of security.",
+        "The certification requires a core exam and a concentration exam. Cisco suggests choosing a concentration that interests you, using the published exam topics as a checklist and studying to understand the technology. Candidates can begin with a concentration before completing the core, allowing their preparation to follow their professional focus."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/training-and-certification/prove-your-data-analytics-skills-three-new-microcredentials-now-available/",
+      "title": "Prove your data analytics skills: Three new microcredentials now available",
+      "published_on": "2026-07-30",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS introduced three free, hands-on microcredentials for streaming, lakehouse and visualization workloads.",
+      "paragraphs": [
+        "The Data Streaming assessment focuses on diagnosing real-time data problems, including ingestion, processing and delivery. Its services include Kinesis, MSK, Data Firehose, Managed Service for Apache Flink and Glue. It is aimed at engineers responsible for streaming systems.",
+        "The Data Lakehouse assessment covers issues such as mismatched schemas, duplicate records, query performance and access controls, using technologies including Athena, Glue, Iceberg and Lake Formation. Data Visualization concentrates on dashboards, reporting, ingestion failures and security, with services such as QuickSight and Redshift Serverless.",
+        "All three are available through AWS Skill Builder without a subscription. They assess practical work in a timed AWS environment rather than multiple-choice answers. Successful candidates receive a shareable Credly badge. Select the assessment that matches the systems you actually build or maintain, and prepare through hands-on troubleshooting rather than relying only on question practice."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+      "title": "Updates to AWS Certified Machine Learning Engineer – Associate (MLA-C02)",
+      "published_on": "2026-07-14",
+      "reviewed_on": "2026-10-21",
+      "summary": "The MLA-C02 beta expands AWS machine learning certification to cover generative AI and agent workflows.",
+      "paragraphs": [
+        "AWS retains the exam’s domain structure but adds skills involving foundation models, retrieval-augmented generation, agent orchestration, Amazon Bedrock and responsible AI. Traditional model development and operations remain part of the scope. The certification targets people building and maintaining production ML and generative AI systems.",
+        "The announced English beta began delivery on September 29, 2026, after registration opened September 1. AWS lists 85 questions, 170 minutes and a US$75 fee, with Pearson VUE test-center or online-proctored delivery. The standard MLA-C02 exam is planned for early 2027.",
+        "The English MLA-C01 testing deadline was September 28, 2026; the announcement says Japanese, Korean and Simplified Chinese versions remain during the beta. Existing credentials retain their original expiry dates. Candidates should use the updated exam guide and include practical SageMaker AI and Bedrock experience when reviewing readiness."
+      ]
+    },
+    {
+      "provider": "Cisco",
+      "source_url": "https://blogs.cisco.com/learning/5-smart-ways-to-use-ai-for-certification-exam-prep",
+      "title": "5 Smart Ways to Use AI for Certification Exam Prep",
+      "published_on": "2026-07-09",
+      "reviewed_on": "2026-10-21",
+      "summary": "Cisco recommends using AI to organize study and practice while checking technical answers against official material.",
+      "paragraphs": [
+        "Start with the official exam blueprint. AI can explain unfamiliar domains, help prioritize their relative weights and distinguish tasks such as configuration from troubleshooting. Give it your target exam date, weekly study time and confidence by topic to draft a realistic schedule with revision time.",
+        "For recall and understanding, the article suggests flashcards, comparison tables and memory aids. Practice questions can be tailored to weak areas, with answers hidden until you attempt them and explanations for both correct and incorrect choices. Updates about what you learned can help adjust the remaining study plan.",
+        "Hands-on preparation still matters. Cisco discusses using AI to help design network labs for Cisco Modeling Labs, alongside question practice. AI-generated explanations and answers can be wrong, so compare questionable claims with official resources. Treat the tools as study support, not as an authoritative exam source or a replacement for working through configurations yourself."
+      ]
+    },
+    {
+      "provider": "Cisco",
+      "source_url": "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh",
+      "title": "Stay on Track: Get Certified Before the CCNA Refresh",
+      "published_on": "2026-07-01",
+      "reviewed_on": "2026-10-21",
+      "summary": "Cisco encourages current CCNA candidates to continue preparing ahead of the February 2027 exam refresh.",
+      "paragraphs": [
+        "The article says CCNA v2.0 will begin testing in February 2027 and advises candidates already studying v1.1 to finish by February 2, 2027. Cisco describes the revision as a change in depth and practical emphasis, including more troubleshooting and security and AI woven through the material.",
+        "Its suggested preparation combines the official CCNA learning path, CLI configuration and troubleshooting labs, and the free CCNA Prep resources. Candidates should set an achievable exam date and focus on completing the applicable blueprint rather than abandoning progress solely because a new version is coming.",
+        "The article also advertised a learning-path giveaway, but its August 31, 2026 deadline has already passed. That promotion should not be treated as currently available. The enduring advice is to match study materials to the version you will actually take and check Cisco’s current scheduling information before booking."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/certification/benefits/",
+      "title": "50% exam voucher for AWS Certified individuals",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS Certified individuals can access a 50% exam discount through their certification benefits.",
+      "paragraphs": [
+        "AWS lists a half-price exam voucher as a benefit of being certified. It can be used toward recertification or a different AWS exam, making it relevant when planning your next credential. This is an eligibility-based benefit for certification holders, rather than a public coupon for every learner.",
+        "Use your AWS Certification account to review the benefits available to you before scheduling. Check the voucher’s displayed terms and confirm that the discount applies to your chosen booking. CertPro does not issue the voucher or redeem it on your behalf.",
+        "The same benefits page describes digital badges, selected event recognition and opportunities to contribute as a subject-matter expert. These are separate benefits, and event availability depends on the specific event. For budgeting, rely on the final exam price and voucher conditions shown by AWS rather than assuming every additional service is discounted."
+      ]
+    },
+    {
+      "provider": "AWS",
+      "source_url": "https://aws.amazon.com/certification/",
+      "title": "Advanced Networking Specialty retires December 31, 2026",
+      "reviewed_on": "2026-10-21",
+      "summary": "AWS lists December 31, 2026 as the retirement date for Advanced Networking – Specialty.",
+      "paragraphs": [
+        "The AWS certification catalog marks Advanced Networking – Specialty as retiring on December 31, 2026. The credential focuses on complex networking skills. Anyone planning to pursue it should factor this deadline into preparation and check the linked exam page before making a booking.",
+        "For an existing study plan, first confirm which exam you intend to sit and whether your schedule allows enough preparation time. Review the current exam guide and available appointments rather than assuming that the exam will remain bookable after the retirement date.",
+        "AWS also offers role-based certification paths and practical microcredentials. Its catalog distinguishes broad certification knowledge from hands-on demonstrations, including application networking. These can inform your next learning goal, but the catalog does not identify them as automatic replacements for Advanced Networking – Specialty."
+      ]
+    },
+    {
+      "provider": "Databricks",
+      "source_url": "https://www.databricks.com/learn/certification/context-engineer-associate",
+      "title": "Context Engineer Associate is in the Databricks catalog",
+      "reviewed_on": "2026-10-21",
+      "summary": "Databricks Context Engineer Associate assesses how practitioners supply reliable, governed information to AI agents.",
+      "paragraphs": [
+        "The exam covers instructions and prompts, retrieval using AI Search, persistent memory with Lakebase and MLflow, and connecting agents to tools or data through protocols such as MCP. It also includes managing context limits, multi-agent workflows and evaluating whether context changes improve agent results.",
+        "Governance is part of the scope: Unity Catalog metadata, data quality, personal-information handling and policy enforcement determine what information should enter an agent’s context. The focus is on designing the information environment around an agent, not only choosing or calling a language model.",
+        "The official page lists 45 scored multiple-choice questions, 90 minutes and a $200 registration fee. Testing is proctored, in English, online or at a test center. There are no formal prerequisites, but Databricks recommends relevant training and at least six months of practical experience. The credential lasts two years; maintaining it requires passing the then-current exam."
+      ]
     }
   ]
 }
