@@ -1,6 +1,7 @@
+export type TextRun={text:string;bold?:boolean;italic?:boolean;underline?:boolean;strike?:boolean;code?:boolean;color?:string;background?:string;link?:string;script?:'sub'|'super'}
 export type BlockType = 'paragraph' | 'heading' | 'checklist' | 'callout'
-export type Block = {id:string; type:BlockType; text:string; checked:boolean; highlight:'none'|'yellow'|'purple'; selection?:{start:number;end:number}}
-export type Page = {id:string; title:string; blocks:Block[]; updatedAt:number; deleted?:boolean; removedBlocks?:Block[]}
+export type Block = {id:string; type:BlockType; text:string; checked:boolean; highlight:'none'|'yellow'|'purple'; selection?:{start:number;end:number};runs?:TextRun[];list?:'bullet'|'number';align?:'left'|'center'|'right';level?:1|2|3}
+export type Page = {id:string; title:string; blocks:Block[]; updatedAt:number; deleted?:boolean; removedBlocks?:Block[];externalSync?:('google'|'notion')[];comments?:{id:string;quote:string;text:string;createdAt:number}[]}
 export type Workspace = {version:1; revision:number; activePage:string; pages:Page[]}
 export const EVENT='certpro-study-workspace'
 const MAX=1000000
@@ -10,11 +11,13 @@ export const block=(text='',type:BlockType='paragraph'):Block=>({id:id(),type,te
 export const fromText=(text:string)=>text.trim()?text.split(/\n\s*\n/).map(text=>block(text)): [block()]
 export const page=(title:string,text=''):Page=>({id:id(),title,blocks:fromText(text),updatedAt:Date.now()})
 export function initial(text:string):Workspace {const first=page(text?'My study notes':'My first study page',text);return {version:1,revision:0,activePage:first.id,pages:[first]}}
-function validBlock(b:Block){return !!b&&typeof b.id==='string'&&typeof b.text==='string'&&typeof b.checked==='boolean'&&['paragraph','heading','checklist','callout'].includes(b.type)&&['none','yellow','purple'].includes(b.highlight)&&(b.selection===undefined||(!!b.selection&&Number.isInteger(b.selection.start)&&Number.isInteger(b.selection.end)&&b.selection.start>=0&&b.selection.end>b.selection.start&&b.selection.end<=b.text.length))}
+const color=(s:unknown)=>typeof s==='string'&&/^#[a-fA-F0-9]{6}$/.test(s)
+const validRun=(r:TextRun)=>!!r&&typeof r.text==='string'&&['bold','italic','underline','strike','code'].every(k=>(r as any)[k]===undefined||typeof (r as any)[k]==='boolean')&&(r.color===undefined||color(r.color))&&(r.background===undefined||color(r.background))&&(r.link===undefined||/^https?:\/\/[^\s<>"']+$/.test(r.link))&&(r.script===undefined||['sub','super'].includes(r.script))
+function validBlock(b:Block){return !!b&&typeof b.id==='string'&&typeof b.text==='string'&&typeof b.checked==='boolean'&&(b.runs===undefined||(Array.isArray(b.runs)&&b.runs.every(validRun)&&b.runs.map(r=>r.text).join('')===b.text))&&(b.list===undefined||['bullet','number'].includes(b.list))&&(b.align===undefined||['left','center','right'].includes(b.align))&&(b.level===undefined||[1,2,3].includes(b.level))&&['paragraph','heading','checklist','callout'].includes(b.type)&&['none','yellow','purple'].includes(b.highlight)&&(b.selection===undefined||(!!b.selection&&Number.isInteger(b.selection.start)&&Number.isInteger(b.selection.end)&&b.selection.start>=0&&b.selection.end>b.selection.start&&b.selection.end<=b.text.length))}
 export function validate(value:unknown):value is Workspace {
  if(!value||typeof value!=='object')return false
  const w=value as Workspace
- return w.version===1&&Number.isInteger(w.revision)&&typeof w.activePage==='string'&&Array.isArray(w.pages)&&w.pages.every(p=>!!p&&typeof p.id==='string'&&typeof p.title==='string'&&typeof p.updatedAt==='number'&&(p.deleted===undefined||typeof p.deleted==='boolean')&&Array.isArray(p.blocks)&&p.blocks.every(validBlock)&&(p.removedBlocks===undefined||(Array.isArray(p.removedBlocks)&&p.removedBlocks.every(validBlock))))
+ return w.version===1&&Number.isInteger(w.revision)&&typeof w.activePage==='string'&&Array.isArray(w.pages)&&w.pages.every(p=>!!p&&typeof p.id==='string'&&typeof p.title==='string'&&typeof p.updatedAt==='number'&&(p.externalSync===undefined||(Array.isArray(p.externalSync)&&p.externalSync.every(x=>['google','notion'].includes(x))))&&(p.comments===undefined||(Array.isArray(p.comments)&&p.comments.every(c=>!!c&&typeof c.id==='string'&&typeof c.quote==='string'&&typeof c.text==='string'&&Number.isFinite(c.createdAt))))&&(p.deleted===undefined||typeof p.deleted==='boolean')&&Array.isArray(p.blocks)&&p.blocks.every(validBlock)&&(p.removedBlocks===undefined||(Array.isArray(p.removedBlocks)&&p.removedBlocks.every(validBlock))))
 }
 export function readWorkspace(uid:string):Workspace|null {
  const raw=localStorage.getItem(storageKey(uid));if(raw===null)return null
