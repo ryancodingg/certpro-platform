@@ -6,7 +6,10 @@ export const runtime = "nodejs"
 export async function GET(request: Request) {
   try {
     await requireOwner()
-    const snap = await services().db.collection("questions").get()
+    const certification = new URL(request.url).searchParams.get("certification")
+    if (certification !== null && !/^[a-z0-9-]{1,100}$/.test(certification)) throw new HttpError(400,"Invalid certification.")
+    const collection = services().db.collection("questions")
+    const snap = await (certification ? collection.where("certification","==",certification) : collection).get()
     const questions = snap.docs.map(d => normalizeQuestion(d.data(), d.id))
     if (new URL(request.url).searchParams.get("export") === "json") return new Response(JSON.stringify(questions,null,2), {headers:{"Content-Type":"application/json", "Content-Disposition":"attachment; filename=certpro-questions.json", "Cache-Control":"no-store"}})
     return Response.json({questions}, {headers:{"Cache-Control":"no-store"}})
@@ -20,10 +23,19 @@ export async function POST(request: Request) {
     const {db} = services()
     if (["preview", "import"].includes(input.action)) {
       if (typeof input.text !== "string" || !["csv","json"].includes(input.format)) throw new HttpError(400,"Choose CSV or JSON and supply question data.")
+      let preflight
+      try { preflight = previewImport(input.text,input.format,[]) } catch(e) { throw new HttpError(400,(e as Error).message) }
+      const certifications = [...new Set(preflight.valid.map(q=>q.certification))]
       return await db.runTransaction(async tx => {
-        const snap = await tx.get(db.collection("questions"))
+        // Fingerprints include certification, so other banks cannot be duplicates.
+        // Keep all reads in the import transaction to retain concurrent-import checks.
+        const existing = []
+        for (let i=0;i<certifications.length;i+=30) {
+          const snap = await tx.get(db.collection("questions").where("certification","in",certifications.slice(i,i+30)))
+          existing.push(...snap.docs.map(d=>normalizeQuestion(d.data(),d.id)))
+        }
         let preview
-        try { preview = previewImport(input.text, input.format, snap.docs.map(d => normalizeQuestion(d.data(),d.id))) } catch(e) { throw new HttpError(400, (e as Error).message) }
+        try { preview = previewImport(input.text, input.format, existing) } catch(e) { throw new HttpError(400, (e as Error).message) }
         const digest = createHash("sha256").update(JSON.stringify(preview)).digest("hex")
         if (input.action === "preview") return Response.json({...preview,digest})
         if (input.digest !== digest) throw new HttpError(409,"The bank or import changed. Preview again before importing.")
