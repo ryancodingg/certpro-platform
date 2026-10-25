@@ -39,7 +39,7 @@ async function sync(uid:string){
   const saved=same?cloud:await request(uid,'PUT',{workspace:sent,expectedRevision:cloud.revision})
   if(saved.workspace)localStorage.setItem(metaKey(uid),JSON.stringify(saved.workspace))
   const latest=readWorkspace(uid)
-  if(latest?.revision!==sent.revision){announce(uid,'New edits waiting to sync…');queueWorkspaceSync(uid)}else announce(uid,'Saved to your account · available on your other devices')
+  if(latest?.revision!==sent.revision){announce(uid,'New edits waiting to sync…');queueWorkspaceSync(uid)}else {announce(uid,'Saved to your account · available on your other devices');window.dispatchEvent(new CustomEvent('certpro-workspace-synced',{detail:{uid}}))}
  }catch(e){announce(uid,e instanceof Error?e.message:'Sync unavailable. Local edits are kept.')}finally{s.busy=false}
 }
 export function watchWorkspaceSync(uid:string,listener:(text:string)=>void){
