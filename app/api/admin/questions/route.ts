@@ -38,6 +38,25 @@ export async function POST(request: Request) {
         return Response.json({imported:preview.valid.length, skipped:preview.duplicates.length})
       })
     }
+    if (input.action === "publish-reviewed-bank") {
+      const ids: unknown = input.ids
+      if (!Array.isArray(ids) || ids.length < 1 || ids.length > 200 || ids.some(id => typeof id !== "string" || !/^[^/]{1,200}$/.test(id)) || new Set(ids).size !== ids.length || typeof input.certification !== "string" || !input.certification) throw new HttpError(400,"Choose 1–200 unique draft IDs for one certification.")
+      const reviewedIds = ids as string[]
+      await db.runTransaction(async tx => {
+        const refs = reviewedIds.map(id => db.collection("questions").doc(id))
+        const docs = await tx.getAll(...refs)
+        for (const doc of docs) {
+          if (!doc.exists) throw new HttpError(409,"A selected draft no longer exists. Reload and review again.")
+          const q = normalizeQuestion(doc.data()!,doc.id)
+          if (q.certification !== input.certification || publication(q) !== "draft") throw new HttpError(409,"The selected bank changed. Only drafts from one certification can be published together.")
+          questionSchema.parse(q)
+        }
+        const now = new Date().toISOString()
+        for (const ref of refs) tx.update(ref,{status:"published",isActive:true,updatedAt:now,updatedBy:uid,archivedAt:null})
+        tx.create(db.collection("certproAudit").doc(),{action:"publish-reviewed-bank",actor:uid,at:now,certification:input.certification,questionIds:reviewedIds,count:reviewedIds.length})
+      })
+      return Response.json({published:reviewedIds.length})
+    }
     if (!/^[^/]{1,200}$/.test(input.id ?? "")) throw new HttpError(400,"A valid question ID is required.")
     if (!["draft","published","archived"].includes(input.status)) throw new HttpError(400,"Invalid publication state.")
     await db.runTransaction(async tx => {
