@@ -1,5 +1,5 @@
 'use client'
-import {useEffect,useState} from 'react'
+import {useEffect,useRef,useState} from 'react'
 import {useAuth} from '@/hooks/use-auth'
 import type {missedQuestions} from '@/lib/learning-memory'
 import {certificationById} from '@/lib/catalog'
@@ -10,7 +10,10 @@ const LIMIT=200000
 export function readStudyDocument(uid:string){return localStorage.getItem(key(uid))||''}
 export function saveStudyDocument(uid:string,text:string){if(text.length>LIMIT)throw Error('Your document is full. Download a copy and shorten it before adding more.');localStorage.setItem(key(uid),text);window.dispatchEvent(new Event('certpro-study-document'))}
 export function appendStudyDocument(uid:string,text:string){appendWorkspaceNote(uid,text)}
-export function CFox({busy=false,review=false,paused=true}:{busy?:boolean;review?:boolean;paused?:boolean}){return <span className="cfox-avatar" aria-hidden="true" data-state={busy?'thinking':review?'review':'idle'} data-paused={paused}><span className="cfox-sprite"/><style>{`.cfox-avatar{display:inline-flex;flex:none;width:72px;height:78px;overflow:hidden}.cfox-sprite{display:block;width:72px;height:78px;background-image:url('/brand/cfox-pip-spritesheet.png');background-size:576px 858px;background-position:0 0;animation:cfox-frames 2.4s steps(6) infinite}.cfox-avatar[data-state=thinking] .cfox-sprite{background-position-y:-546px;animation-duration:1.2s}.cfox-avatar[data-state=review] .cfox-sprite{background-position-y:-624px}.cfox-avatar[data-paused=true] .cfox-sprite{animation-play-state:paused}@keyframes cfox-frames{to{background-position-x:-432px}}@media(prefers-reduced-motion:reduce){.cfox-sprite{animation:none!important}}`}</style></span>}
+export function CFox({busy=false,review=false,paused=true}:{busy?:boolean;review?:boolean;paused?:boolean}){
+ const avatar=useRef<HTMLSpanElement>(null),[visible,setVisible]=useState(false),[foreground,setForeground]=useState(true)
+ useEffect(()=>{const update=()=>setForeground(!document.hidden);update();document.addEventListener('visibilitychange',update);const observer=new IntersectionObserver(([entry])=>setVisible(entry.isIntersecting));if(avatar.current)observer.observe(avatar.current);return()=>{observer.disconnect();document.removeEventListener('visibilitychange',update)}},[])
+ return <span ref={avatar} className="cfox-avatar" aria-hidden="true" data-state={busy?'thinking':review?'review':'idle'} data-paused={paused||!visible||!foreground}><span className="cfox-sprite"/><style>{`.cfox-avatar{display:inline-flex;flex:none;width:72px;height:78px;overflow:hidden}.cfox-sprite{display:block;width:72px;height:78px;background-image:url('/brand/cfox-pip-spritesheet.png');background-size:576px 858px;filter:hue-rotate(85deg) saturate(1.15);background-position:0 0;animation:cfox-frames 2.4s steps(6) infinite}.cfox-avatar[data-state=thinking] .cfox-sprite{background-position-y:-546px;animation-duration:1.2s}.cfox-avatar[data-state=review] .cfox-sprite{background-position-y:-624px}.cfox-avatar[data-paused=true] .cfox-sprite{animation-play-state:paused}@keyframes cfox-frames{to{background-position-x:-432px}}@media(prefers-reduced-motion:reduce){.cfox-sprite{animation:none!important}}`}</style></span>}
 
 
 // Minimal uncompressed OOXML package. Text is XML-escaped; no HTML or remote content is executed.
