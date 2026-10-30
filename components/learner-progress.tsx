@@ -68,7 +68,7 @@ export function WelcomeBack(){
  if(!user)return null
  return <section className="mx-auto max-w-7xl px-6 py-5" aria-label="Your next study session">
   <p className="text-xl font-semibold">Welcome back{user.name?.trim()?<>, <span className="gradient-text">{user.name.trim().split(/\s+/)[0]}</span></>:''}</p>
-  {path==='/'?<HomeContinue uid={user.id}/>:<p className="text-sm text-muted-foreground">Make room for your next milestone. <Link href="/progress" className="underline">Continue learning →</Link></p>}
+  {path==='/'?<HomeContinue uid={user.id}/>:path==='/progress'?null:<p className="text-sm text-muted-foreground">Make room for your next milestone. <Link href="/progress" className="underline">Continue learning →</Link></p>}
  </section>
 }
 export function useProgress(){
