@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import {examGoal,progressCard,hasPracticeCheckpoint} from '../lib/progress-view'
+import {examGoal,progressCard,hasPracticeCheckpoint,visibleProgressCertifications} from '../lib/progress-view'
 import type {ProgressData} from '../lib/device-progress'
 import type {StudyPlan} from '../lib/study-plan'
 const plan:StudyPlan={certification:'dp-700',examDate:'2026-10-24',time:'19:00',timezone:'Australia/Sydney',minutes:30,days:[1,2,3,4,5],reminderMinutes:10,emailRequested:false}
@@ -33,3 +33,12 @@ assert.equal(hasPracticeCheckpoint({getItem:()=>'{broken'},'owner',candidate),fa
 assert.equal(hasPracticeCheckpoint({getItem:()=>{throw Error('blocked')}},'owner',candidate),false,'blocked storage cannot promise resume')
 assert.equal(hasPracticeCheckpoint({getItem:()=>JSON.stringify(checkpoint)},'owner',{...candidate,submitted:true}),false,'submitted practice cannot resume')
 console.log('PASS: resume requires the exact account/topic/attempt checkpoint; cloud-only, stale, corrupt and blocked checkpoints are excluded')
+
+const removed:ProgressData={...data,unsaved:[{certification:'dp-700',removedAt:'2026-10-10'}]}
+assert.deepEqual(visibleProgressCertifications(data),['dp-700'],'aliases deduplicate cards')
+assert.deepEqual(visibleProgressCertifications({...data,saved:[]}),['dp-700'],'history-only cards initially visible')
+assert.deepEqual(visibleProgressCertifications(removed),[],'removal hides stale saved cards and history')
+assert.equal(removed.attempts.length,3,'removal preserves attempts')
+assert.deepEqual(visibleProgressCertifications({...removed,saved:[{...data.saved[0],savedAt:'2026-10-11'}]}),['dp-700'],'saving again restores card')
+assert.deepEqual(visibleProgressCertifications({...removed,attempts:[...data.attempts,{...data.attempts[0],id:'other',certification:'az-900'}]}),['az-900'],'other certifications unaffected')
+console.log('PASS: remove, reload with old history, alias matching, restore and account data isolation')
