@@ -5,7 +5,8 @@ const catalog=moduleOf('lib/catalog.ts',{'@/data/certifications.json':JSON.parse
 assert(catalog.isActiveNews({status:'published',expires_on:'2026-11-01'},new Date('2026-10-21')));assert(!catalog.isActiveNews({status:'published',expires_on:'2026-02-30'},new Date('2026-01-01')));assert(!catalog.isActiveNews({status:'published',expires_on:'2026-10-20'},new Date('2026-10-21')));
 const ed=moduleOf('lib/news-editorial.ts',{'@/data/news-editorial.json':editorial});
 const isaca=moduleOf('lib/server/isaca-news.ts');
-const backend=moduleOf('lib/server/provider-news.ts',{'./isaca-news':isaca,'./news-summary':{automaticSummary:async n=>n},'server-only':{},'./firebase':{services(){throw Error('unavailable')}},'next/cache':{unstable_cache:f=>f},'@/lib/catalog':catalog,'@/lib/news-editorial':ed},'\nexport {readSource};');
+const presentation=moduleOf('lib/news-presentation.ts');
+const backend=moduleOf('lib/server/provider-news.ts',{'@/lib/news-presentation':presentation,'./isaca-news':isaca,'./news-summary':{automaticSummary:async n=>n},'server-only':{},'./firebase':{services(){throw Error('unavailable')}},'next/cache':{unstable_cache:f=>f},'@/lib/catalog':catalog,'@/lib/news-editorial':ed},'\nexport {readSource};');
 for(const provider of ['Cisco','CompTIA','ISC2','ISACA'])assert(backend.sources.some(s=>s.provider===provider));
 for(const article of editorial.articles){assert(article.paragraphs.length>=3);assert(article.paragraphs.join(' ').split(/\s+/).length+article.summary.split(/\s+/).length<=200);assert.equal(new URL(article.source_url).protocol,'https:')}
 for(const file of ['app/news/[id]/page.tsx','components/news-feed.tsx','lib/use-news.ts']){const d=ts.transpileModule(fs.readFileSync(base+'/'+file,'utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX},reportDiagnostics:true}).diagnostics;assert.equal(d.length,0,file)}
