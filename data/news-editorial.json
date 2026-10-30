@@ -425,6 +425,19 @@
         "Governance is part of the scope: Unity Catalog metadata, data quality, personal-information handling and policy enforcement determine what information should enter an agent’s context. The focus is on designing the information environment around an agent, not only choosing or calling a language model.",
         "The official page lists 45 scored multiple-choice questions, 90 minutes and a $200 registration fee. Testing is proctored, in English, online or at a test center. There are no formal prerequisites, but Databricks recommends relevant training and at least six months of practical experience. The credential lasts two years; maintaining it requires passing the then-current exam."
       ]
+    },
+    {
+      "source_url": "https://www.isc2.org/insights/2026/10/what-will-the-isc2-ai-security-certification-cover",
+      "provider": "ISC2",
+      "title": "A first look at the ISC2 AI Security Certification",
+      "published_on": "2026-10-26",
+      "reviewed_on": "2026-10-30",
+      "summary": "ISC2 has published a pilot exam outline for a planned credential covering the security of AI systems.",
+      "paragraphs": [
+        "The outline spans six areas: AI fundamentals; governance and risk; data and model protection; secure architecture and access; operations and incident response; and threats, testing and lifecycle management. It treats AI security as a combination of technical safeguards and organizational responsibility.",
+        "The intended audience includes professionals securing AI and machine-learning systems during design, deployment and ongoing operation. Preparation should cover privacy, model protection, secure integration, monitoring and responding to AI-specific incidents, alongside collaboration with legal, compliance and business teams.",
+        "ISC2 expects approximately 3,000 qualified volunteers to take the pilot from mid-December through late January. A successful pilot could lead to a 2027 launch; this is a planned certification, not confirmation of general availability. Review the official pilot outline for its scope and follow ISC2 for launch details."
+      ]
     }
   ]
 }
