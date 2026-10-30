@@ -12,7 +12,7 @@ import {progressCertification,type ProgressData} from '@/lib/device-progress'
 import {readDevicePlans} from '@/lib/device-study-plans'
 import {matchingStudyPlan} from '@/lib/study-context'
 import type {StudyPlan} from '@/lib/study-plan'
-import {examGoal,progressCard} from '@/lib/progress-view'
+import {examGoal,progressCard,visibleProgressCertifications} from '@/lib/progress-view'
 import {continueLearning,readPracticeCheckpoint,readStudyTopic,type StudyTopic} from '@/lib/continue-learning'
 
 function openPlan(certification?:string){window.dispatchEvent(new CustomEvent('certpro-open-calendar',{detail:{certification}}))}
@@ -68,7 +68,7 @@ function LearningCard({id,data,plan,now,learning,busyId,onUnsave}:{id:string;dat
  const complete=card.guidePercent===100
  const hasActivity=card.attempts.length>0||card.reviewed>0
  return <article className={'cp-learning-card'+(canResume?' has-resume':'')} aria-labelledby={'progress-'+id}>
-  <div className="cp-learning-card-top"><div className="cp-learning-provider"><div className="cp-learning-logo"><ProviderLogo provider={cert?.provider||''} className="h-9 w-9"/></div><div><p>{cert?.provider||'Certification'}<span> · {cert?.level||'Learning path'}</span></p><span className="cp-learning-status">{!card.saved?'History only':complete?'Guide reviewed':hasActivity?'Learning in progress':'Ready when you are'}</span></div></div>{card.saved&&<button type="button" className="cp-learning-unsave" disabled={!!busyId} aria-label={'Unsave '+(cert?.name||id)} onClick={()=>onUnsave(id)}><BookmarkMinus size={16} aria-hidden="true"/>{busyId===id?'Removing…':'Unsave'}</button>}</div>
+  <div className="cp-learning-card-top"><div className="cp-learning-provider"><div className="cp-learning-logo"><ProviderLogo provider={cert?.provider||''} className="h-9 w-9"/></div><div><p>{cert?.provider||'Certification'}<span> · {cert?.level||'Learning path'}</span></p><span className="cp-learning-status">{!card.saved?'History only':complete?'Guide reviewed':hasActivity?'Learning in progress':'Ready when you are'}</span></div></div>{<button type="button" className="cp-learning-unsave" disabled={!!busyId} aria-label={'Remove '+(cert?.name||id)} onClick={()=>onUnsave(id)}><BookmarkMinus size={16} aria-hidden="true"/>{busyId===id?'Removing…':'Remove'}</button>}</div>
   <h2 id={'progress-'+id}><Link href={detail}>{cert?.name||id}</Link></h2>
   <div className={'cp-learning-goal'+(goal&&goal.days>=0&&goal.days<=7?' is-near':'')}><CalendarDays size={20} aria-hidden="true"/><div><strong>{goal?.label||'Give your learning a date'}</strong><span>{goal&&plan?`${goal.date} · ${plan.minutes} min on study days`:'A small daily habit starts with a simple plan.'}</span></div><button type="button" onClick={()=>openPlan(id)}>{goal?'Edit goal':'Set exam goal'}<ArrowRight size={14} aria-hidden="true"/></button></div>
   <div className="cp-learning-progress">
@@ -87,18 +87,22 @@ export function ProgressDashboard(){
  const {user,isLoading}=useAuth(),{data,warning,storageUnavailable,syncUnavailable,mutate}=useProgress()
  const {plans,now}=usePlanCards(user?.id)
  const learning=useLearningContext(user?.id,data)
- const [busyId,setBusyId]=useState(''),[actionError,setActionError]=useState(''),[notice,setNotice]=useState('')
+ const [busyId,setBusyId]=useState(''),[actionError,setActionError]=useState(''),[notice,setNotice]=useState(''),[removedId,setRemovedId]=useState('')
  if(isLoading)return <p role="status">Loading your learning…</p>
  if(!user)return <section className="cp-info-panel"><h2>Your learning, in one place</h2><p>Sign in to save certifications, track your learning and plan your next milestone.</p><Link className="cp-primary" href="/auth/login?next=%2Fprogress">Sign in and continue</Link></section>
- const ids=[...new Set([...data.saved.map(s=>progressCertification(s.certification)),...data.attempts.map(a=>progressCertification(a.certification))])]
+ const ids=visibleProgressCertifications(data)
  async function unsave(id:string){
   if(!user)return;setBusyId(id);setActionError('');setNotice('')
-  try{const synced=await updateProgress(user.id,{action:'unsave',certification:id});setNotice(synced?'Certification unsaved. Your practice and mock history is kept.':'Certification unsaved in this browser. Account sync is unavailable; your history is kept.');await mutate().catch(()=>undefined)}catch(e){setActionError(e instanceof Error?e.message:'Could not unsave this certification.')}finally{setBusyId('')}
+  try{const synced=await updateProgress(user.id,{action:'unsave',certification:id});setRemovedId(id);setNotice(synced?'Removed from My Progress. Your answers and exam history are kept.':'Removed in this browser. Account sync is unavailable; your answers and exam history are kept.');await mutate().catch(()=>undefined)}catch(e){setActionError(e instanceof Error?e.message:'Could not remove this certification.')}finally{setBusyId('')}
+ }
+ async function undo(){
+  if(!user||!removedId)return;setBusyId(removedId);setActionError('')
+  try{const synced=await updateProgress(user.id,{action:'save',certification:removedId});setRemovedId('');setNotice(synced?'Certification restored to My Progress.':'Certification restored in this browser. Account sync is unavailable.');await mutate().catch(()=>undefined)}catch(e){setActionError(e instanceof Error?e.message:'Could not restore this certification.')}finally{setBusyId('')}
  }
  return <div className="cp-progress-dashboard">
   <div className="cp-learning-toolbar"><div><span className="cp-learning-toolbar-icon"><Target size={25} aria-hidden="true"/></span><div><strong>{ids.length?'Your next chapter is already underway.':'Make room for your next chapter.'}</strong><span>{data.saved.length} saved certification{data.saved.length===1?'':'s'} · Choose one small step for today.</span></div></div><button className="cp-secondary" onClick={()=>openPlan()}><Clock3 size={17} aria-hidden="true"/>Plan study time</button></div>
   <div className="cp-progress-quicklinks"><Link href="/my-learning"><RotateCcw size={17} aria-hidden="true"/>My Learning · Revisit missed questions<ArrowRight size={16} aria-hidden="true"/></Link><Link href="/certifications">Find your next certification →</Link></div>
-  {notice&&<p role="status" className="cp-progress-notice">{notice}</p>}{actionError&&<p role="alert" className="cp-progress-notice">{actionError}</p>}{storageUnavailable&&<p role="alert" className="cp-progress-notice">{warning}</p>}
+  {notice&&<p role="status" className="cp-progress-notice">{notice} {removedId&&<button type="button" className="cp-text-link" disabled={!!busyId} onClick={undo}>Undo removal</button>}</p>}{actionError&&<p role="alert" className="cp-progress-notice">{actionError}</p>}{storageUnavailable&&<p role="alert" className="cp-progress-notice">{warning}</p>}
   {!ids.length?<section className="cp-progress-empty"><BookOpen size={36} aria-hidden="true"/><h2>Every learning journey starts somewhere.</h2><p>Save a certification to see your guide progress, practice activity and exam goal here.</p><Link className="cp-primary" href="/certifications">Find a certification<ArrowRight size={17} aria-hidden="true"/></Link></section>:<div className="cp-learning-grid">{ids.map(id=><LearningCard key={id} id={id} data={data} plan={matchingStudyPlan(plans,id)} now={now} learning={learning} busyId={busyId} onUnsave={unsave}/>)}</div>}
   <footer className="cp-progress-footer"><details><summary>{syncUnavailable?'Account sync is temporarily unavailable':'About saved progress'}</summary><p>{warning}</p><p>Exam dates are personal goals, not official bookings. Your calendar plan controls study reminders.</p></details><Link href="/subscription">My Subscription →</Link></footer>
  </div>

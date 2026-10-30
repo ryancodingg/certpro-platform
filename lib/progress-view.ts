@@ -36,3 +36,12 @@ export function hasPracticeCheckpoint(storage:Pick<Storage,'getItem'>,uid:string
   return value?.attempt?.ownerUid===uid&&value.attempt.id===attempt.id&&Array.isArray(value.attempt.questions)&&value.attempt.questions.length>0
  }catch{return false}
 }
+
+/** An archived card stays hidden even when old attempts are fetched again. */
+export function visibleProgressCertifications(data:ProgressData):string[]{
+ const removed=new Map<string,string>()
+ for(const item of data.unsaved||[]){const id=progressCertification(item.certification);if((removed.get(id)||'')<item.removedAt)removed.set(id,item.removedAt)}
+ const saved=new Map<string,string>()
+ for(const item of data.saved){const id=progressCertification(item.certification);if((saved.get(id)||'')<item.savedAt)saved.set(id,item.savedAt)}
+ return [...new Set([...data.saved,...data.attempts].map(item=>progressCertification(item.certification)))].filter(id=>!removed.has(id)||(saved.get(id)||'')>removed.get(id)!)
+}
