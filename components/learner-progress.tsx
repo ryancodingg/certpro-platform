@@ -10,6 +10,7 @@ import useSWR from 'swr'
 import {useAuth} from '@/hooks/use-auth'
 import {learnerFetch} from '@/lib/learner-client'
 import {guideFor} from '@/lib/exam-guide'
+import {visibleProgressCertifications} from '@/lib/progress-view'
 import {readProgress,storeProgress,mergeProgress,emptyProgress,saveDeviceCertification,progressCertification,type ProgressData} from '@/lib/device-progress'
 import {Button} from '@/components/ui/button'
 type HomeResume={href:string;title:string;certification:string;answered:number;total:number;isAttempt:boolean}
@@ -23,7 +24,10 @@ export function homeResumeTarget(progress:ProgressData,uid:string,storage?:Pick<
     if(checkpoint)checkpoints[attempt.id]={updatedAt:checkpoint.updatedAt}
    }
    const ids=[...new Set([...certifications.map(c=>progressCertification(c.id)),...progress.saved.map(s=>progressCertification(s.certification)),...progress.attempts.map(a=>progressCertification(a.certification))])]
-   const candidates=ids.map(id=>{
+   const visible=new Set(visibleProgressCertifications(progress))
+   const removed=new Set((progress.unsaved||[]).map(item=>progressCertification(item.certification)))
+   // Topic checkpoints and retained attempts must respect Remove, including after reload.
+   const candidates=ids.filter(id=>!removed.has(id)||visible.has(id)).map(id=>{
     const guide=guideFor(id),topic=storage?readStudyTopic(storage,uid,id):undefined
     const target=continueLearning(id,progress,guide.domains,checkpoints,topic)
     const saved=progress.saved.find(s=>progressCertification(s.certification)===id)
