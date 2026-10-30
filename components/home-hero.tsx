@@ -2,6 +2,7 @@
 import {useEffect, useRef, useState} from 'react'
 import Link from 'next/link'
 import {ArrowRight, Sparkles, Pause, Play} from 'lucide-react'
+import AnimatedContent from './react-bits/animated-content'
 import {ScrollHeading} from './scroll-heading'
 import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'
@@ -42,11 +43,13 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
       <div className={styles.path} aria-label="Your learning path"><span>Learn</span><i aria-hidden="true"/><span>Practice</span><i aria-hidden="true"/><span>Build confidence</span></div>
 
     </div>
+    <AnimatedContent distance={14} duration={0.45} initialOpacity={0.85} once disabled={controlPaused} style={{minWidth:0,position:'relative',zIndex:2}}>
     <aside className={`cp-latest-panel ${styles.newsPanel}`} aria-label="Latest certification updates">
       <p className="cp-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><ScrollHeading as="h2" text="Stay a step ahead."/><p className="cp-note">Latest official certification updates</p>
       <ol className="cp-highlight-list">{updates.map(n=><li key={n.id}><Link href={'/news/'+n.id}><ProviderLogo provider={n.provider} className="h-7 w-7"/><div><span className="cp-news-tag">{n.provider} · {n.type}</span><h3>{n.title}</h3></div><ArrowRight size={16} aria-hidden="true"/></Link></li>)}</ol>
       <Link className="cp-text-link" href="/news">View all news & discounts <ArrowRight size={16} aria-hidden="true"/></Link>
     </aside>
+    </AnimatedContent>
     <button type="button" className={styles.motionToggle} onClick={toggleMotion} title={reduced&&!motionOptIn?'Paused for your reduced-motion preference. Play only if you want to preview the animation.':undefined} aria-label={controlPaused?'Play homepage animation':'Pause homepage animation'}>{controlPaused?<Play size={13} aria-hidden="true"/>:<Pause size={13} aria-hidden="true"/>}{controlPaused?'Play animation':'Pause animation'}</button>
   </section>
 }

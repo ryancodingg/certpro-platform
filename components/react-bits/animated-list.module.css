@@ -1,0 +1,21 @@
+/* React Bits Animated List adaptation: native disclosure rows, CertPro tokens. */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.item { min-width: 0; }
+.item > details { margin-bottom: 0; }
+.item > details > summary:focus-visible {
+  outline: 3px solid var(--cp-accent);
+  outline-offset: -3px;
+  border-radius: inherit;
+}
+/* The content is visible by default. Animation is an optional enhancement. */
+@media (prefers-reduced-motion: reduce) {
+  .item { transform: none !important; opacity: 1 !important; }
+}
