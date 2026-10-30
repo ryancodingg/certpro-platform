@@ -1,4 +1,5 @@
 import 'server-only'
+import {preserveNewsSummary} from '@/lib/news-presentation'
 import {automaticSummary} from './news-summary'
 import {isacaOffersUrl,parseIsacaNews,parseIsacaOffers} from './isaca-news'
 import {services} from './firebase'
@@ -58,11 +59,15 @@ async function readSource(source:typeof sources[number],previous:NewsRecord[]=[]
  const excerptText=load(entry.contentSnippet||entry.summary||entry.content||'').text().replace(/\s+/g,' ').trim();const excerptWords=Math.max(0,25-title.split(/\s+/).length);const excerpt=excerptText.split(/\s+/).slice(0,excerptWords).join(' ');
  unique.set(id,enrichNews({id,provider:source.provider,type:/discount|voucher|save \d|\d+% off|free (?:exam|certification)|exam offer/i.test(title)?'discount':'news',title,...(excerpt?{source_excerpt:excerpt+(excerptText.split(/\s+/).length>excerptWords?'…':'')}:{}),summary:`An official announcement from ${source.provider}. Read the official announcement for details, eligibility, dates, and any offer terms.`,source_url:url.href,verified_on:fetched.slice(0,10),published_on:date&&!Number.isNaN(date.valueOf())?date.toISOString().slice(0,10):null,status:'published'}))
  }
- const items=[...unique.values()].slice(0,15).map(n=>{const old=previous.find(p=>p.source_url===n.source_url);if(n.article_paragraphs?.length)return n;return {...n,...(old?.summary_attempted_on?{summary_attempted_on:old.summary_attempted_on}:{}),...(old?.article_paragraphs?.length?{summary:old.summary,article_paragraphs:old.article_paragraphs,...(old.article_generated_on?{article_generated_on:old.article_generated_on,article_summary_kind:old.article_summary_kind}:{})}:{})}})
- // One new article per feed per hourly refresh bounds free-tier usage and request time.
- // Rotate failed candidates so one inaccessible page cannot starve the queue.
- const pending=items.filter(n=>!n.article_paragraphs?.length).sort((a,b)=>(previous.find(p=>p.id===a.id)?.summary_attempted_on||'').localeCompare(previous.find(p=>p.id===b.id)?.summary_attempted_on||''))
+ const fresh=[...unique.values()].slice(0,15).map(n=>{
+  const old=previous.find(p=>p.source_url===n.source_url)
+  return {...preserveNewsSummary(n,old),...(old?.summary_attempted_on?{summary_attempted_on:old.summary_attempted_on}:{})}
+ })
+ // Keep older pending articles eligible, even once they fall out of the latest feed window.
+ const items=[...fresh,...previous.filter(n=>!fresh.some(f=>f.source_url===n.source_url)&&retainedArticleValid(n))]
+ const pending=items.filter(n=>!n.article_paragraphs?.length).sort((a,b)=>(a.summary_attempted_on||'').localeCompare(b.summary_attempted_on||''))
  if(pending[0]){const n=pending[0];const index=items.findIndex(p=>p.id===n.id);items[index]={...await automaticSummary(n,articleBodies.get(n.id)),summary_attempted_on:fetched}}
+
  return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:fetched,items,status:'ok'}
 }
 function retainedArticleValid(item:NewsRecord){
@@ -83,7 +88,7 @@ async function retainedSource(source:typeof sources[number]){
  }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((source.kind==='offers'&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
 // An hourly key makes the first visit/cron wait for a refresh, instead of returning stale data and relying on background execution.
-const cached=sources.map(source=>(hour:number)=>unstable_cache(()=>retainedSource(source),['official-news-independent-v8',source.url,String(hour)],{revalidate:3600})())
+const cached=sources.map(source=>(hour:number)=>unstable_cache(()=>retainedSource(source),['official-news-independent-v9',source.url,String(hour)],{revalidate:3600})())
 export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read(Math.floor(Date.now()/3600000)).catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  const reviewedItems:NewsRecord[]=reviewedNews.filter(n=>!seed.some(s=>s.source_url.replace(/\/$/,'')===n.source_url.replace(/\/$/,''))).map(n=>enrichNews({id:'official-'+createHash('sha256').update(n.source_url).digest('hex').slice(0,24),provider:n.provider,type:'news',title:n.title,summary:n.summary,source_url:n.source_url,verified_on:n.reviewed_on,published_on:n.published_on??null,status:'published'}));
