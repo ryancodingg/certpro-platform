@@ -1,7 +1,8 @@
 "use client"
+import {ExamGuide} from '@/components/exam-guide'
 import { examPolicy } from '@/lib/exam-policy'
 import { CertificationStudyPlan } from '@/components/certification-study-plan'
-import { SaveCertification, ExamGuide } from '@/components/learner-progress'
+import { SaveCertification } from '@/components/learner-progress'
 import { guideFor } from '@/lib/exam-guide'
 import Link from "next/link"
 import { useParams } from "next/navigation"
