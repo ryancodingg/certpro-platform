@@ -2,7 +2,7 @@
 import {useEffect, useRef, useState} from 'react'
 import Link from 'next/link'
 import {ArrowRight, Sparkles, Pause, Play} from 'lucide-react'
-import AnimatedContent from './react-bits/animated-content'
+import AnimatedContent from './entrance-content'
 import {ScrollHeading} from './scroll-heading'
 import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'

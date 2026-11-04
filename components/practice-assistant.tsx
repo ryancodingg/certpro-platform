@@ -82,7 +82,7 @@ export function PracticeAssistant({attemptId, questionId, review=false, explanat
     </div>
     <div className={styles.bubble}>
       <div className={styles.heading}>
-        <h3>C-Fox says</h3>
+        <h3>Answer:</h3>
         {text && <span className={styles.aiLabel}>AI explanation</span>}
       </div>
       <div className={styles.message}>

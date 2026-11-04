@@ -6,7 +6,8 @@ import {services} from './firebase'
 import Parser from 'rss-parser'
 import {load} from 'cheerio'
 import {createHash} from 'node:crypto'
-import {unstable_cache} from 'next/cache'
+import {unstable_cache,revalidateTag} from 'next/cache'
+import initialSnapshot from '@/data/news-snapshot.json'
 import {news as seed,isActiveNews,type NewsRecord} from '@/lib/catalog'
 import {enrichNews,reviewedNews} from '@/lib/news-editorial'
 export const sources=[
@@ -87,13 +88,45 @@ async function retainedSource(source:typeof sources[number]){
   return {...fresh,items,archiveAvailable}
  }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((source.kind==='offers'&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
-// An hourly key makes the first visit/cron wait for a refresh, instead of returning stale data and relying on background execution.
-const cached=sources.map(source=>(hour:number)=>unstable_cache(()=>retainedSource(source),['official-news-independent-v9',source.url,String(hour)],{revalidate:3600})())
+// Stable keys serve the last result while Next refreshes expired entries in the background.
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v10',source.url],{revalidate:3600}))
 export async function providerNews(){
- const results=await Promise.all(cached.map((read,i)=>read(Math.floor(Date.now()/3600000)).catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
+ const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
+ return assembleNews(results)
+}
+function assembleNews(results:any[]){
  const reviewedItems:NewsRecord[]=reviewedNews.filter(n=>!seed.some(s=>s.source_url.replace(/\/$/,'')===n.source_url.replace(/\/$/,''))).map(n=>enrichNews({id:'official-'+createHash('sha256').update(n.source_url).digest('hex').slice(0,24),provider:n.provider,type:'news',title:n.title,summary:n.summary,source_url:n.source_url,verified_on:n.reviewed_on,published_on:n.published_on??null,status:'published'}));
  const offerUrls=new Set(sources.filter(s=>s.kind==='offers').map(s=>s.url))
  const byUrl=new Map([...seed,...reviewedItems].filter(n=>isActiveNews(n)&&!offerUrls.has(n.source_url)).map(n=>[n.source_url,enrichNews(n)]));for(const result of results)for(const n of result.items){if(offerUrls.has(n.source_url))byUrl.set(n.source_url+'#'+n.id,n);else if(!byUrl.has(n.source_url))byUrl.set(n.source_url,enrichNews(n))}
  const seenTitles=new Set<string>();const items=[...byUrl.values()].filter(n=>{const key=n.provider+'|'+n.title.toLowerCase().replace(/[^a-z0-9]/g,'');if(seenTitles.has(key))return false;seenTitles.add(key);return true}).sort((a,b)=>(b.published_on||b.verified_on||'').localeCompare(a.published_on||a.verified_on||'')||a.id.localeCompare(b.id))
  return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Certification announcements and supported official training offers appear here; coverage is not exhaustive. ISACA training offers are removed when they expire or disappear from the official offer page. New articles receive AI-generated summaries checked against official source text in small batches. Pending summaries retry on later refreshes.'}
+}
+
+// Visitors never wait for external feeds or AI summarization. The last persisted
+// source results are shared between server rendering and the client endpoint.
+export const newsSnapshot=unstable_cache(async()=>{
+ const fallback=initialSnapshot as unknown as ReturnType<typeof assembleNews>
+ try{
+  const db=services().db
+  let timer:ReturnType<typeof setTimeout>|undefined
+  const docs=await Promise.race([
+   db.getAll(...sources.map(source=>db.collection('certproConfig').doc(sourceId(source)))),
+   new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(Error('News archive timed out')),1200)})
+  ]).finally(()=>clearTimeout(timer))
+  return assembleNews(sources.map((source,i)=>{
+   const stored=docs[i].data()
+   const old=fallback.sources.find(s=>s.sourceUrl===source.url)
+   const items=stored?.items||fallback.items.filter(n=>n.provider===source.provider)
+   const checkedAt=stored?.checkedAt||old?.checkedAt||null
+   const stale=!checkedAt||Date.now()-Date.parse(checkedAt)>3600000
+   return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt,status:stale?'stale':stored?.status||old?.status||'stale',items:(source.kind==='offers'&&(!checkedAt||Date.now()-Date.parse(checkedAt)>48*3600000)?[]:items).filter(retainedArticleValid)}
+  }))
+ }catch{
+  const staleOffers=new Set(sources.filter(s=>s.kind==='offers'&&(!fallback.sources.find(old=>old.sourceUrl===s.url)?.checkedAt||Date.now()-Date.parse(fallback.sources.find(old=>old.sourceUrl===s.url)!.checkedAt!)>48*3600000)).map(s=>s.url))
+  return {...fallback,items:fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)),sources:fallback.sources.map(s=>({...s,status:'stale'}))}
+ }
+},['news-display-snapshot-v1'],{revalidate:300,tags:['news-display-snapshot']})
+export async function refreshNewsInBackground(){
+ await providerNews()
+ revalidateTag('news-display-snapshot','max')
 }

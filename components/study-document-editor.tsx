@@ -1,13 +1,30 @@
 'use client'
-import {useEffect,useRef,useState} from 'react'
+import {useEffect,useLayoutEffect,useRef,useState} from 'react'
 import type {Page} from '@/lib/study-workspace'
 import {documentHtml,readDocument,escapeText} from '@/lib/study-document'
 import {learnerFetch} from '@/lib/learner-client'
-export function StudyDocumentEditor({page,onChange}:{page:Page;onChange:(edit:(p:Page)=>void)=>void}){
+export function StudyDocumentEditor({page,onChange,onPending}:{page:Page;onPending?:()=>void;onChange:(edit:(p:Page)=>void)=>void}){
  const root=useRef<HTMLDivElement>(null),range=useRef<Range|null>(null),last=useRef(''),current=useRef(page),[selection,setSelection]=useState(''),[link,setLink]=useState(''),[showLink,setShowLink]=useState(false),[comment,setComment]=useState(''),[showComment,setShowComment]=useState(false),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[suggestion,setSuggestion]=useState(''),[source,setSource]=useState('')
+ const timer=useRef<ReturnType<typeof setTimeout>|null>(null),dirty=useRef(false),changeRef=useRef(onChange)
+ changeRef.current=onChange
  current.current=page
- useEffect(()=>{const value=JSON.stringify(page.blocks);if(root.current&&last.current!==value){root.current.innerHTML=documentHtml(page);last.current=value}},[page.blocks])
- function save(){if(!root.current)return;const blocks=readDocument(root.current,current.current.blocks);last.current=JSON.stringify(blocks);onChange(p=>{p.blocks=blocks})}
+ useEffect(()=>{const value=JSON.stringify(page.blocks);if(root.current&&!dirty.current&&last.current!==value){root.current.innerHTML=documentHtml(page);last.current=value}},[page.blocks])
+ function save(element=root.current){
+  if(timer.current)clearTimeout(timer.current);timer.current=null
+  if(!element)return
+  const blocks=readDocument(element,current.current.blocks),value=JSON.stringify(blocks)
+  const pending=dirty.current;dirty.current=false
+  if(value===last.current&&!pending)return
+  last.current=value;changeRef.current(p=>{p.blocks=blocks})
+ }
+ function scheduleSave(){dirty.current=true;onPending?.();if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>save(),350)}
+ useLayoutEffect(()=>{
+  const element=root.current
+  const flush=()=>{if(dirty.current)save(element)}
+  const hide=()=>{if(document.visibilityState==='hidden')flush()}
+  window.addEventListener('beforeunload',flush);window.addEventListener('pagehide',flush);document.addEventListener('visibilitychange',hide)
+  return()=>{flush();if(timer.current)clearTimeout(timer.current);window.removeEventListener('beforeunload',flush);window.removeEventListener('pagehide',flush);document.removeEventListener('visibilitychange',hide)}
+ },[])
  function remember(){const s=window.getSelection();if(s?.rangeCount&&root.current?.contains(s.anchorNode)&&root.current.contains(s.focusNode)){range.current=s.getRangeAt(0).cloneRange();setSelection(s.toString())}}
  function restore(){const r=range.current;if(r&&root.current?.contains(r.commonAncestorContainer)){const s=window.getSelection();s?.removeAllRanges();s?.addRange(r)}root.current?.focus()}
  function command(name:string,value?:string){restore();document.execCommand(name,false,value);save();remember()}
@@ -23,7 +40,7 @@ export function StudyDocumentEditor({page,onChange}:{page:Page;onChange:(edit:(p
  {showLink&&<form className="document-inline" onSubmit={e=>{e.preventDefault();if(!/^https?:\/\/[^\s<>"']+$/.test(link)){setMessage('Enter a full https:// link.');return}command('createLink',link);setShowLink(false);setLink('')}}><input aria-label="Link URL" placeholder="https://…" value={link} onChange={e=>setLink(e.target.value)}/><button type="submit">Apply link</button></form>}
  <div className={selection?"document-selection has-selection":"document-selection"} aria-label="Selected text actions"><span>{selection?selection.length+' characters selected':'Select text for comments or C-Fox'}</span><button type="button" onMouseDown={e=>e.preventDefault()} disabled={!selection} onClick={()=>setShowComment(!showComment)}>＋ Comment</button>{['Improve writing','Proofread','Explain'].map((title,i)=><button key={title} disabled={!selection||busy} type="button" onMouseDown={e=>e.preventDefault()} onClick={()=>ai(['improve','proofread','explain'][i])}>✦ {title}</button>)}</div>
  {showComment&&<form className="document-inline" onSubmit={e=>{e.preventDefault();if(!comment.trim()||!selection)return;onChange(p=>{p.comments=[...(p.comments||[]),{id:crypto.randomUUID(),quote:selection,text:comment.trim(),createdAt:Date.now()}]});setComment('');setShowComment(false)}}><input aria-label="Comment" placeholder="Add your revision note…" value={comment} onChange={e=>setComment(e.target.value)}/><button type="submit">Add comment</button></form>}
- <div ref={root} role="textbox" aria-label="Study document" aria-multiline="true" contentEditable suppressContentEditableWarning className="document-paper" onInput={save} onBlur={save} onMouseUp={remember} onKeyUp={remember} onPaste={e=>{e.preventDefault();command('insertText',e.clipboardData.getData('text/plain'))}} onDrop={e=>e.preventDefault()}/>
+ <div ref={root} role="textbox" aria-label="Study document" aria-multiline="true" contentEditable suppressContentEditableWarning className="document-paper" onInput={scheduleSave} onBlur={()=>save()} onMouseUp={remember} onKeyUp={remember} onPaste={e=>{e.preventDefault();command('insertText',e.clipboardData.getData('text/plain'))}} onDrop={e=>e.preventDefault()}/>
  <div className="document-meta">{page.blocks.map(b=>b.text).join(' ').trim().split(/\s+/).filter(Boolean).length} words · Autosaved with your study workspace</div>
  {(busy||message)&&<p role="status">{busy?'C-Fox is preparing a suggestion…':message}</p>}
  {suggestion&&<aside className="document-suggestion"><h3>C-Fox suggestion</h3><p style={{whiteSpace:'pre-wrap'}}>{suggestion}</p><p className="sw-muted">Review AI suggestions before using them.</p><button type="button" onMouseDown={e=>e.preventDefault()} onClick={()=>{restore();if(window.getSelection()?.toString()!==source){setMessage('The selected text has changed. Select it again or add the suggestion below.');return}command('insertText',suggestion);setSuggestion('')}}>Replace selected text</button> <button type="button" onClick={()=>{onChange(p=>{p.blocks.push({id:crypto.randomUUID(),type:'paragraph',text:suggestion,checked:false,highlight:'none'})});setSuggestion('')}}>Add to document</button> <button type="button" onClick={()=>setSuggestion('')}>Dismiss</button></aside>}
