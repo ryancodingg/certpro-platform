@@ -141,6 +141,303 @@
           ]
         }
       ]
+    },
+    {
+      "provider": "Microsoft",
+      "label": "Microsoft official events",
+      "sourceUrl": "https://www.microsoft.com/en-au/events",
+      "checkedAt": "2026-11-05T02:27:27.398Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-f21a2938d05811dc2d4ef293",
+          "provider": "Microsoft",
+          "type": "event",
+          "title": "Microsoft Ignite",
+          "summary": "An upcoming Microsoft event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.microsoft.com/en-au/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-17",
+          "event_end": "2026-11-20",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "Microsoft lists this event for 2026-11-17 to 2026-11-20. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        }
+      ]
+    },
+    {
+      "provider": "Google Cloud",
+      "label": "Google Cloud official events",
+      "sourceUrl": "https://cloud.google.com/events",
+      "checkedAt": "2026-11-05T02:27:20.738Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-8fce163c3f98d8d55f94329e",
+          "provider": "Google Cloud",
+          "type": "event",
+          "title": "AI Arena 2027",
+          "summary": "An upcoming Google Cloud event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://cloudonair.withgoogle.com/events/ai-arena-2027",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2027-01-22",
+          "event_end": "2027-01-22",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "Google Cloud lists this event for 2027-01-22. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        }
+      ]
+    },
+    {
+      "provider": "ISC2",
+      "label": "ISC2 official events",
+      "sourceUrl": "https://www.isc2.org/professional-development/events",
+      "checkedAt": "2026-11-05T02:27:19.925Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-bfb123a2e67e364de81111ba",
+          "provider": "ISC2",
+          "type": "event",
+          "title": "SECURE London 2026",
+          "summary": "An upcoming ISC2 event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.isc2.org/professional-development/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-19",
+          "event_end": "2026-11-19",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "ISC2 lists this event for 2026-11-19. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-e23c2a5bae4f0a39cc740282",
+          "provider": "ISC2",
+          "type": "event",
+          "title": "SECURE Los Angeles",
+          "summary": "An upcoming ISC2 event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.isc2.org/professional-development/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-12-10",
+          "event_end": "2026-12-10",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "ISC2 lists this event for 2026-12-10. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        }
+      ]
+    },
+    {
+      "provider": "ISACA",
+      "label": "ISACA official events",
+      "sourceUrl": "https://www.isaca.org/training-and-events/conferences",
+      "checkedAt": "2026-11-05T02:27:20.116Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-80756dfe65959ad8d13446d6",
+          "provider": "ISACA",
+          "type": "event",
+          "title": "ISACA 2026 Virtual Conference",
+          "summary": "An upcoming ISACA event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.isaca.org/training-and-events/conferences/isaca-virtual-conference",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-12-01",
+          "event_end": "2026-12-03",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "ISACA lists this event for 2026-12-01 to 2026-12-03. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-2831163477bbdad337e6dd9c",
+          "provider": "ISACA",
+          "type": "event",
+          "title": "ISACA 2027 Virtual Student Summit",
+          "summary": "An upcoming ISACA event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.isaca.org/training-and-events/conferences/student-summit",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2027-02-25",
+          "event_end": "2027-02-26",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "ISACA lists this event for 2027-02-25 to 2027-02-26. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-d409e70e2c9265c1ec1b057c",
+          "provider": "ISACA",
+          "type": "event",
+          "title": "ISACA 2027 North America Conference",
+          "summary": "An upcoming ISACA event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://www.isaca.org/training-and-events/conferences/isaca-north-america-conference",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2027-05-05",
+          "event_end": "2027-05-07",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "ISACA lists this event for 2027-05-05 to 2027-05-07. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        }
+      ]
+    },
+    {
+      "provider": "GitHub",
+      "label": "GitHub official events",
+      "sourceUrl": "https://github.com/resources/events",
+      "checkedAt": "2026-11-05T02:27:19.747Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-677b1bbf000784f30af4d904",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "Agentic Day: NYC",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-09",
+          "event_end": "2026-11-09",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-09. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-908f0a47a75c1497d27f7ec8",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "GitHub Agentic Day: Chicago",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-16",
+          "event_end": "2026-11-16",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-16. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-1eda36270632247a78ecae12",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "Microsoft Ignite 2026",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-17",
+          "event_end": "2026-11-20",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-17 to 2026-11-20. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-12bc9bb9e77517a2dccf4eb9",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "GitHub Universe on the Road: Sydney",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-17",
+          "event_end": "2026-11-17",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-17. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-42fd5b7d004953506e8ff19f",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "GitHub Universe on the Road: Toronto",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-18",
+          "event_end": "2026-11-18",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-18. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-b5a753ee1d8770336ad54211",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "Agentic Day: Montréal",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-19",
+          "event_end": "2026-11-19",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-19. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        },
+        {
+          "id": "event-b94841ad098d6c5e535d2248",
+          "provider": "GitHub",
+          "type": "event",
+          "title": "Agentic Day: Boston",
+          "summary": "An upcoming GitHub event. Check the official listing for the agenda, registration and attendance requirements.",
+          "source_url": "https://github.com/resources/events",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "event_on": "2026-11-19",
+          "event_end": "2026-11-19",
+          "attendance": "Provider-wide event · confirm attendance format with the organiser",
+          "article_paragraphs": [
+            "GitHub lists this event for 2026-11-19. Open the official listing to confirm times, timezone, location and registration.",
+            "This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing."
+          ]
+        }
+      ]
     }
   ]
 }

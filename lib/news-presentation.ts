@@ -1,5 +1,5 @@
 import type {NewsRecord} from './catalog'
-export const newsTypeLabel=(type:string)=>({'event-voucher':'Events & exam vouchers',news:'News',discount:'Discounts',retirement:'Exam retirements','catalog-update':'Catalog updates','exam-update':'Exam updates',beta:'Beta exams'}[type]||type.replace(/-/g,' '))
+export const newsTypeLabel=(type:string)=>({event:'Upcoming events','event-announcement':'Event announcements','event-voucher':'Events & exam vouchers',news:'News',discount:'Discounts',retirement:'Exam retirements','catalog-update':'Catalog updates','exam-update':'Exam updates',beta:'Beta exams'}[type]||type.replace(/-/g,' '))
 export const hasNewsSummary=(item:NewsRecord)=>!!item.article_paragraphs?.some(p=>p.trim())
 export function newsDeadline(item:NewsRecord){return item.expires_on||item.event_on||null}
 export function isClosingSoon(item:NewsRecord,now=new Date()){

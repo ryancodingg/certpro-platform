@@ -18,3 +18,10 @@ Exam completion deadlines differ from redemption deadlines. Data Days vouchers a
 
 ## Verification
 Run the event-vouchers, news-updates and isaca-news tests, TypeScript and production build. Browser-check desktop and mobile filter, search by exam code, article details and official links before publication.
+
+## Ongoing discovery across providers
+The section is now News & Events (URLs unchanged). Eight official event directories are polled alongside the existing news feeds. CompTIA uses its official certification blog because no accessible official events calendar was verified. All nine providers have public source links. Upcoming events and event announcements are distinct from confirmed voucher offers.
+
+Directory extraction uses explicit years and dates from structured Event data or reviewed source markup. It never guesses a year, exam relationship or voucher entitlement. Generic events are provider-wide. Expired events disappear after their end date; successful refresh replaces the prior directory list. Unreadable/blocked directories report unavailable (or a saved copy for up to 48 hours). AWS and Databricks currently require richer directory adapters; Cisco blocked server requests. This is monitored coverage, not a promise that every event for every exam can be collected automatically.
+
+Verified directory adapters: Microsoft featured events, Google Cloud explicitly year-dated cards, GitHub cards, ISC2 event tiles, ISACA conference tiles. Structured Event data is supported for all directories. Check `provider-events.test.cjs` in addition to the offer tests. Source timestamps render deterministically in UTC to avoid server/browser hydration mismatch.
