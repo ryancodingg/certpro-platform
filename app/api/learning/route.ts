@@ -1,3 +1,4 @@
+import {startRecoveryExam,recoveryExamAction} from '@/lib/server/recovery-exam'
 import {TESTING_ACCESS} from '@/lib/testing-access'
 import {examPolicy} from '@/lib/exam-policy'
 import {learningBank,bankUnavailable,recoveredBank} from '@/lib/server/learning-bank'
@@ -33,6 +34,11 @@ export async function POST(request: Request) {
   try {
     sameOrigin(request)
     input = await body(request)
+    if(input.recoveryToken){
+      if(!TESTING_ACCESS)throw new HttpError(403,'Temporary exams are available only during testing.')
+      const uid=await learner(request,true)
+      try{return Response.json(recoveryExamAction(input,uid!,process.env.FIREBASE_SERVICE_ACCOUNT_JSON!,id=>recoveredBank(id).questions),{headers:{'Cache-Control':'private, no-store'}})}catch(e){throw new HttpError(400,(e as Error).message)}
+    }
     const {db} = services()
     if (input.action === "start") {
       if (!/^[a-z0-9-]{1,100}$/.test(input.certification ?? "") || !["practice","exam"].includes(input.mode)) throw new HttpError(400,"Invalid learning mode or certification.")
@@ -43,6 +49,7 @@ export async function POST(request: Request) {
       const premium=TESTING_ACCESS||await premiumAccess(uid!);const eligible=input.mode==='practice'&&!premium?freeQuestions(input.certification,all.questions):all.questions
       const questions=input.section?eligible.filter(q=>questionSection(input.certification,q)===input.section):eligible
       if (!questions.length) return Response.json({questions:[], invalid})
+      if(all.recovery&&input.mode==='exam'&&TESTING_ACCESS)return Response.json(startRecoveryExam(uid!,input.certification,questions,examPolicy(input.certification).durationMinutes??90,process.env.FIREBASE_SERVICE_ACCOUNT_JSON!),{headers:{'Cache-Control':'private, no-store'}})
       const id = randomBytes(16).toString("hex")
       const secret = randomBytes(32).toString("hex")
       const duration=examPolicy(input.certification).durationMinutes ?? 90
@@ -111,7 +118,8 @@ export async function POST(request: Request) {
   } catch(e) {
     if(bankUnavailable(e)&&input?.action==='start'){
       try{
-        await learner(request,true)
+        const uid=await learner(request,true)
+        if(input.mode==='exam'&&TESTING_ACCESS){const recovered=recoveredBank(bankId(input.certification));if(!recovered.questions.length)return Response.json({questions:[],invalid:recovered.invalid});return Response.json(startRecoveryExam(uid!,bankId(input.certification),recovered.questions,examPolicy(input.certification).durationMinutes??90,process.env.FIREBASE_SERVICE_ACCOUNT_JSON!),{headers:{'Cache-Control':'private, no-store'}})}
         if(input.mode!=='practice')throw new HttpError(503,'Mock Exams are temporarily unavailable while Firebase recovers. Your attempt allowance has not been bypassed. Use Practical Mode for temporary study; saved scores will return when the service recovers.')
         const certification=bankId(input.certification)
         const recovered=recoveredBank(certification)

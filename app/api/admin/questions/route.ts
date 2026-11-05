@@ -1,3 +1,4 @@
+import {revalidateTag} from 'next/cache'
 import { createHash } from "node:crypto"
 import { body, failure, HttpError, requireOwner, sameOrigin, services } from "@/lib/server/firebase"
 import { fingerprint, normalizeQuestion, questionSchema, publication } from "@/lib/questions"
@@ -67,6 +68,7 @@ export async function POST(request: Request) {
         for (const ref of refs) tx.update(ref,{status:"published",isActive:true,updatedAt:now,updatedBy:uid,archivedAt:null})
         tx.create(db.collection("certproAudit").doc(),{action:"publish-reviewed-bank",actor:uid,at:now,certification:input.certification,questionIds:reviewedIds,count:reviewedIds.length})
       })
+      revalidateTag('certpro-question-bank',{expire:0})
       return Response.json({published:reviewedIds.length})
     }
     if (!/^[^/]{1,200}$/.test(input.id ?? "")) throw new HttpError(400,"A valid question ID is required.")
@@ -81,6 +83,7 @@ export async function POST(request: Request) {
       tx.update(ref, {status:input.status, isActive:input.status === "published", updatedAt:now, updatedBy:uid, archivedAt:input.status === "archived" ? now : null})
       tx.create(db.collection("certproAudit").doc(), {questionId:doc.id, action:input.status, previousStatus:publication(existing), actor:uid, at:now})
     })
+    revalidateTag('certpro-question-bank',{expire:0})
     return Response.json({ok:true})
   } catch(e) { return failure(e) }
 }

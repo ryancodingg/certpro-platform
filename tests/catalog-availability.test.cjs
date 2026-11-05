@@ -1,9 +1,9 @@
 const fs=require('fs'),ts=require('typescript'),assert=require('node:assert/strict');
 function mod(file,mocks={}){const m={exports:{}};new Function('require','module','exports',ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:1,target:9,esModuleInterop:true}}).outputText)(n=>mocks[n]||require(n),m,m.exports);return m.exports}
-const helpers=mod('lib/catalog-availability.ts');
+const helpers=mod('lib/catalog-availability.ts',{'./testing-access':{TESTING_ACCESS:true}});
 assert.deepEqual(helpers.bankAvailability(100,false),{count:100,practice:'available',mock:'available'});
 assert.deepEqual(helpers.bankAvailability(0,false),{count:0,practice:'empty',mock:'empty'});
-assert.deepEqual(helpers.bankAvailability(100,true),{count:100,practice:'available',mock:'unavailable'});
+assert.deepEqual(helpers.bankAvailability(100,true),{count:100,practice:'available',mock:'available'});
 assert.deepEqual(helpers.bankAvailability(0,true),{count:null,practice:'unknown',mock:'unavailable'});
 assert.equal(helpers.bankAvailability(NaN,false).count,null);
 const seen=[];const route=mod('app/api/catalog-availability/route.ts',{'@/lib/catalog':{certificationById:id=>['a','b'].includes(id)?{id,aliases:id==='a'?['alias-a']:[]}:undefined},'@/lib/catalog-availability':helpers,'@/lib/server/learning-bank':{learningBank:async id=>{seen.push(id);if(id==='b')throw Error('offline');return {questions:[{secret:'answer'}],recovery:false}}}});
