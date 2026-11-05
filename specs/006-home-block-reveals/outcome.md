@@ -14,4 +14,4 @@ Implemented original progressive block reveals for homepage certification and ne
 The test browser requests reduced motion. The static accessible path was visually inspected; normal-motion behavior was covered by controlled tests. No physical iPhone or frame-rate performance measurement was performed. This is an original implementation informed by public React Bits presentation patterns, not licensed React Bits Pro code. The separate Blur Highlight installation still needs the license key.
 
 ## Release
-Production publication and final live check are recorded after deployment. Question-bank work remains paused; catalog metadata is unchanged.
+Implemented in commit 2ca1b7f. Production push was blocked by automatic approval review because this turn did not explicitly authorize production publication. Awaiting user approval; no live changes were made. Question-bank work remains paused; catalog metadata is unchanged.
