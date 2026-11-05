@@ -49,6 +49,7 @@ export async function POST(request: Request) {
       const premium=TESTING_ACCESS||await premiumAccess(uid!);const eligible=input.mode==='practice'&&!premium?freeQuestions(input.certification,all.questions):all.questions
       const questions=input.section?eligible.filter(q=>questionSection(input.certification,q)===input.section):eligible
       if (!questions.length) return Response.json({questions:[], invalid})
+      if(all.recovery&&input.mode==='practice')return Response.json({id:'recovery-'+randomBytes(16).toString('hex'),mode:'practice',deadline:null,questions:questions.map(publicQuestion),recoveryQuestions:questions,invalid,recovery:true},{headers:{'Cache-Control':'private, no-store'}})
       if(all.recovery&&input.mode==='exam'&&TESTING_ACCESS)return Response.json(startRecoveryExam(uid!,input.certification,questions,examPolicy(input.certification).durationMinutes??90,process.env.FIREBASE_SERVICE_ACCOUNT_JSON!),{headers:{'Cache-Control':'private, no-store'}})
       const id = randomBytes(16).toString("hex")
       const secret = randomBytes(32).toString("hex")
