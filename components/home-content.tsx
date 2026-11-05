@@ -1,12 +1,9 @@
 "use client"
 import {BlockReveal} from "./block-reveal"
-import { ScrollHeading } from "@/components/scroll-heading"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { CertificationCatalog } from "@/components/certification-catalog"
 import { HomeHero } from "@/components/home-hero"
-import {NewsCarousel} from "@/components/news-carousel"
-import { certifications } from "@/lib/catalog"
+import {HomeUpdates} from "./home-updates"
 import {useNews} from "@/lib/use-news"
-export default function HomeContent({initialNews}:{initialNews:import("@/lib/use-news").NewsSnapshot}){const {news}=useNews(initialNews);const updates=news.slice(0,5);return <main className="cp-site"><SiteHeader/><HomeHero updates={updates}/><BlockReveal selector=".cp-cert-card"><CertificationCatalog compact/></BlockReveal><section className="cp-section cp-news-section"><div className="cp-section-heading"><div><p className="cp-eyebrow">KEEP YOUR LEARNING ON TRACK</p><ScrollHeading text="News, opportunities & savings"/><p>Exam changes and provider updates to help you plan your next step.</p></div><Link className="cp-text-link" href="/news">All updates <ArrowRight size={17}/></Link></div><BlockReveal selector=".cp-news-card" variant="settle"><NewsCarousel items={news.slice(0,12)}/></BlockReveal></section><footer className="cp-footer"><div className="cp-footer-brand"><Link href="/" className="cp-footer-logo" aria-label="CertPro home"><img src="/brand/certpro-fox-c-v1-192.png" alt="" width={32} height={32}/><span className="gradient-text text-2xl">CertPro</span></Link><p>Learn. Practice. Build confidence.</p></div><Link href="/certifications">Certifications</Link><Link href="/news">News & Events</Link></footer></main>}
+export default function HomeContent({initialNews}:{initialNews:import("@/lib/use-news").NewsSnapshot}){const {news}=useNews(initialNews);return <main className="cp-site"><SiteHeader/><HomeHero/><BlockReveal selector=".cp-cert-card"><CertificationCatalog compact/></BlockReveal><HomeUpdates items={news}/><footer className="cp-footer"><div className="cp-footer-brand"><Link href="/" className="cp-footer-logo" aria-label="CertPro home"><img src="/brand/certpro-fox-c-v1-192.png" alt="" width={32} height={32}/><span className="gradient-text text-2xl">CertPro</span></Link><p>Learn. Practice. Build confidence.</p></div><Link href="/certifications">Certifications</Link><Link href="/news">News & Events</Link></footer></main>}

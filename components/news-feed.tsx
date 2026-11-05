@@ -13,7 +13,7 @@ import {browseNews,readableDate,NEWS_PAGE_SIZE,type NewsTab,type NewsGroup} from
 import styles from './news-feed.module.css'
 
 const tabs:{id:NewsTab;label:string}[]=[{id:'news',label:'News'},{id:'events',label:'Events'},{id:'offers',label:'Exam offers'}]
-function FeedCard({group,tab}:{group:NewsGroup;tab:NewsTab}){
+export function FeedCard({group,tab}:{group:NewsGroup;tab:NewsTab}){
  const {item,related}=group
  const date=tab==='events'?item.event_on||related.find(r=>r.event_on)?.event_on:tab==='offers'?item.expires_on:item.published_on||item.verified_on
  const generic=/^An upcoming .+ event\. Check the official listing/i.test(item.summary)
@@ -32,10 +32,10 @@ function FeedCard({group,tab}:{group:NewsGroup;tab:NewsTab}){
   <Link className={`cp-text-link ${styles.read}`} href={'/news/'+item.id}>{tab==='offers'?'View offer & conditions':tab==='events'?'View event details':hasNewsSummary(item)?'Read article':'View source details'}<ArrowRight size={16}/></Link>
  </article>
 }
-export function NewsFeed({initialNews}:{initialNews?:NewsSnapshot}){
+export function NewsFeed({initialNews,initialTab='news'}:{initialNews?:NewsSnapshot;initialTab?:NewsTab}){
  const {news,sources,refresh,error}=useNews(initialNews)
  const {user}=useAuth();const {data:progress}=useProgress()
- const [tab,setTab]=useState<NewsTab>('news'),[provider,setProvider]=useState('All'),[query,setQuery]=useState(''),[scope,setScope]=useState('all'),[page,setPage]=useState(1),[filtersOpen,setFiltersOpen]=useState(false)
+ const [tab,setTab]=useState<NewsTab>(initialTab),[provider,setProvider]=useState('All'),[query,setQuery]=useState(''),[scope,setScope]=useState('all'),[page,setPage]=useState(1),[filtersOpen,setFiltersOpen]=useState(false)
  const results=useRef<HTMLDivElement>(null)
  const savedProviders=new Set(progress.saved.map(s=>certificationById(s.certification)?.provider).filter(Boolean))
  const active=news.filter(n=>isActiveNews(n))

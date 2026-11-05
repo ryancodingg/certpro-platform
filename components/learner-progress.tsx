@@ -1,7 +1,10 @@
 'use client'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
-import {ArrowRight} from 'lucide-react'
+import {ArrowRight,CalendarDays,Clock3} from 'lucide-react'
+import {readDevicePlans} from '@/lib/device-study-plans'
+import {localDate,type StudyPlan} from '@/lib/study-plan'
+import resumeStyles from './home-resume.module.css'
 import {auth} from '@/lib/firebase'
 import {certifications,certificationById} from '@/lib/catalog'
 import {continueLearning,readPracticeCheckpoint,readStudyTopic} from '@/lib/continue-learning'
@@ -14,7 +17,7 @@ const guideFor=(id:string)=> (previews as Record<string,{domains:{id:string;titl
 import {visibleProgressCertifications} from '@/lib/progress-view'
 import {readProgress,storeProgress,mergeProgress,emptyProgress,saveDeviceCertification,progressCertification,type ProgressData} from '@/lib/device-progress'
 import {Button} from '@/components/ui/button'
-type HomeResume={href:string;title:string;certification:string;answered:number;total:number;isAttempt:boolean}
+type HomeResume={certificationId:string;href:string;title:string;certification:string;answered:number;total:number;isAttempt:boolean}
 const activityTime=(value?:string|null)=>value&&Number.isFinite(Date.parse(value))?Date.parse(value):0
 
 export function homeResumeTarget(progress:ProgressData,uid:string,storage?:Pick<Storage,'getItem'>):HomeResume|null{
@@ -39,32 +42,48 @@ export function homeResumeTarget(progress:ProgressData,uid:string,storage?:Pick<
     return {updated,target,id}
    }).filter(c=>c.updated>0).sort((a,b)=>b.updated-a.updated)
    const latest=candidates[0]
-   return latest?{href:latest.target.href,title:latest.target.title,certification:certificationById(latest.id)?.name||latest.id,answered:latest.target.attempt?Math.min(new Set(latest.target.attempt.answeredIds).size,latest.target.attempt.total):0,total:latest.target.attempt?.total||0,isAttempt:!!latest.target.attempt}:null
+   return latest?{certificationId:latest.id,href:latest.target.href,title:latest.target.title,certification:certificationById(latest.id)?.name||latest.id,answered:latest.target.attempt?Math.min(new Set(latest.target.attempt.answeredIds).size,latest.target.attempt.total):0,total:latest.target.attempt?.total||0,isAttempt:!!latest.target.attempt}:null
 }
 
 function HomeContinue({uid}:{uid:string}){
  const {data,syncUnavailable,storageUnavailable}=useProgress()
  const signature=JSON.stringify(data)
- const [state,setState]=useState<{uid:string;signature:string;target:HomeResume|null}>({uid:'',signature:'',target:null})
+ const [state,setState]=useState<{uid:string;signature:string;target:HomeResume|null;plans:StudyPlan[];now:Date}>({uid:'',signature:'',target:null,plans:[],now:new Date()})
  useEffect(()=>{
   const load=()=>{
    const progress=JSON.parse(signature) as ProgressData
-   let storage:Storage|undefined
-   try{storage=window.localStorage}catch{/* Account attempts can still be resumed. */}
-   setState({uid,signature,target:homeResumeTarget(progress,uid,storage)})
+   let storage:Storage|undefined,plans:StudyPlan[]=[]
+   try{storage=window.localStorage;plans=readDevicePlans(storage,uid)}catch{/* Optional plan details must not prevent resuming saved practice. */}
+   setState({uid,signature,target:homeResumeTarget(progress,uid,storage),plans,now:new Date()})
   }
-  load();window.addEventListener('storage',load);window.addEventListener('certpro-progress',load);document.addEventListener('visibilitychange',load)
-  return()=>{window.removeEventListener('storage',load);window.removeEventListener('certpro-progress',load);document.removeEventListener('visibilitychange',load)}
+  load();window.addEventListener('storage',load);window.addEventListener('certpro-progress',load);window.addEventListener('certpro-study-plans',load);document.addEventListener('visibilitychange',load)
+  const timer=setInterval(load,60000)
+  return()=>{clearInterval(timer);window.removeEventListener('storage',load);window.removeEventListener('certpro-progress',load);window.removeEventListener('certpro-study-plans',load);document.removeEventListener('visibilitychange',load)}
  },[uid,signature])
- const target=state.uid===uid&&state.signature===signature?state.target:null
- return <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-  <div className="min-w-0">
-   {target?<><p className="font-semibold break-words">{target.certification}</p><p className="mt-1 text-sm text-muted-foreground break-words">{target.title}{target.isAttempt?` · ${target.answered} of ${target.total} answers saved`:''}</p></>:<p className="text-sm text-muted-foreground">Make room for your next milestone.</p>}
-   {(syncUnavailable||storageUnavailable)&&<p className="mt-1 text-sm text-muted-foreground">{storageUnavailable?'Device history is unavailable.':'Account sync is unavailable; showing this device’s history.'}</p>}
+ const current=state.uid===uid&&state.signature===signature
+ const target=current?state.target:null
+ const plan=target?state.plans.find(p=>progressCertification(p.certification)===target.certificationId):undefined
+ const days=plan?Math.round((Date.parse(plan.examDate)-Date.parse(localDate(state.now,plan.timezone)))/86400000):null
+ const planDate=plan?new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(plan.examDate+'T12:00:00Z')):''
+ return <div className={resumeStyles.card}>
+  <div className={resumeStyles.content}>
+   <h2 className={resumeStyles.heading}>{target?'Pick up where you left off':'Make room for your next milestone'}</h2>
+   {target?<>
+    <p className={resumeStyles.certification}>{target.certification}</p>
+    <p className={resumeStyles.topic}>{target.title}</p>
+    {target.isAttempt&&target.total>0&&<div className={resumeStyles.progress}>
+     <div className={resumeStyles.progressLabel}><span>{target.answered} of {target.total} answers saved</span><span>{target.total-target.answered} remaining</span></div>
+     <progress max={target.total} value={target.answered} aria-label="Answers saved in this practice session"/>
+    </div>}
+    <div className={resumeStyles.plan}>
+     {plan?<><span><CalendarDays size={16} aria-hidden="true"/>{days===0?'Exam goal: today':days!==null&&days>0?`${days} ${days===1?'day':'days'} until your exam goal`:`Exam goal was ${planDate}`}</span><span><Clock3 size={16} aria-hidden="true"/>{plan.minutes} min per study day</span><Link href={'/study-plan?certification='+encodeURIComponent(target.certificationId)} className="cp-text-link">Edit plan</Link></>:<Link href={'/study-plan?certification='+encodeURIComponent(target.certificationId)} className="cp-text-link"><CalendarDays size={16} aria-hidden="true"/>Set an exam goal</Link>}
+    </div>
+   </>:<p className={resumeStyles.topic}>Choose a certification to start your first practice session. We’ll help you return to your saved place.</p>}
+   {(syncUnavailable||storageUnavailable)&&<p className={resumeStyles.status}>{storageUnavailable?'Device history is unavailable.':'Account sync is unavailable; showing this device’s history.'}</p>}
   </div>
-  <div className="flex shrink-0 flex-wrap items-center gap-4">
-   {target&&<Link className="cp-primary" href={target.href}>{target.isAttempt?'Resume practice':'Continue topic'}<ArrowRight size={17} aria-hidden="true"/></Link>}
-   <Link href="/progress" className="cp-text-link">{target?'View My Progress':'Continue learning'}<ArrowRight size={16} aria-hidden="true"/></Link>
+  <div className={resumeStyles.actions}>
+   <Link className="cp-primary" href={target?target.href:'/certifications'}>{target?(target.isAttempt?'Resume practice':'Continue topic'):'Find a certification'}<ArrowRight size={17} aria-hidden="true"/></Link>
+   <Link href="/progress" className="cp-text-link">View My Progress<ArrowRight size={16} aria-hidden="true"/></Link>
   </div>
  </div>
 }

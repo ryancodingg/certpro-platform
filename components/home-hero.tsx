@@ -3,13 +3,11 @@ import {useEffect, useRef, useState} from 'react'
 import {useFullMotion} from '@/lib/browser-motion'
 import Link from 'next/link'
 import {ArrowRight, Sparkles} from 'lucide-react'
-import {BlockReveal} from './block-reveal'
 import {ScrollHeading} from './scroll-heading'
 import {HeroMotion} from './hero-motion'
-import {ProviderLogo} from './provider-logo'
-import {certifications, type NewsRecord} from '@/lib/catalog'
+import {certifications} from '@/lib/catalog'
 import styles from './home-hero.module.css'
-export function HomeHero({updates}: {updates: NewsRecord[]}) {
+export function HomeHero() {
   const fullMotion=useFullMotion()
   const hero = useRef<HTMLElement>(null)
   const [ready,setReady] = useState(false), [burst,setBurst] = useState(false)
@@ -45,12 +43,5 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
       <div className={styles.path} aria-label="Your learning path"><span>Learn</span><i aria-hidden="true"/><span>Practice</span><i aria-hidden="true"/><span>Build confidence</span></div>
 
     </div>
-    <BlockReveal selector="[data-latest-reveal]"><div data-latest-reveal style={{minWidth:0,position:'relative',zIndex:2}}>
-    <aside className={`cp-latest-panel ${styles.newsPanel}`} aria-label="Latest certification updates">
-      <p className="cp-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Stay a step ahead.</h2><p className="cp-note">Latest official certification updates</p>
-      <ol className="cp-highlight-list">{updates.map(n=><li key={n.id}><Link href={'/news/'+n.id}><ProviderLogo provider={n.provider} className="h-7 w-7"/><div><span className="cp-news-tag">{n.provider} · {n.type}</span><h3>{n.title}</h3></div><ArrowRight size={16} aria-hidden="true"/></Link></li>)}</ol>
-      <Link className="cp-text-link" href="/news">View all news & events <ArrowRight size={16} aria-hidden="true"/></Link>
-    </aside>
-    </div></BlockReveal>
   </section>
 }
