@@ -10,7 +10,7 @@ async function request(uid:string,method='GET',body?:unknown){
  const token=await user.getIdToken()
  const r=await fetch('/api/study-workspace',{method,cache:'no-store',headers:{Authorization:'Bearer '+token,...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined})
  if(r.status===409){queueWorkspaceSync(uid,200);throw Error('Combining changes from another device…')}
- if(!r.ok)throw Error(r.status===401?'Sign in again to sync. Local edits are kept.':r.status===413?'Workspace is too large to sync. Download a copy and shorten your notes.':'Account sync is unavailable. Your edits are saved on this device; retry when connected.')
+ if(!r.ok)throw Error(r.status===401?'Sign in again to sync. Local edits are kept.':r.status===413?'Workspace is too large to sync. Download a copy, empty Trash or shorten your notes.':'Account sync is unavailable. Your edits are saved on this device; retry when connected.')
  const result=await r.json();if(result.workspace!==null&&!validate(result.workspace))throw Error('The account copy could not be read. Local notes are unchanged.')
  if(auth.currentUser?.uid!==uid)throw Error('Account changed. Sync stopped; local notes are kept.')
  return result as {workspace:Workspace|null;revision:number}
@@ -38,7 +38,10 @@ async function sync(uid:string){
   const same=cloud.workspace&&JSON.stringify({...sent,revision:0})===JSON.stringify({...cloud.workspace,revision:0})
   const saved=same?cloud:await request(uid,'PUT',{workspace:sent,expectedRevision:cloud.revision})
   if(saved.workspace)localStorage.setItem(metaKey(uid),JSON.stringify(saved.workspace))
-  const latest=readWorkspace(uid)
+  let latest=readWorkspace(uid)
+  if(saved.workspace&&latest?.revision===sent.revision&&JSON.stringify({...latest,revision:0})!==JSON.stringify({...saved.workspace,revision:0})){
+   const canonical={...saved.workspace,revision:latest.revision+1};persist(uid,canonical,latest.revision);latest=canonical;sent.revision=canonical.revision
+  }
   if(latest?.revision!==sent.revision){announce(uid,'New edits waiting to sync…');queueWorkspaceSync(uid)}else {announce(uid,'Saved to your account · available on your other devices');window.dispatchEvent(new CustomEvent('certpro-workspace-synced',{detail:{uid}}))}
  }catch(e){announce(uid,e instanceof Error?e.message:'Sync unavailable. Local edits are kept.')}finally{s.busy=false}
 }
