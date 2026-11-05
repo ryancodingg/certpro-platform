@@ -100,18 +100,27 @@ export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  return assembleNews(results)
 }
+const refreshDescription='Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Supported event vouchers use reviewed official pages; new event sources require review. Expired or withdrawn offers are removed, and unavailable sources retain checked offers for at most 48 hours. Coverage is not exhaustive. New article summaries are prepared in small batches.'
 function assembleNews(results:any[]){
  const reviewedItems:NewsRecord[]=reviewedNews.filter(n=>!seed.some(s=>s.source_url.replace(/\/$/,'')===n.source_url.replace(/\/$/,''))).map(n=>enrichNews({id:'official-'+createHash('sha256').update(n.source_url).digest('hex').slice(0,24),provider:n.provider,type:'news',title:n.title,summary:n.summary,source_url:n.source_url,verified_on:n.reviewed_on,published_on:n.published_on??null,status:'published'}));
  const offerUrls=new Set(sources.filter(s=>['offers','event-offers'].includes(s.kind)).map(s=>s.url))
  const byUrl=new Map([...seed,...reviewedItems].filter(n=>isActiveNews(n)&&!offerUrls.has(n.source_url)).map(n=>[n.source_url,enrichNews(n)]));for(const result of results)for(const n of result.items){if(offerUrls.has(n.source_url))byUrl.set(n.source_url+'#'+n.id,n);else if(!byUrl.has(n.source_url))byUrl.set(n.source_url,enrichNews(n))}
  const seenTitles=new Set<string>();const items=[...byUrl.values()].filter(n=>isActiveNews(n)).filter(n=>{const key=n.provider+'|'+n.title.toLowerCase().replace(/[^a-z0-9]/g,'');if(seenTitles.has(key))return false;seenTitles.add(key);return true}).sort((a,b)=>(b.published_on||b.verified_on||'').localeCompare(a.published_on||a.verified_on||'')||a.id.localeCompare(b.id))
- return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Certification announcements and supported official training offers appear here; coverage is not exhaustive. Supported event vouchers and ISACA offers are removed when expired or withdrawn. Event offers use allowlisted official pages; unavailable sources retain verified offers for at most 48 hours. New event sources require review before onboarding. New articles receive AI-generated summaries checked against official source text in small batches. Pending summaries retry on later refreshes.'}
+ return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:refreshDescription}
 }
 
 // Visitors never wait for external feeds or AI summarization. The last persisted
 // source results are shared between server rendering and the client endpoint.
 export const newsSnapshot=unstable_cache(async()=>{
  const fallback=initialSnapshot as unknown as ReturnType<typeof assembleNews>
+ let eventTimer:ReturnType<typeof setTimeout>|undefined
+ const eventReads=Promise.race([Promise.all(cached.slice(0,eventSources.length).map(read=>read())),new Promise<null>(resolve=>{eventTimer=setTimeout(()=>resolve(null),250)})]).catch(()=>null).finally(()=>clearTimeout(eventTimer))
+ const withEvents=async(snapshot:ReturnType<typeof assembleNews>)=>{
+  const events=await eventReads
+  if(!events)return {...snapshot,refresh:refreshDescription}
+  const urls=new Set(eventSources.map(s=>s.url))
+  return {...snapshot,refresh:refreshDescription,items:[...snapshot.items.filter(n=>!urls.has(n.source_url)),...events.flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...snapshot.sources.filter(s=>!urls.has(s.sourceUrl)),...events.map(({items,...s})=>({...s,matchingArticles:items.length}))]}
+ }
  try{
   const db=services().db
   let timer:ReturnType<typeof setTimeout>|undefined
@@ -119,7 +128,7 @@ export const newsSnapshot=unstable_cache(async()=>{
    db.getAll(...sources.map(source=>db.collection('certproConfig').doc(sourceId(source)))),
    new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(Error('News archive timed out')),1200)})
   ]).finally(()=>clearTimeout(timer))
-  return assembleNews(sources.map((source,i)=>{
+  return withEvents(assembleNews(sources.map((source,i)=>{
    const stored=docs[i].data()
    const bootstrap=eventSnapshot.sources.find(s=>s.sourceUrl===source.url)
    const old=bootstrap||fallback.sources.find(s=>s.sourceUrl===source.url)
@@ -127,12 +136,12 @@ export const newsSnapshot=unstable_cache(async()=>{
    const checkedAt=stored?.checkedAt||old?.checkedAt||null
    const stale=!checkedAt||Date.now()-Date.parse(checkedAt)>3600000
    return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt,status:stale?'stale':stored?.status||old?.status||'stale',items:(['offers','event-offers'].includes(source.kind)&&(!checkedAt||Date.now()-Date.parse(checkedAt)>48*3600000)?[]:items).filter(retainedArticleValid)}
-  }))
+  })))
  }catch{
   const staleOffers=new Set(sources.filter(s=>['offers','event-offers'].includes(s.kind)&&(!fallback.sources.find(old=>old.sourceUrl===s.url)?.checkedAt||Date.now()-Date.parse(fallback.sources.find(old=>old.sourceUrl===s.url)!.checkedAt!)>48*3600000)).map(s=>s.url))
-  return {...fallback,items:[...fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)&&!eventSources.some(s=>s.url===n.source_url)),...eventSnapshot.sources.filter(s=>offerFresh(s.checkedAt)).flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...fallback.sources.filter(s=>!eventSources.some(e=>e.url===s.sourceUrl)).map(s=>({...s,status:'stale'})),...eventSnapshot.sources.map(({items,...s})=>({...s,status:'stale',matchingArticles:offerFresh(s.checkedAt)?items.filter(retainedArticleValid).length:0}))]}
+  return withEvents({...fallback,items:[...fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)&&!eventSources.some(s=>s.url===n.source_url)),...eventSnapshot.sources.filter(s=>offerFresh(s.checkedAt)).flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...fallback.sources.filter(s=>!eventSources.some(e=>e.url===s.sourceUrl)).map(s=>({...s,status:'stale'})),...eventSnapshot.sources.map(({items,...s})=>({...s,status:'stale',matchingArticles:offerFresh(s.checkedAt)?items.filter(retainedArticleValid).length:0}))]})
  }
-},['news-display-snapshot-v2'],{revalidate:300,tags:['news-display-snapshot']})
+},['news-display-snapshot-v3'],{revalidate:300,tags:['news-display-snapshot']})
 export async function refreshNewsInBackground(){
  await providerNews()
  revalidateTag('news-display-snapshot','max')
