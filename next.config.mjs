@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
-    return [{source:'/brand/cfox-purple-v3.webp',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]}, {source:'/brand/cfox-pip-v2.webp',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]}, { source: '/:path*', headers: [
+    return [...['/favicon.ico','/favicon-c.ico','/favicon-c.png'].map(source => ({source,headers:[{key:'Cache-Control',value:'public, max-age=0, must-revalidate'}]})), {source:'/brand/cfox-purple-v3.webp',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]}, {source:'/brand/cfox-pip-v2.webp',headers:[{key:'Cache-Control',value:'public, max-age=31536000, immutable'}]}, { source: '/:path*', headers: [
       { key: 'X-Content-Type-Options', value: 'nosniff' },
       { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
       { key: 'Strict-Transport-Security', value: 'max-age=63072000' },

@@ -8,11 +8,8 @@ export const metadata: Metadata = {
   description:
     "Study published certification question banks with immediate practice explanations and timed mock exams.",
   icons: {
-    icon: [
-      { url: "/brand/certpro-fox-c-v2.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
-      { url: '/brand/certpro-fox-c-v2-32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    shortcut: '/brand/certpro-fox-c-v2.ico',
+    icon: [{ url: '/favicon-c.png', sizes: '32x32', type: 'image/png' }],
+    shortcut: '/favicon-c.ico',
     apple: [{ url: '/brand/certpro-fox-c-v1-180.png', sizes: '180x180', type: 'image/png' }],
   },
 }

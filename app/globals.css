@@ -416,3 +416,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 
 /* Brand lockup: static A fox; the separate C-Fox companion keeps its animation. */
 .cp-footer-brand{margin-right:auto;min-width:0}.cp-footer-logo{display:inline-flex;align-items:center;gap:8px;min-height:44px}.cp-footer-logo img{display:block;flex-shrink:0;object-fit:contain}.cp-footer-brand p{margin:4px 0 0}
+
+/* Brand marks stay compact, with a comfortable home-link touch target. */
+.cp-learning-header .cp-brand{min-height:44px}
+.cp-footer-logo img{width:32px;height:32px}
