@@ -17,3 +17,26 @@ const upcoming=helpers.parseDirectoryEvents(html('1–3 December 2026'),source,n
 const catalog=mod('lib/catalog.ts',{'@/data/certifications.json':{certifications:[]},'@/data/news-seed.json':{items:[]}});assert(!catalog.isActiveNews(upcoming,new Date('2026-12-04')));assert(catalog.isActiveNews(upcoming,new Date('2026-12-02')));
 if(process.argv.includes('--live-fixtures'))for(const s of helpers.directorySources){const key={'Google Cloud':'google','Microsoft':'microsoft','ISC2':'isc2','ISACA':'isaca','GitHub':'github','AWS':'aws','Databricks':'databricks','Cisco':'cisco'}[s.provider];try{const html=fs.readFileSync(base+'/../../output/event-vouchers/directories/'+key+'.html','utf8');const items=helpers.parseDirectoryEvents(html,s,new Date());console.log(s.provider,items.length,items.map(i=>i.event_on+' '+i.title));}catch(e){console.log(s.provider,e.message)}}
 console.log('PASS provider directories: nine providers, explicit dates, expiry, URL trust, no implied vouchers');
+
+assert.equal(helpers.directorySources.length,9);
+assert.deepEqual(helpers.eventDates('Nov 30 – Dec 4, 2026'),['2026-11-30','2026-12-04']);
+assert.equal(helpers.eventDates('February 30 – March 2, 2027'),null);
+const aws=helpers.directorySources.find(s=>s.provider==='AWS');
+const awsHtml='<script type="application/json">'+JSON.stringify({data:{items:[{fields:{heading:'AWS re:Invent | Nov 30 – Dec 4, 2026 | Las Vegas',ctaLink:'https://aws.amazon.com/events/reinvent/'}}]}})+'</script>';
+assert.equal(helpers.parseDirectoryEvents(awsHtml,aws,now)[0].event_end,'2026-12-04');
+const cisco=helpers.directorySources.find(s=>s.provider==='Cisco');
+const ciscoHtml='<table><tr><th><a href="https://third-party.example/">Cisco Live Melbourne</a></th><td>November 9-12, 2026</td><td>Education event</td></tr></table>';
+const ciscoItem=helpers.parseDirectoryEvents(ciscoHtml,cisco,now)[0];assert.equal(ciscoItem.event_on,'2026-11-09');assert.equal(ciscoItem.source_url,cisco.url,'Third-party registration URL is not auto-trusted');
+const db=helpers.directorySources.find(s=>s.provider==='Databricks');
+const payload=rows=>JSON.stringify({result:{pageContext:{globalContext:{eventsData:{eventsEN:rows}}}}});
+const dbRow={title:'Data Engineering Workshop',status:true,entityUrl:{path:'/events/workshop'},fieldDateTimeTimezone:{startDate:'2026-11-10 10:00:00 UTC',endDate:'2026-11-12 10:00:00 UTC'}};
+assert.equal(helpers.parseDirectoryEvents(payload([dbRow]),db,now).length,1);
+assert.equal(helpers.parseDirectoryEvents(payload([{...dbRow,status:false}]),db,now).length,0);
+assert.equal(helpers.parseDirectoryEvents(payload([{...dbRow,fieldDateTimeTimezone:{startDate:'0026-11-10',endDate:'2026-11-12'}}]),db,now).length,0);
+assert.equal(helpers.parseDirectoryEvents(payload([dbRow]),db,new Date('2026-11-13')).length,0);
+assert.throws(()=>helpers.parseDirectoryEvents('{}',db,now));
+assert.equal(helpers.parseDirectoryEvents(payload([]),db,now).length,0);
+const comptia=helpers.directorySources.find(s=>s.provider==='CompTIA');
+assert.equal(helpers.parseDirectoryEvents('<h1>CompTIA Blog</h1>'+Array(4).fill('<a href="/en-us/blog/article/">Article</a>').join(''),comptia,now).length,0);
+assert.throws(()=>helpers.parseDirectoryEvents('<h1>Access denied</h1>',comptia,now));
+console.log('PASS: AWS embedded records, cross-month dates, Cisco tables, Databricks calendar validation/withdrawals, CompTIA valid empty checks');

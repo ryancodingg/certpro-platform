@@ -14,7 +14,7 @@ import initialSnapshot from '@/data/news-snapshot.json'
 import {news as seed,isActiveNews,type NewsRecord} from '@/lib/catalog'
 import {enrichNews,reviewedNews} from '@/lib/news-editorial'
 const eventSnapshot=rawEventSnapshot as {sources:{provider:string;label:string;sourceUrl:string;checkedAt:string;status:string;items:NewsRecord[]}[]}
-export const sources:{provider:string;label?:string;url:string;host:string;kind:string;path?:string;parser?:string}[]=[
+export const sources:{provider:string;label?:string;url:string;host:string;kind:string;path?:string;parser?:string;fetchUrl?:string}[]=[
  ...eventSources,
  ...directorySources,
  {provider:'Cisco',label:'Cisco certification announcements',url:'https://blogs.cisco.com/tag/cisco-certifications/feed',host:'blogs.cisco.com',kind:'rss'},
@@ -30,10 +30,10 @@ export const sources:{provider:string;label?:string;url:string;host:string;kind:
  {provider:'Databricks',url:'https://www.databricks.com/feed',host:'www.databricks.com',kind:'rss'},
  {provider:'GitHub',url:'https://github.blog/feed/',host:'github.blog',kind:'rss'},
 ]
-const sourceId=(source:typeof sources[number])=>'news_source_'+createHash('sha256').update(source.url).digest('hex').slice(0,24)
+const sourceId=(source:typeof sources[number])=>'news_source_'+createHash('sha256').update(source.url+(source.provider==='CompTIA'&&source.kind==='event-directory'?'|events':'')).digest('hex').slice(0,24)
 const relevant=/certif|credential|exam|voucher|\b(?:CCNA|CCNP|CCIE|CISM|CISA|CISSP|CCSP|Security\+|CySA\+)\b/i
 async function readSource(source:typeof sources[number],previous:NewsRecord[]=[]){
- const response=await fetch(source.url,{signal:AbortSignal.timeout(15000),headers:{'User-Agent':'CertPro official certification news reader'},cache:'no-store',...(['event-offers','event-directory'].includes(source.kind)?{redirect:'error' as const}:{})})
+ const response=await fetch(source.fetchUrl||source.url,{signal:AbortSignal.timeout(15000),headers:source.provider==='Cisco'&&source.kind==='event-directory'?{'Accept':'text/html'}:{'User-Agent':'CertPro official certification news reader'},cache:'no-store',...(['event-offers','event-directory'].includes(source.kind)?{redirect:'error' as const}:{})})
  if(!response.ok)throw Error('Source unavailable')
  const text=await response.text();if(text.length>6_000_000)throw Error('Source exceeds size limit')
  const fetched=new Date().toISOString()
@@ -102,7 +102,7 @@ async function retainedSource(source:typeof sources[number]){
  }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((['offers','event-offers','event-directory'].includes(source.kind)&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?.checkedAt?'stale':'unavailable',archiveAvailable:!!previous}}
 }
 // Stable keys serve the last result while Next refreshes expired entries in the background.
-const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v13',source.url],{revalidate:3600}))
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v14',source.url,source.kind],{revalidate:3600}))
 export async function providerNews(force=false){
  const results=await Promise.all(cached.map((read,i)=>(force?retainedSource(sources[i]):read()).catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  return assembleNews(results)
@@ -155,7 +155,7 @@ const storedNewsSnapshot=unstable_cache(async()=>{
 },['news-display-snapshot-v5'],{revalidate:300,tags:['news-display-snapshot']})
 // Persist completed refresh results in Next's shared cache as well as Firestore.
 // This keeps all three categories current even during a Firestore outage.
-const liveNewsSnapshot=unstable_cache(()=>providerNews(true),['official-news-complete-v1'],{revalidate:3600})
+const liveNewsSnapshot=unstable_cache(()=>providerNews(true),['official-news-complete-v2'],{revalidate:3600})
 export async function newsSnapshot(){
  let timer:ReturnType<typeof setTimeout>|undefined
  const fresh=await Promise.race([liveNewsSnapshot().catch(()=>null),new Promise<null>(resolve=>{timer=setTimeout(()=>resolve(null),250)})]).finally(()=>clearTimeout(timer))

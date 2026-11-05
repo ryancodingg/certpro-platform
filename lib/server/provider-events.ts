@@ -2,11 +2,13 @@ import {load} from 'cheerio'
 import {createHash} from 'node:crypto'
 import type {NewsRecord} from '../catalog'
 import {providerEventDirectories} from '../provider-events'
-export const directorySources=providerEventDirectories.filter(s=>s.provider!=='CompTIA').map(s=>({...s,host:new URL(s.url).hostname,label:s.provider+' official events',kind:'event-directory'}))
+export const directorySources=providerEventDirectories.map(s=>({...s,...(s.provider==='Databricks'?{fetchUrl:'https://www.databricks.com/en-website-assets/page-data/events/page-data.json'}:{}),host:new URL(s.url).hostname,label:s.provider+' official events',kind:'event-directory'}))
 const clean=(s:string)=>s.replace(/\s+/g,' ').trim()
 // No inferred year: an undated card is not a confirmed upcoming event.
 export function eventDates(text:string):[string,string]|null {
  const months='January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec'
+ const cross=text.match(new RegExp(`\\b(${months})\\s+(\\d{1,2})\\s*[–—-]\\s*(${months})\\s+(\\d{1,2}),?\\s+(20\\d{2})\\b`,'i'))
+ if(cross){const a=new Date(`${cross[1]} ${cross[2]}, ${cross[5]} 12:00:00 GMT`),b=new Date(`${cross[3]} ${cross[4]}, ${cross[5]} 12:00:00 GMT`);return Number.isFinite(a.valueOf())&&Number.isFinite(b.valueOf())&&a.getUTCDate()===+cross[2]&&b.getUTCDate()===+cross[4]&&a<=b?[a.toISOString().slice(0,10),b.toISOString().slice(0,10)]:null}
  const a=text.match(new RegExp(`\\b(${months}) (\\d{1,2})(?:[–—-](\\d{1,2}))?,? (20\\d{2})\\b`,'i'))
  const b=text.match(new RegExp(`\\b(\\d{1,2})(?:[–—-](\\d{1,2}))? (${months}) (20\\d{2})\\b`,'i'))
  if(!a&&!b)return null
@@ -17,6 +19,22 @@ export function eventDates(text:string):[string,string]|null {
 export function parseDirectoryEvents(html:string,source:typeof directorySources[number],now=new Date()):NewsRecord[]{
  const $=load(html);$('br').replaceWith(' ');$('div,p,span,h2,h3,h4').append(' ');const rows:{title:string;url:string;dates:[string,string]}[]=[]
  const add=(title:string,url:string,dates:[string,string]|null)=>{if(dates&&title.length>=8&&title.length<=220)rows.push({title:clean(title),url,dates})}
+ let recognizedEmpty=false
+ if(source.provider==='Databricks'){
+  const data=JSON.parse(html)?.result?.pageContext?.globalContext?.eventsData?.eventsEN
+  if(!Array.isArray(data))throw Error('Databricks calendar format changed')
+  recognizedEmpty=true
+  for(const item of data){
+   const start=item.fieldDateTimeTimezone?.startDate?.slice(0,10),end=item.fieldDateTimeTimezone?.endDate?.slice(0,10)||start
+   if(item.status!==true||!start||!end||![start,end].every(d=>/^20\d{2}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d)||start>end)continue
+   if(typeof item.title==='string'&&typeof item.entityUrl?.path==='string')add(item.title,item.entityUrl.path,[start,end])
+  }
+ }
+ if(source.provider==='AWS')$('script[type="application/json"]').each((_,e)=>{try{const data=JSON.parse($(e).text());for(const row of data.data?.items||[]){const f=row.fields;if(typeof f?.heading==='string'&&typeof f.ctaLink==='string')add(f.heading.split('|')[0].trim(),f.ctaLink,eventDates(f.heading))}}catch{/* Unrelated page metadata. */}})
+ if(source.provider==='Cisco')$('tr').each((_,e)=>{const cells=$(e).children('th,td');if(cells.length<3)return;const dates=eventDates(clean(cells.eq(1).text()));if(dates)add(clean(cells.eq(0).text()),source.url,dates)})
+ // CompTIA currently publishes announcements in its blog, without a separate dated calendar.
+ // A valid blog with no explicit Event schema is a successful check, not an invented event.
+ if(source.provider==='CompTIA'&&$('h1').text().toLowerCase().includes('blog')&&$('a[href*="/en-us/blog/"]').length>3)recognizedEmpty=true
  // Schema.org is used when the provider supplies explicit machine-readable event dates.
  const walk=(value:any)=>{if(!value||typeof value!=='object')return;if([].concat(value['@type']||[]).some((t:string)=>t==='Event'||t.endsWith('Event'))&&typeof value.name==='string'&&typeof value.startDate==='string'&&!/Cancelled|Postponed/.test(value.eventStatus||'')){
   const start=value.startDate.slice(0,10),end=(value.endDate||value.startDate).slice(0,10)
@@ -29,7 +47,7 @@ export function parseDirectoryEvents(html:string,source:typeof directorySources[
  if(source.provider==='Google Cloud')$('a[track-type="card"]').each((_,e)=>{const text=clean($(e).text());if(!/On demand/i.test(text))add($(e).find('.CilWo').text(),$(e).attr('href')||source.url,eventDates(text))})
  if(source.provider==='Microsoft')$('h2,h3').each((_,e)=>{const title=clean($(e).text());if(title==='Microsoft Ignite')add(title,source.url,eventDates(clean($(e).parent().parent().parent().parent().text())))})
  // A changed/JS-only directory must not report a successful empty ingestion.
- if(!rows.length)throw Error('Event dates require provider-page review')
+ if(!rows.length&&!recognizedEmpty)throw Error('Event dates require provider-page review')
  const unique=new Map<string,NewsRecord>();const today=now.toISOString().slice(0,10)
  for(const row of rows){if(row.dates[1]<today)continue
   let url:URL;try{url=new URL(row.url,source.url)}catch{continue}
