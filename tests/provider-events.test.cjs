@@ -43,3 +43,15 @@ console.log('PASS: AWS embedded records, cross-month dates, Cisco tables, Databr
 
 const liveHtml='<section><p><b>Melbourne</b></p><p>Nov 9-12, 2026</p><div><a href="/apjc.html">Register now</a></div></section>';
 const liveItem=helpers.parseDirectoryEvents(liveHtml,cisco,now)[0];assert.equal(liveItem.title,'Cisco Live Melbourne');assert.equal(liveItem.source_url,'https://www.ciscolive.com/apjc.html');assert.equal(liveItem.event_end,'2026-11-12');console.log('PASS: alternative official Cisco Live calendar');
+
+const schemaEvent={ '@context':'https://schema.org','@type':'Event',name:'Future learning conference',url:source.url+'/example',startDate:'2026-12-01T09:00:00+11:00',endDate:'2026-12-03T17:00:00+11:00',eventAttendanceMode:'https://schema.org/MixedEventAttendanceMode',location:[{'@type':'Place',name:'Convention Centre',address:{'@type':'PostalAddress',addressLocality:'Sydney',addressRegion:'NSW',addressCountry:'AU'}},{'@type':'VirtualLocation',url:'https://example.test/meeting'}],eventSchedule:{'@type':'Schedule',scheduleTimezone:'Australia/Sydney'}};
+const ld=value=>'<script type="application/ld+json">'+JSON.stringify(value)+'</script>';
+const details=helpers.parseDirectoryEvents(ld(schemaEvent)+html('1–3 December 2026'),source,now)[0];
+assert.equal(details.event_format,'Hybrid');assert.equal(details.event_location,'Convention Centre · Sydney, NSW, AU');assert.equal(details.event_timezone,'Australia/Sydney');assert.equal(details.discount_percent,undefined);assert.equal(details.attendance,undefined);
+const online=helpers.parseDirectoryEvents(ld({...schemaEvent,eventSchedule:undefined,eventAttendanceMode:'https://schema.org/OnlineEventAttendanceMode',location:{'@type':'VirtualLocation',url:'https://example.test/meeting'}}),source,now)[0];
+assert.equal(online.event_format,'Online');assert.equal(online.event_location,undefined);assert.equal(online.event_timezone,'UTC+11:00 at event start');
+const noDetails=helpers.parseDirectoryEvents(ld({...schemaEvent,startDate:'2026-12-01',eventSchedule:undefined,eventAttendanceMode:undefined,location:undefined}),source,now)[0];
+assert.equal(noDetails.event_format,undefined);assert.equal(noDetails.event_location,undefined);assert.equal(noDetails.event_timezone,undefined);assert.equal(noDetails.attendance,undefined);
+const venueOnly=helpers.structuredEventMetadata({location:{'@type':'Place',name:'Sydney Convention Centre'}});assert.equal(venueOnly.event_format,undefined);assert.equal(venueOnly.event_timezone,undefined);assert.equal(venueOnly.event_location,'Sydney Convention Centre');
+assert.equal(helpers.structuredEventMetadata({eventAttendanceMode:'__proto__'}).event_format,undefined);
+console.log('PASS: official JSON-LD hybrid/online metadata, timezone vs explicit offset, duplicate preservation, unknowns and no inferred vouchers');

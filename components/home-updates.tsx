@@ -15,7 +15,7 @@ export function HomeUpdates({items}:{items:NewsRecord[]}){
  return <section className={`cp-section ${styles.section}`} aria-label="News, events and exam offers">
   <div className="cp-section-heading"><div><ScrollHeading text="Stay informed. Plan your next step."/><p>Official exam updates, upcoming events and verified offer terms.</p></div><Link className="cp-text-link" href={'/news?tab='+tab}>View all {tabs.find(t=>t.id===tab)?.label.toLowerCase()} <ArrowRight size={17}/></Link></div>
   <div className={styles.filters} role="group" aria-label="Choose update category">{tabs.map(t=><button key={t.id} type="button" aria-pressed={tab===t.id} onClick={()=>setTab(t.id)}>{t.label}</button>)}</div>
-  <BlockReveal key={tab} selector=".cp-news-card" variant="settle"><div className={styles.grid}>{groups.map(group=><FeedCard key={group.item.id} group={group} tab={tab}/>)}</div></BlockReveal>
+  <BlockReveal key={tab} selector=".cp-news-card" variant="settle"><div className={styles.grid}>{groups.map(group=><FeedCard key={group.item.id} group={group} tab={tab} variant="compact" headingLevel={3}/>)}</div></BlockReveal>
   {!groups.length&&<p role="status">No active {tabs.find(t=>t.id===tab)?.label.toLowerCase()} available right now. Check back for official updates.</p>}
  </section>
 }

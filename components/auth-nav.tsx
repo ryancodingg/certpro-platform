@@ -65,7 +65,7 @@ export function AuthNav({returnTo}:{returnTo?:string}) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" aria-label="Profile" className="relative h-10 w-10 rounded-full">
+        <Button variant="ghost" aria-label="Profile" className="relative h-11 w-11 rounded-full">
           <Avatar className="h-10 w-10 bg-gradient-to-r from-blue-600 to-purple-600">
             <AvatarFallback className="bg-transparent text-white font-medium">
               {getInitials(user.email, user.name)}

@@ -420,3 +420,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 /* Brand marks stay compact, with a comfortable home-link touch target. */
 .cp-learning-header .cp-brand{min-height:44px}
 .cp-footer-logo img{width:32px;height:32px}
+
+/* Shared discovery tokens retain the approved purple palette. */
+:root{--cp-news-accent:#6329b4;--cp-news-border:#e5dbee;--cp-news-divider:#e5dfee;--cp-news-surface:#faf8ff}
+.cp-menu-toggle{min-width:44px;min-height:44px;align-items:center;justify-content:center}

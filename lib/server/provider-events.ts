@@ -16,9 +16,29 @@ export function eventDates(text:string):[string,string]|null {
  const parse=(day:string)=>{const d=new Date(`${month} ${day}, ${year} 12:00:00 GMT`);return Number.isFinite(d.valueOf())&&d.getUTCDate()===Number(day)?d.toISOString().slice(0,10):null}
  const from=parse(start),to=parse(end);return from&&to&&from<=to?[from,to]:null
 }
+type EventMetadata=Pick<NewsRecord,'event_format'|'event_location'|'event_timezone'>
+// Read only explicit Schema.org values. A venue never implies attendance mode or timezone.
+export function structuredEventMetadata(value:Record<string,any>):EventMetadata{
+ const text=(v:unknown)=>typeof v==='string'?clean(v).slice(0,240):''
+ const modes:Record<string,string>={OnlineEventAttendanceMode:'Online',OfflineEventAttendanceMode:'In person',MixedEventAttendanceMode:'Hybrid'}
+ const mode=text(value.eventAttendanceMode).split('/').pop()||''
+ const locations=(Array.isArray(value.location)?value.location:[value.location]).filter(Boolean)
+ const venue=locations.map((place:any)=>{
+  if(typeof place==='string')return text(place)
+  if(!place||typeof place!=='object'||(Array.isArray(place['@type'])?place['@type']:[place['@type']]).some((type:unknown)=>typeof type==='string'&&/(^|\/)VirtualLocation$/.test(type)))return ''
+  const address=place.address
+  const parts=[text(place.name),typeof address==='string'?text(address):address&&typeof address==='object'?[text(address.streetAddress),text(address.addressLocality),text(address.addressRegion),typeof address.addressCountry==='string'?text(address.addressCountry):text(address.addressCountry?.name)].filter(Boolean).join(', '):'']
+  return parts.filter(Boolean).join(' · ')
+ }).filter(Boolean).join('; ')
+ const schedules=Array.isArray(value.eventSchedule)?value.eventSchedule:[value.eventSchedule]
+ const zone=schedules.map((s:any)=>text(s?.scheduleTimezone)).find(Boolean)
+ const offset=typeof value.startDate==='string'?value.startDate.match(/T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(Z|[+-]\d{2}:\d{2})$/)?.[1]:undefined
+ const timezone=zone||(offset?(offset==='Z'?'UTC':'UTC'+offset)+' at event start':'')
+ return {...(Object.hasOwn(modes,mode)?{event_format:modes[mode]}:{}),...(venue?{event_location:venue}:{}),...(timezone?{event_timezone:timezone}:{})}
+}
 export function parseDirectoryEvents(html:string,source:typeof directorySources[number],now=new Date()):NewsRecord[]{
- const $=load(html);$('br').replaceWith(' ');$('div,p,span,h2,h3,h4').append(' ');const rows:{title:string;url:string;dates:[string,string]}[]=[]
- const add=(title:string,url:string,dates:[string,string]|null)=>{if(dates&&title.length>=8&&title.length<=220)rows.push({title:clean(title),url,dates})}
+ const $=load(html);$('br').replaceWith(' ');$('div,p,span,h2,h3,h4').append(' ');const rows:{title:string;url:string;dates:[string,string];metadata:EventMetadata}[]=[]
+ const add=(title:string,url:string,dates:[string,string]|null,metadata:EventMetadata={})=>{if(dates&&title.length>=8&&title.length<=220)rows.push({title:clean(title),url,dates,metadata})}
  let recognizedEmpty=false
  if(source.provider==='Databricks'){
   const data=JSON.parse(html)?.result?.pageContext?.globalContext?.eventsData?.eventsEN
@@ -37,9 +57,9 @@ export function parseDirectoryEvents(html:string,source:typeof directorySources[
  // A valid blog with no explicit Event schema is a successful check, not an invented event.
  if(source.provider==='CompTIA'&&$('h1').text().toLowerCase().includes('blog')&&$('a[href*="/en-us/blog/"]').length>3)recognizedEmpty=true
  // Schema.org is used when the provider supplies explicit machine-readable event dates.
- const walk=(value:any)=>{if(!value||typeof value!=='object')return;if([].concat(value['@type']||[]).some((t:string)=>t==='Event'||t.endsWith('Event'))&&typeof value.name==='string'&&typeof value.startDate==='string'&&!/Cancelled|Postponed/.test(value.eventStatus||'')){
+ const walk=(value:any)=>{if(!value||typeof value!=='object')return;if([].concat(value['@type']||[]).some((t:string)=>typeof t==='string'&&(t==='Event'||t.endsWith('Event')))&&typeof value.name==='string'&&typeof value.startDate==='string'&&!/Cancelled|Postponed/.test(value.eventStatus||'')){
   const start=value.startDate.slice(0,10),end=(value.endDate||value.startDate).slice(0,10)
-  if([start,end].every(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d)&&start<=end)add(value.name,typeof value.url==='string'?value.url:source.url,[start,end])
+  if([start,end].every(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d)&&start<=end)add(value.name,typeof value.url==='string'?value.url:source.url,[start,end],structuredEventMetadata(value))
  }for(const child of Object.values(value))if(typeof child==='object')walk(child)}
  $('script[type="application/ld+json"]').each((_,e)=>{try{walk(JSON.parse($(e).text()))}catch{/* Invalid structured data is not an event. */}})
  if(source.provider==='ISACA')$('a.hot-tile').each((_,e)=>add($(e).find('.tile-title').text(),$(e).attr('href')||source.url,eventDates(clean($(e).find('.content-addl-details').text()))))
@@ -56,7 +76,9 @@ export function parseDirectoryEvents(html:string,source:typeof directorySources[
   if(url.hostname!==source.host&&!(source.provider==='Google Cloud'&&url.hostname==='cloudonair.withgoogle.com'))continue
   url.hash='';for(const k of [...url.searchParams.keys()])if(k.startsWith('utm_'))url.searchParams.delete(k)
   const id='event-'+createHash('sha256').update(source.provider+'|'+row.title+'|'+row.dates[0]).digest('hex').slice(0,24)
-  unique.set(id,{id,provider:source.provider,type:'event',title:row.title,summary:`An upcoming ${source.provider} event. Check the official listing for the agenda, registration and attendance requirements.`,source_url:url.href,verified_on:today,published_on:null,status:'published',event_on:row.dates[0],event_end:row.dates[1],attendance:'Provider-wide event · confirm attendance format with the organiser',article_paragraphs:[`${source.provider} lists this event for ${row.dates[0]}${row.dates[1]!==row.dates[0]?' to '+row.dates[1]:''}. Open the official listing to confirm times, timezone, location and registration.`,`This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing.`]})
+  const previous=unique.get(id)
+  const metadata={...(previous?.event_format?{event_format:previous.event_format}:{}),...(previous?.event_location?{event_location:previous.event_location}:{}),...(previous?.event_timezone?{event_timezone:previous.event_timezone}:{}),...row.metadata}
+  unique.set(id,{id,provider:source.provider,type:'event',title:row.title,summary:`An upcoming ${source.provider} event. Check the official listing for the agenda, registration and attendance requirements.`,source_url:url.href,verified_on:today,published_on:null,status:'published',event_on:row.dates[0],event_end:row.dates[1],...metadata,article_paragraphs:[`${source.provider} lists this event for ${row.dates[0]}${row.dates[1]!==row.dates[0]?' to '+row.dates[1]:''}. Open the official listing to confirm times, timezone, location and registration.`,`This is a provider-wide learning opportunity, not an exam booking. No exam voucher or certification-specific eligibility has been confirmed for this listing.`]})
  }
  return [...unique.values()].sort((a,b)=>a.event_on!.localeCompare(b.event_on!)).slice(0,30)
 }

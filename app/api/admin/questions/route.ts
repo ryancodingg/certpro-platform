@@ -1,3 +1,4 @@
+import {certifications as catalogCertifications} from '@/lib/catalog'
 import {revalidateTag} from 'next/cache'
 import { createHash } from "node:crypto"
 import { body, failure, HttpError, requireOwner, sameOrigin, services } from "@/lib/server/firebase"
@@ -10,8 +11,23 @@ export async function GET(request: Request) {
     const certification = new URL(request.url).searchParams.get("certification")
     if (certification !== null && !/^[a-z0-9-]{1,100}$/.test(certification)) throw new HttpError(400,"Invalid certification.")
     const collection = services().db.collection("questions")
+    const readStarted=new Date().toISOString()
     const snap = await (certification ? collection.where("certification","==",certification) : collection).get()
     const questions = snap.docs.map(d => normalizeQuestion(d.data(), d.id))
+    // Reuse the already authorized snapshot; never scan banks for public catalog visits.
+    // Seed explicit zeros only for the banks this successful query actually covered.
+    const bankIds=certification?[certification]:[...new Set(catalogCertifications.map(c=>c.aliases[0]||c.id))]
+    const counts:Record<string,number>=Object.fromEntries(bankIds.map(id=>[id,0]))
+    for(const q of questions)if(publication(q)==='published'&&questionSchema.safeParse(q).success)counts[q.certification]=(counts[q.certification]||0)+1
+    try{
+      const db=services().db,ref=db.collection('certproMetadata').doc('catalogAvailability')
+      await db.runTransaction(async tx=>{
+        const current=await tx.get(ref),previous=current.data()?.banks||{}
+        const banks=Object.fromEntries(Object.entries(counts).filter(([id])=>!previous[id]?.updatedAt||previous[id].updatedAt<=readStarted).map(([id,count])=>[id,{count,updatedAt:readStarted}]))
+        if(Object.keys(banks).length)tx.set(ref,{banks},{merge:true})
+      })
+      revalidateTag('certpro-catalog-counts',{expire:0})
+    }catch{/* An index write failure must not block the owner's question export. */}
     if (new URL(request.url).searchParams.get("export") === "json") return new Response(JSON.stringify(questions,null,2), {headers:{"Content-Type":"application/json", "Content-Disposition":"attachment; filename=certpro-questions.json", "Cache-Control":"no-store"}})
     return Response.json({questions}, {headers:{"Cache-Control":"no-store"}})
   } catch(e) { return failure(e) }
@@ -27,7 +43,7 @@ export async function POST(request: Request) {
       let preflight
       try { preflight = previewImport(input.text,input.format,[]) } catch(e) { throw new HttpError(400,(e as Error).message) }
       const certifications = [...new Set(preflight.valid.map(q=>q.certification))]
-      return await db.runTransaction(async tx => {
+      const result=await db.runTransaction(async tx => {
         // Fingerprints include certification, so other banks cannot be duplicates.
         // Keep all reads in the import transaction to retain concurrent-import checks.
         const existing = []
@@ -47,9 +63,12 @@ export async function POST(request: Request) {
           if (question.dropdownOptions) {stored.dropdownOptionsFlat=question.dropdownOptions.flatMap((opts,i)=>i ? ["",...opts] : opts); delete stored.dropdownOptions}
           tx.create(db.collection("questions").doc(), JSON.parse(JSON.stringify(stored)))
         }
+        for(const certification of certifications){const count=[...existing,...preview.valid].filter(q=>q.certification===certification&&publication(q)==='published'&&questionSchema.safeParse(q).success).length;tx.set(db.collection('certproMetadata').doc('catalogAvailability'),{banks:{[certification]:{count,updatedAt:now}}},{merge:true})}
         tx.create(db.collection("certproAudit").doc(), {action:"import", actor:uid, at:now, count:preview.valid.length, skipped:preview.duplicates.length})
         return Response.json({imported:preview.valid.length, skipped:preview.duplicates.length})
       })
+      if(input.action==='import')revalidateTag('certpro-question-bank',{expire:0})
+      return result
     }
     if (input.action === "publish-reviewed-bank") {
       const ids: unknown = input.ids
@@ -64,7 +83,10 @@ export async function POST(request: Request) {
           if (q.certification !== input.certification || publication(q) !== "draft") throw new HttpError(409,"The selected bank changed. Only drafts from one certification can be published together.")
           questionSchema.parse(q)
         }
+        const bank=await tx.get(db.collection('questions').where('certification','==',input.certification))
+        const count=bank.docs.filter(d=>{const q=normalizeQuestion(d.data(),d.id);return reviewedIds.includes(d.id)||(publication(q)==='published'&&questionSchema.safeParse(q).success)}).length
         const now = new Date().toISOString()
+        tx.set(db.collection('certproMetadata').doc('catalogAvailability'),{banks:{[input.certification]:{count,updatedAt:now}}},{merge:true})
         for (const ref of refs) tx.update(ref,{status:"published",isActive:true,updatedAt:now,updatedBy:uid,archivedAt:null})
         tx.create(db.collection("certproAudit").doc(),{action:"publish-reviewed-bank",actor:uid,at:now,certification:input.certification,questionIds:reviewedIds,count:reviewedIds.length})
       })
@@ -79,7 +101,10 @@ export async function POST(request: Request) {
       if (!doc.exists) throw new HttpError(404,"Question not found.")
       const existing = normalizeQuestion(doc.data()!,doc.id)
       if (input.status === "published") questionSchema.parse(existing)
+      const bank=await tx.get(db.collection('questions').where('certification','==',existing.certification))
+      const count=bank.docs.filter(d=>{const q=normalizeQuestion(d.data(),d.id);return (d.id===doc.id?input.status==='published':publication(q)==='published')&&questionSchema.safeParse(q).success}).length
       const now = new Date().toISOString()
+      tx.set(db.collection('certproMetadata').doc('catalogAvailability'),{banks:{[existing.certification]:{count,updatedAt:now}}},{merge:true})
       tx.update(ref, {status:input.status, isActive:input.status === "published", updatedAt:now, updatedBy:uid, archivedAt:input.status === "archived" ? now : null})
       tx.create(db.collection("certproAudit").doc(), {questionId:doc.id, action:input.status, previousStatus:publication(existing), actor:uid, at:now})
     })

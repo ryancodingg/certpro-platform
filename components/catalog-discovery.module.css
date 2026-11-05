@@ -6,3 +6,5 @@
 .availability{display:flex;flex-direction:column;gap:4px;margin:16px 0 0;padding-top:12px;border-top:1px solid #e9e1f3;color:#514460;font-size:13px;line-height:1.55}
 .availability strong{font-weight:650;color:#56308a}
 .availability span{display:block}
+.scope{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}.scope button,.retry button{min-height:44px;padding:9px 14px;border:1px solid #d9cfee;border-radius:8px;background:#fff;color:#513087;font:inherit;font-size:14px;cursor:pointer}.scope button[aria-pressed=true]{background:#f0e8ff;border-color:#7540d6;font-weight:650}.scope button:focus-visible,.retry button:focus-visible{outline:3px solid #a88add;outline-offset:3px}.retry{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px;color:#514460;margin:12px 0}.retry button:disabled{opacity:.6;cursor:wait}
+@media(max-width:640px){.roles{flex-wrap:nowrap;overflow-x:auto;padding:4px 3px 10px;margin-bottom:14px;scrollbar-width:thin;scrollbar-color:#b8a0d5 #f5f0fb}.roles button{flex:0 0 auto;white-space:nowrap}}
