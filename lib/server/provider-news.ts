@@ -99,7 +99,7 @@ async function retainedSource(source:typeof sources[number]){
   const items=[...merged.values()].filter(retainedArticleValid).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100)
   let archiveAvailable=true;try{await archiveDeadline(services().db.collection('certproConfig').doc(sourceId(source)).set({...fresh,items}))}catch{archiveAvailable=false}
   return {...fresh,items,archiveAvailable}
- }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((['offers','event-offers','event-directory'].includes(source.kind)&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
+ }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((['offers','event-offers','event-directory'].includes(source.kind)&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?.checkedAt?'stale':'unavailable',archiveAvailable:!!previous}}
 }
 // Stable keys serve the last result while Next refreshes expired entries in the background.
 const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v13',source.url],{revalidate:3600}))
