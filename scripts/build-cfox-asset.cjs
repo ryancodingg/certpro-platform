@@ -1,0 +1,7 @@
+const fs=require('fs');const path=require('path');
+// Render the existing approved SVG tint once, instead of on every browser frame.
+const sharp=require(require.resolve('sharp',{paths:[require.resolve('next/package.json')]}));
+const filter=" colorInterpolationFilters=\"sRGB\"><feColorMatrix in=\"SourceGraphic\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 6 0 0 -0.15\" result=\"furSelection\"/><feComposite in=\"furSelection\" in2=\"SourceAlpha\" operator=\"in\" result=\"furMask\"/><feColorMatrix in=\"SourceGraphic\" type=\"matrix\" values=\"0 0.52 0 0 0 0 0.08 0 0 0 0 0.94 0 0 0 0 0 0 1 0\" result=\"purpleFur\"/><feComposite in=\"purpleFur\" in2=\"furMask\" operator=\"in\" result=\"tintedFur\"/><feComposite in=\"SourceGraphic\" in2=\"furMask\" operator=\"out\" result=\"originalDetails\"/><feMerge><feMergeNode in=\"originalDetails\"/><feMergeNode in=\"tintedFur\"/></feMerge>";
+const png=fs.readFileSync('public/brand/cfox-pip-spritesheet.png').toString('base64');
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1536" height="2288"><defs><filter id="tint"${filter}</filter></defs><image width="1536" height="2288" filter="url(#tint)" xlink:href="data:image/png;base64,${png}"/></svg>`;
+sharp(Buffer.from(svg)).resize(1152,1716).webp({quality:90,alphaQuality:100}).toFile('public/brand/cfox-purple-v3.webp').then(x=>console.log({bytes:x.size,width:x.width,height:x.height}));
