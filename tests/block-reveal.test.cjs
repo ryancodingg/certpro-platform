@@ -1,17 +1,17 @@
 const assert=require('node:assert/strict');const fs=require('node:fs');const vm=require('node:vm');const ts=require('typescript');
 const source=ts.transpileModule(fs.readFileSync('components/block-reveal.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
-function fixture({reduced=false,paused=false,delayed=false}={}){
+function fixture({reduced=false,paused=false,delayed=false,optIn=false,mobile=false,variant='rise'}={}){
  let effect,observer,cleanup,mutation;const events={},mediaEvents={};const animations=[];
  const cards=Array.from({length:4},()=>({contains:target=>target=== 'focused',animate:(frames,options)=>{const a={frames,options,canceled:false,cancel(){this.canceled=true}};animations.push(a);return a}}));
  const root={querySelectorAll:()=>delayed?[]:cards,addEventListener:(k,v)=>events[k]=v,removeEventListener:k=>delete events[k]};
  const doc={visibilityState:'visible',activeElement:null,addEventListener:(k,v)=>events[k]=v,removeEventListener:k=>delete events[k]};
  const media={matches:reduced,addEventListener:(k,v)=>mediaEvents[k]=v,removeEventListener:k=>delete mediaEvents[k]};
  const module={exports:{}};
- const context={module,exports:module.exports,Element:{prototype:{animate(){}}},document:doc,matchMedia:q=>q.includes('reduced')?media:{matches:false},MutationObserver:class{constructor(cb){this.cb=cb;mutation=this}observe(){}disconnect(){this.disconnected=true}},IntersectionObserver:class{constructor(cb){this.cb=cb;this.observed=[];observer=this}observe(e){this.observed.push(e)}unobserve(e){this.observed=this.observed.filter(x=>x!==e)}disconnect(){this.observed=[]}},require:n=>n==='react'?{useRef:v=>({current:v===null?root:v}),useEffect:fn=>effect=fn}:{jsx:(type,props)=>({type,props})}};
- vm.runInNewContext(source,context);const rendered=module.exports.BlockReveal({children:'content',selector:'.card',paused});cleanup=effect();
+ const context={module,exports:module.exports,Element:{prototype:{animate(){}}},document:doc,matchMedia:q=>q.includes('reduced')?media:{matches:mobile},MutationObserver:class{constructor(cb){this.cb=cb;mutation=this}observe(){}disconnect(){this.disconnected=true}},IntersectionObserver:class{constructor(cb){this.cb=cb;this.observed=[];observer=this}observe(e){this.observed.push(e)}unobserve(e){this.observed=this.observed.filter(x=>x!==e)}disconnect(){this.observed=[]}},require:n=>n==='./homepage-motion'?{useHomepageMotion:()=>({paused,optIn})}:n==='react'?{useRef:v=>({current:v===null?root:v}),useEffect:fn=>effect=fn}:{jsx:(type,props)=>({type,props})}};
+ vm.runInNewContext(source,context);const rendered=module.exports.BlockReveal({children:'content',selector:'.card',paused,variant});cleanup=effect();
  return {hydrate:()=>{delayed=false;mutation.cb();assert(mutation.disconnected);assert.equal(observer.observed.length,4)},cards,animations,events,media,mediaEvents,doc,rendered,cleanup,enter:()=>observer.cb(cards.map((target,i)=>({target,isIntersecting:true,boundingClientRect:{top:100,left:i*100}})))};
 }
-const normal=fixture();assert.equal(normal.rendered.props.style.display,'contents');normal.enter();assert.equal(normal.animations.length,4);assert.deepEqual(normal.animations.map(a=>a.options.delay),[0,60,120,120]);assert(normal.animations.every(a=>a.options.duration<=500&&a.options.fill==='none'));normal.enter();assert.equal(normal.animations.length,4,'once per target');normal.events.focusin({target:'focused'});assert(normal.animations.every(a=>a.canceled));normal.cleanup();
+const normal=fixture();assert.equal(normal.rendered.props.style.display,'contents');normal.enter();assert.equal(normal.animations.length,4);assert.deepEqual(normal.animations.map(a=>a.options.delay),[0,100,200,200]);assert(normal.animations.every(a=>a.options.duration<=700&&a.options.fill==='backwards'));normal.enter();assert.equal(normal.animations.length,4,'once per target');normal.events.focusin({target:'focused'});assert(normal.animations.every(a=>a.canceled));normal.cleanup();
 const reduced=fixture({reduced:true});reduced.enter();assert.equal(reduced.animations.length,0);reduced.cleanup();
 const hidden=fixture();hidden.enter();hidden.doc.visibilityState='hidden';hidden.events.visibilitychange();assert(hidden.animations.every(a=>a.canceled));hidden.cleanup();
 const change=fixture();change.enter();change.media.matches=true;change.mediaEvents.change();assert(change.animations.every(a=>a.canceled));change.cleanup();
@@ -20,3 +20,8 @@ const unmount=fixture();unmount.enter();unmount.cleanup();assert(unmount.animati
 console.log('PASS: capped stagger, once-only, reduced motion, focus, hidden document, pause and unmount cleanup');
 
 const late=fixture({delayed:true});late.hydrate();late.enter();assert.equal(late.animations.length,4);late.cleanup();
+
+const explicitPlay=fixture({reduced:true,optIn:true});explicitPlay.enter();assert.equal(explicitPlay.animations.length,4,'explicit Play enables reveals even with reduced motion');explicitPlay.cleanup();
+const phone=fixture({mobile:true});phone.enter();assert.equal(phone.animations[0].options.duration,560);assert(phone.animations[0].frames[0].transform.includes('24px'));assert.equal(phone.animations[0].frames[0].filter,undefined,'no card blur on mobile');phone.cleanup();
+const words=fixture({variant:'words',mobile:true});words.enter();assert.equal(words.animations[0].frames[0].filter,'blur(2px)');words.cleanup();
+console.log('PASS: explicit Play override, stronger entrances, mobile transform budget and word reveal');

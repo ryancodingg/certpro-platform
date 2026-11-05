@@ -8,7 +8,7 @@ import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'
 import {certifications, type NewsRecord} from '@/lib/catalog'
 import styles from './home-hero.module.css'
-export function HomeHero({updates,onMotionChange}: {updates: NewsRecord[];onMotionChange?:(paused:boolean)=>void}) {
+export function HomeHero({updates,onMotionChange}: {updates: NewsRecord[];onMotionChange?:(paused:boolean,optIn:boolean)=>void}) {
   const hero = useRef<HTMLElement>(null)
   const [motionOptIn,setMotionOptIn] = useState(false)
   const [ready,setReady] = useState(false), [pausedByUser,setPausedByUser] = useState(false)
@@ -31,7 +31,7 @@ export function HomeHero({updates,onMotionChange}: {updates: NewsRecord[];onMoti
     setPausedByUser(next)
   }
   const controlPaused = pausedByUser || (reduced && !motionOptIn)
-  useEffect(()=>{onMotionChange?.(controlPaused)},[controlPaused,onMotionChange])
+  useEffect(()=>{onMotionChange?.(controlPaused,motionOptIn)},[controlPaused,motionOptIn,onMotionChange])
   const paused = !ready || controlPaused || !inView || !visible
   return <section ref={hero} className={`cp-hero ${styles.hero}`} data-motion={paused?'paused':'playing'} aria-label="Start your learning journey">
     <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused} motionOptIn={motionOptIn}/></div>
@@ -39,7 +39,7 @@ export function HomeHero({updates,onMotionChange}: {updates: NewsRecord[];onMoti
       <p className="cp-eyebrow"><Sparkles size={16} aria-hidden="true"/>LEARNING IS FOR EVERYONE</p>
       <h1><ScrollHeading as="span" text="Build your skills."/><br/><ScrollHeading as="span" text="Practice with purpose." gradient/></h1>
       <p>Find your path across {certifications.length} certifications. Get immediate answer explanations in Practical Mode, then test your knowledge in a timed Mock Exam.</p>
-      <div className={`cp-actions ${styles.actions}`}><Link className={`cp-primary ${styles.start}`} href="#catalog">Find my certification <ArrowRight size={18} aria-hidden="true"/></Link><Link className="cp-secondary" href="/news">Explore news & events</Link></div>
+      <div className={`cp-actions ${styles.actions}`}><Link className={`cp-primary ${styles.start}`} href="/#catalog">Find my certification <ArrowRight size={18} aria-hidden="true"/></Link><Link className="cp-secondary" href="/news">Explore news & events</Link></div>
       <p className="cp-note">Free learning and exam preparation for everyone. Provider exam fees may apply.</p>
       <div className={styles.path} aria-label="Your learning path"><span>Learn</span><i aria-hidden="true"/><span>Practice</span><i aria-hidden="true"/><span>Build confidence</span></div>
 
