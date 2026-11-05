@@ -10,7 +10,7 @@ import {AuthNav} from "@/components/auth-nav"
 export function SiteHeader({authReturnTo}:{authReturnTo?:string}){
  const {user}=useAuth();const path=usePathname();const [open,setOpen]=useState(false);const showWelcome=path==='/'||path==='/progress'
  return <><header className="cp-header cp-learning-header">
- <Link href="/" className="cp-brand" aria-label="CertPro home"><img src="/brand/certpro-fox-b-180.png" alt="" width={38} height={38} className="cp-brand-mascot"/><span className="gradient-text">CertPro</span></Link>
+ <Link href="/" className="cp-brand" aria-label="CertPro home"><img src="/brand/certpro-fox-a-v1-96.png" alt="" width={38} height={38} className="cp-brand-mascot"/><span className="gradient-text">CertPro</span></Link>
  <Link href="/certifications" className="cp-explore-link">Explore</Link>
  <form action="/certifications" className="cp-search" role="search"><Search size={19} aria-hidden="true"/><input name="q" aria-label="Search certifications" placeholder="Search certifications, providers or exam codes"/><button type="submit" aria-label="Search catalog">Search</button></form>
  <nav aria-label="Main navigation" className="cp-desktop-links"><Link href="/news" aria-current={path==='/news'?'page':undefined}>News & Events</Link><Link href="/pricing">Plans</Link>{user&&<><Link href="/progress" aria-current={path==='/progress'?'page':undefined}>My Progress</Link><Link href="/my-learning" aria-current={path==='/my-learning'?'page':undefined}>My Learning</Link></>}</nav>

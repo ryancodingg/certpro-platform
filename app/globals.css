@@ -413,3 +413,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .cp-tool-icon{min-width:44px;min-height:44px}
 .cp-clear{min-height:44px}
 @media(max-width:640px){.cp-catalog-search{grid-template-columns:1fr}.cp-catalog-search .cp-secondary{justify-self:start}.cp-news-scopes button{font-size:14px}.cp-progress-empty{padding:24px 20px}}
+
+/* Brand lockup: static A fox; the separate C-Fox companion keeps its animation. */
+.cp-footer-brand{margin-right:auto;min-width:0}.cp-footer-logo{display:inline-flex;align-items:center;gap:8px;min-height:44px}.cp-footer-logo img{display:block;flex-shrink:0;object-fit:contain}.cp-footer-brand p{margin:4px 0 0}
