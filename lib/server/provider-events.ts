@@ -31,6 +31,7 @@ export function parseDirectoryEvents(html:string,source:typeof directorySources[
   }
  }
  if(source.provider==='AWS')$('script[type="application/json"]').each((_,e)=>{try{const data=JSON.parse($(e).text());for(const row of data.data?.items||[]){const f=row.fields;if(typeof f?.heading==='string'&&typeof f.ctaLink==='string')add(f.heading.split('|')[0].trim(),f.ctaLink,eventDates(f.heading))}}catch{/* Unrelated page metadata. */}})
+ if(source.provider==='Cisco')$('a').filter((_,e)=>clean($(e).text()).toLowerCase()==='register now').each((_,e)=>{const card=$(e).parent().parent(),city=clean(card.find('p b').first().text());if(city)add('Cisco Live '+city,$(e).attr('href')||source.url,eventDates(clean(card.text())))})
  if(source.provider==='Cisco')$('tr').each((_,e)=>{const cells=$(e).children('th,td');if(cells.length<3)return;const dates=eventDates(clean(cells.eq(1).text()));if(dates)add(clean(cells.eq(0).text()),source.url,dates)})
  // CompTIA currently publishes announcements in its blog, without a separate dated calendar.
  // A valid blog with no explicit Event schema is a successful check, not an invented event.

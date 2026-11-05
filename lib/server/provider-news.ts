@@ -155,7 +155,7 @@ const storedNewsSnapshot=unstable_cache(async()=>{
 },['news-display-snapshot-v5'],{revalidate:300,tags:['news-display-snapshot']})
 // Persist completed refresh results in Next's shared cache as well as Firestore.
 // This keeps all three categories current even during a Firestore outage.
-const liveNewsSnapshot=unstable_cache(()=>providerNews(true),['official-news-complete-v2'],{revalidate:3600})
+const liveNewsSnapshot=unstable_cache(()=>providerNews(true),['official-news-complete-v3'],{revalidate:3600})
 export async function newsSnapshot(){
  let timer:ReturnType<typeof setTimeout>|undefined
  const fresh=await Promise.race([liveNewsSnapshot().catch(()=>null),new Promise<null>(resolve=>{timer=setTimeout(()=>resolve(null),250)})]).finally(()=>clearTimeout(timer))

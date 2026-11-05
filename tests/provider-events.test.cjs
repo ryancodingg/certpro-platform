@@ -40,3 +40,6 @@ const comptia=helpers.directorySources.find(s=>s.provider==='CompTIA');
 assert.equal(helpers.parseDirectoryEvents('<h1>CompTIA Blog</h1>'+Array(4).fill('<a href="/en-us/blog/article/">Article</a>').join(''),comptia,now).length,0);
 assert.throws(()=>helpers.parseDirectoryEvents('<h1>Access denied</h1>',comptia,now));
 console.log('PASS: AWS embedded records, cross-month dates, Cisco tables, Databricks calendar validation/withdrawals, CompTIA valid empty checks');
+
+const liveHtml='<section><p><b>Melbourne</b></p><p>Nov 9-12, 2026</p><div><a href="/apjc.html">Register now</a></div></section>';
+const liveItem=helpers.parseDirectoryEvents(liveHtml,cisco,now)[0];assert.equal(liveItem.title,'Cisco Live Melbourne');assert.equal(liveItem.source_url,'https://www.ciscolive.com/apjc.html');assert.equal(liveItem.event_end,'2026-11-12');console.log('PASS: alternative official Cisco Live calendar');
