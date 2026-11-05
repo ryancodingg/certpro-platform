@@ -1,7 +1,7 @@
 import {createHash} from 'node:crypto'
 import {body,HttpError,sameOrigin,services} from '@/lib/server/firebase'
 import {learner} from '@/lib/server/learner'
-import {validate} from '@/lib/study-workspace'
+import {validate,reconcileWorkspace,workspaceBytes,MAX_WORKSPACE_BYTES} from '@/lib/study-workspace'
 export const runtime='nodejs'
 const headers={'Cache-Control':'private, no-store'}
 const reference=(uid:string)=>services().db.collection('certproAttempts').doc('workspace_'+createHash('sha256').update(uid).digest('hex'))
@@ -14,16 +14,18 @@ export async function GET(request:Request){try{
 export async function PUT(request:Request){try{
  sameOrigin(request);const uid=(await learner(request,true))!;const input=await body(request)
  if(!validate(input.workspace)||!Number.isSafeInteger(input.expectedRevision)||input.expectedRevision<0)throw new HttpError(400,'Invalid workspace.')
- const serialized=JSON.stringify(input.workspace)
- if(Buffer.byteLength(serialized,'utf8')>900000)throw new HttpError(413,'Workspace is too large to sync.')
+ if(workspaceBytes(input.workspace)>MAX_WORKSPACE_BYTES)throw new HttpError(413,'Workspace is too large to sync.')
  const ref=reference(uid)
- const revision=await services().db.runTransaction(async tx=>{
+ const saved=await services().db.runTransaction(async tx=>{
   const current=(await tx.get(ref)).data()
   if(current&&(current.uid!==uid||current.kind!=='study-workspace'))throw new HttpError(403,'Workspace is not available.')
   if((current?.revision??0)!==input.expectedRevision)throw new HttpError(409,'Your workspace changed on another device. Retry sync to combine the changes.')
+  const workspace=reconcileWorkspace(input.workspace,current?JSON.parse(current.workspace):null)
+  if(workspaceBytes(workspace)>MAX_WORKSPACE_BYTES)throw new HttpError(413,'Workspace is too large to sync.')
+  const serialized=JSON.stringify(workspace)
   const revision=(current?.revision??0)+1
   tx.set(ref,{uid,kind:'study-workspace',workspace:serialized,revision,updatedAt:new Date().toISOString()})
-  return revision
+  return {workspace,revision}
  })
- return Response.json({workspace:input.workspace,revision},{headers})
+ return Response.json(saved,{headers})
 }catch(e){return fail(e)}}
