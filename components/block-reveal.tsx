@@ -31,9 +31,9 @@ export function BlockReveal({children, selector, paused=false, variant='rise',as
     const end:Keyframe={opacity:1,transform:'none'}
     if(variant==='words'){start.filter=`blur(${mobile?2:4}px)`;end.filter='blur(0px)'}
     // Reduced motion keeps a brief, gentle fade without translation, rotation or blur.
-    const frames=preference.matches?[{opacity:.85},{opacity:1}]:[start,end]
+    const frames=preference.matches?[{opacity:.25},{opacity:1}]:[start,end]
     const animation=element.animate(frames,{
-     duration:preference.matches?180:mobile?560:700,delay:preference.matches?0:Math.min(index*(variant==='words'?85:100),variant==='words'?340:200),easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'
+     duration:preference.matches?450:mobile?560:700,delay:preference.matches?0:Math.min(index*(variant==='words'?85:100),variant==='words'?340:200),easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'
     })
     running.set(element,animation)
     animation.onfinish=()=>running.delete(element)

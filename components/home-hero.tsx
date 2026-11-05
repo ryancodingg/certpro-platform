@@ -36,7 +36,7 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused}/></div>
     <div className={`cp-hero-copy ${styles.copy}`}>
       <p className="cp-eyebrow"><Sparkles size={16} aria-hidden="true"/>LEARNING IS FOR EVERYONE</p>
-      <h1><ScrollHeading as="span" text="Build your skills."/><br/><ScrollHeading as="span" text="Practice with purpose." gradient/></h1>
+      <h1><ScrollHeading as="span" loop text="Build your skills."/><br/><ScrollHeading as="span" loop text="Practice with purpose." gradient/></h1>
       <p>Find your path across {certifications.length} certifications. Get immediate answer explanations in Practical Mode, then test your knowledge in a timed Mock Exam.</p>
       <div className={`cp-actions ${styles.actions}`}><Link className={`cp-primary ${styles.start}`} href="/#catalog">Find my certification <ArrowRight size={18} aria-hidden="true"/></Link><Link className="cp-secondary" href="/news">Explore news & events</Link></div>
       <p className="cp-note">Free learning and exam preparation for everyone. Provider exam fees may apply.</p>
