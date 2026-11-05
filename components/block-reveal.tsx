@@ -39,14 +39,16 @@ export function BlockReveal({children, selector, paused=false, variant='rise',as
     animation.onfinish=()=>running.delete(element)
    })
   },{threshold:.15,rootMargin:'0px 0px -36px 0px'})
-  const observeInitialCards=()=>{
-   const cards=container.querySelectorAll(selector)
-   cards.forEach(element=>{observer.observe(element)})
-   return cards.length>0
+  const observed=new Set<Element>()
+  const syncTargets=()=>{
+   const current=new Set(container.querySelectorAll(selector))
+   observed.forEach(element=>{if(!current.has(element)){observer.unobserve(element);running.get(element)?.cancel();running.delete(element);observed.delete(element);entered.delete(element)}})
+   current.forEach(element=>{if(!observed.has(element)){observed.add(element);observer.observe(element)}})
   }
-  // The catalog may hydrate after its Suspense fallback. Observe its first batch only.
-  const pending=observeInitialCards()?null:new MutationObserver(()=>{if(observeInitialCards())pending?.disconnect()})
-  pending?.observe(container,{childList:true,subtree:true})
+  syncTargets()
+  // Hydration, catalog filtering and refreshed news can all replace the first batch.
+  const pending=new MutationObserver(syncTargets)
+  pending.observe(container,{childList:true,subtree:true})
   const reduce=()=>{if(preference.matches)cancelAll()}
   const visibility=()=>{if(document.visibilityState!=='visible')cancelAll()}
   preference.addEventListener('change',reduce)

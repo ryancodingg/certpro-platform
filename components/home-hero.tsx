@@ -2,7 +2,7 @@
 import {useEffect, useRef, useState} from 'react'
 import Link from 'next/link'
 import {ArrowRight, Sparkles} from 'lucide-react'
-import AnimatedContent from './entrance-content'
+import {BlockReveal} from './block-reveal'
 import {ScrollHeading} from './scroll-heading'
 import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'
@@ -36,19 +36,19 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused}/></div>
     <div className={`cp-hero-copy ${styles.copy}`}>
       <p className="cp-eyebrow"><Sparkles size={16} aria-hidden="true"/>LEARNING IS FOR EVERYONE</p>
-      <h1><ScrollHeading as="span" loop text="Build your skills."/><br/><ScrollHeading as="span" loop text="Practice with purpose." gradient/></h1>
+      <h1><ScrollHeading as="span" text="Build your skills."/><br/><ScrollHeading as="span" text="Practice with purpose." gradient/></h1>
       <p>Find your path across {certifications.length} certifications. Get immediate answer explanations in Practical Mode, then test your knowledge in a timed Mock Exam.</p>
       <div className={`cp-actions ${styles.actions}`}><Link className={`cp-primary ${styles.start}`} href="/#catalog">Find my certification <ArrowRight size={18} aria-hidden="true"/></Link><Link className="cp-secondary" href="/news">Explore news & events</Link></div>
       <p className="cp-note">Free learning and exam preparation for everyone. Provider exam fees may apply.</p>
       <div className={styles.path} aria-label="Your learning path"><span>Learn</span><i aria-hidden="true"/><span>Practice</span><i aria-hidden="true"/><span>Build confidence</span></div>
 
     </div>
-    <AnimatedContent distance={14} duration={0.45} initialOpacity={0.85} once disabled={reduced} style={{minWidth:0,position:'relative',zIndex:2}}>
+    <BlockReveal selector="[data-latest-reveal]"><div data-latest-reveal style={{minWidth:0,position:'relative',zIndex:2}}>
     <aside className={`cp-latest-panel ${styles.newsPanel}`} aria-label="Latest certification updates">
-      <p className="cp-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><ScrollHeading as="h2" text="Stay a step ahead."/><p className="cp-note">Latest official certification updates</p>
+      <p className="cp-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Stay a step ahead.</h2><p className="cp-note">Latest official certification updates</p>
       <ol className="cp-highlight-list">{updates.map(n=><li key={n.id}><Link href={'/news/'+n.id}><ProviderLogo provider={n.provider} className="h-7 w-7"/><div><span className="cp-news-tag">{n.provider} · {n.type}</span><h3>{n.title}</h3></div><ArrowRight size={16} aria-hidden="true"/></Link></li>)}</ol>
       <Link className="cp-text-link" href="/news">View all news & events <ArrowRight size={16} aria-hidden="true"/></Link>
     </aside>
-    </AnimatedContent>
+    </div></BlockReveal>
   </section>
 }

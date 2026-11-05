@@ -1,4 +1,2 @@
 .heading{perspective:800px}.word{display:inline-block;white-space:pre;transform-origin:center bottom}
-
-
-.glyph{display:inline-block;white-space:pre;backface-visibility:hidden;transform-origin:50% 55%}.heading:global(.gradient-text) .glyph{background:linear-gradient(110deg,#4f46c8,#7928ca 55%,#2184a1);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.heading:global(.gradient-text) .word{background:linear-gradient(110deg,#4f46c8,#7928ca 55%,#2184a1);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
