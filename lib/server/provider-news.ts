@@ -83,19 +83,23 @@ function retainedArticleValid(item:NewsRecord){
  // Discard malformed records from the earlier HTML parser, including when the source is temporarily unavailable.
  return item.provider!=='ISACA'||(item.article_summary_kind==='source-offer'&&!!item.expires_on)||!!(date&&item.title.split(/\s+/).length<=25&&!/^Press Release\b/i.test(item.title))
 }
+async function archiveDeadline<T>(request:Promise<T>):Promise<T>{
+ let timer:ReturnType<typeof setTimeout>|undefined
+ try{return await Promise.race([request,new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(Error('News archive unavailable')),1200)})])}finally{clearTimeout(timer)}
+}
 async function retainedSource(source:typeof sources[number]){
  let previous:any=null
- try{previous=(await services().db.collection('certproConfig').doc(sourceId(source)).get()).data();if(!previous&&!source.label)previous=(await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get()).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
+ try{previous=(await archiveDeadline(services().db.collection('certproConfig').doc(sourceId(source)).get())).data();if(!previous&&!source.label)previous=(await archiveDeadline(services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get())).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
  if(!previous&&source.kind==='event-offers')previous=eventSnapshot.sources.find(s=>s.sourceUrl===source.url)
  try{
   const fresh=await readSource(source,previous?.items||[]);const merged=new Map<string,NewsRecord>((['offers','event-offers'].includes(source.kind)?[]:previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n)
   const items=[...merged.values()].filter(retainedArticleValid).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100)
-  let archiveAvailable=true;try{await services().db.collection('certproConfig').doc(sourceId(source)).set({...fresh,items})}catch{archiveAvailable=false}
+  let archiveAvailable=true;try{await archiveDeadline(services().db.collection('certproConfig').doc(sourceId(source)).set({...fresh,items}))}catch{archiveAvailable=false}
   return {...fresh,items,archiveAvailable}
  }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((['offers','event-offers'].includes(source.kind)&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
 // Stable keys serve the last result while Next refreshes expired entries in the background.
-const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v11',source.url],{revalidate:3600}))
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v12',source.url],{revalidate:3600}))
 export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  return assembleNews(results)
@@ -109,7 +113,7 @@ function assembleNews(results:any[]){
  return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:refreshDescription}
 }
 
-// Visitors never wait for external feeds or AI summarization. The last persisted
+// External event reads have a 250ms display budget; other feeds and AI run after response. The last persisted
 // source results are shared between server rendering and the client endpoint.
 export const newsSnapshot=unstable_cache(async()=>{
  const fallback=initialSnapshot as unknown as ReturnType<typeof assembleNews>
@@ -141,7 +145,7 @@ export const newsSnapshot=unstable_cache(async()=>{
   const staleOffers=new Set(sources.filter(s=>['offers','event-offers'].includes(s.kind)&&(!fallback.sources.find(old=>old.sourceUrl===s.url)?.checkedAt||Date.now()-Date.parse(fallback.sources.find(old=>old.sourceUrl===s.url)!.checkedAt!)>48*3600000)).map(s=>s.url))
   return withEvents({...fallback,items:[...fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)&&!eventSources.some(s=>s.url===n.source_url)),...eventSnapshot.sources.filter(s=>offerFresh(s.checkedAt)).flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...fallback.sources.filter(s=>!eventSources.some(e=>e.url===s.sourceUrl)).map(s=>({...s,status:'stale'})),...eventSnapshot.sources.map(({items,...s})=>({...s,status:'stale',matchingArticles:offerFresh(s.checkedAt)?items.filter(retainedArticleValid).length:0}))]})
  }
-},['news-display-snapshot-v3'],{revalidate:300,tags:['news-display-snapshot']})
+},['news-display-snapshot-v4'],{revalidate:300,tags:['news-display-snapshot']})
 export async function refreshNewsInBackground(){
  await providerNews()
  revalidateTag('news-display-snapshot','max')
