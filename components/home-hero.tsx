@@ -8,7 +8,7 @@ import {HeroMotion} from './hero-motion'
 import {ProviderLogo} from './provider-logo'
 import {certifications, type NewsRecord} from '@/lib/catalog'
 import styles from './home-hero.module.css'
-export function HomeHero({updates}: {updates: NewsRecord[]}) {
+export function HomeHero({updates,onMotionChange}: {updates: NewsRecord[];onMotionChange?:(paused:boolean)=>void}) {
   const hero = useRef<HTMLElement>(null)
   const [motionOptIn,setMotionOptIn] = useState(false)
   const [ready,setReady] = useState(false), [pausedByUser,setPausedByUser] = useState(false)
@@ -31,6 +31,7 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     setPausedByUser(next)
   }
   const controlPaused = pausedByUser || (reduced && !motionOptIn)
+  useEffect(()=>{onMotionChange?.(controlPaused)},[controlPaused,onMotionChange])
   const paused = !ready || controlPaused || !inView || !visible
   return <section ref={hero} className={`cp-hero ${styles.hero}`} data-motion={paused?'paused':'playing'} aria-label="Start your learning journey">
     <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused} motionOptIn={motionOptIn}/></div>
