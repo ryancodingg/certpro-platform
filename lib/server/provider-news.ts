@@ -103,8 +103,8 @@ async function retainedSource(source:typeof sources[number]){
 }
 // Stable keys serve the last result while Next refreshes expired entries in the background.
 const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v13',source.url],{revalidate:3600}))
-export async function providerNews(){
- const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
+export async function providerNews(force=false){
+ const results=await Promise.all(cached.map((read,i)=>(force?retainedSource(sources[i]):read()).catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  return assembleNews(results)
 }
 const refreshDescription='Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Official event directories are monitored alongside news feeds for all providers. Dated events are added where the directory supports extraction; blocked or unreadable listings need review. Voucher terms are confirmed separately. Expired or withdrawn offers are removed, and unavailable sources retain checked offers for at most 48 hours. Coverage is not exhaustive. New article summaries are prepared in small batches.'
@@ -118,7 +118,7 @@ function assembleNews(results:any[]){
 
 // External event reads have a 250ms display budget; other feeds and AI run after response. The last persisted
 // source results are shared between server rendering and the client endpoint.
-export const newsSnapshot=unstable_cache(async()=>{
+const storedNewsSnapshot=unstable_cache(async()=>{
  const fallback=initialSnapshot as unknown as ReturnType<typeof assembleNews>
  const eventReads=Promise.all(cached.slice(0,eventSources.length+directorySources.length).map(async read=>{
   let timer:ReturnType<typeof setTimeout>|undefined
@@ -153,7 +153,17 @@ export const newsSnapshot=unstable_cache(async()=>{
   return withEvents({...fallback,items:[...fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)&&!eventSources.some(s=>s.url===n.source_url)),...eventSnapshot.sources.filter(s=>offerFresh(s.checkedAt)).flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...fallback.sources.filter(s=>!eventSources.some(e=>e.url===s.sourceUrl)).map(s=>({...s,status:'stale'})),...eventSnapshot.sources.map(({items,...s})=>({...s,status:'stale',matchingArticles:offerFresh(s.checkedAt)?items.filter(retainedArticleValid).length:0}))]})
  }
 },['news-display-snapshot-v5'],{revalidate:300,tags:['news-display-snapshot']})
+// Persist completed refresh results in Next's shared cache as well as Firestore.
+// This keeps all three categories current even during a Firestore outage.
+const liveNewsSnapshot=unstable_cache(()=>providerNews(true),['official-news-complete-v1'],{revalidate:3600})
+export async function newsSnapshot(){
+ let timer:ReturnType<typeof setTimeout>|undefined
+ const fresh=await Promise.race([liveNewsSnapshot().catch(()=>null),new Promise<null>(resolve=>{timer=setTimeout(()=>resolve(null),250)})]).finally(()=>clearTimeout(timer))
+ const snapshot=fresh||await storedNewsSnapshot()
+ // Apply deadlines after reading the cache, never only when populating it.
+ return {...snapshot,items:snapshot.items.filter(n=>isActiveNews(n))}
+}
 export async function refreshNewsInBackground(){
- await providerNews()
- revalidateTag('news-display-snapshot','max')
+ await liveNewsSnapshot()
+ revalidateTag('news-display-snapshot',{expire:0})
 }

@@ -9,4 +9,13 @@ export const news = rawNews.items as NewsRecord[]
 export const verifiedOn = rawCatalog.verified_on
 export const providers = Array.from(new Set(certifications.map((item) => item.provider)))
 export const certificationById = (id: string) => certifications.find((item) => item.id === id || item.aliases.includes(id))
-export const isActiveNews = (item: NewsRecord, now = new Date()) => { const expiry = item.expires_on || (item.type === 'event' ? item.event_end || item.event_on : null); if (item.status !== "published") return false; if (!expiry) return true; if (!/^\d{4}-\d{2}-\d{2}$/.test(expiry)) return false; const parsed = new Date(`${expiry}T23:59:59Z`); return !Number.isNaN(parsed.valueOf()) && parsed.toISOString().slice(0, 10) === expiry && parsed >= now }
+// Provider date-only deadlines remain active through the stated day (UTC).
+export function deadlineActive(expiry: string | null | undefined, now = new Date()) {
+ if (!expiry) return true
+ if (!/^\d{4}-\d{2}-\d{2}$/.test(expiry)) return false
+ const parsed = new Date(`${expiry}T23:59:59.999Z`)
+ return !Number.isNaN(parsed.valueOf()) && parsed.toISOString().slice(0,10) === expiry && parsed >= now
+}
+export const isActiveNews = (item: NewsRecord, now = new Date()) => item.status === 'published' && deadlineActive(item.expires_on || (item.type.startsWith('event') ? item.event_end || item.event_on : null), now)
+// An event can finish before its voucher redemption window closes.
+export const isActiveEvent = (item: NewsRecord, now = new Date()) => isActiveNews(item, now) && deadlineActive(item.event_end || item.event_on, now)

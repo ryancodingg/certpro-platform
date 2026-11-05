@@ -1,4 +1,4 @@
-import type {NewsRecord} from './catalog'
+import {isActiveNews,isActiveEvent,type NewsRecord} from './catalog'
 export type NewsTab='news'|'events'|'offers'
 export type NewsGroup={item:NewsRecord;related:NewsRecord[]}
 export const NEWS_PAGE_SIZE=9
@@ -20,7 +20,7 @@ function eventKey(item:NewsRecord){
 }
 export function browseNews(items:NewsRecord[],tab:NewsTab,now=new Date()):NewsGroup[]{
  const groups=new Map<string,NewsGroup>()
- for(const item of items.filter(item=>belongsToTab(item,tab))){
+ for(const item of items.filter(item=>belongsToTab(item,tab)&&isActiveNews(item,now)&&(tab!=='events'||isActiveEvent(item,now)))){
   const key=tab==='events'?eventKey(item):item.id
   const group=groups.get(key)
   if(!group)groups.set(key,{item,related:[]})

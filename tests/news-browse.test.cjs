@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),ts=require('typescript');
-const source=ts.transpileModule(fs.readFileSync('lib/news-browse.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;const m={exports:{}};vm.runInNewContext(source,{module:m,exports:m.exports,Intl,Date});const {browseNews,readableDate,NEWS_PAGE_SIZE}=m.exports;
-const make=(id,type,extra={})=>({id,type,title:id,provider:'Microsoft',verified_on:'2026-11-05',published_on:null,...extra});
+const catalogModule={exports:{}};const catalogSource=ts.transpileModule(fs.readFileSync('lib/catalog.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;vm.runInNewContext(catalogSource,{module:catalogModule,exports:catalogModule.exports,Date,require:n=>({default:n.includes('certifications')?{certifications:[]}:{items:[]}})});const catalog=catalogModule.exports;
+const source=ts.transpileModule(fs.readFileSync('lib/news-browse.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;const m={exports:{}};vm.runInNewContext(source,{module:m,exports:m.exports,Intl,Date,require:()=>catalog});const {browseNews,readableDate,NEWS_PAGE_SIZE}=m.exports;
+const make=(id,type,extra={})=>({status:'published',id,type,title:id,provider:'Microsoft',verified_on:'2026-11-05',published_on:null,...extra});
 const items=[make('a','news',{published_on:'2026-10-01'}),make('b','news',{published_on:'2026-10-29'}),make('early','event',{event_on:'2026-11-09'}),make('late','event',{event_on:'2027-02-01'}),make('jan','event-voucher',{expires_on:'2027-01-31'}),make('nov','event-voucher',{expires_on:'2026-11-30'}),make('always','discount')];
 assert.equal(browseNews(items,'news').map(g=>g.item.id).join(','),'b,a');assert.equal(browseNews(items,'offers').map(g=>g.item.id).join(','),'nov,jan,always');assert.equal(browseNews(items,'events')[0].item.id,'early');
 const duplicates=[make('one','event',{title:'Microsoft Ignite 2026',event_on:'2026-11-17'}),make('two','event-voucher',{title:'Microsoft Ignite 2026: one free onsite certification exam',expires_on:'2026-11-20'}),make('three','event',{title:'Microsoft Ignite',event_on:'2026-11-17'})];
@@ -8,4 +9,16 @@ const grouped=browseNews(duplicates,'events');assert.equal(grouped.length,1);ass
 const many=Array.from({length:23},(_,i)=>make(String(i),'news'));const all=browseNews(many,'news');assert.equal(Math.ceil(all.length/NEWS_PAGE_SIZE),3);assert.equal(new Set([0,1,2].flatMap(p=>all.slice(p*NEWS_PAGE_SIZE,(p+1)*NEWS_PAGE_SIZE).map(g=>g.item.id))).size,23);assert.equal(readableDate('2026-11-20'),'20 Nov 2026');
 console.log('PASS: tab separation, chronology, undated offers, event grouping preserves sources, pagination coverage and dates');
 const dates=[make('past','event',{event_on:'2026-11-02'}),make('future','event',{event_on:'2026-11-09'})];assert.equal(browseNews(dates,'events',new Date('2026-11-05'))[0].item.id,'future');
-const days=[make('dec','event-voucher',{title:'Data Days: December',event_on:'2026-11-02',expires_on:'2026-12-31'}),make('nov','event-voucher',{title:'Data Days: November',event_on:'2026-11-02',expires_on:'2026-11-30'})];assert.equal(browseNews(days,'events')[0].item.id,'nov');assert.equal(browseNews(days,'events')[0].related.length,1);assert.equal(browseNews(days,'offers').length,2);console.log('PASS: upcoming events precede started events; grouped events retain distinct offers');
+const days=[make('dec','event-voucher',{title:'Data Days: December',event_on:'2026-11-02',event_end:'2026-12-15',expires_on:'2026-12-31'}),make('nov','event-voucher',{title:'Data Days: November',event_on:'2026-11-02',event_end:'2026-12-15',expires_on:'2026-11-30'})];assert.equal(browseNews(days,'events')[0].item.id,'nov');assert.equal(browseNews(days,'events')[0].related.length,1);assert.equal(browseNews(days,'offers').length,2);console.log('PASS: upcoming events precede started events; grouped events retain distinct offers');
+
+const now=new Date('2026-12-16T00:00:00Z');
+const voucher=make('after-event','event-voucher',{event_on:'2026-11-02',event_end:'2026-12-15',expires_on:'2026-12-31'});
+assert.equal(browseNews([voucher],'events',now).length,0);
+assert.equal(browseNews([voucher],'offers',now).length,1);
+assert.equal(browseNews([voucher],'offers',new Date('2027-01-01')).length,0);
+assert.equal(browseNews([make('ended','event-announcement',{event_end:'2026-12-15'})],'events',now).length,0);
+assert.equal(browseNews([make('bad','event',{event_end:'2026-02-30'})],'events',now).length,0);
+assert.equal(catalog.deadlineActive('2026-12-15',new Date('2026-12-15T23:59:59.999Z')),true);
+assert.equal(catalog.deadlineActive('2026-12-15',now),false);
+assert.equal(browseNews([make('withdrawn','discount',{status:'withdrawn'})],'offers',now).length,0);
+console.log('PASS: expired events, independent voucher deadline, malformed dates, withdrawals and midnight boundary');
