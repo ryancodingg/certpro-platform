@@ -26,7 +26,7 @@ const noOffer='<main><h1>Featured training</h1><p>Explore professional learning 
 assert.deepEqual(helpers.parseIsacaOffers(noOffer,now),[]);
 assert.deepEqual(helpers.parseIsacaOffers('<footer><p>Members get 20% off training using promo code NEWSLETTER26. Offer ends 31 October 2026.</p></footer>'+noOffer,now),[]);
 const docs=new Map();const ed={enrichNews:n=>n,reviewedNews:[]};
-const backend=moduleOf('lib/server/provider-news.ts',{'server-only':{},'./isaca-news':helpers,'./news-summary':{automaticSummary:async n=>n},'./firebase':{services:()=>({db:{collection:()=>({doc:id=>({get:async()=>({data:()=>docs.get(id)}),set:async x=>docs.set(id,x)})})}})},'next/cache':{unstable_cache:f=>f},'@/lib/catalog':catalog,'@/lib/news-editorial':ed},'\nexport {readSource,retainedSource};');
+const backend=moduleOf('lib/server/provider-news.ts',{'./event-vouchers':moduleOf('lib/server/event-vouchers.ts'),'@/data/event-vouchers-snapshot.json':JSON.parse(fs.readFileSync(base+'/data/event-vouchers-snapshot.json')),'@/lib/news-presentation':moduleOf('lib/news-presentation.ts'),'@/data/news-snapshot.json':JSON.parse(fs.readFileSync(base+'/data/news-snapshot.json')),'server-only':{},'./isaca-news':helpers,'./news-summary':{automaticSummary:async n=>n},'./firebase':{services:()=>({db:{collection:()=>({doc:id=>({get:async()=>({data:()=>docs.get(id)}),set:async x=>docs.set(id,x)})})}})},'next/cache':{unstable_cache:f=>f},'@/lib/catalog':catalog,'@/lib/news-editorial':ed},'\nexport {readSource,retainedSource};');
 const originalDate=Date;
 global.Date=class extends originalDate{constructor(...args){super(...(args.length?args:[now.valueOf()]))}static now(){return now.valueOf()}};
 (async()=>{

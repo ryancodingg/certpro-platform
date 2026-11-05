@@ -1,0 +1,146 @@
+{
+  "sources": [
+    {
+      "provider": "Microsoft",
+      "label": "Microsoft Data Days exam vouchers",
+      "url": "https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271",
+      "host": "community.fabric.microsoft.com",
+      "kind": "event-offers",
+      "parser": "data-days",
+      "sourceUrl": "https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271",
+      "checkedAt": "2026-11-05T02:13:50.074Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-db9b8be5c4e106c3c059a6ce",
+          "provider": "Microsoft",
+          "type": "event-voucher",
+          "title": "Data Days: 100% exam voucher · take your exam by November 30, 2026",
+          "summary": "Limited vouchers for DP-800, DP-700, DP-600. Eligibility applies; request one through Microsoft’s official offer page.",
+          "source_url": "https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "article_summary_kind": "source-offer",
+          "expires_on": "2026-11-30",
+          "eligibility": "One voucher per person; limited supply and eligibility requirements apply.",
+          "expiry_note": "Exam completion deadline; your voucher may have an earlier redemption deadline. Confirm the dates on your offer.",
+          "event_on": "2026-11-02",
+          "event_end": "2026-12-15",
+          "attendance": "Live and on-demand learning; check voucher eligibility separately.",
+          "exam_codes": [
+            "DP-800",
+            "DP-700",
+            "DP-600"
+          ],
+          "discount_percent": 100,
+          "terms_url": "https://aka.ms/dd/cert100/terms",
+          "article_paragraphs": [
+            "This Data Days offer covers 100% of the fee for DP-800, DP-700, DP-600. Complete the exam by November 30, 2026. Availability is limited.",
+            "Request through Microsoft with your Fabric Community account. If allocated, the code arrives in your community private messages, not email. One voucher is permitted per person.",
+            "Check the linked terms and your voucher’s redemption deadline before scheduling. Extensions are not available. Attending a session alone does not guarantee a voucher."
+          ]
+        },
+        {
+          "id": "event-ee1070d7a2826c864810b776",
+          "provider": "Microsoft",
+          "type": "event-voucher",
+          "title": "Data Days: 100% exam voucher · take your exam by December 31, 2026",
+          "summary": "Limited vouchers for DP-800, DP-700, DP-600. Eligibility applies; request one through Microsoft’s official offer page.",
+          "source_url": "https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "article_summary_kind": "source-offer",
+          "expires_on": "2026-12-31",
+          "eligibility": "One voucher per person; limited supply and eligibility requirements apply.",
+          "expiry_note": "Exam completion deadline; your voucher may have an earlier redemption deadline. Confirm the dates on your offer.",
+          "event_on": "2026-11-02",
+          "event_end": "2026-12-15",
+          "attendance": "Live and on-demand learning; check voucher eligibility separately.",
+          "exam_codes": [
+            "DP-800",
+            "DP-700",
+            "DP-600"
+          ],
+          "discount_percent": 100,
+          "terms_url": "https://aka.ms/dd/cert100/terms",
+          "article_paragraphs": [
+            "This Data Days offer covers 100% of the fee for DP-800, DP-700, DP-600. Complete the exam by December 31, 2026. Availability is limited.",
+            "Request through Microsoft with your Fabric Community account. If allocated, the code arrives in your community private messages, not email. One voucher is permitted per person.",
+            "Check the linked terms and your voucher’s redemption deadline before scheduling. Extensions are not available. Attending a session alone does not guarantee a voucher."
+          ]
+        },
+        {
+          "id": "event-bdea0ee47c0a71bd0cd7315f",
+          "provider": "Microsoft",
+          "type": "event-voucher",
+          "title": "Data Days: 50% exam voucher · take your exam by January 31, 2027",
+          "summary": "Limited vouchers for PL-300, DP-900, DP-420, DP-300. Eligibility applies; request one through Microsoft’s official offer page.",
+          "source_url": "https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "article_summary_kind": "source-offer",
+          "expires_on": "2027-01-31",
+          "eligibility": "One voucher per person; limited supply and eligibility requirements apply.",
+          "expiry_note": "Exam completion deadline; your voucher may have an earlier redemption deadline. Confirm the dates on your offer.",
+          "event_on": "2026-11-02",
+          "event_end": "2026-12-15",
+          "attendance": "Live and on-demand learning; check voucher eligibility separately.",
+          "exam_codes": [
+            "PL-300",
+            "DP-900",
+            "DP-420",
+            "DP-300"
+          ],
+          "discount_percent": 50,
+          "terms_url": "https://aka.ms/dd/cert50/terms",
+          "article_paragraphs": [
+            "This Data Days offer covers 50% of the fee for PL-300, DP-900, DP-420, DP-300. Complete the exam by January 31, 2027. Availability is limited.",
+            "Request through Microsoft with your Fabric Community account. If allocated, the code arrives in your community private messages, not email. One voucher is permitted per person.",
+            "Check the linked terms and your voucher’s redemption deadline before scheduling. Extensions are not available. Attending a session alone does not guarantee a voucher."
+          ]
+        }
+      ]
+    },
+    {
+      "provider": "Microsoft",
+      "label": "Microsoft Ignite onsite exam offer",
+      "url": "https://learn.microsoft.com/en-us/training/topics/ignite/microsoft-ignite-2026-certification-registration",
+      "host": "learn.microsoft.com",
+      "kind": "event-offers",
+      "parser": "ignite",
+      "sourceUrl": "https://learn.microsoft.com/en-us/training/topics/ignite/microsoft-ignite-2026-certification-registration",
+      "checkedAt": "2026-11-05T02:13:50.074Z",
+      "status": "stale",
+      "items": [
+        {
+          "id": "event-191ec5399a233d239fa650e0",
+          "provider": "Microsoft",
+          "type": "event-voucher",
+          "title": "Microsoft Ignite 2026: one free onsite certification exam",
+          "summary": "Registered in-person attendees can take one Microsoft or GitHub certification exam at the San Francisco event. Limited seats; registration required.",
+          "source_url": "https://learn.microsoft.com/en-us/training/topics/ignite/microsoft-ignite-2026-certification-registration",
+          "verified_on": "2026-11-05",
+          "published_on": null,
+          "status": "published",
+          "article_summary_kind": "source-offer",
+          "discount_percent": 100,
+          "attendance": "In-person only · San Francisco",
+          "event_on": "2026-11-16",
+          "event_end": "2026-11-20",
+          "expires_on": "2026-11-20",
+          "eligibility": "Registered Ignite in-person attendees only. One exam per person; regional restrictions apply.",
+          "expiry_note": "Onsite offer window; not a voucher for remote testing.",
+          "terms_url": "https://learn.microsoft.com/en-us/training/topics/ignite/microsoft-ignite-2026-certification-registration#microsoft-and-github-certification-offer-details",
+          "article_paragraphs": [
+            "The offer applies to one onsite Microsoft or GitHub exam during November 16, 2026–November 20, 2026. It does not provide a free remote exam or free conference admission.",
+            "Schedule through the certification page and select the Microsoft Ignite Event Test Center in San Francisco. The discount applies at checkout. Seats are limited.",
+            "Check the official page for eligible exams, regional exclusions and prerequisites. Government employees must confirm eligibility with their employer. The offer cannot be transferred or extended."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import 'server-only'
+import {eventSources,parseEventOffers,offerFresh,isEventVoucherTitle} from './event-vouchers'
+import rawEventSnapshot from '@/data/event-vouchers-snapshot.json'
 import {preserveNewsSummary} from '@/lib/news-presentation'
 import {automaticSummary} from './news-summary'
 import {isacaOffersUrl,parseIsacaNews,parseIsacaOffers} from './isaca-news'
@@ -10,7 +12,9 @@ import {unstable_cache,revalidateTag} from 'next/cache'
 import initialSnapshot from '@/data/news-snapshot.json'
 import {news as seed,isActiveNews,type NewsRecord} from '@/lib/catalog'
 import {enrichNews,reviewedNews} from '@/lib/news-editorial'
-export const sources=[
+const eventSnapshot=rawEventSnapshot as {sources:{provider:string;label:string;sourceUrl:string;checkedAt:string;status:string;items:NewsRecord[]}[]}
+export const sources:{provider:string;label?:string;url:string;host:string;kind:string;path?:string;parser?:string}[]=[
+ ...eventSources,
  {provider:'Cisco',label:'Cisco certification announcements',url:'https://blogs.cisco.com/tag/cisco-certifications/feed',host:'blogs.cisco.com',kind:'rss'},
  {provider:'CompTIA',label:'CompTIA official certification blog',url:'https://www.comptia.org/en-us/blog/',host:'www.comptia.org',kind:'html',path:'/en-us/blog/'},
  {provider:'ISC2',label:'ISC2 Insights',url:'https://www.isc2.org/isc2insights',host:'www.isc2.org',kind:'html',path:'/insights/'},
@@ -27,10 +31,11 @@ export const sources=[
 const sourceId=(source:typeof sources[number])=>'news_source_'+createHash('sha256').update(source.url).digest('hex').slice(0,24)
 const relevant=/certif|credential|exam|voucher|\b(?:CCNA|CCNP|CCIE|CISM|CISA|CISSP|CCSP|Security\+|CySA\+)\b/i
 async function readSource(source:typeof sources[number],previous:NewsRecord[]=[]){
- const response=await fetch(source.url,{signal:AbortSignal.timeout(15000),headers:{'User-Agent':'CertPro official certification news reader'},cache:'no-store'})
+ const response=await fetch(source.url,{signal:AbortSignal.timeout(15000),headers:{'User-Agent':'CertPro official certification news reader'},cache:'no-store',...(source.kind==='event-offers'?{redirect:'error' as const}:{})})
  if(!response.ok)throw Error('Source unavailable')
  const text=await response.text();if(text.length>6_000_000)throw Error('Source exceeds size limit')
  const fetched=new Date().toISOString()
+ if(source.kind==='event-offers')return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:fetched,items:parseEventOffers(text,source as typeof eventSources[number]),status:'ok'}
  if(source.kind==='offers')return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:fetched,items:parseIsacaOffers(text),status:'ok'}
  let entries:{title?:string;link?:string;isoDate?:string;contentSnippet?:string;content?:string;summary?:string;'content:encoded'?:string}[]=[]
  if(source.kind==='rss')entries=(await new Parser().parseString(text)).items
@@ -58,7 +63,7 @@ async function readSource(source:typeof sources[number],previous:NewsRecord[]=[]
  const id='official-'+createHash('sha256').update(url.href).digest('hex').slice(0,24)
  articleBodies.set(id,load(entry['content:encoded']||entry.content||'').text().replace(/\s+/g,' ').trim());
  const excerptText=load(entry.contentSnippet||entry.summary||entry.content||'').text().replace(/\s+/g,' ').trim();const excerptWords=Math.max(0,25-title.split(/\s+/).length);const excerpt=excerptText.split(/\s+/).slice(0,excerptWords).join(' ');
- unique.set(id,enrichNews({id,provider:source.provider,type:/discount|voucher|save \d|\d+% off|free (?:exam|certification)|exam offer/i.test(title)?'discount':'news',title,...(excerpt?{source_excerpt:excerpt+(excerptText.split(/\s+/).length>excerptWords?'…':'')}:{}),summary:`An official announcement from ${source.provider}. Read the official announcement for details, eligibility, dates, and any offer terms.`,source_url:url.href,verified_on:fetched.slice(0,10),published_on:date&&!Number.isNaN(date.valueOf())?date.toISOString().slice(0,10):null,status:'published'}))
+ unique.set(id,enrichNews({id,provider:source.provider,type:isEventVoucherTitle(title)?'event-voucher':/discount|voucher|save \d|\d+% off|free (?:exam|certification)|exam offer/i.test(title)?'discount':'news',title,...(excerpt?{source_excerpt:excerpt+(excerptText.split(/\s+/).length>excerptWords?'…':'')}:{}),summary:`An official announcement from ${source.provider}. Read the official announcement for details, eligibility, dates, and any offer terms.`,source_url:url.href,verified_on:fetched.slice(0,10),published_on:date&&!Number.isNaN(date.valueOf())?date.toISOString().slice(0,10):null,status:'published'}))
  }
  const fresh=[...unique.values()].slice(0,15).map(n=>{
   const old=previous.find(p=>p.source_url===n.source_url)
@@ -81,25 +86,26 @@ function retainedArticleValid(item:NewsRecord){
 async function retainedSource(source:typeof sources[number]){
  let previous:any=null
  try{previous=(await services().db.collection('certproConfig').doc(sourceId(source)).get()).data();if(!previous&&!source.label)previous=(await services().db.collection('certproConfig').doc('news_'+source.provider.replace(/[^a-z0-9]/gi,'_')).get()).data()}catch{/* Provider refresh must not depend on Firestore availability. */}
+ if(!previous&&source.kind==='event-offers')previous=eventSnapshot.sources.find(s=>s.sourceUrl===source.url)
  try{
-  const fresh=await readSource(source,previous?.items||[]);const merged=new Map<string,NewsRecord>((source.kind==='offers'?[]:previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n)
+  const fresh=await readSource(source,previous?.items||[]);const merged=new Map<string,NewsRecord>((['offers','event-offers'].includes(source.kind)?[]:previous?.items||[]).map((n:NewsRecord)=>[n.id,n]));for(const n of fresh.items)merged.set(n.id,n)
   const items=[...merged.values()].filter(retainedArticleValid).sort((a,b)=>(b.published_on||'').localeCompare(a.published_on||'')).slice(0,100)
   let archiveAvailable=true;try{await services().db.collection('certproConfig').doc(sourceId(source)).set({...fresh,items})}catch{archiveAvailable=false}
   return {...fresh,items,archiveAvailable}
- }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((source.kind==='offers'&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
+ }catch{return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt:previous?.checkedAt||null,items:((['offers','event-offers'].includes(source.kind)&&(!Number.isFinite(Date.parse(previous?.checkedAt))||Date.now()-Date.parse(previous.checkedAt)>48*3600000)?[]:previous?.items||[]) as NewsRecord[]).filter(retainedArticleValid),status:previous?'stale':'unavailable',archiveAvailable:!!previous}}
 }
 // Stable keys serve the last result while Next refreshes expired entries in the background.
-const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v10',source.url],{revalidate:3600}))
+const cached=sources.map(source=>unstable_cache(()=>retainedSource(source),['official-news-independent-v11',source.url],{revalidate:3600}))
 export async function providerNews(){
  const results=await Promise.all(cached.map((read,i)=>read().catch(()=>({provider:sources[i].provider,sourceUrl:sources[i].url,label:sources[i].label||sources[i].provider,checkedAt:null,items:[] as NewsRecord[],status:'unavailable'}))))
  return assembleNews(results)
 }
 function assembleNews(results:any[]){
  const reviewedItems:NewsRecord[]=reviewedNews.filter(n=>!seed.some(s=>s.source_url.replace(/\/$/,'')===n.source_url.replace(/\/$/,''))).map(n=>enrichNews({id:'official-'+createHash('sha256').update(n.source_url).digest('hex').slice(0,24),provider:n.provider,type:'news',title:n.title,summary:n.summary,source_url:n.source_url,verified_on:n.reviewed_on,published_on:n.published_on??null,status:'published'}));
- const offerUrls=new Set(sources.filter(s=>s.kind==='offers').map(s=>s.url))
+ const offerUrls=new Set(sources.filter(s=>['offers','event-offers'].includes(s.kind)).map(s=>s.url))
  const byUrl=new Map([...seed,...reviewedItems].filter(n=>isActiveNews(n)&&!offerUrls.has(n.source_url)).map(n=>[n.source_url,enrichNews(n)]));for(const result of results)for(const n of result.items){if(offerUrls.has(n.source_url))byUrl.set(n.source_url+'#'+n.id,n);else if(!byUrl.has(n.source_url))byUrl.set(n.source_url,enrichNews(n))}
- const seenTitles=new Set<string>();const items=[...byUrl.values()].filter(n=>{const key=n.provider+'|'+n.title.toLowerCase().replace(/[^a-z0-9]/g,'');if(seenTitles.has(key))return false;seenTitles.add(key);return true}).sort((a,b)=>(b.published_on||b.verified_on||'').localeCompare(a.published_on||a.verified_on||'')||a.id.localeCompare(b.id))
- return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Certification announcements and supported official training offers appear here; coverage is not exhaustive. ISACA training offers are removed when they expire or disappear from the official offer page. New articles receive AI-generated summaries checked against official source text in small batches. Pending summaries retry on later refreshes.'}
+ const seenTitles=new Set<string>();const items=[...byUrl.values()].filter(n=>isActiveNews(n)).filter(n=>{const key=n.provider+'|'+n.title.toLowerCase().replace(/[^a-z0-9]/g,'');if(seenTitles.has(key))return false;seenTitles.add(key);return true}).sort((a,b)=>(b.published_on||b.verified_on||'').localeCompare(a.published_on||a.verified_on||'')||a.id.localeCompare(b.id))
+ return {items,sources:results.map(({items,...status})=>({...status,matchingArticles:items.length})),refresh:'Official sources are checked hourly as the site is visited, with a daily scheduled refresh. Certification announcements and supported official training offers appear here; coverage is not exhaustive. Supported event vouchers and ISACA offers are removed when expired or withdrawn. Event offers use allowlisted official pages; unavailable sources retain verified offers for at most 48 hours. New event sources require review before onboarding. New articles receive AI-generated summaries checked against official source text in small batches. Pending summaries retry on later refreshes.'}
 }
 
 // Visitors never wait for external feeds or AI summarization. The last persisted
@@ -115,17 +121,18 @@ export const newsSnapshot=unstable_cache(async()=>{
   ]).finally(()=>clearTimeout(timer))
   return assembleNews(sources.map((source,i)=>{
    const stored=docs[i].data()
-   const old=fallback.sources.find(s=>s.sourceUrl===source.url)
-   const items=stored?.items||fallback.items.filter(n=>n.provider===source.provider)
+   const bootstrap=eventSnapshot.sources.find(s=>s.sourceUrl===source.url)
+   const old=bootstrap||fallback.sources.find(s=>s.sourceUrl===source.url)
+   const items=stored?.items||bootstrap?.items||fallback.items.filter(n=>n.provider===source.provider)
    const checkedAt=stored?.checkedAt||old?.checkedAt||null
    const stale=!checkedAt||Date.now()-Date.parse(checkedAt)>3600000
-   return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt,status:stale?'stale':stored?.status||old?.status||'stale',items:(source.kind==='offers'&&(!checkedAt||Date.now()-Date.parse(checkedAt)>48*3600000)?[]:items).filter(retainedArticleValid)}
+   return {provider:source.provider,sourceUrl:source.url,label:source.label||source.provider,checkedAt,status:stale?'stale':stored?.status||old?.status||'stale',items:(['offers','event-offers'].includes(source.kind)&&(!checkedAt||Date.now()-Date.parse(checkedAt)>48*3600000)?[]:items).filter(retainedArticleValid)}
   }))
  }catch{
-  const staleOffers=new Set(sources.filter(s=>s.kind==='offers'&&(!fallback.sources.find(old=>old.sourceUrl===s.url)?.checkedAt||Date.now()-Date.parse(fallback.sources.find(old=>old.sourceUrl===s.url)!.checkedAt!)>48*3600000)).map(s=>s.url))
-  return {...fallback,items:fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)),sources:fallback.sources.map(s=>({...s,status:'stale'}))}
+  const staleOffers=new Set(sources.filter(s=>['offers','event-offers'].includes(s.kind)&&(!fallback.sources.find(old=>old.sourceUrl===s.url)?.checkedAt||Date.now()-Date.parse(fallback.sources.find(old=>old.sourceUrl===s.url)!.checkedAt!)>48*3600000)).map(s=>s.url))
+  return {...fallback,items:[...fallback.items.filter(n=>retainedArticleValid(n)&&!staleOffers.has(n.source_url)&&!eventSources.some(s=>s.url===n.source_url)),...eventSnapshot.sources.filter(s=>offerFresh(s.checkedAt)).flatMap(s=>s.items).filter(retainedArticleValid)],sources:[...fallback.sources.filter(s=>!eventSources.some(e=>e.url===s.sourceUrl)).map(s=>({...s,status:'stale'})),...eventSnapshot.sources.map(({items,...s})=>({...s,status:'stale',matchingArticles:offerFresh(s.checkedAt)?items.filter(retainedArticleValid).length:0}))]}
  }
-},['news-display-snapshot-v1'],{revalidate:300,tags:['news-display-snapshot']})
+},['news-display-snapshot-v2'],{revalidate:300,tags:['news-display-snapshot']})
 export async function refreshNewsInBackground(){
  await providerNews()
  revalidateTag('news-display-snapshot','max')
