@@ -1,13 +1,28 @@
 import {load} from 'cheerio'
+import Parser from 'rss-parser'
 import {createHash} from 'node:crypto'
 import type {NewsRecord} from '../catalog'
 
 export const isEventVoucherTitle=(title:string)=>/voucher|exam (?:offer|discount)|free (?:certification )?exam/i.test(title)&&/event|training day|challenge|ignite|data days|skills fest|certification week/i.test(title)
 
 export const eventSources = [
- {provider:'Microsoft',label:'Microsoft Data Days exam vouchers',url:'https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271',host:'community.fabric.microsoft.com',kind:'event-offers',parser:'data-days'},
+ {provider:'Microsoft',label:'Microsoft Data Days exam vouchers',fetchUrl:'https://community.fabric.microsoft.com/t5/s/rss/board?board.id=community_blog&count=100',url:'https://community.fabric.microsoft.com/blog/community_blog/data-days--certification-vouchers/5376271',host:'community.fabric.microsoft.com',kind:'event-offers',parser:'data-days'},
  {provider:'Microsoft',label:'Microsoft Ignite onsite exam offer',url:'https://learn.microsoft.com/en-us/training/topics/ignite/microsoft-ignite-2026-certification-registration',host:'learn.microsoft.com',kind:'event-offers',parser:'ignite'},
 ]
+// This is Microsoft's syndication of the original administrator-authored article,
+// not a community summary. Missing/changed identity must retain the stale-source guard.
+export async function dataDaysAnnouncement(xml:string){
+ const feed=await new Parser().parseString(xml)
+ const matches=feed.items.filter(item=>{
+  if(item.creator!=='FabricMau'||item.title?.trim()!=='Data Days | Certification Vouchers'||!item.link)return false
+  try{const u=new URL(item.link);return u.protocol==='https:'&&u.hostname==='community.fabric.microsoft.com'&&!u.port&&!u.username&&!u.password&&[
+   '/t5/Power-BI-Community-Blog/Data-Days-Certification-Vouchers/ba-p/5376271',
+   '/blog/community_blog/data-days--certification-vouchers/5376271'
+  ].includes(u.pathname)&&!u.hash&&!u.search}catch{return false}
+ })
+ if(matches.length!==1||!matches[0].content)throw Error('Official voucher announcement missing from feed')
+ return matches[0].content
+}
 export function offerFresh(checkedAt:string|null|undefined,now=new Date()) {
  const checked=Date.parse(checkedAt||'')
  return Number.isFinite(checked)&&checked<=now.valueOf()&&now.valueOf()-checked<=48*3600000
@@ -26,7 +41,7 @@ function content(html:string){
 export function parseEventOffers(html:string,source:typeof eventSources[number],now=new Date()):NewsRecord[]{
  const pageText=content(html)
  // Exclude community replies and navigation from the administrator-authored announcement.
- const text=source.parser==='data-days'?pageText.split(/Updated\s|Version 2\.0|Comments/i)[0]:pageText
+ const text=source.parser==='data-days'?pageText.split(/Updated\s+\d+\s+(?:days?|hours?|weeks?)\s+ago|Version 2\.0|Comments/i)[0]:pageText
  const make=(key:string,fields:Partial<NewsRecord>):NewsRecord=>({id:'event-'+createHash('sha256').update(source.url+'#'+key).digest('hex').slice(0,24),provider:'Microsoft',type:'event-voucher',title:'',summary:'',source_url:source.url,verified_on:now.toISOString().slice(0,10),published_on:null,status:'published',article_summary_kind:'source-offer',...fields})
  let items:NewsRecord[]=[]
  if(source.parser==='data-days'){
