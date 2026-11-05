@@ -1,5 +1,6 @@
 'use client'
 import {useEffect, useRef, useState} from 'react'
+import {useFullMotion} from '@/lib/browser-motion'
 import Link from 'next/link'
 import {ArrowRight, Sparkles} from 'lucide-react'
 import {BlockReveal} from './block-reveal'
@@ -9,12 +10,13 @@ import {ProviderLogo} from './provider-logo'
 import {certifications, type NewsRecord} from '@/lib/catalog'
 import styles from './home-hero.module.css'
 export function HomeHero({updates}: {updates: NewsRecord[]}) {
+  const fullMotion=useFullMotion()
   const hero = useRef<HTMLElement>(null)
   const [ready,setReady] = useState(false), [burst,setBurst] = useState(false)
   const [reduced,setReduced] = useState(false), [inView,setInView] = useState(true), [visible,setVisible] = useState(true)
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const updateReduced = () => {setReduced(media.matches)}
+    const updateReduced = () => {setReduced(media.matches&&!fullMotion)}
     const updateVisibility = () => setVisible(document.visibilityState === 'visible')
     updateReduced(); updateVisibility()
     setReady(true)
@@ -23,7 +25,7 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
     const observer = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), {threshold:0.05}) : null
     if (hero.current) observer?.observe(hero.current)
     return () => {observer?.disconnect();media.removeEventListener('change',updateReduced);document.removeEventListener('visibilitychange',updateVisibility)}
-  },[])
+  },[fullMotion])
   // A bounded automatic scene replays on re-entry, without an endless reading distraction.
   useEffect(()=>{
     if(!ready||reduced||!inView||!visible){setBurst(false);return}
@@ -33,7 +35,7 @@ export function HomeHero({updates}: {updates: NewsRecord[]}) {
   },[ready,reduced,inView,visible])
   const paused = !burst || reduced || !inView || !visible
   return <section ref={hero} className={`cp-hero ${styles.hero}`} data-motion={paused?'paused':'playing'} aria-label="Start your learning journey">
-    <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused}/></div>
+    <div className={styles.backgroundMotion} aria-hidden="true"><HeroMotion paused={paused} motionOptIn={fullMotion}/></div>
     <div className={`cp-hero-copy ${styles.copy}`}>
       <p className="cp-eyebrow"><Sparkles size={16} aria-hidden="true"/>LEARNING IS FOR EVERYONE</p>
       <h1><ScrollHeading as="span" text="Build your skills."/><br/><ScrollHeading as="span" text="Practice with purpose." gradient/></h1>

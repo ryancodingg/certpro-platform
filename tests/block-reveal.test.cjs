@@ -1,13 +1,13 @@
 const assert=require('node:assert/strict');const fs=require('node:fs');const vm=require('node:vm');const ts=require('typescript');
 const source=ts.transpileModule(fs.readFileSync('components/block-reveal.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
-function fixture({reduced=false,paused=false,delayed=false,mobile=false,variant='rise'}={}){
+function fixture({reduced=false,paused=false,delayed=false,fullMotion=false,mobile=false,variant='rise'}={}){
  let effect,observer,cleanup,mutation;const events={},mediaEvents={};const animations=[];
  const cards=Array.from({length:4},()=>({contains:target=>target=== 'focused',animate:(frames,options)=>{const a={frames,options,canceled:false,cancel(){this.canceled=true}};animations.push(a);return a}}));
  const root={querySelectorAll:()=>delayed?[]:cards,addEventListener:(k,v)=>events[k]=v,removeEventListener:k=>delete events[k]};
  const doc={visibilityState:'visible',activeElement:null,addEventListener:(k,v)=>events[k]=v,removeEventListener:k=>delete events[k]};
  const media={matches:reduced,addEventListener:(k,v)=>mediaEvents[k]=v,removeEventListener:k=>delete mediaEvents[k]};
  const module={exports:{}};
- const context={module,exports:module.exports,Element:{prototype:{animate(){}}},document:doc,matchMedia:q=>q.includes('reduced')?media:{matches:mobile},MutationObserver:class{constructor(cb){this.cb=cb;mutation=this}observe(){}disconnect(){this.disconnected=true}},IntersectionObserver:class{constructor(cb){this.cb=cb;this.observed=[];observer=this}observe(e){this.observed.push(e)}unobserve(e){this.observed=this.observed.filter(x=>x!==e)}disconnect(){this.observed=[]}},require:n=>n==='react'?{useRef:v=>({current:v===null?root:v}),useEffect:fn=>effect=fn}:{jsx:(type,props)=>({type,props})}};
+ const context={module,exports:module.exports,Element:{prototype:{animate(){}}},document:doc,matchMedia:q=>q.includes('reduced')?media:{matches:mobile},MutationObserver:class{constructor(cb){this.cb=cb;mutation=this}observe(){}disconnect(){this.disconnected=true}},IntersectionObserver:class{constructor(cb){this.cb=cb;this.observed=[];observer=this}observe(e){this.observed.push(e)}unobserve(e){this.observed=this.observed.filter(x=>x!==e)}disconnect(){this.observed=[]}},require:n=>n==='@/lib/browser-motion'?{useFullMotion:()=>fullMotion}:n==='react'?{useRef:v=>({current:v===null?root:v}),useEffect:fn=>effect=fn}:{jsx:(type,props)=>({type,props})}};
  vm.runInNewContext(source,context);const rendered=module.exports.BlockReveal({children:'content',selector:'.card',paused,variant});cleanup=effect();
  return {replace:()=>{const old=cards[0];cards[0]={...old};mutation.cb();assert(!observer.observed.includes(old));assert(observer.observed.includes(cards[0]));},hydrate:()=>{delayed=false;mutation.cb();assert.equal(observer.observed.length,4)},leave:()=>observer.cb(cards.map(target=>({target,isIntersecting:false}))),cards,animations,events,media,mediaEvents,doc,rendered,cleanup,enter:()=>observer.cb(cards.map((target,i)=>({target,isIntersecting:true,boundingClientRect:{top:100,left:i*100}})))};
 }
@@ -29,3 +29,5 @@ const replay=fixture();replay.enter();replay.enter();assert.equal(replay.animati
 console.log('PASS: automatic re-entry replay, no repeat while visible, reduced-motion gentle fade');
 
 const filtered=fixture();filtered.enter();filtered.replace();filtered.enter();assert.equal(filtered.animations.length,5,"new filtered card is observed");filtered.cleanup();
+
+const override=fixture({reduced:true,fullMotion:true});override.enter();assert.equal(override.animations[0].options.duration,700);assert(override.animations[0].frames[0].transform.includes("48px"));override.cleanup();

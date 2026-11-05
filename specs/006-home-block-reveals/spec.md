@@ -12,3 +12,6 @@ Updated 2026-11-05 following user request to remove Play/Pause and replay on scr
 
 ## Final approved direction
 Headings use word-by-word scroll entrances. The hero headline has no text loop or exit phase. Certification and news cards reveal on entry and replay only after leaving and returning. The entire latest-updates panel (Your next chapter starts here) reveals as one block, without a nested heading reveal. Dynamically replaced cards from catalog filters or refreshed news must also be observed. Existing colors, layout and C-Fox stay unchanged. User explicitly requested testing on mobile and publishing this revision.
+
+## Browser-specific full-motion preference
+Default remains the device preference. A footer Motion settings disclosure lets a visitor opt into full effects or return to the system setting. Save only the preference in this browser's origin-local storage, never to an account or a global site configuration. The user explicitly approved enabling full effects in the connected browser. Apply the preference to reveal and hero motion; preserve accessibility behavior for all other visitors. Storage failure must display a truthful error.
