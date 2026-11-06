@@ -8,7 +8,7 @@ export function PageReveals({children}:{children:ReactNode}){
  const pathname=usePathname()
  if(pathname==="/")return <>{children}</>
  const working=/^\/(practice|quiz|my-learning|admin)(\/|$)/.test(pathname||"")
- const headings='h1:not(:has([data-reveal-word]))'+(working?'':', h2:not(:has([data-reveal-word])):not(.cp-news-card *)')
+ const headings='h1:not(:has([data-reveal-word]))'+(working?'':', h2:not(:has([data-reveal-word])):not(.cp-news-card *):not(footer *)')
  const selector=(headings+', .cp-cert-card, .cp-news-card').split(', ').map(target=>target+':not([contenteditable], [contenteditable] *, [role="dialog"] *)').join(', ')
  return <BlockReveal key={pathname} selector={selector}>{children}</BlockReveal>
 }
