@@ -424,3 +424,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 /* Shared discovery tokens retain the approved purple palette. */
 :root{--cp-news-accent:#6329b4;--cp-news-border:#e5dbee;--cp-news-divider:#e5dfee;--cp-news-surface:#faf8ff}
 .cp-menu-toggle{min-width:44px;min-height:44px;align-items:center;justify-content:center}
+/* Discovery controls share one compact, accessible filter layout. */
+.cp-catalog-search input,.cp-catalog-search select,.cp-catalog-secondary select{border-radius:8px}
+.cp-catalog-secondary .cp-filters{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:640px){.cp-catalog-search{grid-template-columns:minmax(0,1fr) auto;gap:12px}.cp-catalog-search .cp-filter-search{grid-column:1/-1}.cp-catalog-search .cp-secondary{align-self:end}.cp-catalog-secondary .cp-filters{grid-template-columns:1fr}}
